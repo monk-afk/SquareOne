@@ -1,7 +1,7 @@
 ---
 name: Mod Update
 about: Planned or ongoing development
-title: '[Mod Update]'
+title: '[Planned Update]'
 labels: enhancement
 assignees: monk-afk
 
@@ -10,31 +10,24 @@ assignees: monk-afk
 > **Mod(s) Affected**
 - 
 
-> **Description of planned update**
+> **Description of update**
 
   ___
-> - Checklist of planned development
+> - Checklist of development
   - [ ] ...
 
 > - Other brainstorm ideas
   - [ ] ...
 
-  ___
-> **Testing Q/A**
-Live environment test
-  - [ ] Yes
-Any unforseen bugs?
-  - [ ] No
-  ___
-
-> **Deployment Status**
- - [ ] Not Ready, still planning or stalled
- - [ ] Not Ready, under development
+___
+> **Development Status**
+ - [ ] Planning or stalled
+ - [ ] Active development, testing
  - [ ] Ready, not uploaded
  - [ ] Ready and uploaded, pending server reboot
  - [ ] Is live on server
-  
-___
+
+  ___
 > **After Deployment**
 Any new bugs being reported?
   - [ ] No, Close ticket  
@@ -42,10 +35,10 @@ Any new bugs being reported?
   ```
 
   ```
-___
+  ___
 > **Anything else to add?**
 ```
 ```
-___
+  ___
 > **Add Screenshots if needed.**
-___
+  ___
