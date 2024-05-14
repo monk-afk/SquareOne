@@ -2,8 +2,9 @@ Armor
 =====
 Table of Contents
 -----------------
-> [Group Definitions](/armor.md#definitions)
-> [Armor Stats](/armor.md#armor-stats)
+- > [Group Definitions](/armor.md#definitions)
+
+- > [Armor Stats](/armor.md#armor-stats)
   - [Bronze](/armor.md#bronze)
   - [Cactus](/armor.md#cactus)
   - [Crystal (Pink and Blue)](/armor.md#crystal-pink-and-blue)
@@ -34,7 +35,7 @@ Definitions
 
 > **`reciprocate_damage`** | reflects damage back
 
-<sup>[Complete list of Definitions Here](https://github.com/minetest-mods/3d_armor/blob/master/3d_armor/README.md)</sup>
+<sub>[Complete list of Definitions Here](https://github.com/minetest-mods/3d_armor/blob/master/3d_armor/README.md)</sub>
 ___
 
 Armor Stats
@@ -73,6 +74,8 @@ Bronze Shield
   - physics_speed =
   - physics_gravity = 0.03
   - reciprocate_damage = true,
+
+<sub>[Top](/armor.md#armor)</sub>
 ___
 Cactus
 ------
@@ -104,6 +107,8 @@ Enhanced Cactus Shield
   - armor_heal = 0,
   - armor_use = 1000
   - reciprocate_damage = true,
+
+<sub>[Top](/armor.md#armor)</sub>
 ___
 Crystal (Pink and Blue)
 -----------------------
@@ -139,6 +144,8 @@ Crystal Shield
   - armor_use = 100,
   - armor_fire = 1
   - reciprocate_damage = true,
+
+<sub>[Top](/armor.md#armor)</sub>
 ___
 Diamond
 -------
@@ -165,6 +172,8 @@ Diamond Shield
   - armor_heal = 12,
   - armor_use = 200
   - reciprocate_damage = true,
+
+<sub>[Top](/armor.md#armor)</sub>
 ___
 Gold
 ----
@@ -201,6 +210,8 @@ Gold Shield
   - physics_speed =
   - physics_gravity = 0.04
   - reciprocate_damage = true,
+
+<sub>[Top](/armor.md#armor)</sub>
 ___
 Mithril
 -------
@@ -227,6 +238,8 @@ Mithril Shield
   - armor_heal = 13,
   - armor_use = 66
   - reciprocate_damage = true,
+
+<sub>[Top](/armor.md#armor)</sub>
 ___
 PinkCrystal
 -----------
@@ -256,6 +269,8 @@ PinkCrystal Boots
   - armor_use = 100,
   - physics_speed = 0.35,
   - armor_fire = 1
+
+<sub>[Top](/armor.md#armor)</sub>
 ___
 Steel
 -----
@@ -292,6 +307,8 @@ Steel Shield
   - physics_speed =
   - physics_gravity = 0.03
   - reciprocate_damage = true,
+
+<sub>[Top](/armor.md#armor)</sub>
 ___
 Wood
 ----
@@ -323,6 +340,8 @@ Enhanced Wood Shield
   - armor_heal = 0,
   - armor_use = 2000
   - reciprocate_damage = true,
+
+<sub>[Top](/armor.md#armor)</sub>
 ___
 Copper Patina
 -------------
@@ -355,6 +374,8 @@ Copper Patina Shield
   - armor_heal=12,
   - armor_use=100,
   - armor_fire=0,
+
+<sub>[Top](/armor.md#armor)</sub>
 ___
 Etherium
 --------
@@ -393,6 +414,8 @@ Etherium Shield
   - physics_gravity=-0.15,
   - physics_jump=0.2,
   - reciprocate_damage = true,
+
+<sub>[Top](/armor.md#armor)</sub>
 ___
 Obsidian
 --------
@@ -426,3 +449,6 @@ Obsidian Shield
   - armor_use = 190,
   - armor_fire = 15, 
   - reciprocate_damage = true,
+
+<sub>[Top](/armor.md#armor)</sub>
+___
