@@ -1,29 +1,44 @@
 Armor
 =====
+Table of Contents
+-----------------
+> [Group Definitions](/armor.md#definitions)
+> [Armor Stats](/armor.md#armor-stats)
+  - [Bronze](/armor.md#bronze)
+  - [Cactus](/armor.md#cactus)
+  - [Crystal (Pink and Blue)](/armor.md#crystal-pink-and-blue)
+  - [Diamond](/armor.md#diamond)
+  - [Gold](/armor.md#gold)
+  - [Mithril](/armor.md#mithril)
+  - [PinkCrystal](/armor.md#pinkcrystal)
+  - [Steel](/armor.md#steel)
+  - [Wood](/armor.md#wood)
+  - [Copper Patina](/armor.md#copper-patina)
+  - [Etherium](/armor.md#etherium)
+  - [Obsidian](/armor.md#obsidian)
+
+___
 Definitions
-___
-armor_heal - is the chance the armor will completely block the damage. For each point there is a 1% chance that damage will be completely blocked.
-___
-armor_fire - provides 4 levels of fire protection
-  - - level 1 protects against torches
-  - - level 2 protects against crystal spike
-  - - level 3 protects against fire
-  - - level 4 unused
-  - - level 5 protects against lava
-___
-physics_jump - "=1" will increase jump strength by 100%. "physics_jump= -0.5" will decrease jump by 50%.
-___
-physics_speed - "=1.5" will increase speed by 150%, "physics_speed= -0.5" will decrease speed by 50%.
-___
-physics_gravity - "=2" will increase gravity by 200%, "physics_gravity= -1" will decrease gravity by 100%.
-___
-armor_use - how quickly the armor wears out, higher nubmer breaks quicker
-___
-reciprocate_damage - reflect damage back
+===========
+> **`armor_heal`** | is the chance the armor will completely block the damage. For each point there is a 1% chance that damage will be completely blocked.
+
+> **`armor_fire`** | fire protection: 1. torches, 2. crystal spike, 3. fire, 4. lava
+
+> **`physics_jump`** | "=1" will increase jump strength by 100%. "physics_jump= -0.5" will decrease jump by 50%.
+
+> **`physics_speed`** | "=1.5" will increase speed by 150%, "physics_speed= -0.5" will decrease speed by 50%.
+
+> **`physics_gravity`** | "=2" will increase gravity by 200%, "physics_gravity= -1" will decrease gravity by 100%.
+
+> **`armor_use`** | how quickly the armor wears out, higher nubmer breaks quicker
+
+> **`reciprocate_damage`** | reflects damage back
+
+<sup>[Complete list of Definitions Here](https://github.com/minetest-mods/3d_armor/blob/master/3d_armor/README.md)</sup>
 ___
 
-Stats
-___
+Armor Stats
+===========
 Bronze
 ------
 Bronze Helmet
