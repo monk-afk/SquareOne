@@ -1,9 +1,9 @@
 ___
 > NOT UPLOADED, NOT READY
-- [ ] squareone_ores -- add drop items, see: issue #11
 - [ ] 3d_armor/armor_pinkdiamond_augmented -- textures
 - [ ] homedecor_modpack/homedecor_lighting/init.lua (supellex) -- rewriting missing recipes
 - [ ] money/ -- add safety deposit box
+- [ ] exp update change gain method
 - [ ] ...
 
 ___
@@ -14,6 +14,7 @@ ___
 
 ___
 > TESTED, TO BE UPLOADED
+- [ ] squareone_ores -- add drop items, see: issue #11
 - [ ] homedecor_modpack/homedecor_office/init.lua -- fix invalid inventory size on desk
 - [ ] invisibility/init.lua -- increase time from 30 to 300 seconds
 - [ ] irrigation/* -- cleaned up code, fix reservoir and add recipe
