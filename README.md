@@ -30,6 +30,8 @@ Have fun, stay safe
 Table of Contents
 ------------------
 
+- > [Tips and bits](/uncategorized_info.md)
+
 - > [Update Tracker](/update_tracker.md)
 
 - > [Armor Stats](/armor.md#armor)

@@ -2,9 +2,9 @@ Armor
 =====
 Table of Contents
 -----------------
-- > [Group Definitions](/armor.md#definitions)
+- **[Group Definitions](/armor.md#definitions)**
 
-- > [Armor Stats](/armor.md#armor-stats)
+- **[Armor Stats](/armor.md#armor-stats)**
   - [Bronze](/armor.md#bronze)
   - [Cactus](/armor.md#cactus)
   - [Crystal (Pink and Blue)](/armor.md#crystal-pink-and-blue)

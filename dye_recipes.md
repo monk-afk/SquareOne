@@ -1,6 +1,8 @@
-Craft recipes for the 241 dyes available on SquareOne with the UnifiedDyes mod, most of them are not listed in the craft menu.
+<img src="./images/squareone_text_256px.png" alt="SquareOne pixel text." width="256"/>
 
-These recipes are "shapeless". Meaning, they can be placed in any square of the crafting grid.
+___
+
+241 Dye Recipes available on SquareOne with the UnifiedDyes mod, most of them are not listed in the craft menu. These recipes are "shapeless". Meaning, they can be placed in any square of the crafting grid.
 
 ```lua
 dye:spring
