@@ -1,6 +1,4 @@
-<img src="./images/squareone_logo_v2_notext_256px.png" alt="SquareOne pixel text." width="64"/>
-<img src="./images/squareone_text_256px.png" alt="SquareOne pixel text." width="160"/>
-<img src="./images/squareone_logo_v1_notext_64px.png" alt="SquareOne pixel text." width="64"/>
+<img src="./images/squareone_logo_v2_notext_256px.png" alt="SquareOne pixel text." width="64"/> <img src="./images/squareone_text_256px.png" alt="SquareOne pixel text." width="160"/> <img src="./images/squareone_logo_v1_notext_64px.png" alt="SquareOne pixel text." width="64"/>
 <hr>
 
 **Uncategorized Tips**

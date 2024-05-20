@@ -1,6 +1,4 @@
-<img src="./images/squareone_logo_v2_notext_256px.png" alt="SquareOne pixel text." width="64"/>
-<img src="./images/squareone_text_256px.png" alt="SquareOne pixel text." width="160"/>
-<img src="./images/squareone_logo_v1_notext_64px.png" alt="SquareOne pixel text." width="64"/>
+<img src="./images/squareone_logo_v2_notext_256px.png" alt="SquareOne pixel text." width="64"/> <img src="./images/squareone_text_256px.png" alt="SquareOne pixel text." width="160"/> <img src="./images/squareone_logo_v1_notext_64px.png" alt="SquareOne pixel text." width="64"/>
 <hr>
 
 **Dye Recipes**
@@ -8,10 +6,9 @@
 
 These recipes are "shapeless". Meaning, they can be placed in any square of the crafting grid.
 
+<!--
 **Table of Contents**
-
 (Incomplete and potential errors)
-
  - ![#E7E751](https://via.placeholder.com/15/e7e751/000000.png?text=+) [yellow](/dye_recipes.md#yellow)
  - ![#E7D08B](https://via.placeholder.com/15/e7d08b/000000.png?text=+) [light_amber](/dye_recipes.md#light_amber)
  - ![#9C51E7](https://via.placeholder.com/15/9c51e7/000000.png?text=+) [violet](/dye_recipes.md#violet)
@@ -107,7 +104,7 @@ These recipes are "shapeless". Meaning, they can be placed in any square of the 
  - ![#27592D](https://via.placeholder.com/15/27592d/000000.png?text=+) [dark_emerald_green](/dye_recipes.md#dark_emerald_green)
  - ![#E751C2](https://via.placeholder.com/15/e751c2/000000.png?text=+) [fuchsia](/dye_recipes.md#fuchsia)
  - ![#51C2E7](https://via.placeholder.com/15/51c2e7/000000.png?text=+) [cerulean](/dye_recipes.md#cerulean)
-
+-->
 ___
 
 ### dye:spring

@@ -1,6 +1,4 @@
-<img src="./images/squareone_logo_v2_notext_256px.png" alt="SquareOne pixel text." width="64"/>
-<img src="./images/squareone_text_256px.png" alt="SquareOne pixel text." width="160"/>
-<img src="./images/squareone_logo_v1_notext_64px.png" alt="SquareOne pixel text." width="64"/>
+<img src="./images/squareone_logo_v2_notext_256px.png" alt="SquareOne pixel text." width="64"/><img src="./images/squareone_text_256px.png" alt="SquareOne pixel text." width="160"/><img src="./images/squareone_logo_v1_notext_64px.png" alt="SquareOne pixel text." width="64"/>
 <hr>
 
 Update Tracker
@@ -13,15 +11,14 @@ ___
 > NOT UPLOADED, NOT READY
 - [ ] 3d_armor/armor_pinkdiamond_augmented -- textures
 - [ ] money/ -- add safety deposit box
-- [ ] Integrate exp2 into current modset (bones, money, etc)
 - [ ] ...
 
 ___
 
 > IN PROGRESS
-- [X] homedecor_modpack/homedecor_lighting/init.lua -- rewriting missing recipes
-- [ ] exp2 - localize functions which use exp2, if possible
-- [ ] bones - remove minumum cost to use bones, bones is free but death is costly
+- [X] Integrate exp2 into current modset (bones, money, etc)
+  - [X] exp2 - localize functions which use exp2, if possible
+  - [X] bones - remove minumum cost to use bones, bones is free but death is costly
 
 ___
 
@@ -34,8 +31,10 @@ ___
 
 > TESTED, TO BE UPLOADED
 
-- [ ] motd, cleaned up code, welcome message now sends to all
-- [ ] Stop money from dropping into afk-alts
+- [ ] graphical fixes in sfinv
+- [X] motd, cleaned up code, welcome message now sends to all
+- [X] Stop money from dropping into afk-alts
+- [X] homedecor_modpack/homedecor_lighting/init.lua -- rewriting missing recipes
 - [ ] ...
 
 ___
