@@ -1,6 +1,8 @@
-<img src="./images/squareone_text_256px.png" alt="SquareOne pixel text." width="256"/>
+<img src="./images/squareone_logo_v2_notext_256px.png" alt="SquareOne pixel text." width="64"/>
+<img src="./images/squareone_text_256px.png" alt="SquareOne pixel text." width="160"/>
+<img src="./images/squareone_logo_v1_notext_64px.png" alt="SquareOne pixel text." width="64"/>
+<hr>
 
-___
 - Discord: https://discord.gg/pE4Tu3cf23
 - Download: https://www.minetest.net/
 - Minetest:
@@ -8,6 +10,8 @@ ___
   - Port: `30023`
 - Multicraft: `monk.moe:30023`
 <!-- squareone.moe -->
+
+___
 
 IN-GAME RULES
 -------------
@@ -26,13 +30,19 @@ Chat and Gameplay Rated E10+
 
 Have fun, stay safe
 
+___
 
 Table of Contents
 ------------------
 
-- > [Tips and bits](/uncategorized_info.md)
-
 - > [Update Tracker](/update_tracker.md)
+
+- > [Mod Tips](/mod_tips.md)
+  - [Crystal](/mod_tips.md#crystal)
+  - [Mining](/mod_tips.md#mining)
+  - [Exp](/mod_tips.md#exp)
+  - [PBlocks](/mod_tips.md#protector-blocks)
+
 
 - > [Armor Stats](/armor.md#armor)
   - [Bronze](/armor.md#bronze)
@@ -48,8 +58,7 @@ Table of Contents
   - [Etherium](/armor.md#etherium)
   - [Obsidian](/armor.md#obsidian)
 
-- > [241 Dye Recipes](/dye_recipes.md)
-
+- > [Dye Recipes](/dye_recipes.md)
 ___
 <h3>mønκ</h3>
 <img src="./images/squareone_pixelmonk.png" alt="monk as Inuyasha with pixel glasses" width="64"/>

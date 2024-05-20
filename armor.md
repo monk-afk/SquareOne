@@ -1,7 +1,13 @@
-Armor
+<img src="./images/squareone_logo_v2_notext_256px.png" alt="SquareOne pixel text." width="64"/>
+<img src="./images/squareone_text_256px.png" alt="SquareOne pixel text." width="160"/>
+<img src="./images/squareone_logo_v1_notext_64px.png" alt="SquareOne pixel text." width="64"/>
+<hr>
+
+**Armor**
 =====
-Table of Contents
------------------
+
+### Index
+
 - **[Group Definitions](/armor.md#definitions)**
 
 - **[Armor Stats](/armor.md#armor-stats)**
@@ -19,56 +25,60 @@ Table of Contents
   - [Obsidian](/armor.md#obsidian)
 
 ___
-Definitions
+
+**Definitions**
 ===========
-> **`armor_heal`** | is the chance the armor will completely block the damage. For each point there is a 1% chance that damage will be completely blocked.
+**`armor_heal`** | is the chance the armor will completely block the damage. For each point there is a 1% chance that damage will be completely blocked.
 
-> **`armor_fire`** | fire protection: 1. torches, 2. crystal spike, 3. fire, 4. lava
+**`armor_fire`** | fire protection: 1. torches, 2. crystal spike, 3. fire, 4. lava
 
-> **`physics_jump`** | "=1" will increase jump strength by 100%. "physics_jump= -0.5" will decrease jump by 50%.
+**`physics_jump`** | "=1" will increase jump strength by 100%. "physics_jump= -0.5" will decrease jump by 50%.
 
-> **`physics_speed`** | "=1.5" will increase speed by 150%, "physics_speed= -0.5" will decrease speed by 50%.
+**`physics_speed`** | "=1.5" will increase speed by 150%, "physics_speed= -0.5" will decrease speed by 50%.
 
-> **`physics_gravity`** | "=2" will increase gravity by 200%, "physics_gravity= -1" will decrease gravity by 100%.
+**`physics_gravity`** | "=2" will increase gravity by 200%, "physics_gravity= -1" will decrease gravity by 100%.
 
-> **`armor_use`** | how quickly the armor wears out, higher nubmer breaks quicker
+**`armor_use`** | how quickly the armor wears out, higher nubmer breaks quicker
 
-> **`reciprocate_damage`** | reflects damage back
+**`reciprocate_damage`** | reflects damage back
 
 <sub>[Complete list of Definitions Here](https://github.com/minetest-mods/3d_armor/blob/master/3d_armor/README.md)</sub>
+
 ___
 
-Armor Stats
+**Armor Stats**
 ===========
-Bronze
+
+**Bronze**
 ------
-Bronze Helmet
+
+**Bronze Helmet**
   - armor_heal = 6,
   - armor_use = 400,
   - physics_speed =
   - physics_gravity = 0.01
 
-Bronze Chestplate
+**Bronze Chestplate**
   - armor_torso = 1,
   - armor_heal = 6,
   - armor_use = 400,
   - physics_speed =
   - physics_gravity = 0.04
 
-Bronze Leggings
+**Bronze Leggings**
   - armor_legs = 1,
   - armor_heal = 6,
   - armor_use = 400,
   - physics_gravity = 0.03
 
-Bronze Boots
+**Bronze Boots**
   - armor_feet = 1,
   - armor_heal = 6,
   - armor_use = 400,
   - physics_speed =
   - physics_gravity = 0.01
 
-Bronze Shield
+**Bronze Shield**
   - armor_heal = 6,
   - armor_use = 400,
   - physics_speed =
@@ -76,135 +86,147 @@ Bronze Shield
   - reciprocate_damage = true,
 
 <sub>[Top](/armor.md#armor)</sub>
+
 ___
-Cactus
+
+**Cactus**
 ------
-Cactus Helmet
+
+**Cactus Helmet**
   - armor_heal = 0,
   - armor_use = 1000
 
-Cactus Chestplate
+**Cactus Chestplate**
   - armor_torso = 1,
   - armor_heal = 0,
   - armor_use = 1000
 
-Cactus Leggings
+**Cactus Leggings**
   - armor_legs = 1,
   - armor_heal = 0,
   - armor_use = 1000
 
-Cactus Boots
+**Cactus Boots**
   - armor_feet = 1,
   - armor_heal = 0,
   - armor_use = 1000
 
-Cactus Shield
+**Cactus Shield**
   - armor_heal = 0,
   - armor_use = 1000
   - reciprocate_damage = true,
 
-Enhanced Cactus Shield
+**Enhanced Cactus Shield**
   - armor_heal = 0,
   - armor_use = 1000
   - reciprocate_damage = true,
 
 <sub>[Top](/armor.md#armor)</sub>
+
 ___
-Crystal (Pink and Blue)
+
+**Crystal (Pink and Blue)**
 -----------------------
-Crystal Helmet
+
+**Crystal Helmet**
   - armor_heal = 12,
   - armor_use = 100,
   - physics_speed = 0.35,
   - armor_fire = 1
 
-Crystal Chestplate
+**Crystal Chestplate**
   - armor_torso = 1,
   - armor_heal = 12,
   - armor_use = 100,
   - physics_speed = 0.35,
   - armor_fire = 1
 
-Crystal Leggings
+**Crystal Leggings**
   - armor_legs = 1,
   - armor_heal = 12,
   - armor_use = 100,
   - physics_speed = 0.35,
   - armor_fire = 1
 
-Crystal Boots
+**Crystal Boots**
   - armor_feet = 1,
   - armor_heal = 12,
   - armor_use = 100,
   - physics_speed = 0.35,
   - armor_fire = 1
 
-Crystal Shield
+**Crystal Shield**
   - armor_heal = 12,
   - armor_use = 100,
   - armor_fire = 1
   - reciprocate_damage = true,
 
 <sub>[Top](/armor.md#armor)</sub>
+
 ___
-Diamond
+
+**Diamond**
 -------
-Diamond Helmet
+
+**Diamond Helmet**
   - armor_heal = 12,
   - armor_use = 200
 
-Diamond Chestplate
+**Diamond Chestplate**
   - armor_torso = 1,
   - armor_heal = 12,
   - armor_use = 200
 
-Diamond Leggings
+**Diamond Leggings**
   - armor_legs = 1,
   - armor_heal = 12,
   - armor_use = 200
 
-Diamond Boots
+**Diamond Boots**
   - armor_feet = 1,
   - armor_heal = 12,
   - armor_use = 200
 
-Diamond Shield
+**Diamond Shield**
   - armor_heal = 12,
   - armor_use = 200
   - reciprocate_damage = true,
 
 <sub>[Top](/armor.md#armor)</sub>
+
 ___
-Gold
+
+**Gold**
 ----
-Gold Helmet
+
+**Gold Helmet**
   - armor_heal = 6,
   - armor_use = 300,
   - physics_speed =
   - physics_gravity = 0.02
 
-Gold Chestplate
+**Gold Chestplate**
   - armor_torso = 1,
   - armor_heal = 6,
   - armor_use = 300,
   - physics_speed =
   - physics_gravity = 0.05
 
-Gold Leggings
+**Gold Leggings**
   - armor_legs = 1,
   - armor_heal = 6,
   - armor_use = 300,
   - physics_speed =
   - physics_gravity = 0.04
 
-Gold Boots
+**Gold Boots**
   - armor_feet = 1,
   - armor_heal = 6,
   - armor_use = 300,
   - physics_speed =
   - physics_gravity = 0.02
 
-Gold Shield
+**Gold Shield**
   - armor_heal = 6,
   - armor_use = 300,
   - physics_speed =
@@ -212,58 +234,64 @@ Gold Shield
   - reciprocate_damage = true,
 
 <sub>[Top](/armor.md#armor)</sub>
+
 ___
-Mithril
+
+**Mithril**
 -------
-Mithril Helmet
+
+**Mithril Helmet**
   - armor_heal = 13,
   - armor_use = 66
 
-Mithril Chestplate
+**Mithril Chestplate**
   - armor_torso = 1,
   - armor_heal = 13,
   - armor_use = 66
 
-Mithril Leggings
+**Mithril Leggings**
   - armor_legs = 1,
   - armor_heal = 13,
   - armor_use = 66
 
-Mithril Boots
+**Mithril Boots**
   - armor_feet = 1,
   - armor_heal = 13,
   - armor_use = 66
 
-Mithril Shield
+**Mithril Shield**
   - armor_heal = 13,
   - armor_use = 66
   - reciprocate_damage = true,
 
 <sub>[Top](/armor.md#armor)</sub>
+
 ___
-PinkCrystal
+
+**PinkCrystal**
 -----------
-PinkCrystal Helmet
+
+**PinkCrystal Helmet**
   - armor_heal = 12,
   - armor_use = 100,
   - physics_speed = 0.35,
   - armor_fire = 1
 
-PinkCrystal Chestplate
+**PinkCrystal Chestplate**
   - armor_torso = 1,
   - armor_heal = 12,
   - armor_use = 100,
   - physics_speed = 0.35,
   - armor_fire = 1
 
-PinkCrystal Leggings
+**PinkCrystal Leggings**
   - armor_legs = 1,
   - armor_heal = 12,
   - armor_use = 100,
   - physics_speed = 0.35,
   - armor_fire = 1
 
-PinkCrystal Boots
+**PinkCrystal Boots**
   - armor_feet = 1,
   - armor_heal = 12,
   - armor_use = 100,
@@ -271,37 +299,40 @@ PinkCrystal Boots
   - armor_fire = 1
 
 <sub>[Top](/armor.md#armor)</sub>
+
 ___
-Steel
+
+**Steel**
 -----
-Steel Helmet
+
+**Steel Helmet**
   - armor_heal = 0,
   - armor_use = 800,
   - physics_speed =
   - physics_gravity = 0.01
 
-Steel Chestplate
+**Steel Chestplate**
   - armor_torso = 1,
   - armor_heal = 0,
   - armor_use = 800,
   - physics_speed =
   - physics_gravity = 0.04
 
-Steel Leggings
+**Steel Leggings**
   - armor_legs = 1,
   - armor_heal = 0,
   - armor_use = 800,
   - physics_speed =
   - physics_gravity = 0.03
 
-Steel Boots
+**Steel Boots**
   - armor_feet = 1,
   - armor_heal = 0,
   - armor_use = 800,
   - physics_speed =
   - physics_gravity = 0.01
 
-Steel Shield
+**Steel Shield**
   - armor_heal = 0,
   - armor_use = 800,
   - physics_speed =
@@ -309,105 +340,115 @@ Steel Shield
   - reciprocate_damage = true,
 
 <sub>[Top](/armor.md#armor)</sub>
+
 ___
-Wood
+
+**Wood**
 ----
-Wood Helmet
+
+**Wood Helmet**
   - armor_heal = 0,
   - armor_use = 2000,
 
-Wood Chestplate
+**Wood Chestplate**
   - armor_torso = 1,
   - armor_heal = 0,
   - armor_use = 2000,
 
-Wood Leggings
+**Wood Leggings**
   - armor_legs = 1,
   - armor_heal = 0,
   - armor_use = 2000,
 
-Wood Boots
+**Wood Boots**
   - armor_feet = 1,
   - armor_heal = 0,
   - armor_use = 2000,
 
-Wood Shield
+**Wood Shield**
   - armor_heal = 0,
   - armor_use = 2000,
   - reciprocate_damage = true,
 
-Enhanced Wood Shield
+**Enhanced Wood Shield**
   - armor_heal = 0,
   - armor_use = 2000
   - reciprocate_damage = true,
 
 <sub>[Top](/armor.md#armor)</sub>
+
 ___
-Copper Patina
+
+**Copper Patina**
 -------------
-Copper Patina Helmet
+
+
+**Copper Patina Helmet**
   - armor_head=1,
   - armor_heal=12,
   - armor_use=100,
   - armor_fire=0,
 
-Copper Patina Chestplate
+**Copper Patina Chestplate**
   - armor_torso=1,
   - armor_heal=12,
   - armor_use=100,
   - armor_fire=0,
 
-Copper Patina Leggings
+**Copper Patina Leggings**
   - armor_legs=1,
   - armor_heal=12,
   - armor_use=100,
   - armor_fire=0,
 
-Copper Patina Boots
+**Copper Patina Boots**
   - armor_feet=1,
   - armor_heal=12,
   - armor_use=100,
   - armor_fire=0,
 
-Copper Patina Shield
+**Copper Patina Shield**
   - armor_shield=1,
   - armor_heal=12,
   - armor_use=100,
   - armor_fire=0,
 
 <sub>[Top](/armor.md#armor)</sub>
+
 ___
-Etherium
+
+**Etherium**
 --------
-Etherium Helmet
+
+**Etherium Helmet**
   - armor_head=1,
   - armor_heal=6,
   - armor_use=300,
   - physics_gravity=-0.15,
   - physics_jump=0.2,
 
-Etherium Chestplate
+**Etherium Chestplate**
   - armor_torso=1,
   - armor_heal=6,
   - armor_use=300,
   - physics_gravity=-0.15,
   - physics_jump=0.2,
 
-Etherium Leggings
+**Etherium Leggings**
   - armor_legs=1,
   - armor_heal=6,
   - armor_use=300,
   - physics_gravity=-0.15,
   - physics_jump=0.2,
 
-Etherium Boots
+**Etherium Boots**
   - armor_feet=1,
   - armor_heal=6,
   - armor_use=300,
   - physics_gravity=-0.15,
   - physics_jump=0.2,
 
-Etherium Shield
+**Etherium Shield**
   - armor_shield=1,
   - armor_heal=6,
   - armor_use=300,
@@ -416,34 +457,37 @@ Etherium Shield
   - reciprocate_damage = true,
 
 <sub>[Top](/armor.md#armor)</sub>
+
 ___
-Obsidian
+
+**Obsidian**
 --------
-Obsidian Helmet
+
+**Obsidian Helmet**
   - armor_head = 1,
   - armor_heal = 10,
   - armor_use = 190,
   - armor_fire = 15,
 
-Obsidian Chestplate
+**Obsidian Chestplate**
   - armor_torso = 1,
   - armor_heal = 10,
   - armor_use = 190,
   - armor_fire = 15,
 
-Obsidian Leggings
+**Obsidian Leggings**
   - armor_legs = 1,
   - armor_heal = 10,
   - armor_use = 190,
   - armor_fire = 15,
 
-Obsidian Boots
+**Obsidian Boots**
   - armor_feet = 1,
   - armor_heal = 10,
   - armor_use = 190,
   - armor_fire = 15,
 
-Obsidian Shield
+**Obsidian Shield**
   - armor_shield = 1,
   - armor_heal = 10,
   - armor_use = 190,
@@ -451,4 +495,5 @@ Obsidian Shield
   - reciprocate_damage = true,
 
 <sub>[Top](/armor.md#armor)</sub>
+
 ___
