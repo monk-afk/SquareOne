@@ -57,6 +57,9 @@ Table of Contents
   - [Obsidian](/armor.md#obsidian)
 
 - > [Dye Recipes](/dye_recipes.md)
+
+- > [Market Trends](/market_trends.md)
+
 ___
 <h3>mønκ</h3>
 <img src="./images/squareone_pixelmonk.png" alt="monk as Inuyasha with pixel glasses" width="64"/>
