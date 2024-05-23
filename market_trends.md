@@ -382,7 +382,7 @@ $10
   -  $10 x 1 for 1 protect2 
   -  $10 x 1 for 1 shield_cactus 
   -  $10 x 1 for 1 stained_glass 
-  -  $10 x 1 for 1 pad 
+  -  $10 x 1 for 1 teleport_pad 
   -  $10 x 1 for 1 day_stone 
   -  $10 x 1 for 2 wool_black 
   -  $10 x 1 for 1 wool_white 
@@ -609,7 +609,7 @@ $100
   -  $10 x 10 for 1 sword_crystal 
   -  $10 x 10 for 1 kitten_set 
   -  $10 x 10 for 4 mithril_lump 
-  -  $10 x 10 for 1 pad 
+  -  $10 x 10 for 1 teleport_pad 
 
 $110
 ---
@@ -664,9 +664,9 @@ $200
 $250
 ---
 
-  -  $10 x 25 for 1 pad 
+  -  $10 x 25 for 1 teleport_pad
 
 $290
 ---
 
-  -  $10 x 29 for 1 pad 
+  -  $10 x 29 for 1 teleport_pad
