@@ -29,33 +29,42 @@ ___
 
 ___
 
-> TESTED, TO BE UPLOADED
-
-- [ ] graphical fixes in sfinv
-- [X] motd, cleaned up code, welcome message now sends to all
-- [X] Stop money from dropping into afk-alts
-- [X] homedecor_modpack/homedecor_lighting/init.lua -- rewriting missing recipes
-- [ ] ...
-
+> TO BE UPLOADED
+``` diff
++++ anvil -- clean up code
++++ basic_materials -- fix bad group types
++++ exp2 -- fix error division, add variable gains
++++ filterplus -- clean code
++++ homedecor_modpack/homedecor_lighting -- fix broken recipes
++++ mobs_monster -- lowered dig time
++++ money -- minimum requirement for drops, no afk farming
++++ motd -- rewritten
++++ online_players -- prep code future change
++++ protector -- correct grouping
++++ teleport_potion -- fatal error from throwing tp potion and logout
++++ squareone_items -- fix notice cmd, remove invalid block detection
++++ stamina -- tweak exhaustion values
++++ teleport-request -- add bank to tpp places
++++ bones -- the cost is no longer optional, but the command is free
+```
 ___
 > UPLOADED, PENDING REBOOT
-
-- [ ] ...
 
 ___
 
 > DONE, ADDED TO SERVER
 
-- [ ] ...
-- [X] add staff command functional reporting
-- [Please test] homedecor_modpack/homedecor_office/init.lua -- fix invalid inventory size on desk
-- [X] exp update change gain method
-- [X] filterplus/init.lua -- minor code improvements to filter load order
-- [X] squareone_ores -- add drop items, see: issue #11
-- [X] invisibility/init.lua -- increase time from 30 to 300 seconds
-- [X] irrigation/* -- cleaned up code, fix reservoir and add recipe
-- [X] squareone_guide -- update to guide text
-- [X] shopsign/init.lua -- bugfix and texturing
-- [X] exp/init.lua -- removed garbage noclip detection
-- [X] squareone_items/anti_noclip.lua -- silence reporting
-- [X] building_blocks_marble.png > more visible texture detail
+```diff
++++ squareone_items -- add staff command functional reporting
++++ homedecor_modpack/homedecor_office/init.lua -- fix invalid inventory size on desk
++++ exp update change gain method
++++ filterplus -- minor code improvements to filter load order
++++ squareone_ores -- add drop items, see: issue #11
++++ invisibility/init.lua -- increase time from 30 to 300 seconds
++++ irrigation -- cleaned up code, fix reservoir and add recipe
++++ squareone_guide -- update to guide text
++++ shopsign -- bugfix and texturing
++++ exp -- removed garbage noclip detection
++++ squareone_items -- silence reporting
++++ building_blocks_marble.png -- more visible texture detail
+```
