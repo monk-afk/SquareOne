@@ -35,7 +35,7 @@ ___
 Mining
 ---
 
-- The Ores of Diamond and Pink Diamond are not found visually, they will only drop out of stone by chance.
+- The Ores of Diamond and Pink Diamond are not found visually, they will only drop out of stone by random chance. I don't know what the odds are, since this is determined by your own Luck stat.
   - Minimum Depth:
     - Pink Diamond: y-8192
     - Diamond: y-1024
@@ -49,17 +49,15 @@ Playing the game will gain exp points, basically anything besides being AFK or d
 
 The command to view your exp stats, or of another player is `/exp`. You will see a stats page with these metrics:
 
-`Time` In minutes, is recorded between login and logout
+`Exp` Experience, is your exp.
 
-Acts: Actions, Total records which count towards exp gain
+`Level` Is your level of exp.
 
-Expn: Experience, is your exp. calculated from actions / time = exp
+`Luck` Variable which will be used to determine outcome from random events.
 
-Level: Is your level progress, the plan is to show the integer in player chat rank
+`Fortune` Used to determine the output of your luck.
 
-Luck: Variable value which will be used to determine outcome from random events
-
-Frte: Fortune, this is a metric which increases like the Level stat, and may be used to determine stuff like "getting better items from node drops" or stuff like that
+Luck and Fortune sometimes work together. To give an example; when a player dies, they won't lose exp if they are lucky. If they are not lucky, and exp is deducted, their Fortune stat will determine how much exp they lose. 
 
 ___
 

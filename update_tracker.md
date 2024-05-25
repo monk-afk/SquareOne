@@ -8,28 +8,37 @@ Updates to mods which are planned or in-progress. Not comprehensive.
 
 ___
 
-> NOT UPLOADED, NOT READY
+> HAVEN'T STARTED
 - [ ] 3d_armor/armor_pinkdiamond_augmented -- textures
-- [ ] money/ -- add safety deposit box
 - [ ] ...
 
 ___
 
-> IN PROGRESS
-- [X] Integrate exp2 into current modset (bones, money, etc)
-  - [X] exp2 - localize functions which use exp2, if possible
-  - [X] bones - remove minumum cost to use bones, bones is free but death is costly
-
+> IN PROGRESS, NOT READY
+- [ ] money/ -- add safety deposit box
+- [ ] ...
 ___
 
 > NOT UPLOADED, NEEDS TESTING
 
-- [ ] homedecor_modpack/homedecor_common/inventory.lua -- increase debug verbosity
 - [ ] ...
 
 ___
 
 > TO BE UPLOADED
+
+- [ ] ...
+
+___
+
+> UPLOADED, PENDING REBOOT
+
+- [ ] ...
+
+___
+
+> DONE, ADDED TO SERVER
+
 ``` diff
 +++ anvil -- clean up code
 +++ basic_materials -- fix bad group types
@@ -47,12 +56,6 @@ ___
 +++ teleport-request -- add bank to tpp places
 +++ bones -- the cost is no longer optional, but the command is free
 ```
-___
-> UPLOADED, PENDING REBOOT
-
-___
-
-> DONE, ADDED TO SERVER
 
 ```diff
 +++ squareone_items -- add staff command functional reporting
