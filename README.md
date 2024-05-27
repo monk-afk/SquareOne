@@ -9,6 +9,7 @@
   - Address: `monk.moe`
   - Port: `30023`
 - Multicraft: `monk.moe:30023`
+- Live Map: (*coming soon*)
 <!-- squareone.moe -->
 
 ___
@@ -43,6 +44,12 @@ Table of Contents
   - [Exp](/mod_tips.md#exp)
   - [PBlocks](/mod_tips.md#protector-blocks)
 
+- > [Exp2](/exp2.md)
+  - [Details](/exp2.md#calculated-chaos)
+  - [What are These Numbers?](/exp2.md#metrics)
+  - [The Price of Death](/exp2.md#dying-sucks)
+  - [Do ya feel lucky, punk?](/exp2.md#i-do-feel-lucky)
+  - [Level Up!](/exp2.md#level-up)
 
 - > [Armor Stats](/armor.md#armor)
   - [Bronze](/armor.md#bronze)

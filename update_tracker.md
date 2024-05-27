@@ -4,40 +4,29 @@
 Update Tracker
 ---
 
-Updates to mods which are planned or in-progress. Not comprehensive.
+Updates to mods which are planned or in-progress. Not comprehensive, possibly not up to date. Refer also to bug tracker: https://github.com/monk-afk/SquareOne/issues
 
 ___
 
-> HAVEN'T STARTED
-- [ ] 3d_armor/armor_pinkdiamond_augmented -- textures
-- [ ] ...
-
+- HAVEN'T STARTED
+```diff
+> 3d_armor/armor_pinkdiamond_augmented -- textures
+```
 ___
 
-> IN PROGRESS, NOT READY
-- [ ] money/ -- add safety deposit box
-- [ ] ...
+- IN PROGRESS, STALLED
+```diff
+> money/ -- add safety deposit box
+```
 ___
 
-> NOT UPLOADED, NEEDS TESTING
-
-- [ ] ...
-
+- IN PROGRESS, ACTIVE
+```diff
+- Player tags: Faction is missing from on-screen, and level is missing from chat
+```
 ___
 
-> TO BE UPLOADED
-
-- [ ] ...
-
-___
-
-> UPLOADED, PENDING REBOOT
-
-- [ ] ...
-
-___
-
-> DONE, ADDED TO SERVER
+- DONE, ADDED TO SERVER
 
 ``` diff
 +++ anvil -- clean up code

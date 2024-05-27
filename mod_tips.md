@@ -9,8 +9,6 @@
 
 - **[Mining](/mod_tips.md#mining)**
 
-- **[Exp](/mod_tips.md#exp)**
-
 - **[PBlocks](/mod_tips.md#protector-blocks)**
 
 ___
@@ -39,25 +37,6 @@ Mining
   - Minimum Depth:
     - Pink Diamond: y-8192
     - Diamond: y-1024
-
-___
-
-Exp
----
-
-Playing the game will gain exp points, basically anything besides being AFK or dying will earn you exp.
-
-The command to view your exp stats, or of another player is `/exp`. You will see a stats page with these metrics:
-
-`Exp` Experience, is your exp.
-
-`Level` Is your level of exp.
-
-`Luck` Variable which will be used to determine outcome from random events.
-
-`Fortune` Used to determine the output of your luck.
-
-Luck and Fortune sometimes work together. To give an example; when a player dies, they won't lose exp if they are lucky. If they are not lucky, and exp is deducted, their Fortune stat will determine how much exp they lose. 
 
 ___
 
