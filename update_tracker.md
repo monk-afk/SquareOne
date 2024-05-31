@@ -9,9 +9,16 @@ Updates to mods which are planned or in-progress. Not comprehensive, possibly no
 ___
 
 - HAVEN'T STARTED
-```diff
+
+> SquareOne Mapserver
+  - > Set up SSL
+  - > configure mapserver mod to have an item that you can buy and it shows up on the mapserver
+  - > website development
+
+> finish the filter tags api
+
 > 3d_armor/armor_pinkdiamond_augmented -- textures
-```
+
 ___
 
 - IN PROGRESS, STALLED

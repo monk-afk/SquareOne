@@ -1,9 +1,6 @@
 <img src="./images/squareone_logo_v2_notext_256px.png" alt="SquareOne pixel text." width="64"/> <img src="./images/squareone_text_256px.png" alt="SquareOne pixel text." width="160"/> <img src="./images/squareone_logo_v1_notext_64px.png" alt="SquareOne pixel text." width="64"/>
 <hr>
 
-> [!NOTE]
-> We try to keep the information in these documents up to date, however sometimes things change without being documented. Please let me know of any details which may be incorrect. Thanks!
-
 - Discord: https://discord.gg/pE4Tu3cf23
 - Download: https://www.minetest.net/
 - Minetest:
@@ -71,6 +68,7 @@ Table of Contents
 - > [Market Trends](/market_trends.md)
 
 ___
+
 <h3>mønκ</h3>
 <img src="./images/squareone_pixelmonk.png" alt="monk as Inuyasha with pixel glasses" width="64"/>
 
