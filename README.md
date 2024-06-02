@@ -1,7 +1,8 @@
 <img src="./images/squareone_logo_v2_notext_256px.png" alt="SquareOne pixel text." width="64"/> <img src="./images/squareone_text_256px.png" alt="SquareOne pixel text." width="160"/> <img src="./images/squareone_logo_v1_notext_64px.png" alt="SquareOne pixel text." width="64"/>
-<hr>
 
-[![Discord Badge Image]](https://discord.gg/pE4Tu3cf23)
+[![SquareOne Discord Badge Image]](https://dcbadge.limes.pink/api/server/discord.com/invite/pE4Tu3cf23)
+
+<hr>
 
 - Download: https://www.minetest.net/
 - Minetest:
