@@ -33,10 +33,14 @@ ___
 Mining
 ---
 
-- The Ores of Diamond and Pink Diamond are not found visually, they will only drop out of stone by random chance. I don't know what the odds are, since this is determined by your own Luck stat.
-  - Minimum Depth:
+- The Ores of Diamond and Pink Diamond are not found visually.
+- They have only a chance of dropping from stone while mining.
+- Luck and Fortune will multiply your diamond drops!
+  - Minimum Depth to find:
     - Pink Diamond: y-8192
     - Diamond: y-1024
+- Mining ores will sometimes drop more than one lump.
+- Digging dirt and cobble also drops stuff.
 
 ___
 
@@ -44,6 +48,5 @@ Protection Blocks
 ---
 
 - If a player does not join the server after one year, their protected items will be considered 'Abandonned' and become diggable by other players.
-  - > Please Note: ***Nothing*** is "automatically removed"
+  - > Please Note: ***Nothing*** is "automatically removed". The term 'diggable' does not mean 'poofed'!
 - If the player rejoins the server after the one year, their items and protection blocks are not 'abandonned', and will continue to protect their area and posessions.
-- The 1 year grace period may change depending on player turnover
