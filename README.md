@@ -1,8 +1,9 @@
 <img src="./images/squareone_logo_v2_notext_256px.png" alt="SquareOne pixel text." width="64"/> <img src="./images/squareone_text_256px.png" alt="SquareOne pixel text." width="160"/> <img src="./images/squareone_logo_v1_notext_64px.png" alt="SquareOne pixel text." width="64"/>
 
-### Server Invite&nbsp;&nbsp;&nbsp;[![](https://dcbadge.limes.pink/api/server/pE4Tu3cf23)](https://discord.gg/pE4Tu3cf23)
-
 <hr>
+
+### &nbsp;&nbsp;&nbsp;[![](https://dcbadge.limes.pink/api/server/pE4Tu3cf23)](https://discord.gg/pE4Tu3cf23)
+
 
 - Download: https://www.minetest.net/
 - Minetest:
@@ -16,6 +17,7 @@ ___
 
 IN-GAME RULES
 -------------
+
 Chat and Gameplay Rated E10+
 
 **Do Not:**
@@ -75,26 +77,8 @@ ___
 <img src="./images/squareone_pixelmonk.png" alt="monk as Inuyasha with pixel glasses" width="64"/>
 
 <sup>`2023-05-28 20:01:42: ACTION[Main]: Server for gameid="minetest" listening on 0.0.0.0:30023.`</sup>
+
 ___
 
 ### SquareOne Documentation © 2024 by monk is licensed under CC BY-NC-SA 4.0 
-
-You are free to:
-
-Share - copy and redistribute the material in any medium or format
-Adapt - remix, transform, and build upon the material
-
-The licensor cannot revoke these freedoms as long as you follow the following terms:
-
-Attribution - You must give appropriate credit , provide a link to the license, and indicate if changes were made . You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
-NonCommercial - You may not use the material for commercial purposes .
-
-ShareAlike - If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
-No additional restrictions - You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
-
-Notices:
-You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.
-
-No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.
-
-Full License terms can be found here [LICENSE](/LICENSE.md)
+[LICENSE](/LICENSE.md)

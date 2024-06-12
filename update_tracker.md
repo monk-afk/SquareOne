@@ -8,32 +8,35 @@ Updates to mods which are planned or in-progress. Not comprehensive, possibly no
 
 ___
 
-- HAVEN'T STARTED
+> "On the list"
 
-> SquareOne Mapserver
-  - > Set up SSL
-  - > configure mapserver mod to have an item that you can buy and it shows up on the mapserver
-  - > website development
+- SquareOne Mapserver
+  - Set up SSL
+  - configure mapserver mod to have an item that you can buy and it shows up on the mapserver
+  - website development
 
-> finish the filter tags api
+- Filter tags api: onjoin callbacks
 
-> 3d_armor/armor_pinkdiamond_augmented -- textures
+- 3d_armor/armor_pinkdiamond_augmented -- textures + ability
 
 ___
 
-- IN PROGRESS, STALLED
+> "Working on it"
+- money/ -- add safety deposit box
+
+___
+
+> DONE
 ```diff
-> money/ -- add safety deposit box
-```
-___
++++ restore faction name in player on-screen nametag, also new players names are random colors
++++ Changed recipes for Obsidian tools to make them more affordable
++++ Update Discord webhook script to send batch messages to stop hitting the rate-limit. It is now one single script, as opposed to three
++++ Reduced item drops from ores and common nodes to sane amount
++++ Balance armor ratings
++++ Water is no longer Jell-o. Placing water will cause runoff.
++++ Staff of light creates "glowing stone" which extinguishes after 2 minutes
 
-- IN PROGRESS, ACTIVE
-```diff
-- Player tags: Faction is missing from on-screen, and level is missing from chat
 ```
-___
-
-- DONE, ADDED TO SERVER
 
 ``` diff
 +++ anvil -- clean up code
