@@ -27,46 +27,46 @@ ___
 ___
 
 > DONE
-```diff
-+++ restore faction name in player on-screen nametag, also new players names are random colors
-+++ Changed recipes for Obsidian tools to make them more affordable
-+++ Update Discord webhook script to send batch messages to stop hitting the rate-limit. It is now one single script, as opposed to three
-+++ Reduced item drops from ores and common nodes to sane amount
-+++ Balance armor ratings
-+++ Water is no longer Jell-o. Placing water will cause runoff.
-+++ Staff of light creates "glowing stone" which extinguishes after 2 minutes
 
+```diff
+++ restore faction name in player on-screen nametag, also new players names are random colors
+++ Changed recipes for Obsidian tools to make them more affordable
+++ Update Discord webhook script to send batch messages to stop hitting the rate-limit. It is now one single script, as opposed to three
+++ Reduced item drops from ores and common nodes to sane amount
+++ Balance armor ratings
+++ Water is no longer Jell-o. Placing water will cause runoff.
+++ Staff of light creates "glowing stone" which extinguishes after 2 minutes
 ```
 
 ``` diff
-+++ anvil -- clean up code
-+++ basic_materials -- fix bad group types
-+++ exp2 -- fix error division, add variable gains
-+++ filterplus -- clean code
-+++ homedecor_modpack/homedecor_lighting -- fix broken recipes
-+++ mobs_monster -- lowered dig time
-+++ money -- minimum requirement for drops, no afk farming
-+++ motd -- rewritten
-+++ online_players -- prep code future change
-+++ protector -- correct grouping
-+++ teleport_potion -- fatal error from throwing tp potion and logout
-+++ squareone_items -- fix notice cmd, remove invalid block detection
-+++ stamina -- tweak exhaustion values
-+++ teleport-request -- add bank to tpp places
-+++ bones -- the cost is no longer optional, but the command is free
+++ anvil -- clean up code
+++ basic_materials -- fix bad group types
+++ exp2 -- fix error division, add variable gains
+++ filterplus -- clean code
+++ homedecor_modpack/homedecor_lighting -- fix broken recipes
+++ mobs_monster -- lowered dig time
+++ money -- minimum requirement for drops, no afk farming
+++ motd -- rewritten
+++ online_players -- prep code future change
+++ protector -- correct grouping
+++ teleport_potion -- fatal error from throwing tp potion and logout
+++ squareone_items -- fix notice cmd, remove invalid block detection
+++ stamina -- tweak exhaustion values
+++ teleport-request -- add bank to tpp places
+++ bones -- the cost is no longer optional, but the command is free
 ```
 
 ```diff
-+++ squareone_items -- add staff command functional reporting
-+++ homedecor_modpack/homedecor_office/init.lua -- fix invalid inventory size on desk
-+++ exp update change gain method
-+++ filterplus -- minor code improvements to filter load order
-+++ squareone_ores -- add drop items, see: issue #11
-+++ invisibility/init.lua -- increase time from 30 to 300 seconds
-+++ irrigation -- cleaned up code, fix reservoir and add recipe
-+++ squareone_guide -- update to guide text
-+++ shopsign -- bugfix and texturing
-+++ exp -- removed garbage noclip detection
-+++ squareone_items -- silence reporting
-+++ building_blocks_marble.png -- more visible texture detail
+++ squareone_items -- add staff command functional reporting
+++ homedecor_modpack/homedecor_office/init.lua -- fix invalid inventory size on desk
+++ exp update change gain method
+++ filterplus -- minor code improvements to filter load order
+++ squareone_ores -- add drop items, see: issue #11
+++ invisibility/init.lua -- increase time from 30 to 300 seconds
+++ irrigation -- cleaned up code, fix reservoir and add recipe
+++ squareone_guide -- update to guide text
+++ shopsign -- bugfix and texturing
+++ exp -- removed garbage noclip detection
+++ squareone_items -- silence reporting
+++ building_blocks_marble.png -- more visible texture detail
 ```
