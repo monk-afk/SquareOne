@@ -26,6 +26,14 @@ ___
 
 ___
 
+> PENDING REBOOT
+
+```diff
+++ Increased logging for shopsign events
+++ changed recipies for bags for easier crafting
+```
+___
+
 > DONE
 
 ```diff
