@@ -23,18 +23,33 @@ ___
 
 > "Working on it"
 - money/ -- add safety deposit box
+- 3d_armor -- merging armors from separate mods into 3d_armor
+  - modify falling feather so it is a craft item for etherium armor
+  - add icons to inventory for other stat effects, gravity etc.
+- make falling speed damage player
 
 ___
 
 > PENDING REBOOT
 
+___
+
+> DONE
+```diff
+++ updated mobs_api to fix evil bunny crashing server
+++ fixed the server guide showing incorrect server age
+++ fix missing texture for white granite
+++ optimized table initialization for bob_ross command
+++ fix diggable abandonned protector
+++ update the infographic from the /invhelp command
+-- temporarily disabled shopsigns until the duplication issue is confirmed or debunked
+```
+
+
 ```diff
 ++ Increased logging for shopsign events
 ++ changed recipies for bags for easier crafting
 ```
-___
-
-> DONE
 
 ```diff
 ++ restore faction name in player on-screen nametag, also new players names are random colors
@@ -42,7 +57,7 @@ ___
 ++ Update Discord webhook script to send batch messages to stop hitting the rate-limit. It is now one single script, as opposed to three
 ++ Reduced item drops from ores and common nodes to sane amount
 ++ Balance armor ratings
-++ Water is no longer Jell-o. Placing water will cause runoff.
+-- Water is no longer Jell-o. Placing water will cause runoff. <restored to normal jello-water>
 ++ Staff of light creates "glowing stone" which extinguishes after 2 minutes
 ```
 
