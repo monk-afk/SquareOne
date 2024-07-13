@@ -22,19 +22,28 @@ ___
 ___
 
 > "Working on it"
-- money/ -- add safety deposit box
+- safe -- almost finished
+
 - 3d_armor -- merging armors from separate mods into 3d_armor
   - modify falling feather so it is a craft item for etherium armor
   - add icons to inventory for other stat effects, gravity etc.
+
 - make falling speed damage player
 
 ___
 
 > PENDING REBOOT
 
-___
 
+___
 > DONE
+
+```diff
+++ re-add hopper functionality
+++ re-add auto-crafting workbench
+++ re-add shopsign functionality
+```
+
 ```diff
 ++ updated mobs_api to fix evil bunny crashing server
 ++ fixed the server guide showing incorrect server age
@@ -44,7 +53,6 @@ ___
 ++ update the infographic from the /invhelp command
 -- temporarily disabled shopsigns until the duplication issue is confirmed or debunked
 ```
-
 
 ```diff
 ++ Increased logging for shopsign events
