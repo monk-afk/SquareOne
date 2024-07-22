@@ -33,12 +33,15 @@ ___
 Mining
 ---
 
-- The Ores of Diamond and Pink Diamond are not found visually.
-- They have only a chance of dropping from stone while mining.
+- Diamond and Pink Diamond are only found randomly from digging stone.
+  - Pink Diamond
+    - Minimum depth -8200
+    - Rarity 0.000114%
+  - Diamond
+    - Minimum depth -1024
+    - Rarity 0.000598%
+
 - Luck and Fortune will multiply your diamond drops!
-  - Minimum Depth to find:
-    - Pink Diamond: y-8192
-    - Diamond: y-1024
 - Mining ores will sometimes drop more than one lump.
 - Digging dirt and cobble also drops stuff.
 

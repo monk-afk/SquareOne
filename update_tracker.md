@@ -22,8 +22,6 @@ ___
 ___
 
 > "Working on it"
-- safe -- almost finished
-
 - 3d_armor -- merging armors from separate mods into 3d_armor
   - modify falling feather so it is a craft item for etherium armor
   - add icons to inventory for other stat effects, gravity etc.
@@ -36,7 +34,19 @@ ___
 
 
 ___
+
 > DONE
+
+```diff
+++ shopsigns are reverted back to original mod (aka smartshop)
+++ all the money has been reset due to duplication glitch
+++ Safe is now in-game but untested
+```
+
+```diff
+++ bugfix shopsign
+++ add itemshelfs back to game
+```
 
 ```diff
 ++ re-add hopper functionality
