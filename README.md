@@ -69,8 +69,6 @@ Table of Contents
 
 - > [Dye Recipes](/dye_recipes.md)
 
-- > [Market Trends](/market_trends.md)
-
 ___
 
 <h3>mønκ</h3>
@@ -80,5 +78,4 @@ ___
 
 ___
 
-### SquareOne Documentation © 2024 by monk is licensed under CC BY-NC-SA 4.0 
-[LICENSE](/LICENSE.md)
+### SquareOne Documentation © 2024 by monk is licensed under [MIT](/LICENSE)

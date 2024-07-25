@@ -8,20 +8,16 @@ Updates to mods which are planned or in-progress. Not comprehensive, possibly no
 
 ___
 
-> "On the list"
+> Planned Development
 
-- SquareOne Mapserver
+- SquareOne Website
   - Set up SSL
-  - configure mapserver mod to have an item that you can buy and it shows up on the mapserver
   - website development
 
 - Filter tags api: onjoin callbacks
 
 - 3d_armor/armor_pinkdiamond_augmented -- textures + ability
 
-___
-
-> "Working on it"
 - 3d_armor -- merging armors from separate mods into 3d_armor
   - modify falling feather so it is a craft item for etherium armor
   - add icons to inventory for other stat effects, gravity etc.
@@ -32,6 +28,9 @@ ___
 
 > PENDING REBOOT
 
+```diff
+++ Fix day and night stones recipies
+```
 
 ___
 
