@@ -8,33 +8,47 @@ Updates to mods which are planned or in-progress. Not comprehensive, possibly no
 
 ___
 
-> Planned Development
+> Checklist for server upgrade
 
-- SquareOne Website
-  - Set up SSL
-  - website development
+  -[ ] Onjoin message popup describing the upcoming upgrade and how it will impact players who use version 0.4
 
-- Filter tags api: onjoin callbacks
+  -[x] finish the inventory update
+    -[x] mods which currently plug in to the core inventory
+    -[x] crafting guide
+    -[x] creative
+    -[x] sethome
+    -[x] bags
+    -[x] factions
+    -[x] online players
+    -[x] armor
+    -[x] money
+    -[x] skins
+  -[ ] separate the inventory mods from the non-inventory mods and have them run on separate formspec managers
 
-- 3d_armor/armor_pinkdiamond_augmented -- textures + ability
+  -[x] make sure the auto-pickup still works with the new bags
 
-- 3d_armor -- merging armors from separate mods into 3d_armor
-  - modify falling feather so it is a craft item for etherium armor
-  - add icons to inventory for other stat effects, gravity etc.
-
-- make falling speed damage player
+  -[x] make sure commands like /rules and /online and /who work
 
 ___
+___
 
-> PENDING REBOOT
+```diff
+> Abandonned or Postponned
+- SquareOne Website
+- Set up SSL
+- website development
+- Filter tags api: onjoin callbacks
+- 3d_armor/armor_pinkdiamond_augmented -- textures + ability
+- 3d_armor -- merging armors from separate mods into 3d_armor
+- modify falling feather so it is a craft item for etherium armor
+- add icons to inventory for other stat effects, gravity etc.
+- make falling speed damage player~~
+```
 
+> DONE
 ```diff
 ++ Fix day and night stones recipies
 ```
-
-___
-
-> DONE
 
 ```diff
 ++ shopsigns are reverted back to original mod (aka smartshop)

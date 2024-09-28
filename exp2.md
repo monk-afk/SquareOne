@@ -1,28 +1,26 @@
 <img src="./images/squareone_logo_v2_notext_256px.png" alt="SquareOne pixel text." width="64"/> <img src="./images/squareone_text_256px.png" alt="SquareOne pixel text." width="160"/> <img src="./images/squareone_logo_v1_notext_64px.png" alt="SquareOne pixel text." width="64"/>
 <hr>
 
-The new exp system: *exp2*
+*exp2*
 ===
 
-#### Calculated Chaos
+### Gains and Losses
 
-The previous exp system used a simple luck draw with a chance of 1 in 2000 to gain one exp with every block digged or placed by a player.
+Playing the game will earn exp points, basically from doing anything.
 
-The new exp2 system is totally different, and does not rely on luck for exp gains.
+Being AFK will cause your EXP to drain.
 
-Playing the game will earn exp points, basically anything besides being AFK or dying will earn you exp. 
+New players EXP stats will fluxuate, sometimes going high levels in a short time.
 
-New players with low overall stats will have stats with high fluctuation. Over time, your stats will fluctuate less, and earning exp will be slower.
+As you continue to play, your stats will fluctuate less and steadily increase/decrease.
 
-Gaining exp is not linear, there is no way to know when or how much exp is needed for a level up. Pretty much every stat in the exp mod is unpredictable.
-
-Exp doesn't last forever! Every 24 hours of being offline will cause a reduction of your exp stats. Worry not, it is not very much, and losing all exp will take a long time even for players with low stats.
+Being offline for 24 hours will cause a reduction of approximately 20% every day.
 
 ___
 
-### Metrics
+### EXP Stats
 
-There are four main stats which affect your game. The command to view your exp stats is `/exp`, or of another player is `/exp username`. The popup shows:
+The command to view your exp stats is `/exp`, or of another player is `/exp username`.
 
 `Exp` Experience, is your exp. 
 
@@ -32,37 +30,33 @@ There are four main stats which affect your game. The command to view your exp s
 
 `Fortune` Used to determine the output of your luck.
 
-The two stats which are not player-facing are top secret ;) *wink* Don't even worry about it.
+`Activity` Is how much stuff you do in-game. Being AFK will not earn Activity points.
+
+`OnlineTime` Self explanatory.
 
 ___
 
-### Dying sucks
+### Bones
 
-Dying used to come with a choice of returning to bones at a cost of %10 exp, and players needed at least 1 exp to use `/bones`
+To return to bones, use `/bones` after dying.
 
-The new system doesn't give the dying player a choice of losing exp, and now using `/bones` is free, and can be used anytime.
+Using `/bones` will not cost EXP. However, sometimes dying will cost EXP.
 
-Only one death position is saved. If the player dies again and hasn't returned to bones position, the new death overwrites the old death.
-
-Bones will drop anywhere, and if you are killed by another player inside their protected area, you cannot return to bones by command.
+If you are killed by another player inside their protected area, you cannot return to bones by command.
 
 ___
 
-### I do feel lucky
+### Luck and Fortune
 
-Having a higher Luck or Fortune stat doesn't mean you'll have better results, and being lucky doesn't always mean being fortunate.
+Luck and Fortune can be used as Multipliers or Determinators for certain events.
 
-These two stats are best explained by example.
+Luck is always changing, and will never go above 1.
+  - Used to multiply Blue Diamond drops
+  - Used to determine EXP loss on dying
 
-When a player dies, a draw between 0 and 1 is compared against their Luck. If the draw is lower than their Luck, exp is lost.
-
-The average win over loss for this draw is about 36%.
-
-Next is a Fortune check to get the amount of exp lost. In this case, having a high Fortune stat results in lower exp lost. 
-
-Luck determines the 'if' an outcome will occur, and fortune guages 'how much' the outcome will produce.
-
-- - -  > <sup>**I won the lottery!** <sub>*But I only won $5*...</sub></sup>
+Fortune will normally increase, and sometimes decrease.
+  - Used to multiply Pink Diamond drops
+  - Used to calculate total amount EXP lost on dying
 
 ___
 
@@ -70,4 +64,4 @@ ___
 
 The Level stat does absolutely nothing.
 
-A player's level is the number in (brackets) shown in the chat.
+Eventually will re-add the player's Level next to their name in chat.

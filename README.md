@@ -10,7 +10,7 @@
   - Address: `monk.moe`
   - Port: `30023`
 - Multicraft: `monk.moe:30023`
-- Live Map: (*coming soon*)
+<!-- - Live Map: (*coming soon*) -->
 <!-- squareone.moe -->
 
 ___
@@ -38,6 +38,8 @@ ___
 Table of Contents
 ------------------
 
+- > [Skins CHART](/skins_list.md)
+
 - > [Update Tracker](/update_tracker.md)
 
 - > [Mod Tips](/mod_tips.md)
@@ -47,10 +49,10 @@ Table of Contents
   - [PBlocks](/mod_tips.md#protector-blocks)
 
 - > [Exp2](/exp2.md)
-  - [Details](/exp2.md#calculated-chaos)
-  - [What are These Numbers?](/exp2.md#metrics)
-  - [The Price of Death](/exp2.md#dying-sucks)
-  - [Do ya feel lucky, punk?](/exp2.md#i-do-feel-lucky)
+  - [Gains and Losses](/exp2.md#gains-and-losses)
+  - [EXP Stats](/exp2.md#exp-stats)
+  - [Bones](/exp2.md#bones)
+  - [Luck and Fortune](/exp2.md#luck-and-fortune)
   - [Level Up!](/exp2.md#level-up)
 
 - > [Armor Stats](/armor.md#armor)
