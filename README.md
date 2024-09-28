@@ -38,7 +38,7 @@ ___
 Table of Contents
 ------------------
 
-- > [Skins CHART](/skins_list.md)
+- > [Skins CHART](/skins.md)
 
 - > [Update Tracker](/update_tracker.md)
 
