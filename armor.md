@@ -82,6 +82,7 @@ ___
   - defense = 6
 
 <sub>[Top](/armor.md#armor)</sub>
+
 ___
 
 **Steel**
@@ -114,6 +115,7 @@ ___
   - evasion = 4
 
 <sub>[Top](/armor.md#armor)</sub>
+
 ___
 
 **Wood**
@@ -157,6 +159,7 @@ ___
   - evasion = 0
 
 <sub>[Top](/armor.md#armor)</sub>
+
 ___
 
 **Mithril**
@@ -189,6 +192,7 @@ ___
   - evasion = 7
 
 <sub>[Top](/armor.md#armor)</sub>
+
 ___
 
 **Cactus**
@@ -227,6 +231,7 @@ ___
   - evasion = 0
 
 <sub>[Top](/armor.md#armor)</sub>
+
 ___
 
 **Pink Crystal**
@@ -257,6 +262,7 @@ ___
   - evasion = 5
 
 <sub>[Top](/armor.md#armor)</sub>
+
 ___
 
 **Obsidian**
@@ -294,6 +300,7 @@ ___
   - defense = 8
 
 <sub>[Top](/armor.md#armor)</sub>
+
 ___
 
 **Gold**
@@ -326,6 +333,7 @@ ___
   - evasion = 5
 
 <sub>[Top](/armor.md#armor)</sub>
+
 ___
 
 **Copper Patina**
@@ -357,6 +365,7 @@ ___
   - evasion = 6
 
 <sub>[Top](/armor.md#armor)</sub>
+
 ___
 
 **Etherium**
@@ -403,6 +412,7 @@ ___
   - defense = 1
 
 <sub>[Top](/armor.md#armor)</sub>
+
 ___
 
 **Bronze**
@@ -435,6 +445,7 @@ ___
   - evasion = 4
 
 <sub>[Top](/armor.md#armor)</sub>
+
 ___
 
 **Diamond**
@@ -467,6 +478,7 @@ ___
   - evasion = 7
 
 <sub>[Top](/armor.md#armor)</sub>
+
 ___
 
 <!-- 
