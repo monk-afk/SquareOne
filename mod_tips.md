@@ -50,6 +50,6 @@ ___
 Protection Blocks
 ---
 
-- If a player does not join the server after one year, their protected items will be considered 'Abandonned' and become diggable by other players.
+- If a player does not join the server after 9 months, their protection block will become 'Abandonned' and diggable by other players.
   - > Please Note: ***Nothing*** is "automatically removed". The term 'diggable' does not mean 'poofed'!
-- If the player rejoins the server after the one year, their items and protection blocks are not 'abandonned', and will continue to protect their area and posessions.
+- When a player rejoins the server the 9 month timer is reset.

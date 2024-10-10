@@ -10,27 +10,27 @@ ___
 
 > Checklist for server upgrade
 
+  -[ ] Make sure the engine works properly
   -[ ] Onjoin message popup describing the upcoming upgrade and how it will impact players who use version 0.4
-
-  -[x] finish the inventory update
-    -[x] mods which currently plug in to the core inventory
-    -[x] crafting guide
-    -[x] creative
-    -[x] sethome
-    -[x] bags
-    -[x] factions
-    -[x] online players
-    -[x] armor
-    -[x] money
-    -[x] skins
-  -[ ] separate the inventory mods from the non-inventory mods and have them run on separate formspec managers
-
-  -[x] make sure the auto-pickup still works with the new bags
-
-  -[x] make sure commands like /rules and /online and /who work
+  -[ ] Update the news section more often
 
 ___
 ___
+
+```diff
+++ finish the inventory update, plug ins to the core inventory:
+  - crafting guide
+  - creative
+  - sethome
+  - bags
+  - factions
+  - online players
+  - armor
+  - money
+  - skins
+++ make sure the auto-pickup still works with the new bags
+++ make sure commands like /rules and /online and /who work
+```
 
 ```diff
 > Abandonned or Postponned
