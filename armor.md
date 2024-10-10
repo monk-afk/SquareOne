@@ -26,7 +26,8 @@ ___
 
 **Definitions**
 ===========
-**`evasion`** | is the chance the armor will completely block the damage. For each point there is a 1% chance that damage will be completely blocked.
+
+**`evasion`** | Each point gives a 1% chance that damage will be completely blocked.
 
 **`fire_protect`** | fire protection
 
