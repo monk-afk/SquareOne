@@ -38,7 +38,7 @@ ___
 Table of Contents
 ------------------
 
-- > [Skins CHART](/skins.md)
+- > [Old Skins to New Skins](/skins.md)
 
 - > [Update Tracker](/update_tracker.md)
 
@@ -55,14 +55,14 @@ Table of Contents
   - [Luck and Fortune](/exp2.md#luck-and-fortune)
   - [Level Up!](/exp2.md#level-up)
 
-- > [Armor Stats](/armor.md#armor)
+- > [Armor Stats](/armor.md)
   - [Bronze](/armor.md#bronze)
   - [Cactus](/armor.md#cactus)
-  - [Crystal (Pink and Blue)](/armor.md#crystal-pink-and-blue)
+  - [Blue Crystal](/armor.md#blue-crystal)
+  - [Pink Crystal](/armor.md#pink-crystal)
   - [Diamond](/armor.md#diamond)
   - [Gold](/armor.md#gold)
   - [Mithril](/armor.md#mithril)
-  - [PinkCrystal](/armor.md#pinkcrystal)
   - [Steel](/armor.md#steel)
   - [Wood](/armor.md#wood)
   - [Copper Patina](/armor.md#copper-patina)
