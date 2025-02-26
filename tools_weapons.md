@@ -1,0 +1,843 @@
+<img src="./images/logos_icons/squareone_logo_v2_notext_256px.png" alt="SquareOne pixel text." width="64"/> <img src="./images/logos_icons/squareone_text_256px.png" alt="SquareOne pixel text." width="160"/> <img src="./images/logos_icons/squareone_logo_v1_notext_64px.png" alt="SquareOne pixel text." width="64"/>
+
+<hr>
+
+Tools & Weapons
+===
+
+This is the lua code for in-game weapons.
+
+Maybe in the future will make it into a proper markdown format.
+
+- [Swords](#swords)
+- [Picks](#picks)
+- [Axes](#axes)
+- [Shovels](#shovels)
+
+## Swords
+
+```lua
+  minetest.register_tool("default:sword_wood", {
+    description = S("Wooden Sword"),
+    inventory_image = "default_tool_woodsword.png",
+    tool_capabilities = {
+      full_punch_interval = 0.8,
+      max_drop_level = 0,
+      groupcaps = {
+        snappy = {times = {[2] = 1.6, [3] = 0.40}, uses = 10, maxlevel = 1},
+      },
+      damage_groups = {fleshy = 2},
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {sword = 1, flammable = 2}
+  })
+
+  minetest.register_tool("default:sword_stone", {
+    description = S("Stone Sword"),
+    inventory_image = "default_tool_stonesword.png",
+    tool_capabilities = {
+      full_punch_interval = 1.2,
+      max_drop_level = 0,
+      groupcaps = {
+        snappy = {times = {[2] = 1.4, [3] = 0.40}, uses = 20, maxlevel = 1},
+      },
+      damage_groups = {fleshy = 4},
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {sword = 1}
+  })
+
+  minetest.register_tool("default:sword_bronze", {
+    description = S("Bronze Sword"),
+    inventory_image = "default_tool_bronzesword.png",
+    tool_capabilities = {
+      full_punch_interval = 1.1,
+      max_drop_level = 1,
+      groupcaps = {
+        snappy = {times = {[1] = 2.75, [2] = 1.30, [3] = 0.375}, uses = 25, maxlevel = 2},
+      },
+      damage_groups = {fleshy = 5},
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {sword = 1}
+  })
+
+  minetest.register_tool("moreores:sword_silver", {
+    description = S("@1 Sword", S("Silver")),
+    inventory_image = "moreores_tool_silversword.png",
+    sound = {breaks = "default_tool_breaks"},
+    tool_capabilities = {
+      full_punch_interval = 1.0,
+      max_drop_level = 3,
+      damage_groups = {fleshy = 6},
+      groupcaps = {
+        snappy = {times = {[1] = 2.70, [2] = 1.40, [3] = 0.5}, uses = 100, maxlevel = 1}
+      }
+    },
+    groups = {sword = 1}
+  })
+
+  minetest.register_tool("default:sword_steel", {
+    description = S("Steel Sword"),
+    inventory_image = "default_tool_steelsword.png",
+    tool_capabilities = {
+      full_punch_interval = 0.9,
+      max_drop_level = 1,
+      groupcaps = {
+        snappy = {times = {[1] = 2.5, [2] = 1.20, [3] = 1.35}, uses = 30, maxlevel = 2},
+      },
+      damage_groups = {fleshy = 6},
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {sword = 1}
+  })
+
+  minetest.register_tool("default:sword_mese", {
+    description = S("Mese Sword"),
+    inventory_image = "default_tool_mesesword.png",
+    tool_capabilities = {
+      full_punch_interval = 0.8,
+      max_drop_level = 1,
+      groupcaps = {
+        snappy = {times = {[1] = 2.0, [2] = 1.00, [3] = 1.35}, uses = 30, maxlevel = 3},
+      },
+      damage_groups = {fleshy = 6},
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {sword = 1}
+  })
+
+  minetest.register_tool("moreores:sword_mithril", {
+    description = S("@1 Sword", S("Mithril")),
+    inventory_image = "moreores_tool_mithrilsword.png",
+    sound = {breaks = "default_tool_breaks"},
+    tool_capabilities = {
+      full_punch_interval = 0.7,
+      max_drop_level = 3,
+      damage_groups = {fleshy = 7},
+      groupcaps = {
+        snappy = {times = {[1] = 1.70, [2] = 0.90, [3] = 1.30}, uses = 31, maxlevel = 3}}
+    },
+    groups = {sword = 1}
+  })
+
+
+  minetest.register_tool("ethereal:sword_crystal", {
+    description = S("Crystal Sword"),
+    inventory_image = "ethereal_crystal_sword.png",
+    wield_image = "ethereal_crystal_sword.png",
+    tool_capabilities = {
+      full_punch_interval = 0.9,
+      max_drop_level = 1,
+      groupcaps = {
+        snappy = {
+          times = {[1] = 1.70, [2] = 0.70, [3] = 0.50},
+          uses = 50,
+          maxlevel = 3
+        }
+      },
+      damage_groups = {fleshy = 8}
+    },
+    groups = {sword = 1},
+    sound = {breaks = "default_tool_breaks"}
+  })
+
+  minetest.register_tool("ethereal:sword_pink_crystal", {
+    description = S("Pink Crystal Sword"),
+    inventory_image = "ethereal_pink_crystal_sword.png",
+    wield_image = "ethereal_pink_crystal_sword.png",
+    tool_capabilities = {
+      full_punch_interval = 0.8,
+      max_drop_level = 1,
+      groupcaps = {
+        snappy = {
+          times = {[1] = 1.70, [2] = 0.70, [3] = 0.50},
+          uses = 50,
+          maxlevel = 3
+        }
+      },
+      damage_groups = {fleshy = 9}
+    },
+    groups = {sword = 1},
+    sound = {breaks = "default_tool_breaks"}
+  })
+
+  minetest.register_tool("default:sword_diamond", {
+    description = S("Diamond Sword"),
+    inventory_image = "default_tool_diamondsword.png",
+    tool_capabilities = {
+      full_punch_interval = 0.7,
+      max_drop_level = 1,
+      groupcaps = {
+        snappy = {times = {[1] = 1.90, [2] = 0.90, [3] = 0.30}, uses = 40, maxlevel = 3},
+      },
+      damage_groups = {fleshy = 8},
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {sword = 1}
+  })
+
+  minetest.register_tool("armorplus:obsidian_sword", {
+    description = S("Obsidian Sword"),
+    inventory_image = "armorplus_obsidian_sword.png",
+    tool_capabilities = {
+      full_punch_interval = 0.7,
+      max_drop_level = 1,
+      groupcaps = {
+        snappy = {times = {[1] = 1.90, [2] = 1.45, [3] = 1.00}, uses = 20, maxlevel = 2
+        }
+      },
+      damage_groups = {fleshy = 9}
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {sword = 1}
+  })
+
+  minetest.register_tool("moreores:sword_pinkdiamond", {
+    description = S("@1 Sword", S("Pink Diamond")),
+    inventory_image = "moreores_tool_pinkdiamondsword.png",
+    sound = {breaks = "default_tool_breaks"},
+    tool_capabilities = {
+      full_punch_interval = 0.8,
+      max_drop_level = 1,
+      groupcaps  = {
+        snappy = {
+          times = {[1] = 1.80, [2] = 0.90, [3] = 0.80}, uses = 20, maxlevel = 3
+        },
+      },
+      damage_groups = {fleshy = 10},
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {sword = 1}
+  })
+```
+
+<sub>[Top](/tools_weapons.md#tools--weapons)</sub>
+
+___
+
+## Picks
+
+```lua
+  minetest.register_tool(":mobs:pick_lava", {
+    description = S("Lava Pickaxe"),
+    inventory_image = "mobs_pick_lava.png",
+    tool_capabilities = {
+      full_punch_interval = 0.9,
+      max_drop_level = 3,
+      groupcaps = {
+        cracky = {
+          times = {[1] = 1.80, [2] = 1.40, [3] = 1.00},
+          uses = 30,
+          maxlevel = 3
+        }
+      },
+      damage_groups = {fleshy = 3, fire = 1},
+    },
+    groups = {pickaxe = 1},
+    light_source = 8
+  })
+
+  minetest.register_tool("default:pick_wood", {
+    description = S("Wooden Pickaxe"),
+    inventory_image = "default_tool_woodpick.png",
+    tool_capabilities = {
+      full_punch_interval = 0.9,
+      max_drop_level = 0,
+      groupcaps = {
+        cracky = {times = {[3] = 3.0}, uses = 10, maxlevel = 1},
+      },
+      damage_groups = {fleshy = 2},
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {pickaxe = 1, flammable = 2}
+  })
+
+  minetest.register_tool("default:pick_stone", {
+    description = S("Stone Pickaxe"),
+    inventory_image = "default_tool_stonepick.png",
+    tool_capabilities = {
+      full_punch_interval = 1.3,
+      max_drop_level = 0,
+      groupcaps = {
+        cracky = {times = {[2] = 3.0, [3] = 2.0}, uses = 20, maxlevel = 1},
+      },
+      damage_groups = {fleshy = 3},
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {pickaxe = 1}
+  })
+
+  minetest.register_tool("default:pick_bronze", {
+    description = S("Bronze Pickaxe"),
+    inventory_image = "default_tool_bronzepick.png",
+    tool_capabilities = {
+      full_punch_interval = 1.0,
+      max_drop_level = 1,
+      groupcaps = {
+        cracky = {times = {[1] = 3.00, [2] = 2.80, [3] = 1.90}, uses = 20, maxlevel = 2},
+      },
+      damage_groups = {fleshy = 4},
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {pickaxe = 1}
+  })
+
+  minetest.register_tool("moreores:pick_silver", {
+    description = S("@1 Pickaxe", S("Silver")),
+    inventory_image = "moreores_tool_silverpick.png",
+    sound = {breaks = "default_tool_breaks"},
+    tool_capabilities = {
+      full_punch_interval = 1.0,
+      max_drop_level = 3,
+      damage_groups = {fleshy = 4},
+      groupcaps = {
+        cracky = {
+          times = {[1] = 2.90, [2] = 2.60, [3] = 1.70}, uses = 100, maxlevel = 2}
+      }
+    },
+    groups = {pickaxe = 1}
+  })
+
+  minetest.register_tool("default:pick_steel", {
+    description = S("Steel Pickaxe"),
+    inventory_image = "default_tool_steelpick.png",
+    tool_capabilities = {
+      full_punch_interval = 1.0,
+      max_drop_level = 1,
+      groupcaps = {
+        cracky = {times = {[1] = 2.80, [2] = 2.30, [3] = 1.40}, uses = 20, maxlevel = 2},
+      },
+      damage_groups = {fleshy = 4},
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {pickaxe = 1}
+  })
+
+  minetest.register_tool("moreores:pick_mithril", {
+    description = S("@1 Pickaxe", S("Mithril")),
+    inventory_image = "moreores_tool_mithrilpick.png",
+    sound = {breaks = "default_tool_breaks"},
+    tool_capabilities = {
+      full_punch_interval = 0.95,
+      max_drop_level = 3,
+      damage_groups = {fleshy = 5},
+      groupcaps = {
+        cracky = {
+          times = {[1] = 2.60, [2] = 1.5, [3] = 1.20}, uses = 31, maxlevel = 3}
+      }
+    },
+    groups = {pickaxe = 1}
+  })
+
+  minetest.register_tool("default:pick_mese", {
+    description = S("Mese Pickaxe"),
+    inventory_image = "default_tool_mesepick.png",
+    tool_capabilities = {
+      full_punch_interval = 0.9,
+      max_drop_level = 3,
+      groupcaps = {
+        cracky = {times = {[1] = 2.4, [2] = 1.2, [3] = 0.90}, uses = 20, maxlevel = 3},
+      },
+      damage_groups = {fleshy = 5},
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {pickaxe = 1}
+  })
+
+  minetest.register_tool("ethereal:pick_crystal", {
+    description = S("Crystal Pickaxe"),
+    inventory_image = "ethereal_crystal_pick.png",
+    wield_image = "ethereal_crystal_pick.png",
+    tool_capabilities = {
+      full_punch_interval = 0.85,
+      max_drop_level = 3,
+      groupcaps = {
+        cracky = {times = {[1] = 1.8, [2] = 0.9, [3] = 0.8}, uses = 40, maxlevel = 3}
+      },
+      damage_groups = {fleshy = 5}
+    },
+    groups = {pickaxe = 1},
+    sound = {breaks = "default_tool_breaks"}
+  })
+
+  minetest.register_tool("ethereal:pick_pink_crystal", {
+    description = S("Crystal Pickaxe"),
+    inventory_image = "ethereal_pink_crystal_pick.png",
+    wield_image = "ethereal_pink_crystal_pick.png",
+    tool_capabilities = {
+      full_punch_interval = 0.7,
+      max_drop_level = 3,
+      groupcaps = {
+        cracky = {times = {[1] = 1.6, [2] = 0.8, [3] = 0.7}, uses = 40, maxlevel = 3}
+      },
+      damage_groups = {fleshy = 6}
+    },
+    groups = {pickaxe = 1},
+    sound = {breaks = "default_tool_breaks"}
+  })
+
+  minetest.register_tool("default:pick_diamond", {
+    description = S("Diamond Pickaxe"),
+    inventory_image = "default_tool_diamondpick.png",
+    tool_capabilities = {
+      full_punch_interval = 0.9,
+      max_drop_level = 3,
+      groupcaps = {
+        cracky = {times = {[1] = 1.5, [2] = 0.75, [3] = 0.65}, uses = 30, maxlevel = 3},
+      },
+      damage_groups = {fleshy = 5},
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {pickaxe = 1}
+  })
+
+  minetest.register_tool("armorplus:obsidian_pick", {
+    description = S("Obsidian Pickaxe"),
+    inventory_image = "armorplus_obsidian_pick.png",
+    tool_capabilities = {
+      full_punch_interval = 0.9,
+      max_drop_level = 3,
+      groupcaps = {
+        cracky = {times = {[1] = 1.45, [2] = 0.7, [3] = 0.6}, uses = 30, maxlevel = 3},
+      },
+      damage_groups = {fleshy = 6},
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {pickaxe = 1}
+  })
+
+  minetest.register_tool("moreores:pick_pinkdiamond", {
+    description = S("@1 Pickaxe", S("Pink Diamond")),
+    inventory_image = "moreores_tool_pinkdiamondpick.png",
+    tool_capabilities = {
+      full_punch_interval = 0.6,
+      max_drop_level = 3,
+      groupcaps = {
+        cracky = {times = {[1] = 1.40, [2] = 0.75, [3] = 0.55}, uses = 30, maxlevel = 3},
+      },
+      damage_groups = {fleshy = 6},
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {pickaxe = 1}
+  })
+```
+
+<sub>[Top](/tools_weapons.md#tools--weapons)</sub>
+
+___
+
+## Axes
+
+```lua
+  minetest.register_tool("default:axe_wood", {
+    description = S("Wooden Axe"),
+    inventory_image = "default_tool_woodaxe.png",
+    tool_capabilities = {
+      full_punch_interval = 1.0,
+      max_drop_level = 0,
+      groupcaps = {
+        choppy = {times = {[2] = 3.00, [3] = 1.60}, uses = 10, maxlevel = 1},
+      },
+      damage_groups = {fleshy = 2},
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {axe = 1, flammable = 2}
+  })
+
+  minetest.register_tool("default:axe_stone", {
+    description = S("Stone Axe"),
+    inventory_image = "default_tool_stoneaxe.png",
+    tool_capabilities = {
+      full_punch_interval = 1.2,
+      max_drop_level = 0,
+      groupcaps = {
+        choppy = {times = {[1] = 3.00, [2] = 2.00, [3] = 1.30}, uses = 20, maxlevel = 1},
+      },
+      damage_groups = {fleshy = 3},
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {axe = 1}
+  })
+
+  minetest.register_tool("default:axe_bronze", {
+    description = S("Bronze Axe"),
+    inventory_image = "default_tool_bronzeaxe.png",
+    tool_capabilities = {
+      full_punch_interval = 1.0,
+      max_drop_level = 1,
+      groupcaps = {
+        choppy = {times = {[1] = 2.75, [2] = 1.70, [3] = 1.15}, uses = 20, maxlevel = 2},
+      },
+      damage_groups = {fleshy = 4},
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {axe = 1}
+  })
+
+  minetest.register_tool("default:axe_steel", {
+    description = S("Steel Axe"),
+    inventory_image = "default_tool_steelaxe.png",
+    tool_capabilities = {
+      full_punch_interval = 1.0,
+      max_drop_level = 1,
+      groupcaps = {
+        choppy = {times = {[1] = 2.50, [2] = 1.40, [3] = 1.00}, uses = 20, maxlevel = 2},
+      },
+      damage_groups = {fleshy = 4},
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {axe = 1}
+  })
+
+  minetest.register_tool("default:axe_mese", {
+    description = S("Mese Axe"),
+    inventory_image = "default_tool_meseaxe.png",
+    tool_capabilities = {
+      full_punch_interval = 0.9,
+      max_drop_level = 1,
+      groupcaps = {
+        choppy = {times = {[1] = 2.20, [2] = 1.00, [3] = 0.60}, uses = 20, maxlevel = 3},
+      },
+      damage_groups = {fleshy = 6},
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {axe = 1}
+  })
+
+  minetest.register_tool("default:axe_diamond", {
+    description = S("Diamond Axe"),
+    inventory_image = "default_tool_diamondaxe.png",
+    tool_capabilities = {
+      full_punch_interval = 0.9,
+      max_drop_level = 1,
+      groupcaps = {
+        choppy = {times = {[1] = 2.10, [2] = 0.90, [3] = 0.50}, uses = 30, maxlevel = 3},
+      },
+      damage_groups = {fleshy = 7},
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {axe = 1}
+  })
+
+  minetest.register_tool("armorplus:obsidian_axe", {
+      description = S("Obsidian Axe"),
+      inventory_image = "armorplus_obsidian_axe.png",
+    tool_capabilities = {
+      full_punch_interval = 0.9,
+      max_drop_level = 1,
+      groupcaps = {
+        choppy = {times = {[1] = 2.10, [2] = 0.90, [3] = 0.50}, uses = 30, maxlevel = 3},
+      },
+      damage_groups = {fleshy = 6},
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {axe = 1}
+  })
+
+  minetest.register_tool("ethereal:axe_crystal", {
+    description = S("Crystal Axe"),
+    inventory_image = "ethereal_crystal_axe.png",
+    wield_image = "ethereal_crystal_axe.png",
+    tool_capabilities = {
+      full_punch_interval = 0.8,
+      max_drop_level = 1,
+      groupcaps = {
+        choppy = {
+          times = {[1] = 2.00, [2] = 0.80, [3] = 0.70},
+          uses = 40,
+          maxlevel = 3
+        }
+      },
+      damage_groups = {fleshy = 7}
+    },
+    groups = {axe = 1},
+    sound = {breaks = "default_tool_breaks"}
+  })
+
+  minetest.register_tool("ethereal:axe_pink_crystal", {
+    description = S("Crystal Axe"),
+    inventory_image = "ethereal_pink_crystal_axe.png",
+    wield_image = "ethereal_pink_crystal_axe.png",
+    tool_capabilities = {
+      full_punch_interval = 0.8,
+      max_drop_level = 1,
+      groupcaps = {
+        choppy = {
+          times = {[1] = 2.00, [2] = 0.80, [3] = 0.70},
+          uses = 40,
+          maxlevel = 3
+        }
+      },
+      damage_groups = {fleshy = 7}
+    },
+    groups = {axe = 1},
+    sound = {breaks = "default_tool_breaks"}
+  })
+
+  minetest.register_tool("moreores:axe_pinkdiamond", {
+    description = S("@1 Axe", S("Pink Diamond")),
+    inventory_image = "moreores_tool_pinkdiamondaxe.png",
+    tool_capabilities = {
+      full_punch_interval = 0.9,
+      max_drop_level = 1,
+      groupcaps = {
+        choppy = {times = {[1] = 2.10, [2] = 0.90, [3] = 0.80}, uses = 30, maxlevel = 3},
+      },
+      damage_groups = {fleshy = 7},
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {axe = 1}
+  })
+
+  minetest.register_tool("moreores:axe_mithril", {
+    description = S("@1 Axe", S("Mithril")),
+    inventory_image = "moreores_tool_mithrilaxe.png",
+    sound = {breaks = "default_tool_breaks"},
+    tool_capabilities = {
+      full_punch_interval = 1.0,
+      max_drop_level = 3,
+      damage_groups = {fleshy = 6},
+      groupcaps = {
+        fleshy = {times = {[2] = 2.10, [3] = 2.00}, uses = 31, maxlevel = 3},
+        choppy = {
+          times = {[1] = 1.90, [2] = 1.70, [3] = 0.90}, uses = 31, maxlevel = 3}
+      }
+    },
+    groups = {axe = 1, tool = 1}
+  })
+
+  minetest.register_tool("moreores:axe_silver", {
+    description = S("@1 Axe", S("Silver")),
+    inventory_image = "moreores_tool_silveraxe.png",
+    sound = {breaks = "default_tool_breaks"},
+    tool_capabilities = {
+      full_punch_interval = 1.0,
+      max_drop_level = 3,
+      damage_groups = {fleshy = 4},
+      groupcaps = {
+        fleshy = {times = {[2] = 2.10, [3] = 1.60}, uses = 100, maxlevel = 1},
+        choppy = {
+          times = {[1] = 2.50, [2] = 1.80, [3] = 1.50}, uses = 100, maxlevel = 1}
+      }
+    },
+    groups = {axe = 1, tool = 1}
+  })
+```
+
+<sub>[Top](/tools_weapons.md#tools--weapons)</sub>
+
+___
+
+## Shovels
+
+```lua
+  minetest.register_tool("default:shovel_wood", {
+    description = S("Wooden Shovel"),
+    inventory_image = "default_tool_woodshovel.png",
+    wield_image = "default_tool_woodshovel.png^[transformR90",
+    tool_capabilities = {
+      full_punch_interval = 1.2,
+      max_drop_level = 0,
+      groupcaps = {
+        crumbly = {times = {[1] = 3.00, [2] = 1.60, [3] = 0.60}, uses = 10, maxlevel = 1},
+      },
+      damage_groups = {fleshy = 2},
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {shovel = 1, flammable = 2}
+  })
+
+  minetest.register_tool("default:shovel_stone", {
+    description = S("Stone Shovel"),
+    inventory_image = "default_tool_stoneshovel.png",
+    wield_image = "default_tool_stoneshovel.png^[transformR90",
+    tool_capabilities = {
+      full_punch_interval = 1.4,
+      max_drop_level = 0,
+      groupcaps = {
+        crumbly = {times = {[1] = 1.80, [2] = 1.20, [3] = 0.50}, uses = 20, maxlevel = 1},
+      },
+      damage_groups = {fleshy = 2},
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {shovel = 1}
+  })
+
+  minetest.register_tool("default:shovel_bronze", {
+    description = S("Bronze Shovel"),
+    inventory_image = "default_tool_bronzeshovel.png",
+    wield_image = "default_tool_bronzeshovel.png^[transformR90",
+    tool_capabilities = {
+      full_punch_interval = 1.1,
+      max_drop_level = 1,
+      groupcaps = {
+        crumbly = {times = {[1] = 1.65, [2] = 1.05, [3] = 0.45}, uses = 25, maxlevel = 2},
+      },
+      damage_groups = {fleshy = 3},
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {shovel = 1}
+  })
+
+  minetest.register_tool("default:shovel_steel", {
+    description = S("Steel Shovel"),
+    inventory_image = "default_tool_steelshovel.png",
+    wield_image = "default_tool_steelshovel.png^[transformR90",
+    tool_capabilities = {
+      full_punch_interval = 1.1,
+      max_drop_level = 1,
+      groupcaps = {
+        crumbly = {times = {[1] = 1.50, [2] = 0.90, [3] = 0.40}, uses = 30, maxlevel = 2},
+      },
+      damage_groups = {fleshy = 3},
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {shovel = 1}
+  })
+
+  minetest.register_tool("default:shovel_mese", {
+    description = S("Mese Shovel"),
+    inventory_image = "default_tool_meseshovel.png",
+    wield_image = "default_tool_meseshovel.png^[transformR90",
+    tool_capabilities = {
+      full_punch_interval = 1.0,
+      max_drop_level = 3,
+      groupcaps = {
+        crumbly = {times = {[1] = 1.20, [2] = 0.60, [3] = 0.30}, uses = 20, maxlevel = 3},
+      },
+      damage_groups = {fleshy = 4},
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {shovel = 1}
+  })
+
+  minetest.register_tool("default:shovel_diamond", {
+    description = S("Diamond Shovel"),
+    inventory_image = "default_tool_diamondshovel.png",
+    wield_image = "default_tool_diamondshovel.png^[transformR90",
+    tool_capabilities = {
+      full_punch_interval = 1.0,
+      max_drop_level = 1,
+      groupcaps = {
+        crumbly = {times = {[1] = 1.10, [2] = 0.50, [3] = 0.30}, uses = 30, maxlevel = 3},
+      },
+      damage_groups = {fleshy = 4},
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {shovel = 1}
+  })
+
+  minetest.register_tool("armorplus:obsidian_shovel", {
+      description = S("Obsidian Shovel"),
+      inventory_image = "armorplus_obsidian_shovel.png",
+      wield_image = "armorplus_obsidian_shovel.png^[transformR90",
+    tool_capabilities = {
+      full_punch_interval = 1.0,
+      max_drop_level = 1,
+      groupcaps = {
+        crumbly = {times = {[1] = 1.10, [2] = 0.50, [3] = 0.30}, uses = 30, maxlevel = 3},
+      },
+      damage_groups = {fleshy = 4},
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {shovel = 1}
+  })
+
+  minetest.register_tool("ethereal:shovel_crystal", {
+    description = S("Crystal Shovel"),
+    inventory_image = "ethereal_crystal_shovel.png",
+    wield_image = "ethereal_crystal_shovel.png^[transformR90",
+    tool_capabilities = {
+      full_punch_interval = 1.0,
+      max_drop_level = 1,
+      groupcaps = {
+        crumbly = {
+        times = {[1] = 1.10, [2] = 0.85, [3] = 0.75},
+          uses = 30,
+          maxlevel = 3
+        }
+      },
+      damage_groups = {fleshy = 4}
+    },
+    groups = {shovel = 1},
+    sound = {breaks = "default_tool_breaks"}
+  })
+
+  minetest.register_tool("ethereal:shovel_pink_crystal", {
+    description = S("Crystal Shovel"),
+    inventory_image = "ethereal_pink_crystal_shovel.png",
+    wield_image = "ethereal_pink_crystal_shovel.png^[transformR90",
+    tool_capabilities = {
+      full_punch_interval = 1.0,
+      max_drop_level = 1,
+      groupcaps = {
+        crumbly = {
+          times = {[1] = 1.10, [2] = 0.75, [3] = 0.65},
+          uses = 30,
+        }
+      },
+      damage_groups = {fleshy = 4}
+    },
+    groups = {shovel = 1},
+    sound = {breaks = "default_tool_breaks"}
+  })
+
+  minetest.register_tool("moreores:shovel_silver", {
+    description = S("@1 Shovel", S("Silver")),
+    inventory_image = "moreores_tool_silvershovel.png",
+    wield_image = "moreores_tool_silvershovel.png^[transformR90",
+    sound = {breaks = "default_tool_breaks"},
+    tool_capabilities = {
+      full_punch_interval = 1.0,
+      max_drop_level = 3,
+      damage_groups = {fleshy = 3},
+      groupcaps = {
+        crumbly = {
+          times = {[1] = 2.10, [2] = 1.90, [3] = 1.7}, uses = 100, maxlevel = 1}
+      }
+    },
+    groups = {shovel = 1, tool = 1}
+  })
+
+  minetest.register_tool("moreores:shovel_mithril", {
+    description = S("@1 Shovel", S("Mithril")),
+    inventory_image = "moreores_tool_mithrilshovel.png",
+    wield_image = "moreores_tool_mithrilshovel.png^[transformR90",
+    sound = {breaks = "default_tool_breaks"},
+    tool_capabilities = {
+      full_punch_interval = 1.0,
+      max_drop_level = 3,
+      damage_groups = {fleshy = 4},
+      groupcaps = {
+        crumbly = {
+          times = {[1] = 1.20, [2] = 1.05, [3] = 0.90}, uses = 31, maxlevel = 3}
+        }
+      },
+    groups = {shovel = 1, tool = 1}
+  })
+
+  minetest.register_tool("moreores:shovel_pinkdiamond", {
+    description = S("@1 Shovel", S("Pink Diamond")),
+    inventory_image = "moreores_tool_pinkdiamondshovel.png",
+    wield_image = "moreores_tool_pinkdiamondshovel.png^[transformR90",
+    tool_capabilities = {
+      full_punch_interval = 1.0,
+      max_drop_level = 1,
+      groupcaps = {
+        crumbly = {times = {[1] = 1.10, [2] = 0.80, [3] = 0.70}, uses = 30, maxlevel = 3},
+      },
+      damage_groups = {fleshy = 4},
+    },
+    sound = {breaks = "default_tool_breaks"},
+    groups = {shovel = 1}
+  })
+```
+
+<sub>[Top](/tools_weapons.md#tools--weapons)</sub>
+
+___
+
+<sub>[Home](README.md)</sub>
+
+___

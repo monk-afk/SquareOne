@@ -1,4 +1,4 @@
-<img src="./images/squareone_logo_v2_notext_256px.png" alt="SquareOne pixel text." width="64"/> <img src="./images/squareone_text_256px.png" alt="SquareOne pixel text." width="160"/> <img src="./images/squareone_logo_v1_notext_64px.png" alt="SquareOne pixel text." width="64"/>
+<img src="./images/logos_icons/squareone_logo_v2_notext_256px.png" alt="SquareOne pixel text." width="64"/> <img src="./images/logos_icons/squareone_text_256px.png" alt="SquareOne pixel text." width="160"/> <img src="./images/logos_icons/squareone_logo_v1_notext_64px.png" alt="SquareOne pixel text." width="64"/>
 <hr>
 
 **Armor**
@@ -27,6 +27,8 @@ ___
 **Definitions**
 ===========
 
+**`defense`** | Armor defense rating, reduces the amount of damage received.
+
 **`evasion`** | Each point gives a 1% chance that damage will be completely blocked.
 
 **`fire_protect`** | fire protection
@@ -42,6 +44,12 @@ ___
 **`reflect_dmg`** | absorb and reflect damage back to armor/weapon.
 
 <sub>[Complete list of Definitions Here](https://github.com/minetest-mods/3d_armor/blob/master/3d_armor/README.md)</sub>
+
+___
+
+**Physics Modifiers**
+
+Armor with physic modifiers, such as gravity, speed, and jump, can be combined together with other armor types to achieve preferred physics.
 
 ___
 
@@ -479,6 +487,10 @@ ___
   - evasion = 7
 
 <sub>[Top](/armor.md#armor)</sub>
+
+___
+
+<sub>[Home](README.md)</sub>
 
 ___
 
