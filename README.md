@@ -48,7 +48,7 @@ Table of Contents
 
 - > [Armor Stats](/armor.md)
 
-- > [Weapon Stats (Lua code)](/tools_weapons.lua)
+- > [Weapon Stats](/tools_weapons.md)
 
 - > [Dye Recipes](/dye_recipes.md)
 
