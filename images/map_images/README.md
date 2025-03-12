@@ -1,12 +1,11 @@
 <img src="../logos_icons/squareone_logo_v2_notext_256px.png" alt="SquareOne pixel text." width="64"/> <img src="../logos_icons/squareone_text_256px.png" alt="SquareOne pixel text." width="160"/> <img src="../logos_icons/squareone_logo_v1_notext_64px.png" alt="SquareOne pixel text." width="64"/>
 
-<hr>
+___
 
 # Map Images
-- [View on Fandom](https://squareone.fandom.com/wiki/Special:AllMaps)
   - Each image is 4096x4096 pixels, each pixel represents one node.
-  - Coordinates Cardinal Directions are: z(North), z-(South), x(East), x-(West)
-
+  - Cardinal Directions are: z:(North), -z:(South), x:(East), -x:(West)
+  - Areas of white haven't been generated yet
 
 |               | **Z+12288**                             | **Z+8192**                              | **Z+4096**                              | **Z 0**                                | **Z-4096**                              | **Z-8192**                              | **Z-12288**                             |
 |-------------|--------------------------------------|--------------------------------------|--------------------------------------|--------------------------------------|--------------------------------------|--------------------------------------|--------------------------------------|
@@ -21,16 +20,10 @@
 ___
 ___
 
-- > GIMP script-fu for indexing color of map images, because it takes too long to use optipng
-  - Indexes with max of 128 color pallet
-  - cd into path of image files to be indexed, then run.
-  - images will be copied and prefixed with `-indexed.png`
-
-```sh
-find * -maxdepth 0 -type f -name "*.png" -exec sh -c 'gimp -i -b "(let* ((img (car (gimp-file-load RUN-NONINTERACTIVE \"{}\" \"{}\")))) (gimp-image-convert-indexed img 0 0 128 FALSE TRUE \"\") (gimp-file-save RUN-NONINTERACTIVE img (car (gimp-image-get-active-layer img)) \"{}_indexed.png\" \"{}_indexed.png\") (gimp-image-delete img))" -b "(gimp-quit 0)"' \;
-```
-
-- [make_map_images.lua](make_map_images.lua)
+Lua script for generating the images using minetestmapper
+  - [make_map_images.lua](make_map_images.lua)
+Bash script for converting the images to 128 color palette using GIMP
+- [convert_palette.sh](convert_palette.sh)
 
 ___
 

@@ -1,46 +1,59 @@
---[[ Lua script for generating mapper images with minetestmapper
+local function help_message()
+  io.write([[ Generate Luanti(Minetest) Map Images
+  Requirements:
+    - minetestmapper binary
+    - colors.txt
+
   To use:
-    - Place this file in the same folder as minetestmapper binary
+    - Open this file for editing and configure the local variables:
+        local server = "world of your server"
+        local images = "where the images will be placed"
+        * TODO: local max_y, min_y = max height, min height of captured image
+
     - Run from command line:
 
-      $ lua make_map_images.lua [params]
+      $ lua mapper.lua [params]
+      $ lua mapper.lua x=1 z=-1 d=256
 
-    Accepted parameters:
-      grid        Automates image creation using a grid with each image being 4096px with 0,0 being the center
-        - note: grid does not accept parameters at this time.
-      x=0         Focuses the center x coordinate
-      z=0         Focuses the center z coordinate
-      d=16        Size of the output image in pixels (min 16)
-]]
-local M = 30720
-
-local server = "~/squareone/worlds/world/"
-local images = "~/mapper_images/"
-local option = "--backend postgresql --noemptyimage --colors colors.txt --max-y 400 --min-y -20"
+  Accepted parameters:
+      grid    Automates image creation using a grid with each image being 4096px with 0,0 being the center
+      x=[N]   Focus point of coordinate on X axis
+      z=[N]   Focus point of coordinate on Z axis
+      d=[N]   Optional Dimention of the output image in pixels (Default 16)
+]]); io.stdout:flush()
+end
 
 
 local function generate_image_at(x, z, d)
-  local a = math.floor(d/2)
+  local server = "${HOME}/squareone/worlds/world/"
+  local images = "${HOME}/dropbox/for_website/"
+  local option = "--backend postgresql --noemptyimage --colors colors.txt --max-y 400 --min-y -30"
+  local a = math.floor(d / 2)
   local ax, az = x+(-a), z+(-a)
-
   local exec_string = string.format(
-    "./minetestmapper %s -i %s -o %ssquareone_x%s_z%s_%s.png --geometry %s:%s+%s+%s;",
+      "${PWD}/minetestmapper %s -i %s -o %ssquareone_x%s_z%s_%s.png --geometry %s:%s+%s+%s;",
       option, server, images, x, z, os.date("%F"), ax, az, d, d)
-
   os.execute(exec_string)
 end
 
-if arg[1] == "grid" then
+
+local function process_grid()
   local max_pos = 12288
   local d = 4096
   for x = -max_pos, max_pos, d do
     for z = -max_pos, max_pos, d do
       generate_image_at(x, z, d)
-      print("Generated image: (" .. x .. ", " .. z .. ")")
+      io.write("Generated image: (", x, ", ", z, ")\n"); io.stdout:flush()
     end
   end
+end
 
-else
+
+local function process_command(arg)
+  if arg[1] == "grid" then
+    return process_grid()
+  end
+
   local cmd = {}
   for p = 1, #arg do
     cmd[p] = string.gsub(arg[p], "([xzd])=(%-?%d+)",
@@ -50,26 +63,37 @@ else
       end)
   end
 
+  local M = 30720
   local d = math.max(math.min(M, tonumber(cmd.d) or 256), 16)
   local x = tonumber(cmd.x)
   local z = tonumber(cmd.z)
 
-  if not (x and z and d) then
-    print("Please provide all options: dimention and coordinates x and z:")
-    print("    x=  Point of coordinate on X axis")
-    print("    z=  Point of coordinate on Z axis")
-    print("    d=  Dimensions of a square image W:H")
-    print("Usage: lua mapper.lua x=1 z=-1 d=256")
+  if not (x and z and d) or cmd.help or cmd.h then
+    return help_message()
+  elseif x <= -M
+     and z <= -M
+     and x >=  M
+     and z >=  M then
+    io.write("Please use coordinates between ", -M, " and ", M, ".\n"); io.stdout:flush()
     return
-  end
-
-  if x >= -M and x <= M and z >= -M and z <= M then
-    generate_image_at(x, z, d)
-      print("Image at coordinates: (" .. x .. ", " .. z .. ")")
   else
-    print("Please use coordinates between " .. -M .. " and " .. M .. ".")
+    io.write("Generating Image at Center Coordinates: (", x, ", ", z, ")\n"); io.stdout:flush()
+    generate_image_at(x, z, d)
   end
 end
+
+process_command(arg)
+
+
+-- - Build minetestmapper binary from the GitHub repo:
+--       https://github.com/luanti-org/minetestmapper
+
+-- - In minetestmapper directory, locate the file: util/dumpnodes/init.lua
+--   - There is a chat command, add it to a mod and use it in-game.
+--   - Locate the nodes.txt file created in worldpath.
+
+-- - In minetestmapper directory, locate the file: util/generate_colorstxt.py, Run with args:
+--   $ ./util/generate_colorstxt.py -g /full/path/worlds/world -m /full/path/worlds/world /full/path/worlds/world/nodes.txt
 
 
 ------------------------------------------------------------------------------------
