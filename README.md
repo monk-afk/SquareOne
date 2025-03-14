@@ -11,7 +11,9 @@
   - Port: `30023`
 <!-- squareone.moe -->
 
-- [https://squareone.fandom.com/wiki/](https://squareone.fandom.com/wiki/)
+___
+
+# [Contabo Review](https://squareone.moe/contabo_coercion.html)
 
 ___
 
