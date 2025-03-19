@@ -11,11 +11,6 @@
   - Port: `30023`
 <!-- squareone.moe -->
 
-___
-
-# [Contabo Review](https://squareone.moe/contabo_coercion.html)
-
-___
 
 IN-GAME RULES
 ---
