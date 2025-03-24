@@ -1,37 +1,24 @@
-<img src="./images/logos_icons/squareone_logo_v2_notext_256px.png" alt="SquareOne pixel text." width="64"/> <img src="./images/logos_icons/squareone_text_256px.png" alt="SquareOne pixel text." width="160"/> <img src="./images/logos_icons/squareone_logo_v1_notext_64px.png" alt="SquareOne pixel text." width="64"/>
-<hr>
-
-**Armor**
-=====
-
-### Index
-
-- **[Group Definitions](/armor.md#definitions)**
-
-- **[Armor Stats](/armor.md#armor-stats)**
-  - [Bronze](/armor.md#bronze)
-  - [Cactus](/armor.md#cactus)
-  - [Blue Crystal](/armor.md#blue-crystal)
-  - [Pink Crystal](/armor.md#pink-crystal)
-  - [Diamond](/armor.md#diamond)
-  - [Gold](/armor.md#gold)
-  - [Mithril](/armor.md#mithril)
-  - [Steel](/armor.md#steel)
-  - [Wood](/armor.md#wood)
-  - [Copper Patina](/armor.md#copper-patina)
-  - [Etherium](/armor.md#etherium)
-  - [Obsidian](/armor.md#obsidian)
+# Armor Stats
 
 ___
 
-**Definitions**
-===========
+## Definitions
+
+**Defense Abilities**
+
+**`endurance`** | How many hits the armor can take before breaking.
 
 **`defense`** | Armor defense rating, reduces the amount of damage received.
 
-**`evasion`** | Each point gives a 1% chance that damage will be completely blocked.
+**`block`** | Each point gives a 1% chance that damage will be completely blocked.
 
-**`fire_protect`** | fire protection
+**`reflect`** | Absorb and reflect damage back to armor/weapon.
+
+**`fire_resist`** | Resistance against fire, lava
+
+**Physics Modifiers**
+
+  > Mix & match to suit your preference
 
 **`jump`** | "1" will increase jump strength by 100%. "-0.5" will decrease jump by 50%.
 
@@ -39,580 +26,109 @@ ___
 
 **`gravity`** | "2" will increase gravity by 200%, "-1" will decrease gravity by 100%.
 
-**`durability`** | how many hits the armor can take before breaking.
-
-**`reflect_dmg`** | absorb and reflect damage back to armor/weapon.
-
-<sub>[Complete list of Definitions Here](https://github.com/minetest-mods/3d_armor/blob/master/3d_armor/README.md)</sub>
+[Complete list of Definitions Here](https://github.com/minetest-mods/3d_armor/blob/master/3d_armor/README.md)
 
 ___
 
-**Physics Modifiers**
 
-Armor with physic modifiers, such as gravity, speed, and jump, can be combined together with other armor types to achieve preferred physics.
-
-___
-
-**Armor Stats**
-===========
-
-**Blue Crystal**
----
-
-**Helmet**
-  - durability = 655
-  - speed = 0.35
-  - defense = 7
-  - evasion = 5
-
-**Chestplate**
-  - durability = 655
-  - speed = 0.35
-  - defense = 8
-  - evasion = 5
-
-**Leggings**
-  - durability = 655
-  - speed = 0.35
-  - defense = 8
-  - evasion = 5
-
-**Boots**
-  - durability = 655
-  - speed = 0.35
-  - defense = 6
-  - evasion = 5
-
-**Shield**
-  - evasion = 6
-  - durability = 655
-  - reflect_dmg = 1
-  - fire_protect = 1
-  - defense = 6
-
-<sub>[Top](/armor.md#armor)</sub>
-
-___
-
-**Steel**
----
-
-**Helmet**
-  - durability = 81
-  - defense = 7
-  - evasion = 0
-
-**Chestplate**
-  - durability = 81
-  - defense = 8
-  - evasion = 0
-
-**Leggings**
-  - durability = 81
-  - defense = 8
-  - evasion = 0
-
-**Boots**
-  - durability = 81
-  - defense = 6
-  - evasion = 0
-
-**Shield**
-  - durability = 81
-  - reflect_dmg = 1
-  - defense = 6
-  - evasion = 4
-
-<sub>[Top](/armor.md#armor)</sub>
-
-___
-
-**Wood**
----
-
-**Helmet**
-  - durability = 32
-  - defense = 3
-  - flammable = 1
-  - evasion = 0
-
-**Chestplate**
-  - durability = 32
-  - defense = 5
-  - flammable = 1
-  - evasion = 0
-
-**Leggings**
-  - durability = 32
-  - defense = 4
-  - flammable = 1
-  - evasion = 0
-
-**Boots**
-  - defense = 2
-  - flammable = 1
-  - durability = 32
-  - evasion = 0
-
-**Shield**
-  - evasion = 0
-  - durability = 32
-  - reflect_dmg = 1
-  - defense = 3
-  - flammable = 1
-
-**Enhanced Shield**
-  - durability = 32
-  - reflect_dmg = 1
-  - defense = 4
-  - evasion = 0
-
-<sub>[Top](/armor.md#armor)</sub>
-
-___
-
-**Mithril**
----
-
-**Helmet**
-  - durability = 992
-  - defense = 6
-  - evasion = 13
-
-**Chestplate**
-  - durability = 992
-  - defense = 9
-  - evasion = 13
-
-**Leggings**
-  - durability = 992
-  - defense = 8
-  - evasion = 13
-
-**Boots**
-  - durability = 992
-  - defense = 5
-  - evasion = 13
-
-**Shield**
-  - durability = 992
-  - reflect_dmg = 1
-  - defense = 7
-  - evasion = 7
-
-<sub>[Top](/armor.md#armor)</sub>
-
-___
-
-**Cactus**
----
-
-**Helmet**
-  - durability = 65
-  - defense = 5
-  - evasion = 0
-
-**Chestplate**
-  - durability = 65
-  - defense = 10
-  - evasion = 0
-
-**Leggings**
-  - durability = 65
-  - defense = 10
-  - evasion = 0
-
-**Boots**
-  - durability = 65
-  - defense = 5
-  - evasion = 0
-
-**Shield**
-  - durability = 65
-  - reflect_dmg = 1
-  - defense = 4
-  - evasion = 0
-
-**Enhanced Shield**
-  - durability = 65
-  - reflect_dmg = 1
-  - defense = 5
-  - evasion = 0
-
-<sub>[Top](/armor.md#armor)</sub>
-
-___
-
-**Pink Crystal**
----
-
-**Helmet**
-  - durability = 655
-  - defense = 7
-  - jump = 0.2
-  - evasion = 5
-
-**Chestplate**
-  - durability = 655
-  - defense = 8
-  - jump = 0.2
-  - evasion = 5
-
-**Leggings**
-  - durability = 655
-  - defense = 8
-  - jump = 0.2
-  - evasion = 5
-
-**Boots**
-  - durability = 655
-  - defense = 6
-  - jump = 0.2
-  - evasion = 5
-
-<sub>[Top](/armor.md#armor)</sub>
-
-___
-
-**Obsidian**
----
-
-**Helmet**
-  - durability = 344
-  - defense = 5
-  - fire_protect = 15
-  - evasion = 10
-
-**Chestplate**
-  - durability = 344
-  - defense = 9
-  - fire_protect = 15
-  - evasion = 10
-
-**Leggings**
-  - durability = 344
-  - defense = 8
-  - fire_protect = 15
-  - evasion = 10
-
-**Boots**
-  - durability = 344
-  - defense = 5
-  - fire_protect = 15
-  - evasion = 10
-
-**Shield**
-  - evasion = 7
-  - durability = 344
-  - reflect_dmg = 1
-  - fire_protect = 15
-  - defense = 8
-
-<sub>[Top](/armor.md#armor)</sub>
-
-___
-
-**Gold**
----
-
-**Helmet**
-  - durability = 218
-  - defense = 6
-  - evasion = 6
-
-**Chestplate**
-  - durability = 218
-  - defense = 8
-  - evasion = 6
-
-**Leggings**
-  - durability = 218
-  - defense = 6
-  - evasion = 6
-
-**Boots**
-  - durability = 218
-  - defense = 5
-  - evasion = 6
-
-**Shield**
-  - durability = 218
-  - reflect_dmg = 1
-  - defense = 6
-  - evasion = 5
-
-<sub>[Top](/armor.md#armor)</sub>
-
-___
-
-**Copper Patina**
----
-
-**Helmet**
-  - durability = 655
-  - defense = 4
-  - evasion = 5
-
-**Chestplate**
-  - durability = 655
-  - defense = 6
-  - evasion = 8
-
-**Leggings**
-  - durability = 655
-  - defense = 6
-  - evasion = 8
-
-**Boots**
-  - durability = 655
-  - defense = 4
-  - evasion = 6
-
-**Shield**
-  - durability = 655
-  - defense = 5
-  - evasion = 6
-
-<sub>[Top](/armor.md#armor)</sub>
-
-___
-
-**Etherium**
----
-
-**Helmet**
-  - gravity = -0.15
-  - evasion = 6
-  - durability = 218
-  - defense = 5
-  - jump = 0.2
-
-**Chestplate**
-  - gravity = -0.15
-  - evasion = 6
-  - durability = 218
-  - defense = 8
-  - jump = 0.2
-
-**Leggings**
-  - gravity = -0.15
-  - evasion = 6
-  - durability = 218
-  - defense = 8
-  - jump = 0.2
-
-**Boots**
-  - gravity = -0.15
-  - evasion = 6
-  - durability = 218
-  - defense = 5
-  - jump = 0.2
-
-**Shield**
-  - gravity = -0.15
-  - evasion = 6
-  - durability = 218
-  - reflect_dmg = 1
-  - defense = 7
-  - jump = 0.2
-
-**Falling Feathers**
-  - durability = 327
-  - defense = 1
-
-<sub>[Top](/armor.md#armor)</sub>
-
-___
-
-**Bronze**
----
-
-**Helmet**
-  - durability = 163
-  - defense = 4
-  - evasion = 6
-
-**Chestplate**
-  - durability = 163
-  - defense = 7
-  - evasion = 6
-
-**Leggings**
-  - durability = 163
-  - defense = 6
-  - evasion = 6
-
-**Boots**
-  - durability = 163
-  - defense = 4
-  - evasion = 6
-
-**Shield**
-  - durability = 163
-  - reflect_dmg = 1
-  - defense = 6
-  - evasion = 4
-
-<sub>[Top](/armor.md#armor)</sub>
-
-___
-
-**Diamond**
----
-
-**Helmet**
-  - durability = 327
-  - defense = 7
-  - evasion = 12
-
-**Chestplate**
-  - durability = 327
-  - defense = 10
-  - evasion = 12
-
-**Leggings**
-  - durability = 327
-  - defense = 10
-  - evasion = 12
-
-**Boots**
-  - durability = 327
-  - defense = 7
-  - evasion = 12
-
-**Shield**
-  - durability = 327
-  - reflect_dmg = 1
-  - defense = 8
-  - evasion = 7
-
-<sub>[Top](/armor.md#armor)</sub>
-
-___
-
-<sub>[Home](README.md)</sub>
-
-___
-
-<!-- 
-local armors = {
-  ["Cactus"] = {
-    {["Helmet"]          = {evasion = 0--[[armor_heal]], durability = 1000--[[armor_use]], defense = 5--[[armor_groups.fleshy]]}},
-    {["Chestplate"]      = {evasion = 0, durability = 1000, defense = 10}},
-    {["Leggings"]        = {evasion = 0, durability = 1000, defense = 10}},
-    {["Boots"]           = {evasion = 0, durability = 1000, defense = 5}},
-    {["Shield"]          = {evasion = 0, durability = 1000, defense = 4, reflect_dmg = 1}},
-    {["Enhanced Shield"] = {evasion = 0, durability = 1000, defense = 5, reflect_dmg = 1}},
-  },
-
-  ["Bronze"] = {
-    {["Helmet"]     = {evasion = 6, durability = 400, defense = 4}},
-    {["Chestplate"] = {evasion = 6, durability = 400, defense = 7}},
-    {["Leggings"]   = {evasion = 6, durability = 400, defense = 6}},
-    {["Boots"]      = {evasion = 6, durability = 400, defense = 4}},
-    {["Shield"]     = {evasion = 4, durability = 400, defense = 6, reflect_dmg = 1}},
-  },
-
-  ["Blue Crystal"] = {
-    {["Helmet"]     = {evasion = 5, durability = 100, speed = 0.35, defense = 7}},
-    {["Chestplate"] = {evasion = 5, durability = 100, speed = 0.35, defense = 8}},
-    {["Leggings"]   = {evasion = 5, durability = 100, speed = 0.35, defense = 8}},
-    {["Boots"]      = {evasion = 5, durability = 100, speed = 0.35, defense = 6}},
-    {["Shield"]     = {evasion = 6, durability = 100, fire_protect = 1, defense = 6, reflect_dmg = 1}},
-  },
-
-  ["Diamond"] = {  
-    {["Helmet"]     = {evasion = 12, durability = 200, defense = 7}},
-    {["Chestplate"] = {evasion = 12, durability = 200, defense = 10}},
-    {["Leggings"]   = {evasion = 12, durability = 200, defense = 10}},
-    {["Boots"]      = {evasion = 12, durability = 200, defense = 7}},
-    {["Shield"]     = {evasion = 7, durability = 200, defense = 8, reflect_dmg = 1}},
-  },
-
-  ["Mithril"] = {
-    {["Helmet"]     = {evasion = 13, durability = 66, defense = 6}},
-    {["Chestplate"] = {evasion = 13, durability = 66, defense = 9}},
-    {["Leggings"]   = {evasion = 13, durability = 66, defense = 8}},
-    {["Boots"]      = {evasion = 13, durability = 66, defense = 5}},
-    {["Shield"]     = {evasion = 7, durability = 66, defense = 7, reflect_dmg = 1}},
-  },
-
-  ["Steel"] = {
-    {["Helmet"]     = {evasion = 0, durability = 800, defense = 7}},
-    {["Chestplate"] = {evasion = 0, durability = 800, defense = 8}},
-    {["Leggings"]   = {evasion = 0, durability = 800, defense = 8}},
-    {["Boots"]      = {evasion = 0, durability = 800, defense = 6}},
-    {["Shield"]     = {evasion = 4, durability = 800, defense = 6, reflect_dmg = 1}},
-  },
-
-  ["Pink Crystal"] = {
-    {["Helmet"]     = {evasion = 5, durability = 100, jump = 0.2, defense = 7}},
-    {["Chestplate"] = {evasion = 5, durability = 100, jump = 0.2, defense = 8}},
-    {["Leggings"]   = {evasion = 5, durability = 100, jump = 0.2, defense = 8}},
-    {["Boots"]      = {evasion = 5, durability = 100, jump = 0.2, defense = 6}},
-  },
-
-  ["Wood"] = {
-    {["Helmet"]     = {evasion = 0, durability = 2000, flammable = 1, defense = 3}},
-    {["Chestplate"] = {evasion = 0, durability = 2000, flammable = 1, defense = 5}},
-    {["Leggings"]   = {evasion = 0, durability = 2000, flammable = 1, defense = 4}},
-    {["Boots"]      = {defense = 2, evasion = 0, durability = 2000, flammable = 1}},
-    {["Shield"]     = {evasion = 0, durability = 2000, flammable = 1, defense = 3, reflect_dmg = 1}},
-    {["Enhanced Shield"] = {evasion = 0, durability = 2000, defense = 4, reflect_dmg = 1}},
-  },
-
-  ["Gold"] = {
-    {["Helmet"]     = {evasion = 6, durability = 300, defense = 6}},
-    {["Chestplate"] = {evasion = 6, durability = 300, defense = 8}},
-    {["Leggings"]   = {evasion = 6, durability = 300, defense = 6}},
-    {["Boots"]      = {evasion = 6, durability = 300, defense = 5}},
-    {["Shield"]     = {evasion = 5, durability = 300, defense = 6, reflect_dmg = 1}},
-  },
-
-  ["Etherium"] = {
-    {["Helmet"]     = {evasion = 6, durability = 300, gravity = -0.15, jump = 0.2, defense = 5}},
-    {["Chestplate"] = {evasion = 6, durability = 300, gravity = -0.15, jump = 0.2, defense = 8}},
-    {["Leggings"]   = {evasion = 6, durability = 300, gravity = -0.15, jump = 0.2, defense = 8}},
-    {["Boots"]      = {evasion = 6, durability = 300, gravity = -0.15, jump = 0.2, defense = 5}},
-    {["Shield"]     = {evasion = 6, durability = 300, gravity = -0.15, jump = 0.2, defense = 7, reflect_dmg = 1}},
-    {["Falling Feathers"] = {durability = 200, defense = 1}},
-  },
-
-  ["Copper Patina"] = {
-    {["Helmet"]     = {evasion = 5, durability = 100, defense = 4}},
-    {["Chestplate"] = {evasion = 8, durability = 100, defense = 6}},
-    {["Leggings"]   = {evasion = 8, durability = 100, defense = 6}},
-    {["Boots"]      = {evasion = 6, durability = 100, defense = 4}},
-    {["Shield"]     = {evasion = 6, durability = 100, defense = 5}},
-  },
-
-  ["Obsidian"] = {
-    {["Helmet"]     = {evasion = 10, durability = 190, fire_protect = 15, defense = 5}},
-    {["Chestplate"] = {evasion = 10, durability = 190, fire_protect = 15, defense = 9}},
-    {["Leggings"]   = {evasion = 10, durability = 190, fire_protect = 15, defense = 8}},
-    {["Boots"]      = {evasion = 10, durability = 190, fire_protect = 15, defense = 5}},
-    {["Shield"]     = {evasion = 7, durability = 190, fire_protect = 15, defense = 8, reflect_dmg = 1}},
-  },
-}
-
-for armor_type, armor_pieces in pairs(armors) do
-  print("**"..armor_type.."**")
-  print("---")
-
-  for n = 1, #armor_pieces do
-    armor_piece = armor_pieces[n]
-    for group_name, groups in pairs(armor_piece) do
-      print("\n**"..group_name.."**")
-      for grouptype, rating in pairs(groups) do
-        if grouptype == "durability" and rating > 0 then
-          groups.durability = math.floor(65535/groups.durability)
-          rating = groups.durability
-        end
-        print(string.format("  - %s = %s", grouptype, tostring(rating)))
-      end
-    end
-  end
-  print("\n<sub>[Top](/armor.md#armor)</sub>")
-  print("___\n")
-end
- -->
+|    Mithril | Block | Durability |    Defense |
+|:-------------:|-------------:|-------------:|-------------:|
+| helmet |         13 |        992 |          6 |
+| shield |         12 |        992 |          7 |
+| chestplate |         13 |        992 |          9 |
+| leggings |         13 |        992 |          8 |
+| boots |         13 |        992 |          5 |
+
+| Cactus      | Durability | Defense |
+|:-----------:|-----------:|--------:|
+| helmet      |         65 |       5 |
+| shield      |         65 |       4 |
+| chestplate  |         65 |      10 |
+| leggings    |         65 |      10 |
+| boots       |         65 |       5 |
+| shield+iron |         65 |       5 |
+
+
+|    Diamond | Block | Durability |    Defense |
+|:-------------:|-------------:|-------------:|-------------:|
+| helmet |         12 |        327 |          7 |
+| shield |          7 |        327 |          8 |
+| chestplate |         12 |        327 |         12 |
+| leggings |         12 |        327 |         12 |
+| boots |         12 |        327 |          8 |
+
+| Pink Crystal |    Defense |       Jump | Block | Durability |
+|:-------------:|-------------:|-------------:|-------------:|-------------:|
+| helmet |          7 |       0.25 |          5 |        655 |
+| shield |          6 |       0.35 |          6 |        327 |
+| chestplate |          8 |       0.25 |          5 |        655 |
+| leggings |          8 |       0.25 |          5 |        655 |
+| boots |          6 |       0.35 |          5 |        655 |
+
+|       Wood | Block | Durability |    Defense |
+|:-------------:|-------------:|-------------:|-------------:|
+| helmet |          0 |         32 |          3 |
+| shield |          0 |         32 |          3 |
+| chestplate |          0 |         32 |          5 |
+| leggings |          0 |         32 |          4 |
+| boots |          0 |         32 |          2 |
+
+| Enhanced Wood | Block | Durability |    Defense |
+|:-------------:|-------------:|-------------:|-------------:|
+| shield |          0 |         32 |          4 |
+
+|   Obsidian | Fire Resist |    Defense | Block | Durability |
+|:-------------:|-------------:|-------------:|-------------:|-------------:|
+| helmet |         15 |          5 |         10 |        344 |
+| shield |         15 |          8 |          7 |        344 |
+| chestplate |         15 |          9 |         10 |        344 |
+| leggings |         15 |          8 |         10 |        344 |
+| boots |         15 |          5 |         10 |        344 |
+
+|      Steel |    Defense |      Speed |    Gravity | Block | Durability |
+|:-------------:|-------------:|-------------:|-------------:|-------------:|-------------:|
+| helmet |          7 |      -0.01 |       0.01 |          0 |         81 |
+| shield |          6 |      -0.03 |       0.03 |         10 |         81 |
+| chestplate |          8 |      -0.04 |       0.04 |          0 |         81 |
+| leggings |          8 |      -0.03 |       0.03 |          0 |         81 |
+| boots |          6 |      -0.01 |       0.01 |          0 |         81 |
+
+|   Etherium |    Defense |    Gravity | Block | Durability |
+|:-------------:|-------------:|-------------:|-------------:|-------------:|
+| helmet |          5 |      -0.19 |          6 |        218 |
+| shield |          7 |      -0.19 |          6 |        218 |
+| chestplate |          8 |      -0.19 |          6 |        218 |
+| leggings |          8 |      -0.19 |          6 |        218 |
+| boots |          5 |      -0.19 |          6 |        218 |
+
+| Bronze     | Defense | Block | Durability | Speed | Gravity |
+|:----------:|--------:|-----------:|-----------:|------:|--------:|
+| helmet     |       4 |          6 |        163 | -0.01 |    0.01 |
+| shield     |       6 |          9 |        163 | -0.03 |    0.03 |
+| chestplate |       7 |          6 |        163 | -0.04 |    0.04 |
+| leggings   |       6 |          6 |        163 | -0.03 |    0.03 |
+| boots      |       4 |          6 |        163 | -0.01 |    0.01 |
+
+| Gold       | Defense | Block | Durability | Speed | Gravity |
+|:----------:|--------:|------:|-----------:|------:|--------:|
+| helmet     |       6 |     6 |        218 | -0.02 |    0.02 |
+| shield     |       6 |    15 |        218 | -0.04 |    0.04 |
+| chestplate |       8 |     6 |        218 | -0.05 |    0.05 |
+| leggings   |       6 |     6 |        218 | -0.04 |    0.04 |
+| boots      |       5 |     6 |        218 | -0.02 |    0.02 |
+
+| Crystal    | Defense | Block | Durability | Speed |
+|:----------:|--------:|------:|-----------:|------:|
+| helmet     |       7 |     5 |        655 |  0.35 |
+| shield     |       6 |     6 |        327 |  0.15 |
+| chestplate |       8 |     5 |        655 |  0.35 |
+| leggings   |       8 |     5 |        655 |  0.35 |
+| boots      |       6 |     5 |        655 |  0.35 |
+
+| Copperpatina | Defense | Block | Durability |
+|:------------:|--------:|------:|-----------:|
+| helmet       |       4 |     5 |        655 |
+| shield       |       5 |     6 |        655 |
+| chestplate   |       6 |     8 |        655 |
+| leggings     |       6 |     8 |        655 |
+| boots        |       4 |     6 |        655 |
