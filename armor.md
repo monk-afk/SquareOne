@@ -30,14 +30,14 @@ ___
 
 ___
 
-
-|    Mithril | Block | Durability |    Defense |
-|:-------------:|-------------:|-------------:|-------------:|
-| helmet |         13 |        992 |          6 |
-| shield |         12 |        992 |          7 |
-| chestplate |         13 |        992 |          9 |
-| leggings |         13 |        992 |          8 |
-| boots |         13 |        992 |          5 |
+|        Wood | Durability | Defense |
+|:-----------:|-----------:|--------:|
+| helmet      |         32 |       3 |
+| shield      |         32 |       3 |
+| chestplate  |         32 |       5 |
+| leggings    |         32 |       4 |
+| boots       |         32 |       2 |
+| shield+iron |         32 |       4 |
 
 | Cactus      | Durability | Defense |
 |:-----------:|-----------:|--------:|
@@ -48,87 +48,82 @@ ___
 | boots       |         65 |       5 |
 | shield+iron |         65 |       5 |
 
+| Copperpatina | Durability | Defense | Block |
+|:------------:|-----------:|--------:|------:|
+| helmet       |        655 |       4 |     5 |
+| shield       |        655 |       5 |     6 |
+| chestplate   |        655 |       6 |     8 |
+| leggings     |        655 |       6 |     8 |
+| boots        |        655 |       4 |     6 |
 
-|    Diamond | Block | Durability |    Defense |
-|:-------------:|-------------:|-------------:|-------------:|
-| helmet |         12 |        327 |          7 |
-| shield |          7 |        327 |          8 |
-| chestplate |         12 |        327 |         12 |
-| leggings |         12 |        327 |         12 |
-| boots |         12 |        327 |          8 |
+|    Mithril | Durability |    Defense | Block |
+|:----------:|-----------:|-----------:|------:|
+| helmet     |        992 |          6 |    13 |
+| shield     |        992 |          7 |    12 |
+| chestplate |        992 |          9 |    13 |
+| leggings   |        992 |          8 |    13 |
+| boots      |        992 |          5 |    13 |
 
-| Pink Crystal |    Defense |       Jump | Block | Durability |
-|:-------------:|-------------:|-------------:|-------------:|-------------:|
-| helmet |          7 |       0.25 |          5 |        655 |
-| shield |          6 |       0.35 |          6 |        327 |
-| chestplate |          8 |       0.25 |          5 |        655 |
-| leggings |          8 |       0.25 |          5 |        655 |
-| boots |          6 |       0.35 |          5 |        655 |
+|    Diamond | Durability |    Defense | Block |
+|:----------:|-----------:|-----------:|------:|
+| helmet     |        327 |          7 |    12 |
+| shield     |        327 |          8 |     7 |
+| chestplate |        327 |         12 |    12 |
+| leggings   |        327 |         12 |    12 |
+| boots      |        327 |          8 |    12 |
 
-|       Wood | Block | Durability |    Defense |
-|:-------------:|-------------:|-------------:|-------------:|
-| helmet |          0 |         32 |          3 |
-| shield |          0 |         32 |          3 |
-| chestplate |          0 |         32 |          5 |
-| leggings |          0 |         32 |          4 |
-| boots |          0 |         32 |          2 |
+| Pink Crystal | Durability | Defense | Block | Jump |
+|:------------:|-----------:|--------:|------:|-----:|
+| helmet       |        655 |       7 |     5 | 0.25 |
+| shield       |        327 |       6 |     6 | 0.35 |
+| chestplate   |        655 |       8 |     5 | 0.25 |
+| leggings     |        655 |       8 |     5 | 0.25 |
+| boots        |        655 |       6 |     5 | 0.35 |
 
-| Enhanced Wood | Block | Durability |    Defense |
-|:-------------:|-------------:|-------------:|-------------:|
-| shield |          0 |         32 |          4 |
+|   Obsidian | Durability | Defense | Block | Fire Resist |
+|:----------:|-----------:|--------:|------:|------------:|
+| helmet     |        344 |       5 |    10 |          15 |
+| shield     |        344 |       8 |     7 |          15 |
+| chestplate |        344 |       9 |    10 |          15 |
+| leggings   |        344 |       8 |    10 |          15 |
+| boots      |        344 |       5 |    10 |          15 |
 
-|   Obsidian | Fire Resist |    Defense | Block | Durability |
-|:-------------:|-------------:|-------------:|-------------:|-------------:|
-| helmet |         15 |          5 |         10 |        344 |
-| shield |         15 |          8 |          7 |        344 |
-| chestplate |         15 |          9 |         10 |        344 |
-| leggings |         15 |          8 |         10 |        344 |
-| boots |         15 |          5 |         10 |        344 |
+|      Steel | Durability | Defense | Block | Speed | Gravity |
+|:----------:|-----------:|--------:|------:|------:|--------:|
+| helmet     |         81 |       7 |     0 | -0.01 |    0.01 |
+| shield     |         81 |       6 |    10 | -0.03 |    0.03 |
+| chestplate |         81 |       8 |     0 | -0.04 |    0.04 |
+| leggings   |         81 |       8 |     0 | -0.03 |    0.03 |
+| boots      |         81 |       6 |     0 | -0.01 |    0.01 |
 
-|      Steel |    Defense |      Speed |    Gravity | Block | Durability |
-|:-------------:|-------------:|-------------:|-------------:|-------------:|-------------:|
-| helmet |          7 |      -0.01 |       0.01 |          0 |         81 |
-| shield |          6 |      -0.03 |       0.03 |         10 |         81 |
-| chestplate |          8 |      -0.04 |       0.04 |          0 |         81 |
-| leggings |          8 |      -0.03 |       0.03 |          0 |         81 |
-| boots |          6 |      -0.01 |       0.01 |          0 |         81 |
+|   Etherium | Durability | Defense | Block | Gravity |
+|:----------:|-----------:|--------:|------:|--------:|
+| helmet     |        218 |       5 |     6 |   -0.19 |
+| shield     |        218 |       7 |     6 |   -0.19 |
+| chestplate |        218 |       8 |     6 |   -0.19 |
+| leggings   |        218 |       8 |     6 |   -0.19 |
+| boots      |        218 |       5 |     6 |   -0.19 |
 
-|   Etherium |    Defense |    Gravity | Block | Durability |
-|:-------------:|-------------:|-------------:|-------------:|-------------:|
-| helmet |          5 |      -0.19 |          6 |        218 |
-| shield |          7 |      -0.19 |          6 |        218 |
-| chestplate |          8 |      -0.19 |          6 |        218 |
-| leggings |          8 |      -0.19 |          6 |        218 |
-| boots |          5 |      -0.19 |          6 |        218 |
+| Crystal    | Durability | Defense | Block | Speed |
+|:----------:|-----------:|--------:|------:|------:|
+| helmet     |        655 |       7 |     5 |  0.35 |
+| shield     |        327 |       6 |     6 |  0.15 |
+| chestplate |        655 |       8 |     5 |  0.35 |
+| leggings   |        655 |       8 |     5 |  0.35 |
+| boots      |        655 |       6 |     5 |  0.35 |
 
-| Bronze     | Defense | Block | Durability | Speed | Gravity |
-|:----------:|--------:|-----------:|-----------:|------:|--------:|
-| helmet     |       4 |          6 |        163 | -0.01 |    0.01 |
-| shield     |       6 |          9 |        163 | -0.03 |    0.03 |
-| chestplate |       7 |          6 |        163 | -0.04 |    0.04 |
-| leggings   |       6 |          6 |        163 | -0.03 |    0.03 |
-| boots      |       4 |          6 |        163 | -0.01 |    0.01 |
+| Bronze     | Durability | Defense | Block | Speed | Gravity |
+|:----------:|-----------:|--------:|------:|------:|--------:|
+| helmet     |        163 |       4 |     6 | -0.01 |    0.01 |
+| shield     |        163 |       6 |     9 | -0.03 |    0.03 |
+| chestplate |        163 |       7 |     6 | -0.04 |    0.04 |
+| leggings   |        163 |       6 |     6 | -0.03 |    0.03 |
+| boots      |        163 |       4 |     6 | -0.01 |    0.01 |
 
-| Gold       | Defense | Block | Durability | Speed | Gravity |
-|:----------:|--------:|------:|-----------:|------:|--------:|
-| helmet     |       6 |     6 |        218 | -0.02 |    0.02 |
-| shield     |       6 |    15 |        218 | -0.04 |    0.04 |
-| chestplate |       8 |     6 |        218 | -0.05 |    0.05 |
-| leggings   |       6 |     6 |        218 | -0.04 |    0.04 |
-| boots      |       5 |     6 |        218 | -0.02 |    0.02 |
-
-| Crystal    | Defense | Block | Durability | Speed |
-|:----------:|--------:|------:|-----------:|------:|
-| helmet     |       7 |     5 |        655 |  0.35 |
-| shield     |       6 |     6 |        327 |  0.15 |
-| chestplate |       8 |     5 |        655 |  0.35 |
-| leggings   |       8 |     5 |        655 |  0.35 |
-| boots      |       6 |     5 |        655 |  0.35 |
-
-| Copperpatina | Defense | Block | Durability |
-|:------------:|--------:|------:|-----------:|
-| helmet       |       4 |     5 |        655 |
-| shield       |       5 |     6 |        655 |
-| chestplate   |       6 |     8 |        655 |
-| leggings     |       6 |     8 |        655 |
-| boots        |       4 |     6 |        655 |
+| Gold       | Durability | Defense | Block | Speed | Gravity |
+|:----------:|-----------:|--------:|------:|------:|--------:|
+| helmet     |        218 |       6 |     6 | -0.02 |    0.02 |
+| shield     |        218 |       6 |    15 | -0.04 |    0.04 |
+| chestplate |        218 |       8 |     6 | -0.05 |    0.05 |
+| leggings   |        218 |       6 |     6 | -0.04 |    0.04 |
+| boots      |        218 |       5 |     6 | -0.02 |    0.02 |
