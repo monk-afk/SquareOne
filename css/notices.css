@@ -1,0 +1,94 @@
+.notices {
+  margin: 15px 0;
+  position: relative;
+}
+
+.notices p {
+  padding: 15px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.notices p::before {
+  position: absolute;
+  box-sizing: border-box;
+  top: 0.5px;
+  content: url(/images/icons/alert.svg);
+  width: 18px !important;
+  height: 18px !important;
+  left: 4px;
+  font-size: 19px;
+}
+
+.notices p::after {
+  position: absolute;
+  box-sizing: border-box;
+  top: 4px;
+  color: #333;
+  left: 2rem;
+  content: "";
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.notices.yellow {
+  background: rgba(49, 34, 11, 0.2);
+  color: #eea034;
+  /* background: rgba(239, 171, 76, 0.2); */
+}
+
+.notices.yellow p {
+  border-left: 10px solid rgba(147, 91, 12, 0.8);
+  /* border-top: 30px solid rgba(239, 171, 76, 0.8); */
+}
+
+/* .notices.yellow p::after { */
+  /* content: "Info"; */
+/* } */
+
+.notices.red {
+  /* background: rgba(217, 83, 79, 0.2); */
+  background: rgb(46, 11, 11, 0.2);
+  color: #db5a56;
+}
+
+.notices.red p {
+  border-left: 10px solid rgba(137, 33, 30, 0.8);
+  /* border-top: 30px solid rgba(217, 83, 79, 0.8); */
+}
+
+/* .notices.red p::after { */
+  /* content: "Warning"; */
+  /* top: -1px; */
+/* } */
+
+.notices.blue {
+  /* background: rgba(106, 176, 222, 0.2); */
+
+  background: rgba(19, 34, 42, 0.2);
+  color: #4bb9da;
+}
+
+.notices.blue p {
+  /* border-top: 30px solid rgba(106, 176, 222, 0.8); */
+  border-left: 10px solid rgba(27, 110, 134, 0.8);
+}
+
+/* .notices.blue p::after { */
+  /* content: "Note"; */
+/* } */
+
+.notices.green {
+  background: rgba(25, 44, 19, 0.2);
+  color: #7ac57a;
+  /* background: rgba(92, 184, 92, 0.2); */
+}
+
+.notices.green p {
+  border-left: 10px solid rgba(52, 120, 52, 0.8);
+  /* border-top: 30px solid rgba(92, 184, 92, 0.8); */
+}
+
+/* .notices.green p::after { */
+  /* content: "Tip"; */
+/* } */
