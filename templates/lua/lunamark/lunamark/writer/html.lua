@@ -57,8 +57,8 @@ function M.new(options)
        then titattr = " title=\"" .. Html.string(tit) .. "\""
        else titattr = ""
     end
-    local w = attr and attr.width and ' width="'..attr.width..'"'
-    local h = attr and attr.height and ' height="'..attr.height..'"'
+    local w = attr and attr.width and ' width="'..attr.width..'"' or ""
+    local h = attr and attr.height and ' height="'..attr.height..'"' or ""
     return {"<img src=\"", Html.string(src), "\" alt=\"", lab, "\"", titattr, w, h, " />"}
   end
 
@@ -261,7 +261,8 @@ function M.new(options)
       t[#t+1] = { "<caption>", caption, "</caption>\n" }
     end
 
-    local theadrow = { '<tr class="header">\n' }
+    local theadrow = { '<tr>\n' }
+    -- local theadrow = { '<tr class="header">\n' }
     for j, column in ipairs(rows[1]) do
       local col = { "<th"..tableCellAlign(aligns[j])..">", column, "</th>\n" }
       theadrow[#theadrow+1] = col
@@ -271,7 +272,8 @@ function M.new(options)
 
     t[#t+1] = "<tbody>\n"
     for i = 3, #rows do
-      local tbodyrows = { '<tr class="', (i % 2 == 0) and "even" or "odd",'">\n' }
+      local tbodyrows = { '<tr>\n' }
+      -- local tbodyrows = { '<tr class="', (i % 2 == 0) and "even" or "odd",'">\n' }
       for j, column in ipairs(rows[i]) do
         local col = { "<td"..tableCellAlign(aligns[j])..">", column, "</td>\n" }
         tbodyrows[#tbodyrows+1] = col

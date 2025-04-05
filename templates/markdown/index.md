@@ -2,11 +2,8 @@
 
 ### Welcome to SquareOne new website!
 
-<div class="notices red">
-`Address: monk.moe`
-`Port: 30023`
-</div>
+### Address:Port | monk.moe:30023 {.notices .red}
 
-For [Luanti](https://www.luanti.org/) aka. Minetest and compatible forks
+For [Luanti](https://www.luanti.org/) (Previously Minetest) and compatible forks
 
-We will add pages from our [Fandom Wiki](https://squareone.fandom.com/)
+[Fandom Wiki](https://squareone.fandom.com/) contributions are welcome and may be added as a page to this site

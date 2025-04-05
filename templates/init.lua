@@ -56,7 +56,13 @@ local function alter_syntax(syntax)
   return syntax
 end
 
-local parse = lunamark.reader.markdown.new(writer, { alter_syntax = alter_syntax })
+local parse = lunamark.reader.markdown.new(writer, {
+  alter_syntax = alter_syntax,
+  pipe_tables = true,
+  header_attributes = true,
+  fenced_divs = true,
+  link_attributes = true
+})
 
 local result, metadata = parse(markdown_content)
 

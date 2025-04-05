@@ -150,9 +150,9 @@ tr:hover {
 
 table th {
   padding: 6px 13px;
-  background-color: #555;
+  background-color: #444;
   border-top: 1px solid #d1d9e0b3;
-  text-shadow: 2px 2px black;
+  text-shadow: 1px 1px black;
 }
 
 table td {
@@ -162,6 +162,14 @@ table td {
 
 table td>:last-child {
   margin-bottom: 0;
+}
+
+td:first-child {
+  padding: 6px 13px;
+  background-color: #444;
+  border-top: 1px solid #d1d9e0b3;
+  text-shadow: 1px 1px black;
+  font-weight: bold;
 }
 
 table tr {

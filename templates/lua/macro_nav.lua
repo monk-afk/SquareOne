@@ -19,9 +19,10 @@ local menu_item_page = [[
 ]]
 
 local menu_pages = {
-  {["index"]    = "SERVER HOME"},
-  {["rules"]    = "SERVER RULES"},
-  {["map"]      = "WORLD MAPS"},
+  {["index"]    = "SPAWN"},
+  {["rules"]    = "RULES"},
+  {["staff"]    = "STAFF"},
+  {["map"]      = "MAPS"},
   {
     ["mod_info"] = {
       title = "MOD INFO",
@@ -30,11 +31,14 @@ local menu_pages = {
         {["armor"]   = "Armor"},
         {["exp"]     = "Exp"},
         {["dyes"]    = "Dyes"},
-        {["various"] = "Other"},
+        {["mining"]  = "Mining"},
+        {["crystal"] = "Crystal"},
+        {["protect"] = "Protect"},
+        {["faq"]     = "FAQs"},
       }
     }
   },
-  {["updates"]  = "RECENT UPDATES"},
+  {["updates"]  = "UPDATES"},
 }
 
 local li_class = function(active) return active and ' class="mm-active"' or "" end

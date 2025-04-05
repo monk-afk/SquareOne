@@ -2,6 +2,7 @@
   UnifiedDyes mod was released under GPL-2.0 https://github.com/mt-mods/unifieddyes , and we use specifically "color-tables.lua" and "dyes-crafting.lua"
   There may be some deviation from the RGB values of some colors, for example the greys have been hard-coded by the original mod's author. In UnifiedDyes, the hex value for "dark_grey" is #444444. In this script, the hex value for "dark_grey" is #181818.
   I don't know what license this gets since it's only a few functions of the unified dyes mod, so it's getting MIT with attribution
+    - unifieddyes used the colors from here: https://procato.com/rgb+index/
 ]]
 local output = { dye = {} }
 
