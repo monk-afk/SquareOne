@@ -42,10 +42,9 @@ p, ul, li, code { font-size: 16px; }
 strong { font-weight: 700; }
 
 /* ========== 3. LINKS & BUTTONS ========== */
-a { outline: none; color: #A1A1A1; text-decoration: underline; transition: color 0.7s ease-in-out; }
+a, a:visited { outline: none; color: #A1A1A1; text-decoration: underline; transition: color 0.7s ease-in-out; }
 a:hover, a:focus, a.active { color: #f00; text-decoration: underline; }
 a:focus { box-shadow: 0 0 0 0.1rem rgba(238, 48, 48, 0.66); }
-a:visited{color:#A1A1A1}
 
 /* ========== 4. HEADER & NAVIGATION ========== */
 #header {
@@ -152,12 +151,10 @@ table th {
   padding: 6px 13px;
   background-color: #444;
   border-top: 1px solid #d1d9e0b3;
-  text-shadow: 1px 1px black;
 }
 
 table td {
   padding: 6px 13px;
-  /* border: 1px solid #3d444d; */
 }
 
 table td>:last-child {
@@ -168,7 +165,6 @@ td:first-child {
   padding: 6px 13px;
   background-color: #444;
   border-top: 1px solid #d1d9e0b3;
-  text-shadow: 1px 1px black;
   font-weight: bold;
 }
 
@@ -199,14 +195,10 @@ mark {
 }
 
 blockquote {
-  margin: 1.2em;
-  padding: 0 1em;
-  background-color: #888;
-  color: #222;
-  border-bottom: .3em solid #ddd;
-  border-right: .3em solid #ddd;
-  border-left: .3em solid #555;
-  border-top: .3em solid #555;
+  margin: 0em;
+  padding: 0 2em;
+  border-left: .3em solid #d10;
+  border-top: .3em solid #d10;
 }
 
 #sidebar-logo {

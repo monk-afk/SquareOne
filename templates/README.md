@@ -486,6 +486,5 @@ ___
     - **Workaround**: Escape `%%` in the markdown file.
 
 2. > index.html is not created in the web root
-    - either change the webroot on github or fix the `init.lua` script
 
 + [Top](#markdown-to-html-with-luamark)
