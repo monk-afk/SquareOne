@@ -18,6 +18,7 @@ local menu_item_page = [[
                   <li%s><a href="/%s.html" aria-expanded="%s" class="%swebkitNoSelect">%s</a></li>
 ]]
 
+-- ["filename"] = "menu title"
 local menu_pages = {
   {["index"]    = "SPAWN"},
   {["rules"]    = "RULES"},

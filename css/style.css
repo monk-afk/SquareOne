@@ -194,15 +194,15 @@ mark {
   color: #ddd;
 }
 
-blockquote {
-  margin: 0em;
-  padding: 0 2em;
-  border-left: .3em solid #d10;
-  border-top: .3em solid #d10;
-}
-
 #sidebar-logo {
   flex-direction: column;
   width: 256px;
   max-width: 100%;
+}
+
+.header-separator {
+  margin: 30px 0 0 23px;
+  padding: 12px 0px 8px 2em;
+  border-left: 4px solid #d10;
+  border-top: 4px solid #d10;
 }

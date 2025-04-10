@@ -7,13 +7,14 @@ To apply for Guardian, contact one of the Police ranked staff and they will say 
 | Zandar        | MultiChan7 |
 | Craftmaster   | kikiara    |
 | Mymelodygirl  | mohra      |
-| Pot-of-rice   | Gh0st      |
-| -RoselinCute- | ![-RoselinCute-](/images/staff/RoselinCute.png){width=150 height=150} |
-| BurningCrow   | ![BurningCrow](/images/staff/BurningCrow.png){width=150 height=150} |
-| SaturnKage    | ![SaturnKage](/images/staff/SaturnKage.png){width=150 height=150} |
+| Pot-of-rice   |  |
+| -RoselinCute- | ![-RoselinCute-](/images/staff/RoselinCute.png){width=300 height=300} |
+| BurningCrow   | ![BurningCrow](/images/staff/BurningCrow.png){width=300 height=300} |
+| SaturnKage    | ![SaturnKage](/images/staff/SaturnKage.png){width=300 height=300} |
+| Gh0st         | ![Gh0st](/images/staff/Gh0st.png){width=300 height=300} |
 
 | Police        |            |
 |:-------------:|:----------:|
-| senua         |            |
-| Ylde          | ![Ylde](/images/staff/Ylde.png){width=150 height=150} |
-| Red_Dolphin   | ![Red_Dolphin](/images/staff/Red_Dolphin.png){width=150 height=150} |
+| senua         | ![senua](/images/staff/senua.png){width=300 height=300} |
+| Ylde          | ![Ylde](/images/staff/Ylde.png){width=300 height=300} |
+| Red_Dolphin   | ![Red_Dolphin](/images/staff/Red_Dolphin.png){width=300 height=300} |

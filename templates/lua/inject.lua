@@ -14,7 +14,8 @@ local function inject_template(markdown_content, body, title, filename)
   local nav = dofile("lua/macro_nav.lua")(filename)
 
   local html_output = render_template(template, title, date, body, nav)
-  io.write(html_output, "\n"); io.stdout:flush()
+
+  return html_output
 end
 
 return inject_template

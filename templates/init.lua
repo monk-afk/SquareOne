@@ -3,11 +3,16 @@ local open_markdown_file = io.open(markdown_file, "r") or error("BAD MARKDOWN FI
 
 -- get and strip title before requiring lpeg
 local markdown_content = open_markdown_file:read("a")
+
 -- title is the first pound header: # TITLE
 local title = markdown_content:gsub("^#%s+([%g ]+).+$", "%1")
 markdown_content = markdown_content:gsub("^#%s+[%a%s]-\n", "", 1)
+
 -- make sure the file name is included in the macro_nav.lua
 local filename = markdown_file:gsub("^.+/(%a+)%.md", "%1")
+
+-- second argument is '-o' to write output to file
+local write_to_file = arg[2] and arg[2]:match("%-+o")
 
 package.path = package.path .. ";./lua/?.lua;./lua/lunamark/?.lua;./lua/lunamark/lunamark/?.lua"
 local lpeg = require("lpeg")
@@ -66,7 +71,26 @@ local parse = lunamark.reader.markdown.new(writer, {
 
 local result, metadata = parse(markdown_content)
 
-dofile("lua/inject.lua")(markdown_content, result, title, filename)
+local html_output = dofile("lua/inject.lua")(markdown_content, result, title, filename)
+
+
+if not write_to_file then
+  io.write(html_output, "\n"); io.stdout:flush()
+
+else
+  local dir = io.popen("dirname ${PWD}", "r"):read("l")
+  local html_file = string.format("%s/pages/%s.html", dir, filename)
+
+  if filename == "index" then -- index is written into project root
+    html_file = string.format("%s/%s.html", dir, filename)
+  end
+
+  local output_file = io.open(html_file, "w") or error("Cannot open HTML file!")
+  output_file:write(html_output, "\n")
+  output_file:close()
+
+  io.write("Converted ", markdown_file, " to ", html_file, "\n"); io.stdout:flush()
+end
 
 
 ------------------------------------------------------------------------------------

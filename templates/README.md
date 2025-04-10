@@ -143,61 +143,70 @@ webroot/
     ├─markdown/*
     │ └─index.md      -- markdown files for conversion
     ├─init.lua        -- initializer for conversion
-    ├─nav_macro.lua   -- navigation menu macro
+    ├─macro_nav.lua   -- navigation menu macro
     └─inject.lua      -- keyword substituted injections
 ```
 
 ## Markdown Injection
 
-  - Markdown files must be formatted in this way:
+  1. Template `/templates/hypertext/master.html` is the file with which all pages are created. It should contain keywords to be substituted with the content of a given markdown file. Keyword substitution functions are completed with `/templates/lua/inject.lua`.
 
-      1. The markdown file name will be used as the markup file name.
-          - `myfile.md` -> `myfile.html`
-      2. The very first line containing a header will be used as the page title.
+      - `$nav` -> navigation side-menu built using `/templates/lua/macro_nav.lua`
+      - `$body` -> from the converted markdown content
+      - `$title` -> Extracted from the markdown file's first header line
+      - `$time` -> Footer element for last-updated time.
+      - `$hitmark` -> Used to inject html partials from file.
+
+  2. The markdown file name will be used as the markup file name.
+      - This is true for converted pages, as well as html-partials injection files:
+          - Converting from markdown file `/templates/markdown/myfile.md`
+          - Will use partial html from `/templates/hypertext/myfile.html`
+          - And will write to html file `/pages/myfile.html`
+      - The very first line containing a header will be used as the **page title** (Not the menu label).
           - `# Some Title!` -> `<h1>Some Title!</h1>`
-      3. The side menu must be configured manually (ie: add page to menu) in `macro_nav.lua`.
 
-  - Template `master.html` contains keywords to be substituted with the content of a given markdown file:
+  3. The side menu must be configured manually (ie: add page to menu) in `macro_nav.lua`.
+      - The `menu_pages` table contains the items to be processed into the sidebar menu.
+      - With the exception of the sub-menu, the naming scheme is: `["filename"] = "Item Label"`
+      - Ordering of the table items is also ordering of the menu items.
+      - `index` is handled separately and includes the sidebar logo.
+      - Page nesting is possible and follows the table nesting
 
-      1. `$nav` -> navigation side-menu built using `macro_nav.lua`
-
-      2. `$body` -> from the converted markdown content
-
-      3. `$title` -> Extracted from the markdown file's first header line
-
-      4. `$time` -> Footer element for last-updated time.
-
-      5. `$hitmark` -> Used to inject partial html into the output
-
-  - Substitution methods are found within `inject.lua`.
-
-  - Navigation menu is constructed with `macro_nav.lua`
-
-  - Partial html can be injected by adding `$hitmark`
-
+      ```lua
+        local menu_pages = {
+          {["index"]    = "No text"},
+          {["filename"] = "Page Label"},
+          {
+            ["mod_info"] = { -- internal identifier
+              title = "MOD INFO", -- the sub-menu page title
+              pages = { -- submenu pages
+                {["tools"] = "Tools"},
+                {["faq"]   = "FAQs"},
+              }
+            }
+          },
+          {["lastpage"]  = "Last Page"},
+        }
+      ```
 
 + [Top](#markdown-to-html-with-luamark)
 
 
 ## Convert
 
-  1. Using terminal. This will *only* print to stdout. You can redirect the output to wherever, maybe in the future it'll write out to file.
+After writing the markdown files, using the terminal:
+
+  1. Navigate to project root and into `templates/` (where the `init.lua` is located)
+
+  2. Run `lua init.lua` with the path and file of the markdown file:
 
 ```bash
-# print only
-webroot/templates/ $ lua init.lua markdown/index.md
-# redirect output
-webroot/templates/ $ lua init.lua markdown/index.md > /path/to/where_ever/index.html
+  # print only
+project_root/templates/ $ lua init.lua markdown/index.md
+
+  # write to file
+project_root/templates/ $ lua init.lua markdown/index.md -o
 ```
-
-  2. Optionally, until I'm comfortable writing to file automatically:
-
-```bash
-# from within the templates dir
-for FILE in `ls markdown/ | sed -E 's/(\w+).md/\1/g'` ;\
-  do lua init.lua markdown/${FILE}.md > ../pages/${FILE}.html ; done
-```
-
 
 + [Top](#markdown-to-html-with-luamark)
 
@@ -218,21 +227,16 @@ the DWTFYWT Public License.
 
 **Links**
 
-+ [Source code repository]
-+ [Issue tracker]
++ [Lunamark Source Repository]
 + [Website]
 + [API documentation]
 + [lunamark(1)]
 + [lunadoc(1)]
 + [lpeg]
 
-[Source code repository]: https://github.com/jgm/lunamark
-[Issue tracker]: https://github.com/jgm/lunamark/issues
+[Lunamark Source Repository]: https://github.com/jgm/lunamark
 [Website]: https://jgm.github.io/lunamark
 [API documentation]: https://jgm.github.io/lunamark/doc/
-[lunamark(1)]: https://jgm.github.io/lunamark/lunamark.1.html
-[lunadoc(1)]: https://jgm.github.io/lunamark/lunadoc.1.html
-[dzslides]: https://paulrouget.com/dzslides/
 [lpeg]: https://www.inf.puc-rio.br/~roberto/lpeg/#ex
 
 
@@ -462,6 +466,8 @@ ___
 
 ## Writer Quick Reference
 
+A bunch of test files were included with Lunamark, and are found in [/templates/lua/lunamark/tests/](/templates/lua/lunamark/tests/)
+
 ### Element Class and ID
 
 ```md
@@ -484,7 +490,5 @@ ___
 
 1. > lua: lua/inject.lua:4: invalid use of '%' in replacement string
     - **Workaround**: Escape `%%` in the markdown file.
-
-2. > index.html is not created in the web root
 
 + [Top](#markdown-to-html-with-luamark)
