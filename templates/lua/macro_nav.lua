@@ -12,7 +12,7 @@ local drop_menu_selector = [[
                 <ul class="mm-collapse">
 %s                </ul>
               </li>
-]] -- i know the format is weird, but it works
+]]
 
 local menu_item_page = [[
                   <li%s><a href="/%s.html" aria-expanded="%s" class="%swebkitNoSelect">%s</a></li>
@@ -28,14 +28,15 @@ local menu_pages = {
     ["mod_info"] = {
       title = "MOD INFO",
       pages = {
-        {["tools"]   = "Tools"},
-        {["armor"]   = "Armor"},
-        {["exp"]     = "Exp"},
-        {["dyes"]    = "Dyes"},
-        {["mining"]  = "Mining"},
-        {["crystal"] = "Crystal"},
-        {["protect"] = "Protect"},
-        {["faq"]     = "FAQs"},
+        {["economy"]  = "Economy"},
+        {["tools"]    = "Tools"},
+        {["armor"]    = "Armor"},
+        {["exp"]      = "Exp"},
+        {["dyes"]     = "Dyes"},
+        {["mining"]   = "Mining"},
+        {["crystal"]  = "Crystal"},
+        {["protect"]  = "Protect"},
+        {["faq"]      = "FAQs"},
       }
     }
   },

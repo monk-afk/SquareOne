@@ -5,12 +5,12 @@ To apply for Guardian, contact one of the Police ranked staff and they will say 
 | Guardians     |            |
 |:-------------:|:----------:|
 | Zandar        | MultiChan7 |
-| Craftmaster   | kikiara    |
+| Pot-of-rice   | kikiara    |
 | Mymelodygirl  | mohra      |
-| Pot-of-rice   |  |
 | -RoselinCute- | ![-RoselinCute-](/images/staff/RoselinCute.png){width=300 height=300} |
-| BurningCrow   | ![BurningCrow](/images/staff/BurningCrow.png){width=300 height=300} |
 | SaturnKage    | ![SaturnKage](/images/staff/SaturnKage.png){width=300 height=300} |
+| Craftmaster   | ![Craftmaster](/images/staff/Craftmaster.png){width=300 height=300} |
+| BurningCrow   | ![BurningCrow](/images/staff/BurningCrow.png){width=300 height=300} |
 | Gh0st         | ![Gh0st](/images/staff/Gh0st.png){width=300 height=300} |
 
 | Police        |            |

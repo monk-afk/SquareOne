@@ -139,7 +139,7 @@ webroot/
     │ └─lunamark/*
     ├─hypertext/      -- html templates
     │ ├─master.html   -- master contains head/body substitutes
-    │ └─index.html?   -- partials (not yet implemented)
+    │ └─index.html?   -- html partials
     ├─markdown/*
     │ └─index.md      -- markdown files for conversion
     ├─init.lua        -- initializer for conversion

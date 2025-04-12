@@ -37,10 +37,10 @@
               <li class=" class="mm-active"">
                 <a href="#" class="mm-active has-arrow webkitNoSelect" aria-expanded="true">MOD INFO</a>
                 <ul class="mm-collapse">
-                  <li><a href="/pages/economy.html" aria-expanded="false" class="webkitNoSelect">Economy</a></li>
+                  <li class="mm-active"><a href="/pages/economy.html" aria-expanded="true" class="mm-active webkitNoSelect">Economy</a></li>
                   <li><a href="/pages/tools.html" aria-expanded="false" class="webkitNoSelect">Tools</a></li>
                   <li><a href="/pages/armor.html" aria-expanded="false" class="webkitNoSelect">Armor</a></li>
-                  <li class="mm-active"><a href="/pages/exp.html" aria-expanded="true" class="mm-active webkitNoSelect">Exp</a></li>
+                  <li><a href="/pages/exp.html" aria-expanded="false" class="webkitNoSelect">Exp</a></li>
                   <li><a href="/pages/dyes.html" aria-expanded="false" class="webkitNoSelect">Dyes</a></li>
                   <li><a href="/pages/mining.html" aria-expanded="false" class="webkitNoSelect">Mining</a></li>
                   <li><a href="/pages/crystal.html" aria-expanded="false" class="webkitNoSelect">Crystal</a></li>
@@ -58,7 +58,7 @@
       </div>
       <main id="panel" class="slideout-panel slideout-panel-left"> 
         <div id="header">
-          <h1 id="top">  EXP</h1>
+          <h1 id="top">  Economy</h1>
           <div class="toggle-button hamburger hamburger--spin">
             <div class="hamburger-box">
               <div class="hamburger-inner">
@@ -70,63 +70,73 @@
           <hr class="header-hr">
           <div class="pagebox">
             <!-- ===== MAIN CONTENT ============================= -->
-<h2>Gains and Losses</h2>
+<p>There are 6 denominations:</p>
 
-<p>Playing the game will earn exp points, basically from doing anything.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: center;"></th>
+<th style="text-align: right;"></th>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><strong>$1</strong></td>
+<td style="text-align: center;"><img src="/images/textures/money/money_note_1.png" alt="SQ1<em>Note</em>1" /></td>
+<td style="text-align: right;"><strong>$5</strong></td>
+<td style="text-align: center;"><img src="/images/textures/money/money_note_5.png" alt="SQ1<em>Note</em>5" /></td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>$10</strong></td>
+<td style="text-align: center;"><img src="/images/textures/money/money_note_10.png" alt="SQ1<em>Note</em>10" /></td>
+<td style="text-align: right;"><strong>$50</strong></td>
+<td style="text-align: center;"><img src="/images/textures/money/money_note_50.png" alt="SQ1<em>Note</em>50" /></td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>$100</strong></td>
+<td style="text-align: center;"><img src="/images/textures/money/money_note_100.png" alt="SQ1<em>Note</em>100" /></td>
+<td style="text-align: right;"><strong>$500</strong></td>
+<td style="text-align: center;"><img src="/images/textures/money/money_note_500.png" alt="SQ1<em>Note</em>500" /></td>
+</tr>
+</tbody>
+</table>
 
-<p>Being AFK will cause your EXP to drain.</p>
-
-<p>New players EXP stats will fluxuate, sometimes going high levels in a short time.</p>
-
-<p>As you continue to play, your stats will fluctuate less and steadily increase/decrease.</p>
-
-<p>Being offline for 24 hours will cause a reduction of approximately 20% every day.</p>
-
-<hr class="header-hr">
-
-<h2>EXP Stats</h2>
-
-<p>The command to view your exp stats is <code>/exp</code>, or of another player is <code>/exp username</code>.</p>
-
-<p><code>Exp</code> Experience, is your exp. </p>
-
-<p><code>Level</code> Is your level of exp.</p>
-
-<p><code>Luck</code> Variable which will be used to determine outcome from random events.</p>
-
-<p><code>Fortune</code> Used to determine the output of your luck.</p>
-
-<p><code>Activity</code> Is how much stuff you do in-game. Being AFK will not earn Activity points.</p>
-
-<p><code>OnlineTime</code> Self explanatory.</p>
-
-<hr class="header-hr">
-
-<h2>Bones</h2>
-
-<p>To return to bones, use <code>/bones</code> after dying.</p>
-
-<p>Using <code>/bones</code> will not cost EXP. However, sometimes dying will cost EXP.</p>
-
-<p>If you are killed by another player inside their protected area, you cannot return to bones by command.</p>
 
 <hr class="header-hr">
 
-<h2>Luck and Fortune</h2>
+<h3>Market</h3>
 
-<p>Luck and Fortune can be used as Multipliers or Determinators for certain events.</p>
+<p>Most of the server&#39;s economy is driven by sales from Shop signs.</p>
 
-<p>Luck is always changing, and will never go above 1. - Used to multiply Blue Diamond drops - Used to determine EXP loss on dying</p>
+<p>Players may choose to sell items for cash or trade with another item.</p>
 
-<p>Fortune will normally increase, and sometimes decrease. - Used to multiply Pink Diamond drops - Used to calculate total amount EXP lost on dying</p>
+<p><code>/market</code> view the real-time market-price averages.</p>
+
+<p>Every cash sale contributes to the moving average.</p>
 
 <hr class="header-hr">
 
-<h2>Levels</h2>
+<h3>Money Drops</h3>
 
-<p>The Level stat does absolutely nothing.</p>
+<p>Every 30 minutes, players receive a base amount of $10 deposited into their inventory wallet.</p>
 
-Eventually will re-add the player&#39;s Level next to their name in chat.
+<p>The inventory wallet can hold up to 99 notes.</p>
+
+<hr class="header-hr">
+
+<h3>Profit Sharing</h3>
+
+<p>Profit Sharing is a way for shop owners to give back a portion of their shop profit.</p>
+
+<p>Members of Profit Sharing contribute 10% of their shop sales towards server money drops.</p>
+
+<p>Shared profits are distributed when there is enough collection to give every online player at least $10 on top of the regular $10 half-hour money drops.</p>
+
+<p>For example, if there are 10 players online, there must be at lease $100 pending payout to give everyone $10 at the next money drop.</p>
+
+<code>/profit-share</code> View or join the profit-share members. Also displays the pending payout amount.
             <!-- ===== FOOTER =================================== -->
             <hr class="header-hr">
           </div>
