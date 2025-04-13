@@ -5,7 +5,10 @@
 #   - copy this file script into same temporary folder
 #   - run it, images will be moved to the parent folder
 PALLET=128
-mkdir "../GIMP_converted"
+THUMB_WIDTH=200
+THUMB_HEIGHT=200
+mkdir -p "../GIMP_converted"
+mkdir -p "../GIMP_thumbnails"
 
 gimpy () {
   gimp -i -b "(let* (
@@ -17,14 +20,15 @@ gimpy () {
 }
 
 imgparser () {
-    for arg in "$@"; do
-        echo "Converting <$arg>"
-        gimpy $arg &> /dev/null
-        mv "${arg}_indexed.png" "../GIMP_converted/${arg}"
-        
-    done
+  for arg in "$@"; do
+    echo "Converting <$arg>"
+    gimpy "$arg" &> /dev/null
+    mv "${arg}_indexed.png" "../GIMP_converted/${arg}"
+    convert "$arg" -resize ${THUMB_WIDTH}x${THUMB_HEIGHT}^ -gravity center -extent ${THUMB_WIDTH}x${THUMB_HEIGHT} "../GIMP_thumbnails/${arg%.png}.jpg"
+  done
 }
-imgparser `ls *.png`
+
+imgparser *.png
 
 echo "Done"
 
