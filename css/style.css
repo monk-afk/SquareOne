@@ -154,7 +154,8 @@ table th {
 }
 
 table td {
-  padding: 6px 13px;
+  padding: 0;
+  /* padding: 6px 13px; */
 }
 
 table td>:last-child {
