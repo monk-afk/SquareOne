@@ -1,0 +1,4 @@
+This is a Brave Creators publisher verification file.
+
+Domain: squareone.moe
+Token: a09310a91ee2e48f279ceea8e4dfb95d1728102d83914a85d6b878fbf2e72a9f
