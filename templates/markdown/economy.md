@@ -1,43 +1,23 @@
-# Economy
+# Water
 
-There are 6 denominations:
+This page covers the following details surrounding water in-game:
 
-|     |      |     |      |
-|----:|:----:|----:|:----:|
-| **$1**   | ![SQ1_Note_1](/images/textures/money/money_note_1.png) | **$5**   | ![SQ1_Note_5](/images/textures/money/money_note_5.png) |
-| **$10**  | ![SQ1_Note_10](/images/textures/money/money_note_10.png) | **$50**  | ![SQ1_Note_50](/images/textures/money/money_note_50.png) |
-| **$100** | ![SQ1_Note_100](/images/textures/money/money_note_100.png) | **$500** | ![SQ1_Note_500](/images/textures/money/money_note_500.png) |
+- Reverse Tsunami
+- Water placement
+- Irrigation well
 
-___
+### Reverse Tsunami
 
-### Market
+Sometime last year, it was decided to set a world modifier to remove water between y-8 and y+12. This was decided to increase the amount of exposed land. Probably in the future I'll write a new function to remove the rest of the water at this level instead of waiting for the current function to finish.
 
-Most of the server's economy is driven by sales from Shop signs.
+### Water Placement
 
-Players may choose to sell items for cash or trade with another item.
+Water doesn't spread beyond a single node of being placed, with the maximum spread being 2.
 
-```/market``` view the real-time market-price averages.
+Water cannot be made into an source, and picking up water from an ocean will not self-replenish.
 
-Every cash sale contributes to the moving average.
+The top limit for placing water with a bucket is y+10.
 
-___
+Any water placed at the allowed height must be inside a protected area.
 
-### Money Drops
-
-Every 30 minutes, players receive a base amount of $10 deposited into their inventory wallet.
-
-The inventory wallet can hold up to 99 notes.
-
-___
-
-### Profit Sharing
-
-Profit Sharing is a way for shop owners to give back a portion of their shop profit.
-
-Members of Profit Sharing contribute 10%% of their shop sales towards server money drops.
-
-Shared profits are distributed when there is enough collection to give every online player at least $10 on top of the regular $10 half-hour money drops.
-
-For example, if there are 10 players online, there must be at lease $100 pending payout to give everyone $10 at the next money drop.
-
-```/profit-share``` View or join the profit-share members. Also displays the pending payout amount.
+Water may also not be placed above another player's protected area.

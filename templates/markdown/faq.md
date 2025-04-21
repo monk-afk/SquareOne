@@ -69,10 +69,7 @@ ___
 
 ### Why can't I place water?{#why-cant-i-place-water}
 
-Due to multiple water griefing, water placement has been restricted.
-
-- The maximum height to place water is y8 above sea level
-- A water well will accumulate water over time, up to 100 buckets per day.
+See [Water Info](/pages/water.html) for full details.
 
 ___
 
