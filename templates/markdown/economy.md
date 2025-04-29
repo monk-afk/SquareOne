@@ -40,4 +40,7 @@ Shared profits are distributed when there is enough collection to give every onl
 
 For example, if there are 10 players online, there must be at lease $100 pending payout to give everyone $10 at the next money drop.
 
-```/profit-share``` View or join the profit-share members. Also displays the pending payout amount.
+```/profit-share``` View the list of profit sharing shops and current pool amount.
+```/profit-share join``` to join the profit sharing group
+
+Profit Sharing shops can be distinguished from normal shops by the customer interface, which is customised with the shop owner's name and faction color.

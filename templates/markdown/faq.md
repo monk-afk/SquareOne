@@ -8,6 +8,7 @@
 - [Why won't anything grow?](#faq-why-wont-anything-grow)
 - [Why can't I place water?](#faq-why-cant-i-place-water)
 - [Why is the water disappearing?](#faq-why-is-the-water-disappearing)
+- [How do I fill the well?](#how-do-i-fill-the-well)
 
 ___
 
@@ -69,11 +70,26 @@ ___
 
 ### Why can't I place water?{#why-cant-i-place-water}
 
-See [Water Info](/pages/water.html) for full details.
+The top limit for placing water with a bucket is y+10.
+
+Water cannot be made into an source, and picking up water from an ocean will not self-replenish.
+
+For farming you have two options:
+  - Plant crops anywhere below y+10, or
+  - Use irrigation items, (well, barrel, reservoir)
 
 ___
 
 ### Why is the water disappearing?{#why-is-the-water-disappearing}
 
-The water is currently going through a reduction from y0 to y-12 in order to increase the exposed land, because there was just way too much water.
+The water is currently going through a reduction from y+2 to y-8 in order to increase the exposed land, because there was just way too much water.
+
+___
+
+### How do I fill the well?{#how-do-i-fill-the-well}
+
+You dont.
+  - A well will fill itself over time
+  - A full well will supply 100 buckets of water
+  - It takes 24 hours to full (14.4 minutes for 1 bucket)
 

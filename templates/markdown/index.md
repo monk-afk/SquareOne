@@ -1,6 +1,6 @@
 # Spawn
 
-### Welcome to SquareOne new website!
+### Welcome to SquareOne website!
 
 For [Luanti](https://www.luanti.org/) (Previously Minetest) and compatible forks
 
@@ -10,3 +10,7 @@ Port: **`30023`**
 [Fandom Wiki](https://squareone.fandom.com/) contributions are welcome and may be added as a page to this site
 
 Bugs can be reported on our [GitHub](https://github.com/monk-afk/SquareOne/issues)
+
+Some scripts can be [found here](https://github.com/monk-afk/SquareOne/tree/main/scripts)
+
+To support SquareOne, we have a ko-fi page: [https://ko-fi.com/monkmoe](https://ko-fi.com/monkmoe)

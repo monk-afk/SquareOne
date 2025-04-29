@@ -1,5 +1,31 @@
 # Recent Updates
 
+### April 28 2025 | Mods Update {.header-separator}
+
+- ***Abandoned Protector Patch***
+
+Nodes which are now affected by the abandoned protector mechanic:
+
+- Mailbox (Red Cube)
+- Inbox (White Round)
+- Shopsign
+
+The items in an abandoned shop can only be removed from the shop. Items cannot be moved within the shop, neither can items be moved into the shop.
+
+Patched a bug caused by placing protector blocks on an abandoned protector too quickly; [see issue #46](https://github.com/monk-afk/SquareOne/issues/46).
+
+- ***Clearobjects caused the removal of some animals***
+
+Unfortunately, the command was not able to clear the objects from the entire world; some animals were removed while others were not.
+
+- ***Old spawn demolished!***
+
+The spawn build was an impressive structure. I loved telling people that it was built using mathematics and explain how spawn was a [Menger Cube twisted by a Fibonacci Spiral](/scripts/spawn_build.lua)
+
+However, building inside the spawn building was becoming increasingly frustrating. There was no place to build, despite being 6 stories high; and it was oddly shaped, having almost no symmetry.
+
+Now, I have room to build stuff.
+
 ### April 14 2025 | Announcement {.header-separator}
 
 - ***A new regulation implemented in relation to the abandoned protector mechanic.***
