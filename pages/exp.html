@@ -72,43 +72,41 @@
             <!-- ===== MAIN CONTENT ============================= -->
 <h2>Gains and Losses</h2>
 
-<p>Playing the game will earn exp points, basically from doing anything.</p>
+<p>Playing the game will earn EXP stats. Just play, and you&#39;ll gain in stats.</p>
 
 <p>Being AFK will cause your EXP to drain.</p>
 
-<p>New players EXP stats will fluxuate, sometimes going high levels in a short time.</p>
+<p>New players EXP stats will, sometimes rise to high levels in a short time.</p>
 
 <p>As you continue to play, your stats will fluctuate less and steadily increase/decrease.</p>
 
-<p>Being offline for 24 hours will cause a reduction of approximately 20% every day.</p>
+<p>Being offline for 5 days will cause a reduction of approximately 20% every day.</p>
 
 <hr class="header-hr">
 
-<h2>EXP Stats</h2>
+<h2>Stat Definitions</h2>
 
-<p>The command to view your exp stats is <code>/exp</code>, or of another player is <code>/exp username</code>.</p>
+<p>The idea behind the way exp is calculated is simple: Experience is measured by your overall activity over a period of time.</p>
 
-<p><code>Exp</code> Experience, is your exp. </p>
+<p>The command to view your exp stats is <code>/exp</code>, or of another player <code>/exp username</code>. This will show your stats:</p>
 
-<p><code>Level</code> Is your level of exp.</p>
+<p><code>OT</code>: Every second counts. Being online in-game will increase your online time (OT)</p>
 
-<p><code>Luck</code> Variable which will be used to determine outcome from random events.</p>
+<p><code>AP</code>: Action points. Doing stuff, even running in circles will increase this stat.</p>
 
-<p><code>Fortune</code> Used to determine the output of your luck.</p>
+<p><code>Exp</code>: Experience.</p>
 
-<p><code>Activity</code> Is how much stuff you do in-game. Being AFK will not earn Activity points.</p>
+<p><code>Level</code>: Bragging rights, nothing more.</p>
 
-<p><code>OnlineTime</code> Self explanatory.</p>
+<p><code>Luck</code>: Chance of outcome. This number is variable, and used to determine outcome from random events (either good or bad). In other words, &quot;whether you win or lose&quot;.</p>
+
+<p><code>Fortune</code> Outcome multiplier. Fortune is complimentary to luck, and decides &quot;how much you win or lose&quot;.</p>
 
 <hr class="header-hr">
 
-<h2>Bones</h2>
+<h2>Levels</h2>
 
-<p>To return to bones, use <code>/bones</code> after dying.</p>
-
-<p>Using <code>/bones</code> will not cost EXP. However, sometimes dying will cost EXP.</p>
-
-<p>If you are killed by another player inside their protected area, you cannot return to bones by command.</p>
+<p>For now, your Level is nothing more than proof of brag. Remember, other players can check your exp stats, incase they don&#39;t believe you.</p>
 
 <hr class="header-hr">
 
@@ -122,11 +120,23 @@
 
 <hr class="header-hr">
 
-<h2>Levels</h2>
+<h2>Bones</h2>
 
-<p>The Level stat does absolutely nothing.</p>
+<p>Dying will cause your player to drop items into a bones block.</p>
 
-Eventually will re-add the player&#39;s Level next to their name in chat.
+<p>There is no loss of EXP from dying, however using the command to return to bones <em>may</em> cost some EXP points.</p>
+
+<p>To test your luck and return to bones, use <code>/bones</code> after dying.</p>
+
+<p>If you&#39;re lucky, returning to bones will not lower your exp stats.</p>
+
+<p>If not, your EXP will be deducted using the formula: <code>(AP * Luck) / fortune</code></p>
+
+<p>Regardless of how much EXP it would cost, there is a minimum of 100 EXP to use the command.</p>
+
+<p>If you die in someone else&#39;s protected area no bones are dropped, and are therefore unable to use <code>/bones</code>.</p>
+
+<hr class="header-hr">
             <!-- ===== FOOTER =================================== -->
             <hr class="header-hr">
           </div>
@@ -134,7 +144,7 @@ Eventually will re-add the player&#39;s Level next to their name in chat.
         </div>
 
         <footer>
-          <sub>Updated <code>2025-04-12 12:35:31</code></sub>
+          <sub>Updated <code>2025-05-02 13:44:08</code></sub>
           <hr class="header-hr">
           <ul class="footer">
             <li><sup><span style="color: #f00"> ❖ </span>Square<span style="color: #f00">One</span> ❖ <a href="https://github.com/monk-afk">by mønκ</a><span style="color: #f00"> ❖ </span></sup></li>

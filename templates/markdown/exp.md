@@ -2,43 +2,41 @@
 
 ## Gains and Losses
 
-Playing the game will earn exp points, basically from doing anything.
+Playing the game will earn EXP stats. Just play, and you'll gain in stats.
 
 Being AFK will cause your EXP to drain.
 
-New players EXP stats will fluxuate, sometimes going high levels in a short time.
+New players EXP stats will, sometimes rise to high levels in a short time.
 
 As you continue to play, your stats will fluctuate less and steadily increase/decrease.
 
-Being offline for 24 hours will cause a reduction of approximately 20%% every day.
+Being offline for 5 days will cause a reduction of approximately 20%% every day.
 
 ___
 
-## EXP Stats
+## Stat Definitions
 
-The command to view your exp stats is `/exp`, or of another player is `/exp username`.
+The idea behind the way exp is calculated is simple: Experience is measured by your overall activity over a period of time.
 
-`Exp` Experience, is your exp. 
+The command to view your exp stats is `/exp`, or of another player `/exp username`. This will show your stats:
 
-`Level` Is your level of exp.
+`OT`: Every second counts. Being online in-game will increase your online time (OT)
 
-`Luck` Variable which will be used to determine outcome from random events.
+`AP`: Action points. Doing stuff, even running in circles will increase this stat.
 
-`Fortune` Used to determine the output of your luck.
+`Exp`: Experience.
 
-`Activity` Is how much stuff you do in-game. Being AFK will not earn Activity points.
+`Level`: Bragging rights, nothing more.
 
-`OnlineTime` Self explanatory.
+`Luck`: Chance of outcome. This number is variable, and used to determine outcome from random events (either good or bad). In other words, "whether you win or lose".
+
+`Fortune` Outcome multiplier. Fortune is complimentary to luck, and decides "how much you win or lose".
 
 ___
 
-## Bones
+## Levels
 
-To return to bones, use `/bones` after dying.
-
-Using `/bones` will not cost EXP. However, sometimes dying will cost EXP.
-
-If you are killed by another player inside their protected area, you cannot return to bones by command.
+For now, your Level is nothing more than proof of brag. Remember, other players can check your exp stats, incase they don't believe you.
 
 ___
 
@@ -56,8 +54,20 @@ Fortune will normally increase, and sometimes decrease.
 
 ___
 
-## Levels
+## Bones
 
-The Level stat does absolutely nothing.
+Dying will cause your player to drop items into a bones block.
 
-Eventually will re-add the player's Level next to their name in chat.
+There is no loss of EXP from dying, however using the command to return to bones *may* cost some EXP points.
+
+To test your luck and return to bones, use `/bones` after dying.
+
+If you're lucky, returning to bones will not lower your exp stats.
+
+If not, your EXP will be deducted using the formula: `(AP * Luck) / fortune`
+
+Regardless of how much EXP it would cost, there is a minimum of 100 EXP to use the command.
+
+If you die in someone else's protected area no bones are dropped, and are therefore unable to use `/bones`.
+
+___

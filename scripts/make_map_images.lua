@@ -67,13 +67,12 @@ local function process_command(arg)
   local d = math.max(math.min(M, tonumber(cmd.d) or 256), 16)
   local x = tonumber(cmd.x)
   local z = tonumber(cmd.z)
+  local y = tonumber(cmd.y)
 
   if not (x and z and d) or cmd.help or cmd.h then
     return help_message()
-  elseif x <= -M
-     and z <= -M
-     and x >=  M
-     and z >=  M then
+  elseif x < -M or z < -M
+      or x >  M or z >  M then
     io.write("Please use coordinates between ", -M, " and ", M, ".\n"); io.stdout:flush()
     return
   else

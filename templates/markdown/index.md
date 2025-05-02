@@ -1,13 +1,13 @@
 # Spawn
 
-### Welcome to SquareOne website!
+### Welcome to SquareOne
 
 For [Luanti](https://www.luanti.org/) (Previously Minetest) and compatible forks
 
 Address: **`monk.moe`**
 Port: **`30023`**
 
-[Fandom Wiki](https://squareone.fandom.com/) contributions are welcome and may be added as a page to this site
+[Fandom Wiki](https://squareone.fandom.com/) contributions are welcome and appreciated! If you have submitted an article and would like to have it added as a page to this site, let us know on Discord!
 
 Bugs can be reported on our [GitHub](https://github.com/monk-afk/SquareOne/issues)
 

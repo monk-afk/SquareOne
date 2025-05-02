@@ -1,5 +1,33 @@
 # Recent Updates
 
+### May 2 | EXP and Bones Update {.header-separator}
+
+- ***Balanced gains/losses***
+
+Adjusted the formula used to calculate your EXP and Levels. This should better reflect established players Level, while also giving noobs a lot of chances to die without suffering too many losses.
+
+- ***Dying is more risky***
+
+Using `/bones` now has a minimum of 100 exp. This sounds like a lot, but it isn't anymore.
+
+When you use `/bones`, there is still a chance of not losing EXP based on your Luck.
+
+Your Luck decides if you pay, and Fortune determines the amount of EXP lost. Check the [EXP Page](/pages/exp.html) for full details.
+
+- ***Dropping bones in someone else's protected area***
+
+If you die in someone else's protected area (in other words, not your own protected area, or not in a unprotected), don't worry about your bones because you won't drop them. You also won't be able to use `/bones` to return to your death position, so tread carefully in a stranger's property.
+
+- ***Spawn: 3***
+
+The Bank is now open. The Library is now Open. The Potions Shop (Willow Tree Shop) is now Open. The Clothing Store is now Open. The Post Office is finally open.
+
+To apply for a mailbox in the Post Office: *Read and follow the instructions in the book at front entrance*!
+
+![Spawn Image](/images/squareone_spawn.png)
+
+There's probably more but I'm done with typing.
+
 ### April 28 2025 | Mods Update {.header-separator}
 
 - ***Abandoned Protector Patch***
