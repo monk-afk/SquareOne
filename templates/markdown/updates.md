@@ -56,22 +56,15 @@ Now, I have room to build stuff.
 
 ### April 14 2025 | Announcement {.header-separator}
 
+(Ammended May 5 2025)
+
 - ***A new regulation implemented in relation to the abandoned protector mechanic.***
 
 ::: {.notices .red}
-8.1 Do not hoard abandoned builds: Players should only use protectors to protect areas they actively use and contribute to.
+Do not protect abandonned builds, unless you will live in it
 :::
 
-- Protecting abandoned areas is permitted under certain conditions:
-    - they are keeping the area for personal use
-    - they are demolishing the build and will remove the protectors when finished
-    - they are currently looting the area and don't intend to return
-
-- For the last two cases, long-term protection is not permitted.
-
-- This also includes squatting an area to resell the property.
-
-- If there are disputes over abandoned builds, or if multiple players chaotically protect an abandoned area into a state where it cannot be built upon, we will dismantle the area.
+If there are disputes over abandoned builds, or if multiple players chaotically protect an abandoned area into a state where it cannot be built upon, we will demolish the area.
 
 ### April 8 2025 | Mods Update {.header-separator}
 
