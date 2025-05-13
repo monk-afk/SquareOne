@@ -1,5 +1,34 @@
 # Recent Updates
 
+### May 13 | Chat and Filter Update {.header-separator}
+
+- ***Useless chat filter***
+
+The old one sucked, this one sucks a little less. You still can't use caps, but you can say '100000000' without it turning into '100'. Thie updated version was completely re-written, which means there could be some bugs.
+
+- ***Proximity Chat***
+
+A new command for players, `/xm` is another way to group chat. This one will only send to players within 100 nodes, and will show as cyan-colored text with.
+
+- ***Toggle Chat***
+
+Ignore everyone while staying available with `/chat`. This command will silence the public channel, while allowing private and faction and proximity chat.
+
+- ***Useless EXP***
+
+Not anymore! Your Level stat will now show as your nametag flair.
+
+- ***Simplified /block***
+
+Just use `/block player_name` to pretend like player_name doesn't even exist. Do it yourself before staff does it for you.
+
+To see who you've blocked, just type `/block`. Staff can also now see your block list with the same command.
+
+- ***Outgoing Private Messages***
+
+Private messages will show as blue when you send it, and green when you receive. The notification of being unable to send due to 'active block-list' has also been removed. Now, you'll never know why player_name doesn't answer you.
+
+
 ### May 2 | EXP and Bones Update {.header-separator}
 
 - ***Balanced gains/losses***
