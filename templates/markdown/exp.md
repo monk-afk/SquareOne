@@ -24,9 +24,9 @@ The command to view your exp stats is `/exp`, or of another player `/exp usernam
 
 `AP`: Action points. Doing stuff, even running in circles will increase this stat.
 
-`Exp`: Experience.
+`Exp`: Experience gained by doing things in-game.
 
-`Level`: Bragging rights, nothing more.
+`Level`: Bragging rights, shown as nametag flair in public chat.
 
 `Luck`: Chance of outcome. This number is variable, and used to determine outcome from random events (either good or bad). In other words, "whether you win or lose".
 
@@ -36,7 +36,7 @@ ___
 
 ## Levels
 
-For now, your Level is nothing more than proof of brag. Remember, other players can check your exp stats, incase they don't believe you.
+Your level is shown as part of your public chat nametag flair in round brackets.
 
 ___
 
@@ -69,5 +69,3 @@ If not, your EXP will be deducted using the formula: `(AP * Luck) / fortune`
 Regardless of how much EXP it would cost, there is a minimum of 100 EXP to use the command.
 
 If you die in someone else's protected area no bones are dropped, and are therefore unable to use `/bones`.
-
-___
