@@ -163,7 +163,7 @@
 .sidebar-nav .metismenu a {
   position: relative;
   display: block;
-  padding: 15px 15px;
+  padding: 12px 36px;
   color: #aaa;
   outline-width: 0;
   text-decoration: none;
@@ -223,7 +223,7 @@
 
 .slideout-menu {
   position: fixed;
-  top: 0;
+  top: 14px;
   bottom: 0;
   width: 320px;
   min-height: 100vh;
