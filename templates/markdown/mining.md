@@ -12,7 +12,7 @@ There are two public mine locations. Use the `tpp` chat command to travel:
 Diamonds can only be found below a certain depth, and only by chance from digging stone.
 
 | Diamond | Minimum depth | Rarity     |
-|:-------:|--------------:|-----------:|
+|:-------:|:--------------|-----------:|
 | Pink    |         -8200 | 0.000114%% |
 | Blue    |         -1024 | 0.000598%% |
 
