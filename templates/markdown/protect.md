@@ -10,6 +10,10 @@ When in an abandonned state, everything, including the pblock, can be picked up 
 
 Protector Abandonment is automatic after 9 months of not joining the server.
 
+::: {.notices .yellow}
+The abandon state only affects the protector blocks, not the player data. Account information, such as passwords and inventories, are **not** affected.
+:::
+
 If the owner of an abandonned area returns after 9 months, remaining pblocks will be re-activated.
 
 ::: {.notices .red}
