@@ -6,10 +6,21 @@ local markdown_content = open_markdown_file:read("a")
 
 -- title is the first pound header: # TITLE
 local title = markdown_content:gsub("^#%s+([%g ]+).+$", "%1")
-markdown_content = markdown_content:gsub("^#%s+[%a%s]-\n", "", 1)
+
+-- explicit save path after the title will be placed in /pages/file_path/:
+-- # TITLE /file_path/
+local file_path = title:match("%b//")
+
+if file_path and file_path ~= "" and file_path ~= "//" then
+  title = title:gsub(file_path, "")
+else
+  file_path = nil
+end
+
+markdown_content = markdown_content:gsub("^#%s+[%a%s%p]-\n", "", 1)
 
 -- make sure the file name is included in the macro_nav.lua
-local filename = markdown_file:gsub("^.+/(%a+)%.md", "%1")
+local filename = markdown_file:gsub("^.+/([%a%d_]+)%.md", "%1")
 
 -- second argument is '-o' to write output to file
 local write_to_file = arg[2] and arg[2]:match("%-+o")
@@ -31,9 +42,9 @@ local function add_details_block(syntax)
   return syntax
 end
 
--- for when lunamark doesn't capture elements or whatever, use $hitmark
+-- for when lunamark doesn't capture elements or whatever, use $htmlsup
 local function add_supplement_markup(syntax)
-  local marker = lpeg.C(lpeg.P("$hitmark"))
+  local marker = lpeg.C(lpeg.P("$htmlsup"))
   syntax.Block = marker / function(marker)
     local supplement_file = "hypertext/" .. filename .. ".html"
     local file = io.open(supplement_file, "r") or error("SUPPLEMENT FILE NOT FOUND: " .. supplement_file)
@@ -66,7 +77,14 @@ local parse = lunamark.reader.markdown.new(writer, {
   pipe_tables = true,
   header_attributes = true,
   fenced_divs = true,
-  link_attributes = true
+  link_attributes = true,
+  definition_lists = true,
+  mark = true,
+  superscript = true,
+  raw_attribute = true,
+  bracketed_spans = true,
+  fenced_code_attributes = true,
+  table_captions = true,
 })
 
 local result, metadata = parse(markdown_content)
@@ -78,13 +96,31 @@ if not write_to_file then
   io.write(html_output, "\n"); io.stdout:flush()
 
 else
-  local dir = io.popen("dirname ${PWD}", "r"):read("l")
-  local html_file = string.format("%s/pages/%s.html", dir, filename)
+  local root_dir = io.popen("dirname ${PWD}", "r"):read("l") .. "/"
+  local pages_dir = root_dir .. "pages"
 
-  if filename == "index" then -- index is written into project root
-    html_file = string.format("%s/%s.html", dir, filename)
+  -- all menu pages get put into /pages/*.html
+  local html_file = string.format("%s/%s.html", pages_dir, filename)
+
+  -- index.md is written into project root
+  if filename == "index" then
+    html_file = string.format("%s%s.html", root_dir, filename)
   end
 
+  local sub_dir_index = filename:match("([%a_]+)_index")
+  -- sub-directory indexes, eg; archive_index.md -> /archive/index.html
+  if sub_dir_index or file_path then
+    -- first create a path if it doesn't exist
+    local sub_dir = sub_dir_index and ("%s/%s/"):format(pages_dir, sub_dir_index)
+        or file_path and ("%s%s"):format(pages_dir, file_path)
+        or error("Something wrong with the sub-directory path")
+    os.execute("mkdir -p " .. sub_dir)
+
+    html_file = sub_dir_index and sub_dir .. "index.html" or
+        sub_dir .. filename .. ".html"
+  end
+
+  -- print(html_file)
   local output_file = io.open(html_file, "w") or error("Cannot open HTML file!")
   output_file:write(html_output, "\n")
   output_file:close()

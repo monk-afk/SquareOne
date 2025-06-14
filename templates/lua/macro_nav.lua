@@ -40,6 +40,7 @@ local menu_pages = {
       }
     }
   },
+  {["history"]  = "HISTORY"},
   {["updates"]  = "UPDATES"},
 }
 

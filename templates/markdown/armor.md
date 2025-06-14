@@ -17,9 +17,8 @@ Physics modifiers can be combined! Mix armor types to combine their effects
 - **`speed`**   Your walking and sprinting speed.
 - **`gravity`** The force of downward pull.
 
-___
-
 [Complete list of Definitions Here](https://github.com/minetest-mods/3d_armor/blob/master/3d_armor/README.md)
+___
 
 |        Wood | Durability | Defense |
 |:-----------:|-----------:|--------:|
@@ -50,10 +49,10 @@ ___
 |    Mithril | Durability |    Defense | Block |
 |:----------:|-----------:|-----------:|------:|
 | ![helmet](/images/textures/armor/3d_armor_inv_helmet_mithril.png)         |        992 |          6 |    13 |
-| ![shield](/images/textures/armor/shields_inv_shield_mithril.png)          |        992 |          7 |    12 |
-| ![chestplate](/images/textures/armor/3d_armor_inv_chestplate_mithril.png) |        992 |          9 |    13 |
-| ![leggings](/images/textures/armor/3d_armor_inv_leggings_mithril.png)     |        992 |          8 |    13 |
-| ![boots](/images/textures/armor/3d_armor_inv_boots_mithril.png)           |        992 |          5 |    13 |
+| ![shield](/images/textures/armor/shields_inv_shield_mithril.png)          |        992 |          7 |    16 |
+| ![chestplate](/images/textures/armor/3d_armor_inv_chestplate_mithril.png) |        992 |          9 |    15 |
+| ![leggings](/images/textures/armor/3d_armor_inv_leggings_mithril.png)     |        992 |          8 |    14 |
+| ![boots](/images/textures/armor/3d_armor_inv_boots_mithril.png)           |        992 |          5 |    12 |
 
 |    Diamond | Durability |    Defense | Block |
 |:----------:|-----------:|-----------:|------:|

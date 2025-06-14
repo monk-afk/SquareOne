@@ -24,16 +24,19 @@ local function help_message()
 end
 
 
+local server = "${HOME}/squareone/worlds/world/"
+local images = "${PWD}/generated_images/"
+local option = "--backend postgresql --noemptyimage --colors colors.txt --max-y 400 --min-y -30"
+local today = os.date("%F")
+local exec_string = "${PWD}/minetestmapper %s -i %s -o %ssquareone_x%s_z%s_%s.png --geometry %s:%s+%s+%s;"
+
 local function generate_image_at(x, z, d)
-  local server = "${HOME}/squareone/worlds/world/"
-  local images = "${HOME}/dropbox/for_website/"
-  local option = "--backend postgresql --noemptyimage --colors colors.txt --max-y 400 --min-y -30"
   local a = math.floor(d / 2)
   local ax, az = x+(-a), z+(-a)
-  local exec_string = string.format(
-      "${PWD}/minetestmapper %s -i %s -o %ssquareone_x%s_z%s_%s.png --geometry %s:%s+%s+%s;",
-      option, server, images, x, z, os.date("%F"), ax, az, d, d)
-  os.execute(exec_string)
+  local exec_format = string.format(
+      exec_string, option, server, images, x, z, today, ax, az, d, d
+    )
+  os.execute(exec_format)
 end
 
 

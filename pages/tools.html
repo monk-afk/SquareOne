@@ -9,7 +9,7 @@
       <link rel="icon" type="image/png" href="/favicon.ico">
       <link rel="canonical" href="https://squareone.moe/">
       <meta name="description" content="SquareOne - SMP for Luanti - Hosted by monk">
-      <title>SquareOne</title>
+      <title>Tools - SquareOne</title>
       <link href="/css/style.css" type="text/css" rel="stylesheet">
       <link href="/css/menu.css" type="text/css" rel="stylesheet">
       <link href="/css/notices.css" type="text/css" rel="stylesheet">
@@ -49,6 +49,8 @@
                 </ul>
               </li>
 
+                  <li><a href="/pages/history.html" aria-expanded="false" class="webkitNoSelect">HISTORY</a></li>
+
                   <li><a href="/pages/updates.html" aria-expanded="false" class="webkitNoSelect">UPDATES</a></li>
 
               <li><a href="https://discord.gg/pE4Tu3cf23"><img src="https://dcbadge.limes.pink/api/server/pE4Tu3cf23?logoColor=red&theme=grey" alt=""></a></li>
@@ -70,834 +72,613 @@
           <hr class="header-hr">
           <div class="pagebox">
             <!-- ===== MAIN CONTENT ============================= -->
-<p>This is the lua code for in-game weapons.</p>
-
-<p>Maybe in the future will make it into a proper format.</p>
-
 <ul>
-<li><a href="#swords">Swords</a></li>
-<li><a href="#picks">Picks</a></li>
-<li><a href="#axes">Axes</a></li>
-<li><a href="#shovels">Shovels</a></li>
+<li><a href="#tools-wood">Wood</a></li>
+<li><a href="#tools-stone">Stone</a></li>
+<li><a href="#tools-silver">Silver</a></li>
+<li><a href="#tools-steel">Steel</a></li>
+<li><a href="#tools-mese">Mese</a></li>
+<li><a href="#tools-pink-crystal">Pink Crystal</a></li>
+<li><a href="#tools-pink-diamond">Pink Diamond</a></li>
+<li><a href="#tools-obsidian">Obsidian</a></li>
+<li><a href="#tools-crystal">Crystal</a></li>
+<li><a href="#tools-diamond">Diamond</a></li>
+<li><a href="#tools-bronze">Bronze</a></li>
+<li><a href="#tools-mithril">Mithril</a></li>
+<li><a href="#tools-lava">Lava</a></li>
+<li><a href="#tools-staff">Staff</a></li>
 </ul>
 
-    <hr class="header-hr">
-    <h3 id="swords">Swords</h3>
-      <pre>
-      <code>
-        minetest.register_tool("default:sword_wood", {
-          description = S("Wooden Sword"),
-          inventory_image = "default_tool_woodsword.png",
-          tool_capabilities = {
-            full_punch_interval = 0.8,
-            max_drop_level = 0,
-            groupcaps = {
-              snappy = {times = {[2] = 1.6, [3] = 0.40}, uses = 10, maxlevel = 1},
-            },
-            damage_groups = {fleshy = 2},
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {sword = 1, flammable = 2}
-        })
+<hr class="header-hr">
 
-        minetest.register_tool("default:sword_stone", {
-          description = S("Stone Sword"),
-          inventory_image = "default_tool_stonesword.png",
-          tool_capabilities = {
-            full_punch_interval = 1.2,
-            max_drop_level = 0,
-            groupcaps = {
-              snappy = {times = {[2] = 1.4, [3] = 0.40}, uses = 20, maxlevel = 1},
-            },
-            damage_groups = {fleshy = 4},
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {sword = 1}
-        })
+<h3 id="tools-wood">Wood</h3>
 
-        minetest.register_tool("default:sword_bronze", {
-          description = S("Bronze Sword"),
-          inventory_image = "default_tool_bronzesword.png",
-          tool_capabilities = {
-            full_punch_interval = 1.1,
-            max_drop_level = 1,
-            groupcaps = {
-              snappy = {times = {[1] = 2.75, [2] = 1.30, [3] = 0.375}, uses = 25, maxlevel = 2},
-            },
-            damage_groups = {fleshy = 5},
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {sword = 1}
-        })
-
-        minetest.register_tool("moreores:sword_silver", {
-          description = S("@1 Sword", S("Silver")),
-          inventory_image = "moreores_tool_silversword.png",
-          sound = {breaks = "default_tool_breaks"},
-          tool_capabilities = {
-            full_punch_interval = 1.0,
-            max_drop_level = 3,
-            damage_groups = {fleshy = 6},
-            groupcaps = {
-              snappy = {times = {[1] = 2.70, [2] = 1.40, [3] = 0.5}, uses = 100, maxlevel = 1}
-            }
-          },
-          groups = {sword = 1}
-        })
-
-        minetest.register_tool("default:sword_steel", {
-          description = S("Steel Sword"),
-          inventory_image = "default_tool_steelsword.png",
-          tool_capabilities = {
-            full_punch_interval = 0.9,
-            max_drop_level = 1,
-            groupcaps = {
-              snappy = {times = {[1] = 2.5, [2] = 1.20, [3] = 1.35}, uses = 30, maxlevel = 2},
-            },
-            damage_groups = {fleshy = 6},
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {sword = 1}
-        })
-
-        minetest.register_tool("default:sword_mese", {
-          description = S("Mese Sword"),
-          inventory_image = "default_tool_mesesword.png",
-          tool_capabilities = {
-            full_punch_interval = 0.8,
-            max_drop_level = 1,
-            groupcaps = {
-              snappy = {times = {[1] = 2.0, [2] = 1.00, [3] = 1.35}, uses = 30, maxlevel = 3},
-            },
-            damage_groups = {fleshy = 6},
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {sword = 1}
-        })
-
-        minetest.register_tool("moreores:sword_mithril", {
-          description = S("@1 Sword", S("Mithril")),
-          inventory_image = "moreores_tool_mithrilsword.png",
-          sound = {breaks = "default_tool_breaks"},
-          tool_capabilities = {
-            full_punch_interval = 0.7,
-            max_drop_level = 3,
-            damage_groups = {fleshy = 7},
-            groupcaps = {
-              snappy = {times = {[1] = 1.70, [2] = 0.90, [3] = 1.30}, uses = 31, maxlevel = 3}}
-          },
-          groups = {sword = 1}
-        })
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Wood</th>
+<th style="text-align: right;">Durability</th>
+<th style="text-align: right;">Attack</th>
+<th style="text-align: right;">Swing Speed</th>
+<th style="text-align: right;">Full Dmg. Interval</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_woodpick.png" alt="pick" width="32" height="32" /></td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.9</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_woodsword.png" alt="sword" width="32" height="32" /></td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.8</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_woodaxe.png" alt="axe" width="32" height="32" /></td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_woodshovel.png" alt="shovel" width="32" height="32" /></td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.2</td>
+</tr>
+</tbody>
+</table>
 
 
-        minetest.register_tool("ethereal:sword_crystal", {
-          description = S("Crystal Sword"),
-          inventory_image = "ethereal_crystal_sword.png",
-          wield_image = "ethereal_crystal_sword.png",
-          tool_capabilities = {
-            full_punch_interval = 0.9,
-            max_drop_level = 1,
-            groupcaps = {
-              snappy = {
-                times = {[1] = 1.70, [2] = 0.70, [3] = 0.50},
-                uses = 50,
-                maxlevel = 3
-              }
-            },
-            damage_groups = {fleshy = 8}
-          },
-          groups = {sword = 1},
-          sound = {breaks = "default_tool_breaks"}
-        })
+<h3 id="tools-stone">Stone</h3>
 
-        minetest.register_tool("ethereal:sword_pink_crystal", {
-          description = S("Pink Crystal Sword"),
-          inventory_image = "ethereal_pink_crystal_sword.png",
-          wield_image = "ethereal_pink_crystal_sword.png",
-          tool_capabilities = {
-            full_punch_interval = 0.8,
-            max_drop_level = 1,
-            groupcaps = {
-              snappy = {
-                times = {[1] = 1.70, [2] = 0.70, [3] = 0.50},
-                uses = 50,
-                maxlevel = 3
-              }
-            },
-            damage_groups = {fleshy = 9}
-          },
-          groups = {sword = 1},
-          sound = {breaks = "default_tool_breaks"}
-        })
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Stone</th>
+<th style="text-align: right;">Durability</th>
+<th style="text-align: right;">Attack</th>
+<th style="text-align: right;">Swing Speed</th>
+<th style="text-align: right;">Full Dmg. Interval</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_stonepick.png" alt="pick" width="32" height="32" /></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.3</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_stonesword.png" alt="sword" width="32" height="32" /></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.2</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_stoneaxe.png" alt="axe" width="32" height="32" /></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.2</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_stoneshovel.png" alt="shovel" width="32" height="32" /></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.4</td>
+</tr>
+</tbody>
+</table>
 
-        minetest.register_tool("default:sword_diamond", {
-          description = S("Diamond Sword"),
-          inventory_image = "default_tool_diamondsword.png",
-          tool_capabilities = {
-            full_punch_interval = 0.7,
-            max_drop_level = 1,
-            groupcaps = {
-              snappy = {times = {[1] = 1.90, [2] = 0.90, [3] = 0.30}, uses = 40, maxlevel = 3},
-            },
-            damage_groups = {fleshy = 8},
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {sword = 1}
-        })
 
-        minetest.register_tool("armorplus:obsidian_sword", {
-          description = S("Obsidian Sword"),
-          inventory_image = "armorplus_obsidian_sword.png",
-          tool_capabilities = {
-            full_punch_interval = 0.7,
-            max_drop_level = 1,
-            groupcaps = {
-              snappy = {times = {[1] = 1.90, [2] = 1.45, [3] = 1.00}, uses = 20, maxlevel = 2
-              }
-            },
-            damage_groups = {fleshy = 9}
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {sword = 1}
-        })
+<h3 id="tools-bronze">Bronze</h3>
 
-        minetest.register_tool("moreores:sword_pinkdiamond", {
-          description = S("@1 Sword", S("Pink Diamond")),
-          inventory_image = "moreores_tool_pinkdiamondsword.png",
-          sound = {breaks = "default_tool_breaks"},
-          tool_capabilities = {
-            full_punch_interval = 0.8,
-            max_drop_level = 1,
-            groupcaps  = {
-              snappy = {
-                times = {[1] = 1.80, [2] = 0.90, [3] = 0.80}, uses = 20, maxlevel = 3
-              },
-            },
-            damage_groups = {fleshy = 10},
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {sword = 1}
-        })
-      </pre>
-    </code>
-    <a href="#top">Top</a>
-    <hr class="header-hr">
-    <h3 id="picks">Picks</h3>
-      <pre>
-      <code>
-        minetest.register_tool(":mobs:pick_lava", {
-          description = S("Lava Pickaxe"),
-          inventory_image = "mobs_pick_lava.png",
-          tool_capabilities = {
-            full_punch_interval = 0.9,
-            max_drop_level = 3,
-            groupcaps = {
-              cracky = {
-                times = {[1] = 1.80, [2] = 1.40, [3] = 1.00},
-                uses = 30,
-                maxlevel = 3
-              }
-            },
-            damage_groups = {fleshy = 3, fire = 1},
-          },
-          groups = {pickaxe = 1},
-          light_source = 8
-        })
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Bronze</th>
+<th style="text-align: right;">Durability</th>
+<th style="text-align: right;">Attack</th>
+<th style="text-align: right;">Swing Speed</th>
+<th style="text-align: right;">Full Dmg. Interval</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_bronzepick.png" alt="pick" width="32" height="32" /></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_bronzesword.png" alt="sword" width="32" height="32" /></td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.1</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_bronzeaxe.png" alt="axe" width="32" height="32" /></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_bronzeshovel.png" alt="shovel" width="32" height="32" /></td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.1</td>
+</tr>
+</tbody>
+</table>
 
-        minetest.register_tool("default:pick_wood", {
-          description = S("Wooden Pickaxe"),
-          inventory_image = "default_tool_woodpick.png",
-          tool_capabilities = {
-            full_punch_interval = 0.9,
-            max_drop_level = 0,
-            groupcaps = {
-              cracky = {times = {[3] = 3.0}, uses = 10, maxlevel = 1},
-            },
-            damage_groups = {fleshy = 2},
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {pickaxe = 1, flammable = 2}
-        })
 
-        minetest.register_tool("default:pick_stone", {
-          description = S("Stone Pickaxe"),
-          inventory_image = "default_tool_stonepick.png",
-          tool_capabilities = {
-            full_punch_interval = 1.3,
-            max_drop_level = 0,
-            groupcaps = {
-              cracky = {times = {[2] = 3.0, [3] = 2.0}, uses = 20, maxlevel = 1},
-            },
-            damage_groups = {fleshy = 3},
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {pickaxe = 1}
-        })
+<h3 id="tools-steel">Steel</h3>
 
-        minetest.register_tool("default:pick_bronze", {
-          description = S("Bronze Pickaxe"),
-          inventory_image = "default_tool_bronzepick.png",
-          tool_capabilities = {
-            full_punch_interval = 1.0,
-            max_drop_level = 1,
-            groupcaps = {
-              cracky = {times = {[1] = 3.00, [2] = 2.80, [3] = 1.90}, uses = 20, maxlevel = 2},
-            },
-            damage_groups = {fleshy = 4},
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {pickaxe = 1}
-        })
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Steel</th>
+<th style="text-align: right;">Durability</th>
+<th style="text-align: right;">Attack</th>
+<th style="text-align: right;">Swing Speed</th>
+<th style="text-align: right;">Full Dmg. Interval</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_steelpick.png" alt="pick" width="32" height="32" /></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_steelsword.png" alt="sword" width="32" height="32" /></td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.9</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_steelaxe.png" alt="axe" width="32" height="32" /></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_steelshovel.png" alt="shovel" width="32" height="32" /></td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.1</td>
+</tr>
+</tbody>
+</table>
 
-        minetest.register_tool("moreores:pick_silver", {
-          description = S("@1 Pickaxe", S("Silver")),
-          inventory_image = "moreores_tool_silverpick.png",
-          sound = {breaks = "default_tool_breaks"},
-          tool_capabilities = {
-            full_punch_interval = 1.0,
-            max_drop_level = 3,
-            damage_groups = {fleshy = 4},
-            groupcaps = {
-              cracky = {
-                times = {[1] = 2.90, [2] = 2.60, [3] = 1.70}, uses = 100, maxlevel = 2}
-            }
-          },
-          groups = {pickaxe = 1}
-        })
 
-        minetest.register_tool("default:pick_steel", {
-          description = S("Steel Pickaxe"),
-          inventory_image = "default_tool_steelpick.png",
-          tool_capabilities = {
-            full_punch_interval = 1.0,
-            max_drop_level = 1,
-            groupcaps = {
-              cracky = {times = {[1] = 2.80, [2] = 2.30, [3] = 1.40}, uses = 20, maxlevel = 2},
-            },
-            damage_groups = {fleshy = 4},
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {pickaxe = 1}
-        })
+<h3 id="tools-silver">Silver</h3>
 
-        minetest.register_tool("moreores:pick_mithril", {
-          description = S("@1 Pickaxe", S("Mithril")),
-          inventory_image = "moreores_tool_mithrilpick.png",
-          sound = {breaks = "default_tool_breaks"},
-          tool_capabilities = {
-            full_punch_interval = 0.95,
-            max_drop_level = 3,
-            damage_groups = {fleshy = 5},
-            groupcaps = {
-              cracky = {
-                times = {[1] = 2.60, [2] = 1.5, [3] = 1.20}, uses = 31, maxlevel = 3}
-            }
-          },
-          groups = {pickaxe = 1}
-        })
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Silver</th>
+<th style="text-align: right;">Durability</th>
+<th style="text-align: right;">Attack</th>
+<th style="text-align: right;">Swing Speed</th>
+<th style="text-align: right;">Full Dmg. Interval</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/moreores_tool_silverpick.png" alt="pick" width="32" height="32" /></td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/moreores_tool_silversword.png" alt="sword" width="32" height="32" /></td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/moreores_tool_silveraxe.png" alt="axe" width="32" height="32" /></td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/moreores_tool_silvershovel.png" alt="shovel" width="32" height="32" /></td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+</tbody>
+</table>
 
-        minetest.register_tool("default:pick_mese", {
-          description = S("Mese Pickaxe"),
-          inventory_image = "default_tool_mesepick.png",
-          tool_capabilities = {
-            full_punch_interval = 0.9,
-            max_drop_level = 3,
-            groupcaps = {
-              cracky = {times = {[1] = 2.4, [2] = 1.2, [3] = 0.90}, uses = 20, maxlevel = 3},
-            },
-            damage_groups = {fleshy = 5},
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {pickaxe = 1}
-        })
 
-        minetest.register_tool("ethereal:pick_crystal", {
-          description = S("Crystal Pickaxe"),
-          inventory_image = "ethereal_crystal_pick.png",
-          wield_image = "ethereal_crystal_pick.png",
-          tool_capabilities = {
-            full_punch_interval = 0.85,
-            max_drop_level = 3,
-            groupcaps = {
-              cracky = {times = {[1] = 1.8, [2] = 0.9, [3] = 0.8}, uses = 40, maxlevel = 3}
-            },
-            damage_groups = {fleshy = 5}
-          },
-          groups = {pickaxe = 1},
-          sound = {breaks = "default_tool_breaks"}
-        })
+<h3 id="tools-pink-crystal">Pink Crystal</h3>
 
-        minetest.register_tool("ethereal:pick_pink_crystal", {
-          description = S("Crystal Pickaxe"),
-          inventory_image = "ethereal_pink_crystal_pick.png",
-          wield_image = "ethereal_pink_crystal_pick.png",
-          tool_capabilities = {
-            full_punch_interval = 0.7,
-            max_drop_level = 3,
-            groupcaps = {
-              cracky = {times = {[1] = 1.6, [2] = 0.8, [3] = 0.7}, uses = 40, maxlevel = 3}
-            },
-            damage_groups = {fleshy = 6}
-          },
-          groups = {pickaxe = 1},
-          sound = {breaks = "default_tool_breaks"}
-        })
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Pink Crystal</th>
+<th style="text-align: right;">Durability</th>
+<th style="text-align: right;">Attack</th>
+<th style="text-align: right;">Swing Speed</th>
+<th style="text-align: right;">Full Dmg. Interval</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/ethereal_pink_crystal_pick.png" alt="pick" width="32" height="32" /></td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.7</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/ethereal_pink_crystal_sword.png" alt="sword" width="32" height="32" /></td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.8</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/ethereal_pink_crystal_axe.png" alt="axe" width="32" height="32" /></td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.8</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/ethereal_pink_crystal_shovel.png" alt="shovel" width="32" height="32" /></td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+</tbody>
+</table>
 
-        minetest.register_tool("default:pick_diamond", {
-          description = S("Diamond Pickaxe"),
-          inventory_image = "default_tool_diamondpick.png",
-          tool_capabilities = {
-            full_punch_interval = 0.9,
-            max_drop_level = 3,
-            groupcaps = {
-              cracky = {times = {[1] = 1.5, [2] = 0.75, [3] = 0.65}, uses = 30, maxlevel = 3},
-            },
-            damage_groups = {fleshy = 5},
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {pickaxe = 1}
-        })
 
-        minetest.register_tool("armorplus:obsidian_pick", {
-          description = S("Obsidian Pickaxe"),
-          inventory_image = "armorplus_obsidian_pick.png",
-          tool_capabilities = {
-            full_punch_interval = 0.9,
-            max_drop_level = 3,
-            groupcaps = {
-              cracky = {times = {[1] = 1.45, [2] = 0.7, [3] = 0.6}, uses = 30, maxlevel = 3},
-            },
-            damage_groups = {fleshy = 6},
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {pickaxe = 1}
-        })
+<h3 id="tools-pink-diamond">Pink Diamond</h3>
 
-        minetest.register_tool("moreores:pick_pinkdiamond", {
-          description = S("@1 Pickaxe", S("Pink Diamond")),
-          inventory_image = "moreores_tool_pinkdiamondpick.png",
-          tool_capabilities = {
-            full_punch_interval = 0.6,
-            max_drop_level = 3,
-            groupcaps = {
-              cracky = {times = {[1] = 1.40, [2] = 0.75, [3] = 0.55}, uses = 30, maxlevel = 3},
-            },
-            damage_groups = {fleshy = 6},
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {pickaxe = 1}
-        })
-      </pre>
-    </code>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Pink Diamond</th>
+<th style="text-align: right;">Durability</th>
+<th style="text-align: right;">Attack</th>
+<th style="text-align: right;">Swing Speed</th>
+<th style="text-align: right;">Full Dmg. Interval</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/moreores_tool_pinkdiamondpick.png" alt="pick" width="32" height="32" /></td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.6</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/moreores_tool_pinkdiamondsword.png" alt="sword" width="32" height="32" /></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.8</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/moreores_tool_pinkdiamondaxe.png" alt="axe" width="32" height="32" /></td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.9</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/moreores_tool_pinkdiamondshovel.png" alt="shovel" width="32" height="32" /></td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+</tbody>
+</table>
 
-    <a href="#top">Top</a>
-    <hr class="header-hr">
-    <h3 id="axes">Axes</h3>
-    <code>
-      <pre>
-        minetest.register_tool("default:axe_wood", {
-          description = S("Wooden Axe"),
-          inventory_image = "default_tool_woodaxe.png",
-          tool_capabilities = {
-            full_punch_interval = 1.0,
-            max_drop_level = 0,
-            groupcaps = {
-              choppy = {times = {[2] = 3.00, [3] = 1.60}, uses = 10, maxlevel = 1},
-            },
-            damage_groups = {fleshy = 2},
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {axe = 1, flammable = 2}
-        })
 
-        minetest.register_tool("default:axe_stone", {
-          description = S("Stone Axe"),
-          inventory_image = "default_tool_stoneaxe.png",
-          tool_capabilities = {
-            full_punch_interval = 1.2,
-            max_drop_level = 0,
-            groupcaps = {
-              choppy = {times = {[1] = 3.00, [2] = 2.00, [3] = 1.30}, uses = 20, maxlevel = 1},
-            },
-            damage_groups = {fleshy = 3},
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {axe = 1}
-        })
+<h3 id="tools-mese">Mese</h3>
 
-        minetest.register_tool("default:axe_bronze", {
-          description = S("Bronze Axe"),
-          inventory_image = "default_tool_bronzeaxe.png",
-          tool_capabilities = {
-            full_punch_interval = 1.0,
-            max_drop_level = 1,
-            groupcaps = {
-              choppy = {times = {[1] = 2.75, [2] = 1.70, [3] = 1.15}, uses = 20, maxlevel = 2},
-            },
-            damage_groups = {fleshy = 4},
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {axe = 1}
-        })
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Mese</th>
+<th style="text-align: right;">Durability</th>
+<th style="text-align: right;">Attack</th>
+<th style="text-align: right;">Swing Speed</th>
+<th style="text-align: right;">Full Dmg. Interval</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_mesepick.png" alt="pick" width="32" height="32" /></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.9</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_mesesword.png" alt="sword" width="32" height="32" /></td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.8</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_meseaxe.png" alt="axe" width="32" height="32" /></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.9</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_meseshovel.png" alt="shovel" width="32" height="32" /></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+</tbody>
+</table>
 
-        minetest.register_tool("default:axe_steel", {
-          description = S("Steel Axe"),
-          inventory_image = "default_tool_steelaxe.png",
-          tool_capabilities = {
-            full_punch_interval = 1.0,
-            max_drop_level = 1,
-            groupcaps = {
-              choppy = {times = {[1] = 2.50, [2] = 1.40, [3] = 1.00}, uses = 20, maxlevel = 2},
-            },
-            damage_groups = {fleshy = 4},
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {axe = 1}
-        })
 
-        minetest.register_tool("default:axe_mese", {
-          description = S("Mese Axe"),
-          inventory_image = "default_tool_meseaxe.png",
-          tool_capabilities = {
-            full_punch_interval = 0.9,
-            max_drop_level = 1,
-            groupcaps = {
-              choppy = {times = {[1] = 2.20, [2] = 1.00, [3] = 0.60}, uses = 20, maxlevel = 3},
-            },
-            damage_groups = {fleshy = 6},
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {axe = 1}
-        })
+<h3 id="tools-obsidian">Obsidian</h3>
 
-        minetest.register_tool("default:axe_diamond", {
-          description = S("Diamond Axe"),
-          inventory_image = "default_tool_diamondaxe.png",
-          tool_capabilities = {
-            full_punch_interval = 0.9,
-            max_drop_level = 1,
-            groupcaps = {
-              choppy = {times = {[1] = 2.10, [2] = 0.90, [3] = 0.50}, uses = 30, maxlevel = 3},
-            },
-            damage_groups = {fleshy = 7},
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {axe = 1}
-        })
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Obsidian</th>
+<th style="text-align: right;">Durability</th>
+<th style="text-align: right;">Attack</th>
+<th style="text-align: right;">Swing Speed</th>
+<th style="text-align: right;">Full Dmg. Interval</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/armorplus_obsidian_pick.png" alt="pick" width="32" height="32" /></td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.9</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/armorplus_obsidian_sword.png" alt="sword" width="32" height="32" /></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.7</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/armorplus_obsidian_axe.png" alt="axe" width="32" height="32" /></td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.9</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/armorplus_obsidian_shovel.png" alt="shovel" width="32" height="32" /></td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+</tbody>
+</table>
 
-        minetest.register_tool("armorplus:obsidian_axe", {
-            description = S("Obsidian Axe"),
-            inventory_image = "armorplus_obsidian_axe.png",
-          tool_capabilities = {
-            full_punch_interval = 0.9,
-            max_drop_level = 1,
-            groupcaps = {
-              choppy = {times = {[1] = 2.10, [2] = 0.90, [3] = 0.50}, uses = 30, maxlevel = 3},
-            },
-            damage_groups = {fleshy = 6},
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {axe = 1}
-        })
 
-        minetest.register_tool("ethereal:axe_crystal", {
-          description = S("Crystal Axe"),
-          inventory_image = "ethereal_crystal_axe.png",
-          wield_image = "ethereal_crystal_axe.png",
-          tool_capabilities = {
-            full_punch_interval = 0.8,
-            max_drop_level = 1,
-            groupcaps = {
-              choppy = {
-                times = {[1] = 2.00, [2] = 0.80, [3] = 0.70},
-                uses = 40,
-                maxlevel = 3
-              }
-            },
-            damage_groups = {fleshy = 7}
-          },
-          groups = {axe = 1},
-          sound = {breaks = "default_tool_breaks"}
-        })
+<h3 id="tools-crystal">Crystal</h3>
 
-        minetest.register_tool("ethereal:axe_pink_crystal", {
-          description = S("Crystal Axe"),
-          inventory_image = "ethereal_pink_crystal_axe.png",
-          wield_image = "ethereal_pink_crystal_axe.png",
-          tool_capabilities = {
-            full_punch_interval = 0.8,
-            max_drop_level = 1,
-            groupcaps = {
-              choppy = {
-                times = {[1] = 2.00, [2] = 0.80, [3] = 0.70},
-                uses = 40,
-                maxlevel = 3
-              }
-            },
-            damage_groups = {fleshy = 7}
-          },
-          groups = {axe = 1},
-          sound = {breaks = "default_tool_breaks"}
-        })
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Crystal</th>
+<th style="text-align: right;">Durability</th>
+<th style="text-align: right;">Attack</th>
+<th style="text-align: right;">Swing Speed</th>
+<th style="text-align: right;">Full Dmg. Interval</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/ethereal_crystal_pick.png" alt="pick" width="32" height="32" /></td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.85</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/ethereal_crystal_sword.png" alt="sword" width="32" height="32" /></td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.9</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/ethereal_crystal_axe.png" alt="axe" width="32" height="32" /></td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.8</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/ethereal_crystal_shovel.png" alt="shovel" width="32" height="32" /></td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+</tbody>
+</table>
 
-        minetest.register_tool("moreores:axe_pinkdiamond", {
-          description = S("@1 Axe", S("Pink Diamond")),
-          inventory_image = "moreores_tool_pinkdiamondaxe.png",
-          tool_capabilities = {
-            full_punch_interval = 0.9,
-            max_drop_level = 1,
-            groupcaps = {
-              choppy = {times = {[1] = 2.10, [2] = 0.90, [3] = 0.80}, uses = 30, maxlevel = 3},
-            },
-            damage_groups = {fleshy = 7},
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {axe = 1}
-        })
 
-        minetest.register_tool("moreores:axe_mithril", {
-          description = S("@1 Axe", S("Mithril")),
-          inventory_image = "moreores_tool_mithrilaxe.png",
-          sound = {breaks = "default_tool_breaks"},
-          tool_capabilities = {
-            full_punch_interval = 1.0,
-            max_drop_level = 3,
-            damage_groups = {fleshy = 6},
-            groupcaps = {
-              fleshy = {times = {[2] = 2.10, [3] = 2.00}, uses = 31, maxlevel = 3},
-              choppy = {
-                times = {[1] = 1.90, [2] = 1.70, [3] = 0.90}, uses = 31, maxlevel = 3}
-            }
-          },
-          groups = {axe = 1, tool = 1}
-        })
+<h3 id="tools-diamond">Diamond</h3>
 
-        minetest.register_tool("moreores:axe_silver", {
-          description = S("@1 Axe", S("Silver")),
-          inventory_image = "moreores_tool_silveraxe.png",
-          sound = {breaks = "default_tool_breaks"},
-          tool_capabilities = {
-            full_punch_interval = 1.0,
-            max_drop_level = 3,
-            damage_groups = {fleshy = 4},
-            groupcaps = {
-              fleshy = {times = {[2] = 2.10, [3] = 1.60}, uses = 100, maxlevel = 1},
-              choppy = {
-                times = {[1] = 2.50, [2] = 1.80, [3] = 1.50}, uses = 100, maxlevel = 1}
-            }
-          },
-          groups = {axe = 1, tool = 1}
-        })
-      </pre>
-    </code>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Diamond</th>
+<th style="text-align: right;">Durability</th>
+<th style="text-align: right;">Attack</th>
+<th style="text-align: right;">Swing Speed</th>
+<th style="text-align: right;">Full Dmg. Interval</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_diamondpick.png" alt="pick" width="32" height="32" /></td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.9</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_diamondsword.png" alt="sword" width="32" height="32" /></td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.7</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_diamondaxe.png" alt="axe" width="32" height="32" /></td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.9</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_diamondshovel.png" alt="shovel" width="32" height="32" /></td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+</tbody>
+</table>
 
-    <a href="#top">Top</a>
-    <hr class="header-hr">
-    <h3 id="shovels">Shovels</h3>
-    <code>
-      <pre>
-        minetest.register_tool("default:shovel_wood", {
-          description = S("Wooden Shovel"),
-          inventory_image = "default_tool_woodshovel.png",
-          wield_image = "default_tool_woodshovel.png^[transformR90",
-          tool_capabilities = {
-            full_punch_interval = 1.2,
-            max_drop_level = 0,
-            groupcaps = {
-              crumbly = {times = {[1] = 3.00, [2] = 1.60, [3] = 0.60}, uses = 10, maxlevel = 1},
-            },
-            damage_groups = {fleshy = 2},
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {shovel = 1, flammable = 2}
-        })
 
-        minetest.register_tool("default:shovel_stone", {
-          description = S("Stone Shovel"),
-          inventory_image = "default_tool_stoneshovel.png",
-          wield_image = "default_tool_stoneshovel.png^[transformR90",
-          tool_capabilities = {
-            full_punch_interval = 1.4,
-            max_drop_level = 0,
-            groupcaps = {
-              crumbly = {times = {[1] = 1.80, [2] = 1.20, [3] = 0.50}, uses = 20, maxlevel = 1},
-            },
-            damage_groups = {fleshy = 2},
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {shovel = 1}
-        })
+<h3 id="tools-mithril">Mithril</h3>
 
-        minetest.register_tool("default:shovel_bronze", {
-          description = S("Bronze Shovel"),
-          inventory_image = "default_tool_bronzeshovel.png",
-          wield_image = "default_tool_bronzeshovel.png^[transformR90",
-          tool_capabilities = {
-            full_punch_interval = 1.1,
-            max_drop_level = 1,
-            groupcaps = {
-              crumbly = {times = {[1] = 1.65, [2] = 1.05, [3] = 0.45}, uses = 25, maxlevel = 2},
-            },
-            damage_groups = {fleshy = 3},
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {shovel = 1}
-        })
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Mithril</th>
+<th style="text-align: right;">Durability</th>
+<th style="text-align: right;">Attack</th>
+<th style="text-align: right;">Swing Speed</th>
+<th style="text-align: right;">Full Dmg. Interval</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/moreores_tool_mithrilpick.png" alt="pick" width="32" height="32" /></td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.95</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/moreores_tool_mithrilsword.png" alt="sword" width="32" height="32" /></td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.7</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/moreores_tool_mithrilaxe.png" alt="axe" width="32" height="32" /></td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/moreores_tool_mithrilshovel.png" alt="shovel" width="32" height="32" /></td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+</tbody>
+</table>
 
-        minetest.register_tool("default:shovel_steel", {
-          description = S("Steel Shovel"),
-          inventory_image = "default_tool_steelshovel.png",
-          wield_image = "default_tool_steelshovel.png^[transformR90",
-          tool_capabilities = {
-            full_punch_interval = 1.1,
-            max_drop_level = 1,
-            groupcaps = {
-              crumbly = {times = {[1] = 1.50, [2] = 0.90, [3] = 0.40}, uses = 30, maxlevel = 2},
-            },
-            damage_groups = {fleshy = 3},
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {shovel = 1}
-        })
 
-        minetest.register_tool("default:shovel_mese", {
-          description = S("Mese Shovel"),
-          inventory_image = "default_tool_meseshovel.png",
-          wield_image = "default_tool_meseshovel.png^[transformR90",
-          tool_capabilities = {
-            full_punch_interval = 1.0,
-            max_drop_level = 3,
-            groupcaps = {
-              crumbly = {times = {[1] = 1.20, [2] = 0.60, [3] = 0.30}, uses = 20, maxlevel = 3},
-            },
-            damage_groups = {fleshy = 4},
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {shovel = 1}
-        })
+<h3 id="tools-lava">Lava</h3>
 
-        minetest.register_tool("default:shovel_diamond", {
-          description = S("Diamond Shovel"),
-          inventory_image = "default_tool_diamondshovel.png",
-          wield_image = "default_tool_diamondshovel.png^[transformR90",
-          tool_capabilities = {
-            full_punch_interval = 1.0,
-            max_drop_level = 1,
-            groupcaps = {
-              crumbly = {times = {[1] = 1.10, [2] = 0.50, [3] = 0.30}, uses = 30, maxlevel = 3},
-            },
-            damage_groups = {fleshy = 4},
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {shovel = 1}
-        })
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Lava</th>
+<th style="text-align: right;">Ability</th>
+<th style="text-align: right;">Durability</th>
+<th style="text-align: right;">Attack</th>
+<th style="text-align: right;">Swing Speed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/mobs_pick_lava.png" alt="pick" width="32" height="32" /></td>
+<td style="text-align: right;">Auto-smelting</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
 
-        minetest.register_tool("armorplus:obsidian_shovel", {
-            description = S("Obsidian Shovel"),
-            inventory_image = "armorplus_obsidian_shovel.png",
-            wield_image = "armorplus_obsidian_shovel.png^[transformR90",
-          tool_capabilities = {
-            full_punch_interval = 1.0,
-            max_drop_level = 1,
-            groupcaps = {
-              crumbly = {times = {[1] = 1.10, [2] = 0.50, [3] = 0.30}, uses = 30, maxlevel = 3},
-            },
-            damage_groups = {fleshy = 4},
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {shovel = 1}
-        })
 
-        minetest.register_tool("ethereal:shovel_crystal", {
-          description = S("Crystal Shovel"),
-          inventory_image = "ethereal_crystal_shovel.png",
-          wield_image = "ethereal_crystal_shovel.png^[transformR90",
-          tool_capabilities = {
-            full_punch_interval = 1.0,
-            max_drop_level = 1,
-            groupcaps = {
-              crumbly = {
-              times = {[1] = 1.10, [2] = 0.85, [3] = 0.75},
-                uses = 30,
-                maxlevel = 3
-              }
-            },
-            damage_groups = {fleshy = 4}
-          },
-          groups = {shovel = 1},
-          sound = {breaks = "default_tool_breaks"}
-        })
+<h3 id="tools-staff">Staffs</h3>
 
-        minetest.register_tool("ethereal:shovel_pink_crystal", {
-          description = S("Crystal Shovel"),
-          inventory_image = "ethereal_pink_crystal_shovel.png",
-          wield_image = "ethereal_pink_crystal_shovel.png^[transformR90",
-          tool_capabilities = {
-            full_punch_interval = 1.0,
-            max_drop_level = 1,
-            groupcaps = {
-              crumbly = {
-                times = {[1] = 1.10, [2] = 0.75, [3] = 0.65},
-                uses = 30,
-              }
-            },
-            damage_groups = {fleshy = 4}
-          },
-          groups = {shovel = 1},
-          sound = {breaks = "default_tool_breaks"}
-        })
-
-        minetest.register_tool("moreores:shovel_silver", {
-          description = S("@1 Shovel", S("Silver")),
-          inventory_image = "moreores_tool_silvershovel.png",
-          wield_image = "moreores_tool_silvershovel.png^[transformR90",
-          sound = {breaks = "default_tool_breaks"},
-          tool_capabilities = {
-            full_punch_interval = 1.0,
-            max_drop_level = 3,
-            damage_groups = {fleshy = 3},
-            groupcaps = {
-              crumbly = {
-                times = {[1] = 2.10, [2] = 1.90, [3] = 1.7}, uses = 100, maxlevel = 1}
-            }
-          },
-          groups = {shovel = 1, tool = 1}
-        })
-
-        minetest.register_tool("moreores:shovel_mithril", {
-          description = S("@1 Shovel", S("Mithril")),
-          inventory_image = "moreores_tool_mithrilshovel.png",
-          wield_image = "moreores_tool_mithrilshovel.png^[transformR90",
-          sound = {breaks = "default_tool_breaks"},
-          tool_capabilities = {
-            full_punch_interval = 1.0,
-            max_drop_level = 3,
-            damage_groups = {fleshy = 4},
-            groupcaps = {
-              crumbly = {
-                times = {[1] = 1.20, [2] = 1.05, [3] = 0.90}, uses = 31, maxlevel = 3}
-              }
-            },
-          groups = {shovel = 1, tool = 1}
-        })
-
-        minetest.register_tool("moreores:shovel_pinkdiamond", {
-          description = S("@1 Shovel", S("Pink Diamond")),
-          inventory_image = "moreores_tool_pinkdiamondshovel.png",
-          wield_image = "moreores_tool_pinkdiamondshovel.png^[transformR90",
-          tool_capabilities = {
-            full_punch_interval = 1.0,
-            max_drop_level = 1,
-            groupcaps = {
-              crumbly = {times = {[1] = 1.10, [2] = 0.80, [3] = 0.70}, uses = 30, maxlevel = 3},
-            },
-            damage_groups = {fleshy = 4},
-          },
-          sound = {breaks = "default_tool_breaks"},
-          groups = {shovel = 1}
-        })
-      </pre>
-    </code>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Staff</th>
+<th style="text-align: left;">Ability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Gilly <img src="/images/textures/tools/ethereal_crystal_gilly_staff.png" alt="gilly" width="32" height="32" /></td>
+<td style="text-align: left;">Use item to breathe under water</td>
+</tr>
+<tr>
+<td style="text-align: center;">Healing <img src="/images/textures/tools/armorplus_etherium_life_staff.png" alt="staff" width="32" height="32" /></td>
+<td style="text-align: left;">Use to restore another player HP, or on self for +5HP</td>
+</tr>
+<tr>
+<td style="text-align: center;">Light <img src="/images/textures/tools/ethereal_light_staff.png" alt="staff" width="32" height="32" /></td>
+<td style="text-align: left;">Temporarily Changes stone into a glowing stone</td>
+</tr>
+</tbody>
+</table>
 
             <!-- ===== FOOTER =================================== -->
             <hr class="header-hr">
@@ -906,13 +687,13 @@
         </div>
 
         <footer>
-          <sub>Updated <code>2025-04-12 12:35:31</code></sub>
+          <sub>Updated <code>2025-06-13 22:17:11</code></sub>
           <hr class="header-hr">
           <ul class="footer">
             <li><sup><span style="color: #f00"> ❖ </span>Square<span style="color: #f00">One</span> ❖ <a href="https://github.com/monk-afk">by mønκ</a><span style="color: #f00"> ❖ </span></sup></li>
             <li><sup>Circa. 2023-05-28</sup></li>
             <li><img src="/images/squareone_pixelmonk.png" alt="monk with pixel glasses" width="64"/></li>
-            <li><a href="https://visitorbadge.io/status?path=squareone.moe"><img src="https://api.visitorbadge.io/api/visitors?path=squareone.moe&countColor=%23d60000" /></a></li>
+            <!-- <li><a href="https://visitorbadge.io/status?path=squareone.moe"><img src="https://api.visitorbadge.io/api/visitors?path=squareone.moe&countColor=%23d60000" /></a></li> -->
           </ul>
           <hr class="header-hr">
           <br>

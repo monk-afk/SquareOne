@@ -1,19 +1,26 @@
 # Staff
 
-To apply for Guardian, contact one of the Police ranked staff and they will say whether they are hiring or when they will be hiring.
+Police manage the Guardian roster, from the selection process to training and sometimes firing.
 
-| Guardians     |            |
-|:-------------:|:----------:|
-| Zandar        | MultiChan7 |
-| Pot-of-rice   | kikiara    |
-| Mymelodygirl  | mohra      |
-| -RoselinCute- | ![-RoselinCute-](/images/staff/RoselinCute.png){width=300 height=300} |
-| Craftmaster   | ![Craftmaster](/images/staff/Craftmaster.png){width=300 height=300} |
-| BurningCrow   | ![BurningCrow](/images/staff/BurningCrow.png){width=300 height=300} |
-| Gh0st         | ![Gh0st](/images/staff/Gh0st.png){width=300 height=300} |
+There is no set schedule for when Police hire guardians. The decision typically comes with an announcement in-game and on Discord.
 
-| Police        |            |
-|:-------------:|:----------:|
-| senua         | ![senua](/images/staff/senua.png){width=300 height=300} |
-| Ylde          | ![Ylde](/images/staff/Ylde.png){width=300 height=300} |
-| Red_Dolphin   | ![Red_Dolphin](/images/staff/Red_Dolphin.png){width=300 height=300} |
+___
+
+| Guardians     | Hired On   | Avatar |
+|--------------:|:----------:|:------:|
+| mohra         | 2024/06/24 |        |
+| Mymelodygirl  | 2025/02/20 |        |
+| Zandar        | 2025/02/20 | ![Zandar](/images/staff/Zandar.png){width=300 height=300} |
+| Multichan7    | 2025/02/20 | ![Multichan7](/images/staff/Multichan7.png){width=300 height=300} |
+| -RoselinCute- | 2025/02/20 | ![-RoselinCute-](/images/staff/RoselinCute.png){width=300 height=300} |
+| Pot-of-rice   | 2025/09/21 | ![Pot-of-rice](/images/staff/Pot-of-rice.png){width=300 height=300} |
+| kikiara       | 2024/06/24 | ![kikiara](/images/staff/kikiara.png){width=300 height=300} |
+| Craftmaster   | 2024/03/15 | ![Craftmaster](/images/staff/Craftmaster.png){width=300 height=300} |
+| BurningCrow   | 2024/02/04 | ![BurningCrow](/images/staff/BurningCrow.png){width=300 height=300} |
+| Gh0st         | 2024/07/24 | ![Gh0st](/images/staff/Gh0st.png){width=300 height=300} |
+
+| Police        | Hired On   | Avatar |
+|:-------------:|:----------:|:------:|
+| senua         | 2024/02/04 | ![senua](/images/staff/senua.png){width=300 height=300} |
+| Ylde          | 2023/08/08 | ![Ylde](/images/staff/Ylde.png){width=300 height=300} |
+| Red_Dolphin   | 2023/09/03 | ![Red_Dolphin](/images/staff/Red_Dolphin.png){width=300 height=300} |

@@ -211,6 +211,12 @@
   color: #c9c8c8;
 }
 
+#sidebar-logo {
+  flex-direction: column;
+  width: 256px;
+  max-width: 100%;
+}
+
 .main-nav {
   display: none;
 }
@@ -227,7 +233,7 @@
   bottom: 0;
   width: 320px;
   min-height: 100vh;
-  overflow-y: auto;
+  overflow-y: clip;
   -webkit-overflow-scrolling: touch;
   z-index: 0;
   display: none;
@@ -238,7 +244,8 @@
 }
 
 .slideout-menu-left {
-  left: 0;
+  left: 0px;
+  overflow-y:clip;
 }
 
 .slideout-panel {
@@ -527,7 +534,7 @@
 }
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1120px) {
   .slideout-panel {margin-left: 320px;}
   .slideout-menu {display: block;}
   .toggle-button {visibility: hidden;}

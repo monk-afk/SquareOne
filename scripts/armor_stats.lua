@@ -23,14 +23,14 @@ local armor_pieces = {
 }
 
 local stat_groups = {
-  ["inventory_image"] = "image",
-  ["fleshy"]          = "Defense",
-  ["armor_heal"]      = "Block Rate",
-  ["armor_use"]       = "Durability",
-  ["armor_fire"]      = "Fire Resist",
-  ["physics_jump"]    = "Jump",
-  ["physics_speed"]   = "Speed",
-  ["physics_gravity"] = "Gravity",
+  {["inventory_image"] = "image"},
+  {["fleshy"]          = "Defense"},
+  {["armor_heal"]      = "Block Chance"},
+  {["armor_use"]       = "Durability"},
+  {["armor_fire"]      = "Fire Resist"},
+  {["physics_jump"]    = "Jump"},
+  {["physics_speed"]   = "Speed"},
+  {["physics_gravity"] = "Gravity"},
 }
 
 local armor_data = {}
@@ -41,16 +41,17 @@ for _,armor in ipairs(armor_pieces) do
 
       armor_data[class] = armor_data[class] or {}
       armor_data[class][armor] = {}
-
-      for group, desc in pairs(stat_groups) do
+    for n = 1, #stat_groups do
+      for group, desc in pairs(stat_groups[n]) do
         def:gsub(
-          "(" .. group .. ')="?(%-?[%a%d._]*)"?', function(g, v)
-            if group == "armor_use" then 
-              v = math.floor(65535/v)
+            "(" .. group .. ')="?(%-?[%a%d._]*)"?', function(g, v)
+              if group == "armor_use" then 
+                v = math.floor(65535/v)
+              end
+              armor_data[class][armor][desc] = v
             end
-            armor_data[class][armor][desc] = v
-          end
-        )
+          )
+        end
       end
     end
   )

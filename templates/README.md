@@ -130,42 +130,88 @@ ___
 Relevant Directies:
 
 ```
+? means "optional"
+
 webroot/
-  ├─index.html?       -- index.html will be created in the root
-  ├─pages/*           -- public facing html files
-  └─templates/        -- MD-HTML conversion workspace
-    ├─lunamark/
-    │ ├─lunamark.lua  -- lunamark does most of the conversion
-    │ └─lunamark/*
-    ├─hypertext/      -- html templates
-    │ ├─master.html   -- master contains head/body substitutes
-    │ └─index.html?   -- html partials
-    ├─markdown/*
-    │ └─index.md      -- markdown files for conversion
-    ├─init.lua        -- initializer for conversion
-    ├─macro_nav.lua   -- navigation menu macro
-    └─inject.lua      -- keyword substituted injections
+  ├─index.html?   -- index.html will be created in the root
+  ├─pages/        -- public facing html files
+  │ └─sub_dir/?   -- sub-directory
+  └─templates/    -- MD-HTML conversion workspace
+    ├─lua/        -- Engine files
+    │ ├─macro_nav.lua   -- navigation menu macro
+    │ ├─inject.lua      -- keyword substituted injections
+    │ └─lunamark/lunamark/  -- writer/reader
+    │   └─lunamark.lua      -- lunamark does most of the conversion
+    ├─hypertext/       -- html templates
+    │ ├─master.html    -- master template
+    │ └─*.html?        -- html partials
+    ├─markdown/        -- markdown files for conversion
+    │ └─index.md?
+    └─init.lua        -- initializer for conversion
 ```
+
+Anything within the webroot which is not part of this structure is not part of the engine functionality.
 
 ## Markdown Injection
 
-  1. Template `/templates/hypertext/master.html` is the file with which all pages are created. It should contain keywords to be substituted with the content of a given markdown file. Keyword substitution functions are completed with `/templates/lua/inject.lua`.
+  1. The master template.
 
-      - `$nav` -> navigation side-menu built using `/templates/lua/macro_nav.lua`
-      - `$body` -> from the converted markdown content
-      - `$title` -> Extracted from the markdown file's first header line
-      - `$time` -> Footer element for last-updated time.
-      - `$hitmark` -> Used to inject html partials from file.
+  `/templates/hypertext/master.html` is the **HTML** file with which all pages are created. It should contain keywords to be substituted with the content of a given markdown file, as well as the formatting of the entire website. Not to be confused with `index.html`, which is handled separately from other files.
 
-  2. The markdown file name will be used as the markup file name.
-      - This is true for converted pages, as well as html-partials injection files:
-          - Converting from markdown file `/templates/markdown/myfile.md`
-          - Will use partial html from `/templates/hypertext/myfile.html`
-          - And will write to html file `/pages/myfile.html`
-      - The very first line containing a header will be used as the **page title** (Not the menu label).
-          - `# Some Title!` -> `<h1>Some Title!</h1>`
+  Main files which do **keyword substitution** are completed with `/templates/lua/inject.lua` and  `/templates/lua/macro_nav.lua`.
 
-  3. The side menu must be configured manually (ie: add page to menu) in `macro_nav.lua`.
+  Included substitution keywords: `$nav`, `$body`, `$title`,  `$time`, `$htmlsup`. A very basic outline of the master template would contain at minimum the `$nav` and `$body`.
+
+  ```html
+  <!-- master.html -->
+  <!DOCTYPE html> <html>
+    <head> <title>$title - SquareOne</title> </head>
+    <body>
+      <nav>$nav</nav>
+      <div class="main">$body</div>
+      <footer>$time</footer>
+    </body>
+  </html>
+  ```
+
+  ### `$body` and `$title`
+
+  The `$body` tag will be the converted markdown from files contained within `/templates/markdown/`. The file name of the markdown file becomes the name of the publicly served HTML files.
+
+  For the web-root files:
+
+  `/templates/markdown/index.md` -> `/index.html`
+  `/templates/markdown/ezpz.md` -> `/pages/ezpz.html`
+
+  For sub-root files:
+
+  `/templates/markdown/mysubs_index.md` -> `/pages/mysubs/index.html`
+
+  To add pages into a sub directory, we must include `/mysubs/` on the first line with the `#title`
+  `/templates/markdown/credits.md` -> `#Credits /mysubs/` -> `/pages/mysubs/credits.html`
+
+  Why not just use a sub path within the markdown folder? That would have been the smart thing to do.
+
+  ### `$htmlsup`
+
+  Similar to the path of converting a `.md` to `.html`, the partials file must correspond by name with the markdown file to be injected.
+
+  `/templates/hypertext/myfile.html`:
+
+  ```html
+    <code>The snippet</code>
+  ```
+  
+  `/templates/markdown/myfile.md`:
+
+  ```md
+  # Some markdown
+  $htmlsup
+  ```
+
+  ### `$nav`
+
+  The side menu must be configured manually (ie: add page to menu) in `macro_nav.lua`.
       - The `menu_pages` table contains the items to be processed into the sidebar menu.
       - With the exception of the sub-menu, the naming scheme is: `["filename"] = "Item Label"`
       - Ordering of the table items is also ordering of the menu items.
@@ -188,7 +234,7 @@ webroot/
           {["lastpage"]  = "Last Page"},
         }
       ```
-
+  <!-- TODO:Sub menu items for sub-directory pages -->
 + [Top](#markdown-to-html-with-luamark)
 
 
@@ -206,6 +252,12 @@ project_root/templates/ $ lua init.lua markdown/index.md
 
   # write to file
 project_root/templates/ $ lua init.lua markdown/index.md -o
+```
+
+3. Batch updating is not currently implemented, and must be done using something similar to:
+
+```bash
+project_root/templates/ $ for FILE in `find markdown/ -type f` ; do lua init.lua $FILE -o ; done
 ```
 
 + [Top](#markdown-to-html-with-luamark)
@@ -480,7 +532,11 @@ This is a div block as  a md notice box
 
 <!-- Also link attributes -->
 ![with attributes](image.png){width=150 height=100}
+
+!!! Summary element
+  Dropdown details element follows two spaces
 ```
+
 
 + [Top](#markdown-to-html-with-luamark)
 
