@@ -1,5 +1,12 @@
 # Recent Updates
 
+### June 14 | Armor Buffs
+
+Mythril has long been a rare and useless item. It's harder to find than diamonds, and has a market value of roughly $5 per lump. To offset this, the armor stat for mythril has been buffed, by increasing the block chance to around 5%%.
+
+Additionally, the Pink Crystal boots have gained the ability to "walk" over single nodes. This will be noticed primarily by PC players, since some mobile apps have had this functionality for a while. Wearing the Pink Crystal boots will let players walk and step over single blocks without having to jump.
+
+
 ### May 27 | Celebrating SquareOne Year Two! {.header-separator}
 
 - ***New Posters***
