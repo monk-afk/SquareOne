@@ -16,6 +16,8 @@ When a player is within the borders of a protected area, they are only able to i
 |   | Yes             | No           | No                | Yes - From pB owner | No               |
 |   | Yes             | Yes          | Yes!              | No                  | Yes              |
 
+___
+
 ### Abandonned Protectors
 
 When in an abandonned state, everything, including the pblock, can be picked up by other players.
