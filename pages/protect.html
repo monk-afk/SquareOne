@@ -9,7 +9,7 @@
       <link rel="icon" type="image/png" href="/favicon.ico">
       <link rel="canonical" href="https://squareone.moe/">
       <meta name="description" content="SquareOne - SMP for Luanti - Hosted by monk">
-      <title>Protect - SquareOne</title>
+      <title>Protection Blocks - SquareOne</title>
       <link href="/css/style.css" type="text/css" rel="stylesheet">
       <link href="/css/menu.css" type="text/css" rel="stylesheet">
       <link href="/css/notices.css" type="text/css" rel="stylesheet">
@@ -60,7 +60,7 @@
       </div>
       <main id="panel" class="slideout-panel slideout-panel-left"> 
         <div id="header">
-          <h1 id="top">  Protect</h1>
+          <h1 id="top">  Protection Blocks</h1>
           <div class="toggle-button hamburger hamburger--spin">
             <div class="hamburger-box">
               <div class="hamburger-inner">
@@ -75,6 +75,52 @@
 <p>Players can protect their area from griefing with protection blocks (pblock).</p>
 
 <p>A pblock will cover an area of 15 cubic meters (nodes).</p>
+
+<p>Tap on the pblock, or tap on the ground with a pblock, to momentarily show the area&#39;s protected borders.</p>
+
+<h3>PvP</h3>
+
+<p>When a player is within the borders of a protected area, they are only able to inflict PvP damage on another player <em>if they own</em> the protected area. Otherwise, PvP is not enabled for players who stand in protected areas not owned by themselves.</p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+<th style="text-align: center;">inside pB zone?</th>
+<th style="text-align: center;">is pB owner?</th>
+<th style="text-align: center;">Can cause damage?</th>
+<th style="text-align: center;">Can receive damage?</th>
+<th style="text-align: center;">Will drop bones?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes - From pB owner</td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes!</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+</tbody>
+</table>
+
 
 <h3>Abandonned Protectors</h3>
 
@@ -98,7 +144,7 @@
         </div>
 
         <footer>
-          <sub>Updated <code>2025-06-13 22:47:40</code></sub>
+          <sub>Updated <code>2025-06-14 18:19:45</code></sub>
           <hr class="header-hr">
           <ul class="footer">
             <li><sup><span style="color: #f00"> ❖ </span>Square<span style="color: #f00">One</span> ❖ <a href="https://github.com/monk-afk">by mønκ</a><span style="color: #f00"> ❖ </span></sup></li>
