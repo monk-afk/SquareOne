@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+  <html lang="en_US">
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta charset="utf-8" />
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" type="image/png" href="/favicon.ico">
+      <link rel="canonical" href="https://squareone.moe/">
+      <meta name="description" content="SquareOne - SMP for Luanti - Hosted by monk">
+      <title>Protection Blocks - SquareOne</title>
+      <link href="/css/style.css" type="text/css" rel="stylesheet">
+      <link href="/css/menu.css" type="text/css" rel="stylesheet">
+      <link href="/css/notices.css" type="text/css" rel="stylesheet">
+      <script src="/js/jquery-3.x.min.js"></script>
+    </head>
+
+    <body>
+      <!-- ======== NAVIGATION MENU ============================= -->
+      <div class="main-nav slideout-menu slideout-menu-left" id="menu"> 
+        <div class="flex-container">
+          <nav class="sidebar-nav">
+            <ul class="metismenu" id="metismenu">
+              <li>
+                <a href="/index.html" aria-expanded="false" class="sidebar-brand">
+                  <img src="/images/squareone_text.png" id="sidebar-logo" alt="SquareOne">
+                </a>
+              </li>
+
+                  <li><a href="/pages/rules.html" aria-expanded="false" class="webkitNoSelect">RULES</a></li>
+
+                  <li><a href="/pages/staff.html" aria-expanded="false" class="webkitNoSelect">STAFF</a></li>
+
+                  <li><a href="/pages/map.html" aria-expanded="false" class="webkitNoSelect">MAPS</a></li>
+
+              <li class=" class="mm-active"">
+                <a href="#" class="mm-active has-arrow webkitNoSelect" aria-expanded="true">MOD INFO</a>
+                <ul class="mm-collapse">
+                  <li><a href="/pages/economy.html" aria-expanded="false" class="webkitNoSelect">Economy</a></li>
+                  <li><a href="/pages/tools.html" aria-expanded="false" class="webkitNoSelect">Tools</a></li>
+                  <li><a href="/pages/armor.html" aria-expanded="false" class="webkitNoSelect">Armor</a></li>
+                  <li><a href="/pages/exp.html" aria-expanded="false" class="webkitNoSelect">Exp</a></li>
+                  <li><a href="/pages/dyes.html" aria-expanded="false" class="webkitNoSelect">Dyes</a></li>
+                  <li><a href="/pages/mining.html" aria-expanded="false" class="webkitNoSelect">Mining</a></li>
+                  <li><a href="/pages/crystal.html" aria-expanded="false" class="webkitNoSelect">Crystal</a></li>
+                  <li class="mm-active"><a href="/pages/protect.html" aria-expanded="true" class="mm-active webkitNoSelect">Protect</a></li>
+                  <li><a href="/pages/faq.html" aria-expanded="false" class="webkitNoSelect">FAQs</a></li>
+                </ul>
+              </li>
+
+                  <li><a href="/pages/history.html" aria-expanded="false" class="webkitNoSelect">HISTORY</a></li>
+
+                  <li><a href="/pages/updates.html" aria-expanded="false" class="webkitNoSelect">UPDATES</a></li>
+
+              <li><a href="https://discord.gg/pE4Tu3cf23"><img src="https://dcbadge.limes.pink/api/server/pE4Tu3cf23?logoColor=red&theme=grey" alt=""></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <main id="panel" class="slideout-panel slideout-panel-left"> 
+        <div id="header">
+          <h1 id="top">  Protection Blocks</h1>
+          <div class="toggle-button hamburger hamburger--spin">
+            <div class="hamburger-box">
+              <div class="hamburger-inner">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <hr class="header-hr">
+          <div class="pagebox">
+            <!-- ===== MAIN CONTENT ============================= -->
+<p>Players can protect their area from griefing with protection blocks (pblock).</p>
+
+<p>A pblock will cover an area of 15 cubic meters (nodes).</p>
+
+<p>Tap on the pblock, or tap on the ground with a pblock, to momentarily show the area&#39;s protected borders.</p>
+
+<h3>PvP</h3>
+
+<p>When a player is within the borders of a protected area, they are only able to inflict PvP damage on another player <em>if they own</em> the protected area. Otherwise, PvP is not enabled for players who stand in protected areas not owned by themselves.</p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+<th style="text-align: center;">inside pB zone?</th>
+<th style="text-align: center;">is pB owner?</th>
+<th style="text-align: center;">Can cause damage?</th>
+<th style="text-align: center;">Can receive damage?</th>
+<th style="text-align: center;">Will drop bones?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes - From pB owner</td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes!</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+</tbody>
+</table>
+
+
+<hr class="header-hr">
+
+<h3>Abandonned Protectors</h3>
+
+<p>When in an abandonned state, everything, including the pblock, can be picked up by other players.</p>
+
+<p>Protector Abandonment is automatic after 9 months of not joining the server.</p>
+
+<div class="notices yellow">The abandon state only affects the protector blocks, not the player data. Account information, such as passwords and inventories, are <strong>not</strong> affected.</div>
+
+<p>If the owner of an abandonned area returns after 9 months, remaining pblocks will be re-activated.</p>
+
+<div class="notices red">Do not protect abandonned builds, unless you will live in it</div>
+
+<p>If there are disputes over abandoned builds, or if multiple players chaotically protect an abandoned area into a state where it cannot be built upon, we will demolish the area.</p>
+
+<div class="notices green">Please consider scavenging the whole build, as to not leave a mess of half-destroyed builds everywhere.</div>
+            <!-- ===== FOOTER =================================== -->
+            <hr class="header-hr">
+          </div>
+          <a href="#top"><sub>TOP</sub></a>
+        </div>
+
+        <footer>
+          <sub>Updated <code>2025-06-14 18:24:03</code></sub>
+          <hr class="header-hr">
+          <ul class="footer">
+            <li><sup><span style="color: #f00"> ❖ </span>Square<span style="color: #f00">One</span> ❖ <a href="https://github.com/monk-afk">by mønκ</a><span style="color: #f00"> ❖ </span></sup></li>
+            <li><sup>Circa. 2023-05-28</sup></li>
+            <li><img src="/images/squareone_pixelmonk.png" alt="monk with pixel glasses" width="64"/></li>
+            <li><a href="https://visitorbadge.io/status?path=squareone.moe"><img src="https://api.visitorbadge.io/api/visitors?path=squareone.moe&countColor=%23d60000" /></a></li>
+          </ul>
+          <hr class="header-hr">
+          <br>
+        </footer>
+      </main>
+    </div>
+    <script src="/js/metismenu.js"></script>
+    <script src="/js/slideout.js"></script>
+    <script src="/js/hamburger.js"></script>
+  </body>
+</html>
+
