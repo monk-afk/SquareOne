@@ -24,31 +24,34 @@ local function help_message()
 end
 
 
-local server = "${HOME}/squareone/worlds/world/"
-local images = "${PWD}/generated_images/"
-local option = "--backend postgresql --noemptyimage --colors colors.txt --max-y 400 --min-y -30"
 local today = os.date("%F")
-local exec_string = "${PWD}/minetestmapper %s -i %s -o %ssquareone_x%s_z%s_%s.png --geometry %s:%s+%s+%s;"
+local server = "${HOME}/squareone/worlds/world/"
+local images = "${PWD}/generated_images/" .. today .. "/"
+os.execute("mkdir -p " .. images)
+
+local option = "--backend postgresql --noemptyimage --colors colors.txt --max-y 120 --min-y -12"
+local exec_string = "${PWD}/minetestmapper %s -i %s -o %ssquareone_x%s_z%s.png --geometry %s:%s+%s+%s;"
 
 local function generate_image_at(x, z, d)
   local a = math.floor(d / 2)
   local ax, az = x+(-a), z+(-a)
   local exec_format = string.format(
-      exec_string, option, server, images, x, z, today, ax, az, d, d
+      exec_string, option, server, images, x, z, ax, az, d, d
     )
   os.execute(exec_format)
 end
 
 
 local function process_grid()
-  local max_pos = 12288
   local d = 4096
+  local max_pos = (d * 7) // 2
   for x = -max_pos, max_pos, d do
     for z = -max_pos, max_pos, d do
       generate_image_at(x, z, d)
       io.write("Generated image: (", x, ", ", z, ")\n"); io.stdout:flush()
     end
   end
+  io.open(images .. "last_update.txt", "w"):write(today):close()
 end
 
 
