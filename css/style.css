@@ -1,0 +1,188 @@
+/* ========== BASE STYLES ========== */
+body, html {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  background-color: #1f1f1f;
+  font-size: 0.8rem;
+  color: #b8b8b8;
+  line-height: 1.25;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  word-break: break-word;
+  margin:0;
+  padding:0;
+  margin-top:6px;
+}
+
+article, aside, details,
+figcaption, figure, footer,
+header, hgroup, main,
+menu, nav, section,
+summary {
+  display: block;
+}
+
+/* ========== TYPOGRAPHY ========== */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+  margin-bottom: 0.5em;
+  margin-top: 0;
+}
+
+h1 { font-size: 2rem; }
+#top:before { color:#f00; content: "\2756"; }
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1.4rem; }
+h4 { font-size: 1.2rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: 0.8rem; }
+p, ul, li, code { font-size: 16px; }
+strong { font-weight: 700; }
+
+/* ========== 3. LINKS & BUTTONS ========== */
+a, a:visited { outline: none; color: #A1A1A1; text-decoration: underline; transition: color 0.7s ease-in-out; }
+a:hover, a:focus, a.active { color: #f00; text-decoration: underline; }
+a:focus { box-shadow: 0 0 0 0.1rem rgba(238, 48, 48, 0.66); }
+
+/* ========== 4. HEADER & NAVIGATION ========== */
+#header {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  width: 100%;
+  height: 0rem;
+  background: #1e201d;
+  color: #aaa;
+  font-size: 0.7rem;
+  font-weight: 700;
+  transition: all 0.5s ease;
+}
+
+footer ul li {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  list-style: none;
+}
+
+/* ========== PAGE STYLE ============= */
+.pagebox {
+  background-color: #2F2F2F;
+  border-radius: 3px;
+  margin: 15px 0;
+  padding: 4px 8px;
+  position: relative;
+}
+
+.header-hr{
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right,#f23,#333,#f23)
+}
+
+.content {
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: 1280px;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.content img, .content div {
+  max-width: 100%;
+}
+
+.webkitNoSelect {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ========= SCROLLBAR =========== */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #D60000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6f6e6e;
+}
+
+
+/* == STRAY == */
+.flex-container {
+  display: flex;
+}
+
+/* ====== TABLE ======= */
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  overflow: auto;
+  font-variant: tabular-nums;
+  /* margin-bottom: 0em; */
+}
+
+td, th {
+  padding: 2px;
+}
+
+table th {
+  padding: 6px 13px;
+  background-color: #444;
+  border-right: 1px solid #f00;
+}
+
+td:first-child {
+  padding: 1px;
+  background-color: #444;
+  border-top: 1px solid #f00;
+  font-weight: bold;
+}
+
+table img {
+  background-color: transparent;
+}
+
+img[align=right] {
+  padding-left: 20px;
+}
+
+img[align=left] {
+  padding-right: 20px;
+}
+
+td>:first-child:hover {
+  outline: 2px solid #d23;
+  outline-offset: -2px;
+  box-shadow: none;
+}
+
+mark {
+  background-color: #d6000066;
+  color: #ddd;
+}
+
+/* ==== FADED HORIZONTAL RULE === */
+
+.header-separator {
+  margin: 30px 0 0 23px;
+  padding: 12px 0px 8px 2em;
+  border-left: 4px solid #d10;
+  border-top: 4px solid #d10;
+}

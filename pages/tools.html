@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+  <html lang="en_US">
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta charset="utf-8" />
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" type="image/png" href="/favicon.ico">
+      <link rel="canonical" href="https://squareone.moe/">
+      <meta name="description" content="SquareOne - SMP for Luanti - Hosted by monk">
+      <title>Tools - SquareOne</title>
+      <link href="/css/style.css" type="text/css" rel="stylesheet">
+      <link href="/css/menu.css" type="text/css" rel="stylesheet">
+      <link href="/css/notices.css" type="text/css" rel="stylesheet">
+      <script src="/js/jquery-3.x.min.js"></script>
+    </head>
+
+    <body>
+      <!-- ======== NAVIGATION MENU ============================= -->
+      <div class="main-nav slideout-menu slideout-menu-left" id="menu"> 
+        <div class="flex-container">
+          <nav class="sidebar-nav">
+            <ul class="metismenu" id="metismenu">
+              <li>
+                <a href="/index.html" aria-expanded="false" class="sidebar-brand">
+                  <img src="/images/squareone_text.png" id="sidebar-logo" alt="SquareOne">
+                </a>
+              </li>
+
+                  <li><a href="/pages/rules.html" aria-expanded="false" class="webkitNoSelect">RULES</a></li>
+
+                  <li><a href="/pages/staff.html" aria-expanded="false" class="webkitNoSelect">STAFF</a></li>
+
+                  <li><a href="/pages/map.html" aria-expanded="false" class="webkitNoSelect">MAPS</a></li>
+
+              <li class=" class="mm-active"">
+                <a href="#" class="mm-active has-arrow webkitNoSelect" aria-expanded="true">MOD INFO</a>
+                <ul class="mm-collapse">
+                  <li><a href="/pages/economy.html" aria-expanded="false" class="webkitNoSelect">Economy</a></li>
+                  <li class="mm-active"><a href="/pages/tools.html" aria-expanded="true" class="mm-active webkitNoSelect">Tools</a></li>
+                  <li><a href="/pages/armor.html" aria-expanded="false" class="webkitNoSelect">Armor</a></li>
+                  <li><a href="/pages/exp.html" aria-expanded="false" class="webkitNoSelect">Exp</a></li>
+                  <li><a href="/pages/dyes.html" aria-expanded="false" class="webkitNoSelect">Dyes</a></li>
+                  <li><a href="/pages/mining.html" aria-expanded="false" class="webkitNoSelect">Mining</a></li>
+                  <li><a href="/pages/crystal.html" aria-expanded="false" class="webkitNoSelect">Crystal</a></li>
+                  <li><a href="/pages/protect.html" aria-expanded="false" class="webkitNoSelect">Protect</a></li>
+                  <li><a href="/pages/faq.html" aria-expanded="false" class="webkitNoSelect">FAQs</a></li>
+                </ul>
+              </li>
+
+                  <li><a href="/pages/history.html" aria-expanded="false" class="webkitNoSelect">HISTORY</a></li>
+
+                  <li><a href="/pages/updates.html" aria-expanded="false" class="webkitNoSelect">UPDATES</a></li>
+
+              <li><a href="https://discord.gg/pE4Tu3cf23"><img src="https://dcbadge.limes.pink/api/server/pE4Tu3cf23?logoColor=red&theme=grey" alt=""></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <main id="panel" class="slideout-panel slideout-panel-left"> 
+        <div id="header">
+          <h1 id="top">  Tools</h1>
+          <div class="toggle-button hamburger hamburger--spin">
+            <div class="hamburger-box">
+              <div class="hamburger-inner">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <hr class="header-hr">
+          <div class="pagebox">
+            <!-- ===== MAIN CONTENT ============================= -->
+<div class="notice red">There are some stats here that are miscalculated, and some are missing. Only realized after publishing. The numbers will be corrected soon.</div>
+
+<ul>
+<li><a href="#tools-wood">Wood</a></li>
+<li><a href="#tools-stone">Stone</a></li>
+<li><a href="#tools-silver">Silver</a></li>
+<li><a href="#tools-steel">Steel</a></li>
+<li><a href="#tools-mese">Mese</a></li>
+<li><a href="#tools-pink-crystal">Pink Crystal</a></li>
+<li><a href="#tools-pink-diamond">Pink Diamond</a></li>
+<li><a href="#tools-obsidian">Obsidian</a></li>
+<li><a href="#tools-crystal">Crystal</a></li>
+<li><a href="#tools-diamond">Diamond</a></li>
+<li><a href="#tools-bronze">Bronze</a></li>
+<li><a href="#tools-mithril">Mithril</a></li>
+<li><a href="#tools-lava">Lava</a></li>
+<li><a href="#tools-staff">Staff</a></li>
+</ul>
+
+<hr class="header-hr">
+
+<h3 id="tools-wood">Wood</h3>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Wood</th>
+<th style="text-align: right;">Durability</th>
+<th style="text-align: right;">Attack</th>
+<th style="text-align: right;">Swing Speed</th>
+<th style="text-align: right;">Full Dmg. Interval</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_woodpick.png" alt="pick" width="32" height="32" /></td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.9</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_woodsword.png" alt="sword" width="32" height="32" /></td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.8</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_woodaxe.png" alt="axe" width="32" height="32" /></td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_woodshovel.png" alt="shovel" width="32" height="32" /></td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.2</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3 id="tools-stone">Stone</h3>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Stone</th>
+<th style="text-align: right;">Durability</th>
+<th style="text-align: right;">Attack</th>
+<th style="text-align: right;">Swing Speed</th>
+<th style="text-align: right;">Full Dmg. Interval</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_stonepick.png" alt="pick" width="32" height="32" /></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.3</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_stonesword.png" alt="sword" width="32" height="32" /></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.2</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_stoneaxe.png" alt="axe" width="32" height="32" /></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.2</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_stoneshovel.png" alt="shovel" width="32" height="32" /></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.4</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3 id="tools-bronze">Bronze</h3>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Bronze</th>
+<th style="text-align: right;">Durability</th>
+<th style="text-align: right;">Attack</th>
+<th style="text-align: right;">Swing Speed</th>
+<th style="text-align: right;">Full Dmg. Interval</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_bronzepick.png" alt="pick" width="32" height="32" /></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_bronzesword.png" alt="sword" width="32" height="32" /></td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.1</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_bronzeaxe.png" alt="axe" width="32" height="32" /></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_bronzeshovel.png" alt="shovel" width="32" height="32" /></td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.1</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3 id="tools-steel">Steel</h3>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Steel</th>
+<th style="text-align: right;">Durability</th>
+<th style="text-align: right;">Attack</th>
+<th style="text-align: right;">Swing Speed</th>
+<th style="text-align: right;">Full Dmg. Interval</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_steelpick.png" alt="pick" width="32" height="32" /></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_steelsword.png" alt="sword" width="32" height="32" /></td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.9</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_steelaxe.png" alt="axe" width="32" height="32" /></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_steelshovel.png" alt="shovel" width="32" height="32" /></td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.1</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3 id="tools-silver">Silver</h3>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Silver</th>
+<th style="text-align: right;">Durability</th>
+<th style="text-align: right;">Attack</th>
+<th style="text-align: right;">Swing Speed</th>
+<th style="text-align: right;">Full Dmg. Interval</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/moreores_tool_silverpick.png" alt="pick" width="32" height="32" /></td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/moreores_tool_silversword.png" alt="sword" width="32" height="32" /></td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/moreores_tool_silveraxe.png" alt="axe" width="32" height="32" /></td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/moreores_tool_silvershovel.png" alt="shovel" width="32" height="32" /></td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3 id="tools-pink-crystal">Pink Crystal</h3>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Pink Crystal</th>
+<th style="text-align: right;">Durability</th>
+<th style="text-align: right;">Attack</th>
+<th style="text-align: right;">Swing Speed</th>
+<th style="text-align: right;">Full Dmg. Interval</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/ethereal_pink_crystal_pick.png" alt="pick" width="32" height="32" /></td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.7</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/ethereal_pink_crystal_sword.png" alt="sword" width="32" height="32" /></td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.8</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/ethereal_pink_crystal_axe.png" alt="axe" width="32" height="32" /></td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.8</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/ethereal_pink_crystal_shovel.png" alt="shovel" width="32" height="32" /></td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3 id="tools-pink-diamond">Pink Diamond</h3>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Pink Diamond</th>
+<th style="text-align: right;">Durability</th>
+<th style="text-align: right;">Attack</th>
+<th style="text-align: right;">Swing Speed</th>
+<th style="text-align: right;">Full Dmg. Interval</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/moreores_tool_pinkdiamondpick.png" alt="pick" width="32" height="32" /></td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.6</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/moreores_tool_pinkdiamondsword.png" alt="sword" width="32" height="32" /></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.8</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/moreores_tool_pinkdiamondaxe.png" alt="axe" width="32" height="32" /></td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.9</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/moreores_tool_pinkdiamondshovel.png" alt="shovel" width="32" height="32" /></td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3 id="tools-mese">Mese</h3>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Mese</th>
+<th style="text-align: right;">Durability</th>
+<th style="text-align: right;">Attack</th>
+<th style="text-align: right;">Swing Speed</th>
+<th style="text-align: right;">Full Dmg. Interval</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_mesepick.png" alt="pick" width="32" height="32" /></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.9</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_mesesword.png" alt="sword" width="32" height="32" /></td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.8</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_meseaxe.png" alt="axe" width="32" height="32" /></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.9</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_meseshovel.png" alt="shovel" width="32" height="32" /></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3 id="tools-obsidian">Obsidian</h3>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Obsidian</th>
+<th style="text-align: right;">Durability</th>
+<th style="text-align: right;">Attack</th>
+<th style="text-align: right;">Swing Speed</th>
+<th style="text-align: right;">Full Dmg. Interval</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/armorplus_obsidian_pick.png" alt="pick" width="32" height="32" /></td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.9</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/armorplus_obsidian_sword.png" alt="sword" width="32" height="32" /></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.7</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/armorplus_obsidian_axe.png" alt="axe" width="32" height="32" /></td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.9</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/armorplus_obsidian_shovel.png" alt="shovel" width="32" height="32" /></td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3 id="tools-crystal">Crystal</h3>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Crystal</th>
+<th style="text-align: right;">Durability</th>
+<th style="text-align: right;">Attack</th>
+<th style="text-align: right;">Swing Speed</th>
+<th style="text-align: right;">Full Dmg. Interval</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/ethereal_crystal_pick.png" alt="pick" width="32" height="32" /></td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.85</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/ethereal_crystal_sword.png" alt="sword" width="32" height="32" /></td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.9</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/ethereal_crystal_axe.png" alt="axe" width="32" height="32" /></td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.8</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/ethereal_crystal_shovel.png" alt="shovel" width="32" height="32" /></td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3 id="tools-diamond">Diamond</h3>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Diamond</th>
+<th style="text-align: right;">Durability</th>
+<th style="text-align: right;">Attack</th>
+<th style="text-align: right;">Swing Speed</th>
+<th style="text-align: right;">Full Dmg. Interval</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_diamondpick.png" alt="pick" width="32" height="32" /></td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.9</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_diamondsword.png" alt="sword" width="32" height="32" /></td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.7</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_diamondaxe.png" alt="axe" width="32" height="32" /></td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.9</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/default_tool_diamondshovel.png" alt="shovel" width="32" height="32" /></td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3 id="tools-mithril">Mithril</h3>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Mithril</th>
+<th style="text-align: right;">Durability</th>
+<th style="text-align: right;">Attack</th>
+<th style="text-align: right;">Swing Speed</th>
+<th style="text-align: right;">Full Dmg. Interval</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/moreores_tool_mithrilpick.png" alt="pick" width="32" height="32" /></td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.95</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/moreores_tool_mithrilsword.png" alt="sword" width="32" height="32" /></td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.7</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/moreores_tool_mithrilaxe.png" alt="axe" width="32" height="32" /></td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/moreores_tool_mithrilshovel.png" alt="shovel" width="32" height="32" /></td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.0</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3 id="tools-lava">Lava</h3>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Lava</th>
+<th style="text-align: right;">Ability</th>
+<th style="text-align: right;">Durability</th>
+<th style="text-align: right;">Attack</th>
+<th style="text-align: right;">Swing Speed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/tools/mobs_pick_lava.png" alt="pick" width="32" height="32" /></td>
+<td style="text-align: right;">Auto-smelting</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
+
+
+<h3 id="tools-staff">Staffs</h3>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Staff</th>
+<th style="text-align: left;">Ability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Gilly <img src="/images/textures/tools/ethereal_crystal_gilly_staff.png" alt="gilly" width="32" height="32" /></td>
+<td style="text-align: left;">Use item to breathe under water</td>
+</tr>
+<tr>
+<td style="text-align: center;">Healing <img src="/images/textures/tools/armorplus_etherium_life_staff.png" alt="staff" width="32" height="32" /></td>
+<td style="text-align: left;">Use to restore another player HP, or on self for +5HP</td>
+</tr>
+<tr>
+<td style="text-align: center;">Light <img src="/images/textures/tools/ethereal_light_staff.png" alt="staff" width="32" height="32" /></td>
+<td style="text-align: left;">Temporarily Changes stone into a glowing stone</td>
+</tr>
+</tbody>
+</table>
+
+            <!-- ===== FOOTER =================================== -->
+            <hr class="header-hr">
+          </div>
+          <a href="#top"><sub>TOP</sub></a>
+        </div>
+
+        <footer>
+          <sub>Updated <code>2025-06-13 22:47:40</code></sub>
+          <hr class="header-hr">
+          <ul class="footer">
+            <li><sup><span style="color: #f00"> ❖ </span>Square<span style="color: #f00">One</span> ❖ <a href="https://github.com/monk-afk">by mønκ</a><span style="color: #f00"> ❖ </span></sup></li>
+            <li><sup>Circa. 2023-05-28</sup></li>
+            <li><img src="/images/squareone_pixelmonk.png" alt="monk with pixel glasses" width="64"/></li>
+            <li><a href="https://visitorbadge.io/status?path=squareone.moe"><img src="https://api.visitorbadge.io/api/visitors?path=squareone.moe&countColor=%23d60000" /></a></li>
+          </ul>
+          <hr class="header-hr">
+          <br>
+        </footer>
+      </main>
+    </div>
+    <script src="/js/metismenu.js"></script>
+    <script src="/js/slideout.js"></script>
+    <script src="/js/hamburger.js"></script>
+  </body>
+</html>
+

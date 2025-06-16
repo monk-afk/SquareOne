@@ -51,7 +51,7 @@ local function process_grid()
       io.write("Generated image: (", x, ", ", z, ")\n"); io.stdout:flush()
     end
   end
-  io.open(images .. "last_update.txt", "w"):write(today):close()
+  os.execute("echo " .. today .. " > " .. images .. "last_update.txt")
 end
 
 

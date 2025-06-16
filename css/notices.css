@@ -1,0 +1,52 @@
+.notices {
+  margin: 15px 0;
+  padding: 15px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.notices p::before {
+  position: absolute;
+  box-sizing: border-box;
+  top: 0.5px;
+  content: url(/images/icons/alert.svg);
+  width: 18px !important;
+  height: 18px !important;
+  left: 4px;
+  font-size: 19px;
+}
+
+.notices p::after {
+  position: absolute;
+  box-sizing: border-box;
+  top: 4px;
+  color: #333;
+  left: 2rem;
+  content: "";
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.notices.yellow {
+  background: rgba(49, 34, 11, 0.2);
+  border-left: 10px solid rgba(147, 91, 12, 0.8);
+  color: #eea034;
+}
+
+.notices.red {
+  background: rgb(46, 11, 11, 0.2);
+  border-left: 10px solid rgba(137, 33, 30, 0.8);
+  color: #db5a56;
+}
+
+.notices.blue {
+  background: rgba(19, 34, 42, 0.2);
+  border-left: 10px solid rgba(27, 110, 134, 0.8);
+  color: #4bb9da;
+}
+
+.notices.green {
+  background: rgba(25, 44, 19, 0.2);
+  color: #7ac57a;
+  border-left: 10px solid rgba(52, 120, 52, 0.8);
+}
