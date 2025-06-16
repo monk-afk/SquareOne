@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+  <html lang="en_US">
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta charset="utf-8" />
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" type="image/png" href="/favicon.ico">
+      <link rel="canonical" href="https://squareone.moe/">
+      <meta name="description" content="SquareOne - SMP for Luanti - Hosted by monk">
+      <title>EXP - SquareOne</title>
+      <link href="/css/style.css" type="text/css" rel="stylesheet">
+      <link href="/css/menu.css" type="text/css" rel="stylesheet">
+      <link href="/css/notices.css" type="text/css" rel="stylesheet">
+      <script src="/js/jquery-3.x.min.js"></script>
+    </head>
+
+    <body>
+      <!-- ======== NAVIGATION MENU ============================= -->
+      <div class="main-nav slideout-menu slideout-menu-left" id="menu"> 
+        <div class="flex-container">
+          <nav class="sidebar-nav">
+            <ul class="metismenu" id="metismenu">
+              <li>
+                <a href="/index.html" aria-expanded="false" class="sidebar-brand">
+                  <img src="/images/squareone_text.png" id="sidebar-logo" alt="SquareOne">
+                </a>
+              </li>
+
+                  <li><a href="/pages/rules.html" aria-expanded="false" class="webkitNoSelect">RULES</a></li>
+
+                  <li><a href="/pages/staff.html" aria-expanded="false" class="webkitNoSelect">STAFF</a></li>
+
+                  <li><a href="/pages/map.html" aria-expanded="false" class="webkitNoSelect">MAPS</a></li>
+
+              <li class=" class="mm-active"">
+                <a href="#" class="mm-active has-arrow webkitNoSelect" aria-expanded="true">MOD INFO</a>
+                <ul class="mm-collapse">
+                  <li><a href="/pages/economy.html" aria-expanded="false" class="webkitNoSelect">Economy</a></li>
+                  <li><a href="/pages/tools.html" aria-expanded="false" class="webkitNoSelect">Tools</a></li>
+                  <li><a href="/pages/armor.html" aria-expanded="false" class="webkitNoSelect">Armor</a></li>
+                  <li class="mm-active"><a href="/pages/exp.html" aria-expanded="true" class="mm-active webkitNoSelect">Exp</a></li>
+                  <li><a href="/pages/dyes.html" aria-expanded="false" class="webkitNoSelect">Dyes</a></li>
+                  <li><a href="/pages/mining.html" aria-expanded="false" class="webkitNoSelect">Mining</a></li>
+                  <li><a href="/pages/crystal.html" aria-expanded="false" class="webkitNoSelect">Crystal</a></li>
+                  <li><a href="/pages/protect.html" aria-expanded="false" class="webkitNoSelect">Protect</a></li>
+                  <li><a href="/pages/faq.html" aria-expanded="false" class="webkitNoSelect">FAQs</a></li>
+                </ul>
+              </li>
+
+                  <li><a href="/pages/history.html" aria-expanded="false" class="webkitNoSelect">HISTORY</a></li>
+
+                  <li><a href="/pages/updates.html" aria-expanded="false" class="webkitNoSelect">UPDATES</a></li>
+
+              <li><a href="https://discord.gg/pE4Tu3cf23"><img src="https://dcbadge.limes.pink/api/server/pE4Tu3cf23?logoColor=red&theme=grey" alt=""></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <main id="panel" class="slideout-panel slideout-panel-left"> 
+        <div id="header">
+          <h1 id="top">  EXP</h1>
+          <div class="toggle-button hamburger hamburger--spin">
+            <div class="hamburger-box">
+              <div class="hamburger-inner">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <hr class="header-hr">
+          <div class="pagebox">
+            <!-- ===== MAIN CONTENT ============================= -->
+<h2>Gains and Losses</h2>
+
+<p>Playing the game will earn EXP stats. Just play, and you&#39;ll gain in stats.</p>
+
+<p>Being AFK will cause your EXP to drain.</p>
+
+<p>New players EXP stats will, sometimes rise to high levels in a short time.</p>
+
+<p>As you continue to play, your stats will fluctuate less and steadily increase/decrease.</p>
+
+<p>Being offline for 5 days will cause a reduction of approximately 20% every day.</p>
+
+<hr class="header-hr">
+
+<h2>Stat Definitions</h2>
+
+<p>The idea behind the way exp is calculated is simple: Experience is measured by your overall activity over a period of time.</p>
+
+<p>The command to view your exp stats is <code>/exp</code>, or of another player <code>/exp username</code>. This will show your stats:</p>
+
+<p><code>OT</code>: Every second counts. Being online in-game will increase your online time (OT)</p>
+
+<p><code>AP</code>: Action points. Doing stuff, even running in circles will increase this stat.</p>
+
+<p><code>Exp</code>: Experience gained by doing things in-game.</p>
+
+<p><code>Level</code>: Bragging rights, shown as nametag flair in public chat.</p>
+
+<p><code>Luck</code>: Chance of outcome. This number is variable, and used to determine outcome from random events (either good or bad). In other words, &quot;whether you win or lose&quot;.</p>
+
+<p><code>Fortune</code> Outcome multiplier. Fortune is complimentary to luck, and decides &quot;how much you win or lose&quot;.</p>
+
+<hr class="header-hr">
+
+<h2>Levels</h2>
+
+<p>Your level is shown as part of your public chat nametag flair in round brackets.</p>
+
+<hr class="header-hr">
+
+<h2>Luck and Fortune</h2>
+
+<p>Luck and Fortune can be used as Multipliers or Determinators for certain events.</p>
+
+<p>Luck is always changing, and will never go above 1. - Used to multiply Blue Diamond drops - Used to determine EXP loss on dying</p>
+
+<p>Fortune will normally increase, and sometimes decrease. - Used to multiply Pink Diamond drops - Used to calculate total amount EXP lost on dying</p>
+
+<hr class="header-hr">
+
+<h2>Bones</h2>
+
+<p>Dying will cause your player to drop items into a bones block.</p>
+
+<p>There is no loss of EXP from dying, however using the command to return to bones <em>may</em> cost some EXP points.</p>
+
+<p>To test your luck and return to bones, use <code>/bones</code> after dying.</p>
+
+<p>If you&#39;re lucky, returning to bones will not lower your exp stats.</p>
+
+<p>If not, your EXP will be deducted using the formula: <code>(AP * Luck) / fortune</code></p>
+
+<p>Regardless of how much EXP it would cost, there is a minimum of 100 EXP to use the command.</p>
+
+If you die in someone else&#39;s protected area no bones are dropped, and are therefore unable to use <code>/bones</code>.
+            <!-- ===== FOOTER =================================== -->
+            <hr class="header-hr">
+          </div>
+          <a href="#top"><sub>TOP</sub></a>
+        </div>
+
+        <footer>
+          <sub>Updated <code>2025-06-13 22:47:39</code></sub>
+          <hr class="header-hr">
+          <ul class="footer">
+            <li><sup><span style="color: #f00"> ❖ </span>Square<span style="color: #f00">One</span> ❖ <a href="https://github.com/monk-afk">by mønκ</a><span style="color: #f00"> ❖ </span></sup></li>
+            <li><sup>Circa. 2023-05-28</sup></li>
+            <li><img src="/images/squareone_pixelmonk.png" alt="monk with pixel glasses" width="64"/></li>
+            <li><a href="https://visitorbadge.io/status?path=squareone.moe"><img src="https://api.visitorbadge.io/api/visitors?path=squareone.moe&countColor=%23d60000" /></a></li>
+          </ul>
+          <hr class="header-hr">
+          <br>
+        </footer>
+      </main>
+    </div>
+    <script src="/js/metismenu.js"></script>
+    <script src="/js/slideout.js"></script>
+    <script src="/js/hamburger.js"></script>
+  </body>
+</html>
+
