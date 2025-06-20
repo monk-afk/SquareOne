@@ -44,7 +44,7 @@ end
 
 local function process_grid()
   local d = 4096
-  local max_pos = (d * 7) // 2
+  local max_pos = (d * 8) // 2
   for x = -max_pos, max_pos, d do
     for z = -max_pos, max_pos, d do
       generate_image_at(x, z, d)
