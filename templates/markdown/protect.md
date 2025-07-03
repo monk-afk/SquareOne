@@ -39,3 +39,4 @@ If there are disputes over abandoned builds, or if multiple players chaotically 
 ::: {.notices .green}
 Please consider scavenging the whole build, as to not leave a mess of half-destroyed builds everywhere.
 :::
+

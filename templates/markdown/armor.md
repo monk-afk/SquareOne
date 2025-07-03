@@ -117,3 +117,4 @@ ___
 | ![chestplate](/images/textures/armor/3d_armor_inv_chestplate_gold.png) |        218 |       8 |     6 | -0.05 |    0.05 |
 | ![leggings](/images/textures/armor/3d_armor_inv_leggings_gold.png)     |        218 |       6 |     6 | -0.04 |    0.04 |
 | ![boots](/images/textures/armor/3d_armor_inv_boots_gold.png)           |        218 |       5 |     6 | -0.02 |    0.02 |
+

@@ -44,3 +44,4 @@ For example, if there are 10 players online, there must be at lease $100 pending
 ```/profit-share join``` to join the profit sharing group
 
 Profit Sharing shops can be distinguished from normal shops by the customer interface, which is customised with the shop owner's name and faction color.
+

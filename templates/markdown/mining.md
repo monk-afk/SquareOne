@@ -51,3 +51,4 @@ If an item is listed twice, like copper, it means there are two chances per dig.
 | stone with mese    | mese crystal   | 34     |
 | sand               | ender pearl    | 1475   |
 | dirt               | bone           | 40     |
+
