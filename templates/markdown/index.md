@@ -11,4 +11,5 @@ Bugs can be reported on our [GitHub](https://github.com/monk-afk/SquareOne/issue
 
 The source code for this webside is also on our [GitHub](https://github.com/monk-afk/SquareOne)
 
-To support SquareOne, we have a ko-fi page: [https://ko-fi.com/monkmoe](https://ko-fi.com/monkmoe)
+How much does a server like SquareOne cost? Feel free to review the [Expenses Summary](/pages/expenses.html)
+

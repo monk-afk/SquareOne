@@ -17,3 +17,4 @@ There is no minimum light for crystal grass to crystalize.
 Pink Crystal will spawn along with a Pink Crystal Dirt node; it does not spread like normal grassy dirt.
 
 Sometimes a Salt Crystal will spawn
+

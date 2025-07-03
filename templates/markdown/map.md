@@ -24,3 +24,4 @@ For generating the images using minetestmapper
 For converting the images to 128 color palette using GIMP
 
   - [convert_palette.sh](/scripts/convert_palette.sh)
+

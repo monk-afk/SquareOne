@@ -143,4 +143,3 @@ If there are disputes over abandoned builds, or if multiple players chaotically 
     - `Lumber` Adds several wood-derived blocks: `Panel`, `Panel Link`, `Cross Planks`, `Braced Panel`, `Tile`
     - Several Tree-related textures, including wood/plank blocks, are updated.
 
-___

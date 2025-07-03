@@ -69,3 +69,4 @@ If not, your EXP will be deducted using the formula: `(AP * Luck) / fortune`
 Regardless of how much EXP it would cost, there is a minimum of 100 EXP to use the command.
 
 If you die in someone else's protected area no bones are dropped, and are therefore unable to use `/bones`.
+

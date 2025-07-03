@@ -11,7 +11,6 @@ ___
 | mohra         | 2024/06/24 |        |
 | Mymelodygirl  | 2025/02/20 |        |
 | Zandar        | 2025/02/20 | ![Zandar](/images/staff/Zandar.png){width=300 height=300} |
-| Multichan7    | 2025/02/20 | ![Multichan7](/images/staff/Multichan7.png){width=300 height=300} |
 | -RoselinCute- | 2025/02/20 | ![-RoselinCute-](/images/staff/RoselinCute.png){width=300 height=300} |
 | Pot-of-rice   | 2025/09/21 | ![Pot-of-rice](/images/staff/Pot-of-rice.png){width=300 height=300} |
 | kikiara       | 2024/06/24 | ![kikiara](/images/staff/kikiara.png){width=300 height=300} |
@@ -23,3 +22,4 @@ ___
 | senua         | 2024/02/04 | ![senua](/images/staff/senua.png){width=300 height=300} |
 | Ylde          | 2023/08/08 | ![Ylde](/images/staff/Ylde.png){width=300 height=300} |
 | Red_Dolphin   | 2023/09/03 | ![Red_Dolphin](/images/staff/Red_Dolphin.png){width=300 height=300} |
+
