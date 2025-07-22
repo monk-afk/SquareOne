@@ -1,5 +1,22 @@
 # Recent Updates
 
+### July 21 | Mandated Taxes and Chat Filter Update {.header-separator}
+
+"Profit Sharing" has been an optional feature of shops for the last 9 months. It will now be mandated for all shops, and any shop selling items for cash will automatically contribute 10%% of their cash sales towards the half-hourly money drops.
+
+What to expect:
+
+  - If you have a shop selling items for cash, you will receive 90%% of the cash sale
+    - Example: if you sell gold for $10, each sale gives you $9
+  - The server 30 minute money drops will give more than $10 more frequently
+  - Everyone will complain about it, but in the long run they will have more money to spend
+
+For more details about the shop taxes, [click here](/pages/economy.html)
+
+___
+
+And yes, another chat filter update. I don't have much to say about it. It should be better than the last one, but I always say that.
+
 ### June 24 | Add Lantern Slabs and Improved Textures {.header-separator}
 
 A few nodes were missing from the available slabs, have been added:
