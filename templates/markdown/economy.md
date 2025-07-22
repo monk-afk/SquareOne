@@ -30,18 +30,19 @@ The inventory wallet can hold up to 99 notes.
 
 ___
 
-### Profit Sharing
+### Profit Sharing Tax
 
-Profit Sharing is a way for shop owners to give back a portion of their shop profit.
+Shop signs (aka. smartshop) contribute a 10%% tax towards the server half-hour money drops.
 
-Members of Profit Sharing contribute 10%% of their shop sales towards server money drops.
+Only cash sales are taxed. Any bartering, or item-for-item sales are not taxed.
 
-Shared profits are distributed when there is enough collection to give every online player at least $10 on top of the regular $10 half-hour money drops.
+For the pending amount to be paid, there must be at least enough to give each online player at minimum an additional $10 on top of the regular $10 half-hour money drop.
 
-For example, if there are 10 players online, there must be at lease $100 pending payout to give everyone $10 at the next money drop.
+Any surplus is also distributed up to a maximum of $90 + regular drop.
 
-```/profit-share``` View the list of profit sharing shops and current pool amount.
-```/profit-share join``` to join the profit sharing group
+For example, if there are 10 players online, there must be at least $100 pending payout to give everyone $10 at the next money drop.
 
-Profit Sharing shops can be distinguished from normal shops by the customer interface, which is customised with the shop owner's name and faction color.
+```/profit-share``` show the amount of collected taxes pending next payout.
+
+Shop owners can expect to receive $9 for every $10 sale.
 
