@@ -2,10 +2,11 @@
 
 **Public Mines**
 
-There are two public mine locations. Use the `tpp` chat command to travel:
+There are three public mine locations. Use the `tpp` chat command to travel:
 
 > `/tpp mine1`
 > `/tpp mine2`
+> `/tpp mine3`
 
 **Diamonds**
 
@@ -26,9 +27,7 @@ If a node normally drops an item, this list details extra items drop potentials.
 
 The rarity number means "1 in X" chance to drop.
 
-Your luck and fortune stats do not affect the potentiality of drops.
-
-If an item is listed twice, like copper, it means there are two chances per dig.
+Your luck and fortune stats do not affect the potentiality a node drops, but it [does affect the amount of the reward dropped](/pages/exp.html).
 
 | Node Dug           | Drop Item      | Rarity |
 |:-------------------|---------------:|:------:|
@@ -38,14 +37,9 @@ If an item is listed twice, like copper, it means there are two chances per dig.
 | cobble             | obsidian shard | 775    |
 | stone with coal    | diamond        | 4450   |
 | stone with coal    | coal lump      | 7      |
-| stone with coal    | coal lump      | 3      |
 | stone with iron    | iron lump      | 9      |
-| stone with iron    | iron lump      | 4      |
-| stone with copper  | copper lump    | 10     |
 | stone with copper  | copper lump    | 5      |
-| stone with mithril | mithril lump   | 10     |
 | stone with mithril | mithril lump   | 5      |
-| stone with silver  | silver lump    | 10     |
 | stone with silver  | silver lump    | 5      |
 | stone with gold    | gold lump      | 34     |
 | stone with mese    | mese crystal   | 34     |

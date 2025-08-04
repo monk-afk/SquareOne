@@ -116,9 +116,9 @@
 
 <p>Luck and Fortune can be used as Multipliers or Determinators for certain events.</p>
 
-<p>Luck is always changing, and will never go above 1. - Used to multiply Blue Diamond drops - Used to determine EXP loss on dying</p>
+<p>Luck is always changing, and will never go above 1. Typically used to determine if something will happen.</p>
 
-<p>Fortune will normally increase, and sometimes decrease. - Used to multiply Pink Diamond drops - Used to calculate total amount EXP lost on dying</p>
+<p>Fortune will normally increase, and sometimes decrease.</p>
 
 <hr class="header-hr">
 
@@ -130,13 +130,94 @@
 
 <p>To test your luck and return to bones, use <code>/bones</code> after dying.</p>
 
+<p>The luck throw is this: <code>if (random decimal between 0.0 and 1.0) &lt; (your current luck) then you lose exp</code></p>
+
 <p>If you&#39;re lucky, returning to bones will not lower your exp stats.</p>
 
-<p>If not, your EXP will be deducted using the formula: <code>(AP * Luck) / fortune</code></p>
+<p>If not, your AP and OT stats will each be reduced using the formula: <code>((stat * luck) / (fortune + 3))</code></p>
 
-<p>Regardless of how much EXP it would cost, there is a minimum of 100 EXP to use the command.</p>
+<p>Regardless of how much EXP it would cost, there is a minimum of 10 EXP to use the command.</p>
 
 <p>If you die in someone else&#39;s protected area no bones are dropped, and are therefore unable to use <code>/bones</code>.</p>
+
+<hr class="header-hr">
+
+<h2>Drop Bonus</h2>
+
+<p>For node drops, if a listed item is to be dropped into your inventory, a luck throw will be made.</p>
+
+<p>The throw is: if your luck is lower than a random decimal between 0.0 and 1.0</p>
+
+<p>Next you&#39;ll roll for a multiplier using your fortune stat.</p>
+
+<p>The roll is simply a random number between 1 and your fortunre stat rounded up to the next integer.</p>
+
+<p>The list of items which qualify for a luck/multiplier throw is:</p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">bone</td>
+</tr>
+<tr>
+<td style="text-align: center;">coal_lump</td>
+</tr>
+<tr>
+<td style="text-align: center;">copper_lump</td>
+</tr>
+<tr>
+<td style="text-align: center;">diamond</td>
+</tr>
+<tr>
+<td style="text-align: center;">gold_lump</td>
+</tr>
+<tr>
+<td style="text-align: center;">iron_lump</td>
+</tr>
+<tr>
+<td style="text-align: center;">mese_crystal</td>
+</tr>
+<tr>
+<td style="text-align: center;">obsidian_shard</td>
+</tr>
+<tr>
+<td style="text-align: center;">ender_pearl</td>
+</tr>
+<tr>
+<td style="text-align: center;">etherium_dust</td>
+</tr>
+<tr>
+<td style="text-align: center;">mithril_lump</td>
+</tr>
+<tr>
+<td style="text-align: center;">pinkdiamond</td>
+</tr>
+<tr>
+<td style="text-align: center;">silver_lump</td>
+</tr>
+<tr>
+<td style="text-align: center;">quartz_crystal</td>
+</tr>
+</tbody>
+</table>
+
+
+<hr class="header-hr">
+
+<h2>Mob Drops</h2>
+
+<p>Mobs drop items, and your luck/fortune will amplify those drops.</p>
+
+<p>Luck throw is successful if your luck stat is lower than a random decimal between 0.0 and 1.0</p>
+
+<p>If successful, the multiplier roll from the random number between zero and your fortune stat rounded up to the next integer is added to the mob drop</p>
+
+<p>In other words, if a mob drops a diamond, and your fortune rolls a 2, you&#39;ll receive 3 diamonds.</p>
             <!-- ===== FOOTER =================================== -->
             <hr class="header-hr">
           </div>
@@ -144,7 +225,7 @@
         </div>
 
         <footer>
-          <sub>Updated <code>2025-07-03 10:48:18</code></sub>
+          <sub>Updated <code>2025-08-04 19:29:26</code></sub>
           <hr class="header-hr">
           <ul class="footer">
             <li><sup><span style="color: #f00"> ❖ </span>Square<span style="color: #f00">One</span> ❖ <a href="https://github.com/monk-afk">by mønκ</a><span style="color: #f00"> ❖ </span></sup></li>

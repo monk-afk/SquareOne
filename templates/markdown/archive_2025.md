@@ -2,6 +2,20 @@
 
 - [Archive Index](/pages/archive/index.html)
 
+# {#may-27-2025}
+
+### May 27 | Celebrating SquareOne Year Two! {.header-separator}
+
+- ***New Posters***
+
+In recognition of the server's second year anniversary, four new posters are available for purchase in the spawn willow shop (the potions shop). This year's themes are 'mosaic' and 'cascading text'.
+
+![SquareOne Poster Anniversary 2025](/images/other/logos_icons/squareone_poster_anniversary_2025.png){width=64 height=64} ![SquareOne Poster Are One](/images/other/logos_icons/squareone_poster_are_one.png){width=64 height=64}
+
+![SquareOne Poster Logo Mosaic 1](/images/other/logos_icons/squareone_poster_logo_mosaic_1.png){width=64 height=64} ![SquareOne Poster Logo Mosaic 2](/images/other/logos_icons/squareone_poster_logo_mosaic_2.png){width=64 height=64}
+
+Limited Edition, Only 2025 of each will be distributed!
+
 # {#may-13-2025}
 
 ### May 13 | Chat and Filter Update {.header-separator}
