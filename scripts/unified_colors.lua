@@ -101,57 +101,109 @@ for _, h in ipairs(hues) do
   output.dye[hue].hex = hex
   output.dye[hue].rgb = rgb
 
-	for v = 0, 6 do
-		local val = values[v + 1]
-		local factor = 40
+  -- work in 0..1 floats for better math
+  local function clamp01(x) return math.max(0, math.min(1, x)) end
 
-    if v > 3 then
-      factor = 75
+  local function hex_to_rgb01(hex)
+    hex = hex:gsub("^#", "")
+    if #hex == 3 then
+      hex = hex:sub(1,1)..hex:sub(1,1)..hex:sub(2,2)..hex:sub(2,2)..hex:sub(3,3)..hex:sub(3,3)
+    end
+    local r = tonumber(hex:sub(1,2),16) / 255
+    local g = tonumber(hex:sub(3,4),16) / 255
+    local b = tonumber(hex:sub(5,6),16) / 255
+    return r,g,b
+  end
+
+  local function rgb01_to_hex(r,g,b)
+    local function to255(x) return math.floor(clamp01(x) * 255 + 0.5) end
+    return string.format("#%02x%02x%02x", to255(r), to255(g), to255(b))
+  end
+
+  -- gamma helpers
+  local function srgb_to_linear(c)
+    if c <= 0.04045 then return c / 12.92 end
+    return ((c + 0.055) / 1.055) ^ 2.4
+  end
+  local function linear_to_srgb(c)
+    if c <= 0.0031308 then return c * 12.92 end
+    return 1.055 * (c ^ (1 / 2.4)) - 0.055
+  end
+
+  local function mix_linear(c1, c2, t)
+    return c1 * (1 - t) + c2 * t
+  end
+
+  -- produce low-saturation version by mixing color towards its luminance (desaturate)
+  local function desaturate_rgb_linear(lr,lg,lb, amount) -- amount 0..1 (0=no change, 1=grayscale)
+    -- luminance in linear space using Rec.709 weights
+    local L = 0.2126 * lr + 0.7152 * lg + 0.0722 * lb
+    return mix_linear(lr, L, amount), mix_linear(lg, L, amount), mix_linear(lb, L, amount)
+  end
+
+  -- map values -> behaviors (t is mix factor toward white/black in linear space)
+  local value_map = {
+    ["faint_"]  = { kind = "white", t = 0.92 },
+    ["pastel_"] = { kind = "white", t = 0.70 },
+    ["light_"]  = { kind = "white", t = 0.40 },
+    ["bright_"] = { kind = "white", t = 0.18 },
+    [""]        = { kind = "none",  t = 0 },
+    ["medium_"] = { kind = "black", t = 0.35 }, -- darken to 65% brightness
+    ["dark_"]   = { kind = "black", t = 0.62 }, -- darken more
+  }
+
+  for v = 0, 6 do
+    local val = values[v + 1]
+    local vm = value_map[val] or { kind = "none", t = 0 }
+
+    -- base sRGB 0..1
+    local sr = r / 255
+    local sg = g / 255
+    local sb = b / 255
+
+    -- convert to linear for blending
+    local lr, lg, lb = srgb_to_linear(sr), srgb_to_linear(sg), srgb_to_linear(sb)
+
+    local lr2, lg2, lb2
+    if vm.kind == "white" then
+      -- blend toward white (linear white = 1,1,1)
+      lr2 = mix_linear(lr, 1, vm.t)
+      lg2 = mix_linear(lg, 1, vm.t)
+      lb2 = mix_linear(lb, 1, vm.t)
+    elseif vm.kind == "black" then
+      -- blend toward black (linear black = 0)
+      lr2 = mix_linear(lr, 0, vm.t)
+      lg2 = mix_linear(lg, 0, vm.t)
+      lb2 = mix_linear(lb, 0, vm.t)
+    else
+      lr2, lg2, lb2 = lr, lg, lb
     end
 
-    local r2 = math.max(math.min(r + (4 - v) * factor, 255), 0)
-    local g2 = math.max(math.min(g + (4 - v) * factor, 255), 0)
-    local b2 = math.max(math.min(b + (4 - v) * factor, 255), 0)
-
-    local rgb2, hex2 = heximate({r2, g2, b2})
+    -- convert back to sRGB space for output
+    local sr2, sg2, sb2 = linear_to_srgb(lr2), linear_to_srgb(lg2), linear_to_srgb(lb2)
+    local hex2 = rgb01_to_hex(sr2, sg2, sb2)
+    local rgb2 = { math.floor(sr2 * 255 + 0.5), math.floor(sg2 * 255 + 0.5), math.floor(sb2 * 255 + 0.5) }
 
     local dye_name = val .. hue
-
     output.dye[dye_name] = output.dye[dye_name] or {}
     output.dye[dye_name].hex = hex2
     output.dye[dye_name].rgb = rgb2
 
-    if v > 3 then -- also register the low-sat version
-      local pr = 0.299
-      local pg = 0.587
-      local pb = 0.114
-
-      local p = math.sqrt(r2 * r2 * pr + g2 * g2 * pg + b2 * b2 * pb)
-      local r3 = math.floor(p + (r2 - p) * 0.5)
-      local g3 = math.floor(p + (g2 - p) * 0.5)
-      local b3 = math.floor(p + (b2 - p) * 0.5)
-
-      local rgb3, hex3 = heximate({r3, g3, b3})
-
+    if v > 3 then
+      -- produce low-saturation (50%) version: desaturate in linear space by 50%
+      local dlr, dlg, dlb = desaturate_rgb_linear(lr2, lg2, lb2, 0.5)
+      local dsr, dsg, dsb = linear_to_srgb(dlr), linear_to_srgb(dlg), linear_to_srgb(dlb)
+      local hex3 = rgb01_to_hex(dsr, dsg, dsb)
+      local rgb3 = { math.floor(dsr * 255 + 0.5), math.floor(dsg * 255 + 0.5), math.floor(dsb * 255 + 0.5) }
       local dye_name_low_sat = dye_name .. "_s50"
-
       output.dye[dye_name_low_sat] = output.dye[dye_name_low_sat] or {}
       output.dye[dye_name_low_sat].hex = hex3
       output.dye[dye_name_low_sat].rgb = rgb3
     end
   end
+
 end
 
--- greyscales
--- for x = 0, 15 do
---   local y = x * 17
---   local rgb, hex = heximate({y,y,y})
---   local name = "grey_"..x
-
---   output.dye[name] = output.dye[name] or {}
---   output.dye[name].hex = hex
---   output.dye[name].rgb = rgb
--- end
 
 local base_color_crafts = {
 	{ "vermilion",  "dye:red",                  "dye:orange",     nil,         nil,        nil,        3 },
@@ -300,6 +352,7 @@ local trd =
 
 -- for n,v in pairs(output.dye) do
 for _,v in ipairs(sorted) do
+
   -- local rgb = "(" .. table.concat(v.rgb, ", ") .. ")"
   -- local recipe = table.concat(v.recipe, ", ")
   o[#o+1] = string.format(trd, v.hex, v.dye, v.hex, v.rgb, v.recipe)
