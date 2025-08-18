@@ -10,7 +10,6 @@ ___
 |--------------:|:----------:|:------:|
 | mohra         | 2024/06/24 |        |
 | Mymelodygirl  | 2025/02/20 |        |
-| Zandar        | 2025/02/20 | ![Zandar](/images/staff/Zandar.png){width=300 height=300} |
 | -RoselinCute- | 2025/02/20 | ![-RoselinCute-](/images/staff/RoselinCute.png){width=300 height=300} |
 | Pot-of-rice   | 2025/09/21 | ![Pot-of-rice](/images/staff/Pot-of-rice.png){width=300 height=300} |
 | kikiara       | 2024/06/24 | ![kikiara](/images/staff/kikiara.png){width=300 height=300} |
