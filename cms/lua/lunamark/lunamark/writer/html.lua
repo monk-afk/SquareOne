@@ -57,9 +57,10 @@ function M.new(options)
        then titattr = " title=\"" .. Html.string(tit) .. "\""
        else titattr = ""
     end
+    local class = attr.class and attr.class ~= "" and ' class="'..attr.class..'"' or ""
     local w = attr and attr.width and ' width="'..attr.width..'"' or ""
     local h = attr and attr.height and ' height="'..attr.height..'"' or ""
-    return {"<img src=\"", Html.string(src), "\" alt=\"", lab, "\"", titattr, w, h, " />"}
+    return {"<img", class, " src=\"", Html.string(src), "\" alt=\"", lab, "\"", titattr, w, h, " />"}
   end
 
   function Html.paragraph(s)
