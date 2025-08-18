@@ -13,12 +13,14 @@ body, html {
   margin-top:6px;
 }
 
-article, aside, details,
-figcaption, figure, footer,
-header, hgroup, main,
-menu, nav, section,
-summary {
+article, aside, details, figcaption,
+figure, header, hgroup, main, footer,
+menu, nav, section, summary {
   display: block;
+}
+
+.icon {
+  color: #f00;
 }
 
 /* ========== TYPOGRAPHY ========== */
@@ -45,7 +47,7 @@ a, a:visited { outline: none; color: #A1A1A1; text-decoration: underline; transi
 a:hover, a:focus, a.active { color: #f00; text-decoration: underline; }
 a:focus { box-shadow: 0 0 0 0.1rem rgba(238, 48, 48, 0.66); }
 
-/* ========== 4. HEADER & NAVIGATION ========== */
+/* ========== 4. HEADER & FOOTER ========== */
 #header {
   display: inline-flex;
   flex-direction: row-reverse;
@@ -59,12 +61,32 @@ a:focus { box-shadow: 0 0 0 0.1rem rgba(238, 48, 48, 0.66); }
   transition: all 0.5s ease;
 }
 
-footer ul li {
-  display:flex;
-  flex-direction:column;
-  align-items: center;
-  list-style: none;
+footer {
+  font-size: 0.9rem;
+  color: #444;
 }
+
+footer .signature {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 0.95rem;
+  margin: 1.5rem 1.5rem 0.5rem 0;
+}
+
+footer .footer-logo {
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 0 0 56px;
+}
+
+footer .footer-logo img {
+  width: 64px;
+  height: auto;
+}
+
 
 /* ========== PAGE STYLE ============= */
 .pagebox {
@@ -96,6 +118,13 @@ footer ul li {
 
 .webkitNoSelect {
   -webkit-tap-highlight-color: transparent;
+}
+
+.pagebox .page-timestamp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 0 1.1rem;
 }
 
 /* ========= SCROLLBAR =========== */
