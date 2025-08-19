@@ -236,3 +236,7 @@ mark {
   max-width: 90%;
   max-height: 90%;
 }
+
+.hitcounter {
+  display: none;      /* hidden unless targeted */
+}
