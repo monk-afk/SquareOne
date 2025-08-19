@@ -1256,7 +1256,9 @@ function M.new(writer, options)
                         * (parsers.url + Cc(""))  -- link can be empty [foo]()
                         * parsers.optionaltitle
                         * parsers.rparent
+                        * (parsers.attributes + Ct(""))
                         / writer.link
+
 
   larsers.IndirectLink  = parsers.tag * (C(parsers.spnl) * parsers.tag)^-1
                         / indirect_link

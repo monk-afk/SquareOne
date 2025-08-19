@@ -42,25 +42,29 @@ function M.new(options)
     return {"<code>", Html.string(s), "</code>"}
   end
 
-  function Html.link(lab,src,tit)
+  function Html.link(lab, src, tit, attr)
     local titattr
     if type(tit) == "string" and #tit > 0
        then titattr = " title=\"" .. Html.string(tit) .. "\""
        else titattr = ""
        end
-    return {"<a href=\"", Html.string(src), "\"", titattr, ">", lab, "</a>"}
+    local id = attr.id and attr.id ~= "" and ' id="' .. attr.id .. '"' or ""
+    local class = attr.class and attr.class ~= "" and ' class="' .. attr.class .. '"' or ""
+
+    return {"<a", id, class, " href=\"", Html.string(src), "\"", titattr, ">", lab, "</a>"}
   end
 
-  function Html.image(lab,src,tit,attr)
+  function Html.image(lab, src, tit, attr)
     local titattr
     if type(tit) == "string" and #tit > 0
        then titattr = " title=\"" .. Html.string(tit) .. "\""
        else titattr = ""
     end
-    local class = attr.class and attr.class ~= "" and ' class="'..attr.class..'"' or ""
-    local w = attr and attr.width and ' width="'..attr.width..'"' or ""
-    local h = attr and attr.height and ' height="'..attr.height..'"' or ""
-    return {"<img", class, " src=\"", Html.string(src), "\" alt=\"", lab, "\"", titattr, w, h, " />"}
+    local id = attr.id and attr.id ~= "" and ' id="' .. attr.id .. '"' or ""
+    local class = attr.class and attr.class ~= "" and ' class="' .. attr.class .. '"' or ""
+    local w = attr and attr.width and ' width="' .. attr.width .. '"' or ""
+    local h = attr and attr.height and ' height="' .. attr.height .. '"' or ""
+    return {"<img", id, class, " src=\"", Html.string(src), "\" alt=\"", lab, "\"", titattr, w, h, " />"}
   end
 
   function Html.paragraph(s)
