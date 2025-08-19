@@ -1,6 +1,6 @@
 .notices {
-  margin: 15px 0;
-  padding: 15px;
+  margin: 0 20px;
+  padding: 1px 0px 19px 0px;
   position: relative;
   box-sizing: border-box;
 }
@@ -9,7 +9,6 @@
   position: absolute;
   box-sizing: border-box;
   top: 0.5px;
-  content: url(/images/icons/alert.svg);
   width: 18px !important;
   height: 18px !important;
   left: 4px;
@@ -19,7 +18,7 @@
 .notices p::after {
   position: absolute;
   box-sizing: border-box;
-  top: 4px;
+  top: 1px;
   color: #333;
   left: 2rem;
   content: "";
