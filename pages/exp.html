@@ -76,67 +76,90 @@
 
 <p>Playing the game will earn EXP stats. Just play, and you&#39;ll gain in stats.</p>
 
-<p>Being AFK will cause your EXP to drain.</p>
+<p>As you continue to play, your stats curve will dampen and steadily increase/decrease.</p>
 
-<p>New players EXP stats will, sometimes rise to high levels in a short time.</p>
-
-<p>As you continue to play, your stats will fluctuate less and steadily increase/decrease.</p>
+<p>Dying won&#39;t reduce your EXP, but using /bones has a chance of costing EXP.</p>
 
 <p>Being offline for 5 days will cause a reduction of approximately 20% every day.</p>
 
 <hr class="header-hr">
 
-<h2>Stat Definitions</h2>
+<h2>Metrics and Stats</h2>
 
-<p>The idea behind the way exp is calculated is simple: Experience is measured by your overall activity over a period of time.</p>
+<p>Experience is measured by your overall activity over a period of time.</p>
 
-<p>The command to view your exp stats is <code>/exp</code>, or of another player <code>/exp username</code>. This will show your stats:</p>
+<p>To calculate this, we use two metric points:</p>
 
-<p><code>OT</code>: Every second counts. Being online in-game will increase your online time (OT)</p>
+<ul>
+<li><code>Online Time</code>: Measured in seconds from the time you join until you leave.</li>
+<li><code>Stamina Exhaust</code>: Your activity: building, digging, fighting, crafting, running.</li>
+</ul>
 
-<p><code>AP</code>: Action points. Doing stuff, even running in circles will increase this stat.</p>
+<p>From these we measure your <code>Exp</code> and <code>level</code>, <code>Luck</code> and <code>Fortune</code>.</p>
 
-<p><code>Exp</code>: Experience gained by doing things in-game.</p>
-
-<p><code>Level</code>: Bragging rights, shown as nametag flair in public chat.</p>
-
-<p><code>Luck</code>: Chance of outcome. This number is variable, and used to determine outcome from random events (either good or bad). In other words, &quot;whether you win or lose&quot;.</p>
-
-<p><code>Fortune</code> Outcome multiplier. Fortune is complimentary to luck, and decides &quot;how much you win or lose&quot;.</p>
+<p>View the Leaderboard, and your stats or another player, with game command: <code>/exp player_name</code></p>
 
 <hr class="header-hr">
 
-<h2>Levels</h2>
+<h2>Exp and Levels</h2>
 
-<p>Your level is shown as part of your public chat nametag flair in round brackets.</p>
+<p>Your <strong>level</strong> is shown as part of your public chat nametag flair in round brackets.</p>
 
 <hr class="header-hr">
 
 <h2>Luck and Fortune</h2>
 
-<p>Luck and Fortune can be used as Multipliers or Determinators for certain events.</p>
+<p>Luck is a <strong>determinator</strong>: whether something <em>will or will not</em> happen.</p>
 
-<p>Luck is always changing, and will never go above 1. Typically used to determine if something will happen.</p>
+<p>Fortune is a <strong>Multipliers</strong>: how much of a reward or punishment to receive.</p>
 
-<p>Fortune will normally increase, and sometimes decrease.</p>
+<div class="notices yellow">Luck and Fortune are always changing, especially for new players.</div>
+
+<p>They typically work together to give a sense of fateful outcome.</p>
+
+<hr class="header-hr">
+
+<h2 id="odds">The Odds</h2>
+
+<p>A player&#39;s luck will always drift between 0.5 and 1.0.</p>
+
+<p>When luck is to be tested, like when using <code>/bones</code>, a random decimal between 0.0 and 1.0 is compared against the player&#39;s luck.</p>
+
+<p>Having a high or low luck stat doesn&#39;t mean having good or bad luck.</p>
+
+<p>Whether &#39;good&#39; luck means having a stat higher or lower than the random is determined by the mod calling for a luck throw.</p>
+
+<p><a href="#img"><img src="/images/other/published/thumbnails/exp_simulation-lvl_20-25.jpg" alt="Thumbnail Snapshot of Luck and Fortune at Levels 20 to 25" /></a></p>
+
+<p><a id="img" class="lightbox" href="#odds"><img src="/images/other/published/full/exp_simulation-lvl_20-25.png" alt="Full Snapshot of Luck and Fortune at Levels 20 to 25" /></a></p>
+
+<p>^Snapshot of Luck (blue) and Fortune (magenta) from at Levels 20 to 25^</p>
+
+<p>If a mod function asks for a win to be determined with <code>random() &gt; luck</code>, the win probability is around 20%.</p>
+
+<p>Conversely, if the win condition is <code>luck &gt; random()</code> the win probability is closer to 80%.</p>
 
 <hr class="header-hr">
 
 <h2>Bones</h2>
 
-<p>Dying will cause your player to drop items into a bones block.</p>
+<p>Dying players drop their items into a bones block.</p>
 
-<p>There is no loss of EXP from dying, however using the command to return to bones <em>may</em> cost some EXP points.</p>
+<p>There is no loss of EXP from dying.</p>
 
-<p>To test your luck and return to bones, use <code>/bones</code> after dying.</p>
+<p>There is a minimum of 50 EXP to use the command.</p>
 
-<p>The luck throw is this: <code>if (random decimal between 0.0 and 1.0) &lt; (your current luck) then you lose exp</code></p>
+<p>You can use command <code>/bones</code> to return to bones, but it <em>may</em> cost some EXP points.</p>
 
-<p>If you&#39;re lucky, returning to bones will not lower your exp stats.</p>
+<p>The luck throw is this, random() is between 0.0 and 1.0:</p>
 
-<p>If not, your AP and OT stats will each be reduced using the formula: <code>((stat * luck) / (fortune + 3))</code></p>
+<blockquote>
+<p>if <code>luck &gt; random()</code>: free bones!</p>
 
-<p>Regardless of how much EXP it would cost, there is a minimum of 10 EXP to use the command.</p>
+<p>if <code>lua &lt; random()</code>: not free! rip exp.</p>
+</blockquote>
+
+<p>Exp is reduced by applying the formula <code>(metric * luck) / (fortune * math.pi)</code> to both metric points, your Stamina Exhaust, and Online Seconds, then recalculate the exp from the new metric values.</p>
 
 <p>If you die in someone else&#39;s protected area no bones are dropped, and are therefore unable to use <code>/bones</code>.</p>
 
@@ -144,15 +167,7 @@
 
 <h2>Drop Bonus</h2>
 
-<p>For node drops, if a listed item is to be dropped into your inventory, a luck throw will be made.</p>
-
-<p>The throw is: if your luck is lower than a random decimal between 0.0 and 1.0</p>
-
-<p>Next you&#39;ll roll for a multiplier using your fortune stat.</p>
-
-<p>The roll is simply a random number between 1 and your fortunre stat rounded up to the next integer.</p>
-
-<p>The list of items which qualify for a luck/multiplier throw is:</p>
+<p>For node drops, you dig something from the list below, a luck throw is made.</p>
 
 <table>
 <thead>
@@ -207,34 +222,51 @@
 </table>
 
 
+<p>The throw is: <code>if luck &lt; random()</code>: you win a fortune multiplier!</p>
+
+<p>The multiplier is used with Fortune rounded up: <code>digged_item x random(1, Fortune)</code></p>
+
+<p>In other words, if your fortune is 3.45 and you dig a diamond, you could get between 1 and 4 diamonds!</p>
+
 <hr class="header-hr">
 
 <h2>Mob Drops</h2>
 
-<p>Mobs drop items, and your luck/fortune will amplify those drops.</p>
+<p>Similar to node drops, killing mobs has a chance multiplier.</p>
 
-<p>Luck throw is successful if your luck stat is lower than a random decimal between 0.0 and 1.0</p>
+<p>Luck throw is successful if: <code>luck &gt; rand</code>: successful luck</p>
 
-<p>If successful, the multiplier roll from the random number between zero and your fortune stat rounded up to the next integer is added to the mob drop</p>
+<p>The multiplier is the same as digging, except Fortune is <em>added on to the mob drops</em>.</p>
 
-<p>In other words, if a mob drops a diamond, and your fortune rolls a 2, you&#39;ll receive 3 diamonds.</p>
-            <!-- ===== FOOTER =================================== -->
-            <hr class="header-hr">
+<p>Meaning, if a killing a mob drops two diamonds, and your multiplier adds 2, you get 4 diamonds!</p>
+
+<hr class="header-hr">
+
+<h1>Money</h1>
+
+<p>The less fortunate don&#39;t get money drops every 30 minutes.</p>
+
+<p>The minimum amount of fortune to receive money drops is <code>0.5</code></p>
+            <div class="page-timestamp">
+              <span><a href="#top">TOP</a></span>
+              <span>Updated <code>2025-08-19 09:19:38</code></span>
+            </div>
           </div>
-          <a href="#top"><sub>TOP</sub></a>
         </div>
-
+        <!-- ===== FOOTER =================================== -->
         <footer>
-          <sub>Updated <code>2025-08-04 19:29:26</code></sub>
           <hr class="header-hr">
-          <ul class="footer">
-            <li><sup><span style="color: #f00"> ❖ </span>Square<span style="color: #f00">One</span> ❖ <a href="https://github.com/monk-afk">by mønκ</a><span style="color: #f00"> ❖ </span></sup></li>
-            <li><sup>Circa. 2023-05-28</sup></li>
-            <li><img src="/images/squareone_pixelmonk.png" alt="monk with pixel glasses" width="64"/></li>
-            <li><a href="https://visitorbadge.io/status?path=squareone.moe"><img src="https://api.visitorbadge.io/api/visitors?path=squareone.moe&countColor=%23d60000" /></a></li>
-          </ul>
-          <hr class="header-hr">
-          <br>
+          <div class="signature">
+            <span>Circa. 2023-05-28</span>
+            <span class="icon"> ❖ </span>
+            <span>Square<span class="icon">One</span>
+            </span>
+            <span class="icon"> ❖ </span>
+            <span><a href="https://github.com/monk-afk">by mønκ</a></span>
+          </div>
+          <div class="footer-logo">
+            <img src="/images/squareone_icon_64px.png" alt="SquareOne Four-squared Diamond Logo" />
+          </div>
         </footer>
       </main>
     </div>
