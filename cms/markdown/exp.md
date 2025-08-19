@@ -61,7 +61,7 @@ Whether 'good' luck means having a stat higher or lower than the random is deter
 
 [![Full Snapshot of Luck and Fortune at Levels 20 to 25](/images/other/published/full/exp_simulation-lvl_20-25.png)](#odds){#img .lightbox}
 
-^Snapshot of Luck (blue) and Fortune (magenta) from at Levels 20 to 25^
+^Snapshot\ of\ Luck\ and\ Fortune\ from\ Levels\ 20\ to\ 25^
 
 If a mod function asks for a win to be determined with `random() > luck`, the win probability is around 20%%.
 
