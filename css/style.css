@@ -237,6 +237,38 @@ mark {
   max-height: 90%;
 }
 
-.hitcounter {
-  display: none;      /* hidden unless targeted */
+/* ==== CODEBLOCK ==== */
+
+code {
+  border-radius:.1rem;
+  line-height:1.25;
+  padding:.1rem .2rem;
+  background:#310b0b;
+  color:#da4e57;
+  font-size:85%
+}
+
+.code {
+  border-radius:.1rem;
+  color:#50596c;
+  position:relative
+}
+
+.code::before {
+  color:#acb3c2;
+  content:attr(data-lang);
+  font-size:.7rem;
+  position:absolute;
+  right:.4rem;
+  top:.1rem
+}
+
+.code code {
+  background:#f8f9fa;
+  color:inherit;
+  display:block;
+  line-height:1.5;
+  overflow-x:auto;
+  padding:1rem;
+  width:100%
 }
