@@ -19106,6 +19106,14 @@ moreores:mineral_mithril_nanoslab 126 126 126
 moreores:mineral_mithril_panel 126 126 126
 moreores:mineral_mithril_thinstair 126 126 126
 moreores:mineral_pinkdiamond 126 126 126
+moreores:mineral_pinkdiamond_cube 126 126 126
+moreores:mineral_pinkdiamond_doublepanel 126 126 126
+moreores:mineral_pinkdiamond_halfstair 126 126 126
+moreores:mineral_pinkdiamond_micropanel 126 126 126
+moreores:mineral_pinkdiamond_microslab 126 126 126
+moreores:mineral_pinkdiamond_nanoslab 126 126 126
+moreores:mineral_pinkdiamond_panel 126 126 126
+moreores:mineral_pinkdiamond_thinstair 126 126 126
 moreores:mineral_silver 126 126 126
 moreores:mineral_silver_cube 126 126 126
 moreores:mineral_silver_doublepanel 126 126 126
@@ -19404,6 +19412,7 @@ stairs:slab_meatblock_raw 211 68 68
 stairs:slab_melon_8 102 139 35
 stairs:slab_mese 201 204 0
 stairs:slab_mineral_mithril 126 126 126
+stairs:slab_mineral_pinkdiamond 126 126 126
 stairs:slab_mineral_silver 126 126 126
 stairs:slab_mithril_block 80 94 191
 stairs:slab_moonbrick 68 65 62
@@ -19542,6 +19551,7 @@ stairs:stair_inner_meatblock_raw 211 68 68
 stairs:stair_inner_melon_8 102 139 35
 stairs:stair_inner_mese 201 204 0
 stairs:stair_inner_mineral_mithril 126 126 126
+stairs:stair_inner_mineral_pinkdiamond 126 126 126
 stairs:stair_inner_mineral_silver 126 126 126
 stairs:stair_inner_mithril_block 80 94 191
 stairs:stair_inner_moonbrick 68 65 62
@@ -19596,6 +19606,7 @@ stairs:stair_meatblock_raw 211 68 68
 stairs:stair_melon_8 102 139 35
 stairs:stair_mese 201 204 0
 stairs:stair_mineral_mithril 126 126 126
+stairs:stair_mineral_pinkdiamond 126 126 126
 stairs:stair_mineral_silver 126 126 126
 stairs:stair_mithril_block 80 94 191
 stairs:stair_moonbrick 68 65 62
@@ -19655,6 +19666,7 @@ stairs:stair_outer_meatblock_raw 211 68 68
 stairs:stair_outer_melon_8 102 139 35
 stairs:stair_outer_mese 201 204 0
 stairs:stair_outer_mineral_mithril 126 126 126
+stairs:stair_outer_mineral_pinkdiamond 126 126 126
 stairs:stair_outer_mineral_silver 126 126 126
 stairs:stair_outer_mithril_block 80 94 191
 stairs:stair_outer_moonbrick 68 65 62
