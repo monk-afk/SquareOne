@@ -2,11 +2,11 @@
 
 **Public Mines**
 
-There are three public mine locations. Use the `tpp` chat command to travel:
+There are three public mine locations. Use the `/tpp` chat command to travel:
 
-> `/tpp mine1`
-> `/tpp mine2`
-> `/tpp mine3`
+  - `/tpp mine1`
+  - `/tpp mine2`
+  - `/tpp mine3`
 
 **Diamonds**
 
