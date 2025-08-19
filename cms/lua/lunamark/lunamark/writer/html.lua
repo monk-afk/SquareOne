@@ -51,7 +51,7 @@ function M.new(options)
     local id = attr.id and attr.id ~= "" and ' id="' .. attr.id .. '"' or ""
     local class = attr.class and attr.class ~= "" and ' class="' .. attr.class .. '"' or ""
 
-    return {"<a", id, class, " href=\"", Html.string(src), "\"", titattr, ">", lab, "</a>"}
+    return {"<a", id, class, " href=\"", src, "\"", titattr, ">", lab, "</a>"}
   end
 
   function Html.image(lab, src, tit, attr)
@@ -64,7 +64,7 @@ function M.new(options)
     local class = attr.class and attr.class ~= "" and ' class="' .. attr.class .. '"' or ""
     local w = attr and attr.width and ' width="' .. attr.width .. '"' or ""
     local h = attr and attr.height and ' height="' .. attr.height .. '"' or ""
-    return {"<img", id, class, " src=\"", Html.string(src), "\" alt=\"", lab, "\"", titattr, w, h, " />"}
+    return {"<img", id, class, " src=\"", src, "\" alt=\"", lab, "\"", titattr, w, h, " />"}
   end
 
   function Html.paragraph(s)
