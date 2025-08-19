@@ -215,3 +215,24 @@ mark {
   border-left: 4px solid #d10;
   border-top: 4px solid #d10;
 }
+
+
+/* ==== IMAGES AND THUMBNAILS ==== */
+.lightbox {
+  display: none;      /* hidden unless targeted */
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.lightbox:target {
+  display: flex;      /* only show when anchor is targeted */
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+}
