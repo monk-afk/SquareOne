@@ -4,67 +4,88 @@
 
 Playing the game will earn EXP stats. Just play, and you'll gain in stats.
 
-Being AFK will cause your EXP to drain.
+As you continue to play, your stats curve will dampen and steadily increase/decrease.
 
-New players EXP stats will, sometimes rise to high levels in a short time.
-
-As you continue to play, your stats will fluctuate less and steadily increase/decrease.
+Dying won't reduce your EXP, but using /bones has a chance of costing EXP.
 
 Being offline for 5 days will cause a reduction of approximately 20%% every day.
 
 ___
 
-## Stat Definitions
+## Metrics and Stats
 
-The idea behind the way exp is calculated is simple: Experience is measured by your overall activity over a period of time.
+Experience is measured by your overall activity over a period of time.
 
-The command to view your exp stats is `/exp`, or of another player `/exp username`. This will show your stats:
+To calculate this, we use two metric points:
 
-`OT`: Every second counts. Being online in-game will increase your online time (OT)
+- `Online Time`: Measured in seconds from the time you join until you leave.
+- `Stamina Exhaust`: Your activity: building, digging, fighting, crafting, running.
 
-`AP`: Action points. Doing stuff, even running in circles will increase this stat.
+From these we measure your `Exp` and `level`, `Luck` and `Fortune`.
 
-`Exp`: Experience gained by doing things in-game.
-
-`Level`: Bragging rights, shown as nametag flair in public chat.
-
-`Luck`: Chance of outcome. This number is variable, and used to determine outcome from random events (either good or bad). In other words, "whether you win or lose".
-
-`Fortune` Outcome multiplier. Fortune is complimentary to luck, and decides "how much you win or lose".
+View the Leaderboard, and your stats or another player, with game command: `/exp player_name`
 
 ___
 
-## Levels
+## Exp and Levels
 
-Your level is shown as part of your public chat nametag flair in round brackets.
+Your **level** is shown as part of your public chat nametag flair in round brackets.
 
 ___
 
 ## Luck and Fortune
 
-Luck and Fortune can be used as Multipliers or Determinators for certain events.
+Luck is a **determinator**: whether something *will or will not* happen.
 
-Luck is always changing, and will never go above 1. Typically used to determine if something will happen.
+Fortune is a **Multipliers**: how much of a reward or punishment to receive.
 
-Fortune will normally increase, and sometimes decrease.
+::: {.notices .yellow}
+Luck and Fortune are always changing, especially for new players.
+:::
+
+They typically work together to give a sense of fateful outcome.
+
+___
+
+## The Odds {#odds}
+
+A player's luck will always drift between 0.5 and 1.0.
+
+When luck is to be tested, like when using `/bones`, a random decimal between 0.0 and 1.0 is compared against the player's luck.
+
+Having a high or low luck stat doesn't mean having good or bad luck.
+
+Whether 'good' luck means having a stat higher or lower than the random is determined by the mod calling for a luck throw.
+
+[![Thumbnail Snapshot of Luck and Fortune at Levels 20 to 25](/images/other/published/thumbnails/exp_simulation-lvl_20-25.jpg)](#img)
+
+[![Full Snapshot of Luck and Fortune at Levels 20 to 25](/images/other/published/full/exp_simulation-lvl_20-25.png)](#odds){#img .lightbox}
+
+^Snapshot of Luck (blue) and Fortune (magenta) from at Levels 20 to 25^
+
+If a mod function asks for a win to be determined with `random() > luck`, the win probability is around 20%%.
+
+Conversely, if the win condition is `luck > random()` the win probability is closer to 80%%.
 
 ___
 
 ## Bones
 
-Dying will cause your player to drop items into a bones block.
+Dying players drop their items into a bones block.
 
-There is no loss of EXP from dying, however using the command to return to bones *may* cost some EXP points.
+There is no loss of EXP from dying.
 
-To test your luck and return to bones, use `/bones` after dying.
+There is a minimum of 50 EXP to use the command.
 
-The luck throw is this: `if (random decimal between 0.0 and 1.0) < (your current luck) then you lose exp`
+You can use command `/bones` to return to bones, but it *may* cost some EXP points.
 
-If you're lucky, returning to bones will not lower your exp stats.
+The luck throw is this, random() is between 0.0 and 1.0:
 
-If not, your AP and OT stats will each be reduced using the formula: `((stat * luck) / (fortune + 3))`
+  > if `luck > random()`: free bones!
 
-Regardless of how much EXP it would cost, there is a minimum of 10 EXP to use the command.
+  > if `lua < random()`: not free! rip exp.
+
+Exp is reduced by applying the formula `(metric * luck) / (fortune * math.pi)` to both metric points, your Stamina Exhaust, and Online Seconds, then recalculate the exp from the new metric values.
 
 If you die in someone else's protected area no bones are dropped, and are therefore unable to use `/bones`.
 
@@ -72,15 +93,7 @@ ___
 
 ## Drop Bonus
 
-For node drops, if a listed item is to be dropped into your inventory, a luck throw will be made.
-
-The throw is: if your luck is lower than a random decimal between 0.0 and 1.0
-
-Next you'll roll for a multiplier using your fortune stat.
-
-The roll is simply a random number between 1 and your fortunre stat rounded up to the next integer.
-
-The list of items which qualify for a luck/multiplier throw is:
+For node drops, you dig something from the list below, a luck throw is made.
 
 |                |
 |:--------------:|
@@ -99,15 +112,29 @@ The list of items which qualify for a luck/multiplier throw is:
 | silver_lump    |
 | quartz_crystal |
 
+The throw is: `if luck < random()`: you win a fortune multiplier!
+
+The multiplier is used with Fortune rounded up: `digged_item x random(1, Fortune)`
+
+In other words, if your fortune is 3.45 and you dig a diamond, you could get between 1 and 4 diamonds!
+
 ___
 
 ## Mob Drops
 
-Mobs drop items, and your luck/fortune will amplify those drops.
+Similar to node drops, killing mobs has a chance multiplier.
 
-Luck throw is successful if your luck stat is lower than a random decimal between 0.0 and 1.0
+Luck throw is successful if: `luck > rand`: successful luck
 
-If successful, the multiplier roll from the random number between zero and your fortune stat rounded up to the next integer is added to the mob drop
+The multiplier is the same as digging, except Fortune is *added on to the mob drops*.
 
-In other words, if a mob drops a diamond, and your fortune rolls a 2, you'll receive 3 diamonds.
+Meaning, if a killing a mob drops two diamonds, and your multiplier adds 2, you get 4 diamonds!
+
+___
+
+# Money
+
+The less fortunate don't get money drops every 30 minutes.
+
+The minimum amount of fortune to receive money drops is `0.5`
 
