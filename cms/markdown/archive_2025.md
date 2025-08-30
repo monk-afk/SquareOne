@@ -2,6 +2,38 @@
 
 - [Archive Index](/pages/archive/index.html)
 
+# {#june-24-2025}
+
+### June 24 | Add Lantern Slabs and Improved Textures {.header-separator}
+
+A few nodes were missing from the available slabs, have been added:
+
+- Obsidian Frosted Glass
+- Obsidian Lantern
+- Cobble Brick
+- Wooden Lightbox (white and yellow)
+
+These textures were also updated:
+
+- White Granite (also recipe gives 4 instead of 1)
+- Birch wood
+- Healing wood
+- Willow wood
+
+And finally, the coloredblocks mod. Completely re-written to make it easier to add new nodes, and create individual colored textures without relying on the engine modifiers to colorize a greyscale template.
+
+This also comes with a new block: Colored Obsidian Frosted Glass! So pretty.
+
+![Screenshot of Colored Blocks](/images/other/game_textures/Screenshot_2025-06-24_11-09-16.png)
+
+# {#june-14-2025}
+
+### June 14 | Armor Buffs {.header-separator}
+
+Mythril has long been a rare and useless item. It's harder to find than diamonds, and has a market value of roughly $5 per lump. To offset this, the armor stat for mythril has been buffed, by increasing the block chance to around 5%%.
+
+Additionally, the Pink Crystal boots have gained the ability to "walk" over single nodes. This will be noticed primarily by PC players, since some mobile apps have had this functionality for a while. Wearing the Pink Crystal boots will let players walk and step over single blocks without having to jump.
+
 # {#may-27-2025}
 
 ### May 27 | Celebrating SquareOne Year Two! {.header-separator}
