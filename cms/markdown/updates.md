@@ -1,5 +1,15 @@
 # Recent Updates
 
+### August 30 | Personalized Tools {.header-separator}
+
+Tools which are able to level up, pickaxes, axes, swords, shovels, etc, will now show the player's name after being a level up!
+
+Yes! New tools and old tools will receive the mark of ownership on the tool after a level up. Any level 0 tools will not show a player's name.
+
+This change is not applied retroactively, therefore any tools with a level will still need to gain one level before receiving the mark of ownership.
+
+Also, the Mese and Mitril Pickax have had their digtimes swapped. Meaning Mithril pick now digs faster than Mese. The page with [tool digtimes](/pages/tools.html) will be updated soon with *accurate* stats.
+
 ### August 4 | EXP Balance Update {.header-separator}
 
 - It will be **more difficult to gain exp**, and rewards balanced gameplay instead of a purely action-based gain system.
@@ -36,36 +46,6 @@ For more details about the shop taxes, [click here](/pages/economy.html)
 ___
 
 And yes, another chat filter update. I don't have much to say about it. It should be better than the last one, but I always say that.
-
-### June 24 | Add Lantern Slabs and Improved Textures {.header-separator}
-
-A few nodes were missing from the available slabs, have been added:
-
-- Obsidian Frosted Glass
-- Obsidian Lantern
-- Cobble Brick
-- Wooden Lightbox (white and yellow)
-
-These textures were also updated:
-
-- White Granite (also recipe gives 4 instead of 1)
-- Birch wood
-- Healing wood
-- Willow wood
-
-And finally, the coloredblocks mod. Completely re-written to make it easier to add new nodes, and create individual colored textures without relying on the engine modifiers to colorize a greyscale template.
-
-This also comes with a new block: Colored Obsidian Frosted Glass! So pretty.
-
-![Screenshot of Colored Blocks](/images/other/game_textures/Screenshot_2025-06-24_11-09-16.png)
-
-
-### June 14 | Armor Buffs {.header-separator}
-
-Mythril has long been a rare and useless item. It's harder to find than diamonds, and has a market value of roughly $5 per lump. To offset this, the armor stat for mythril has been buffed, by increasing the block chance to around 5%%.
-
-Additionally, the Pink Crystal boots have gained the ability to "walk" over single nodes. This will be noticed primarily by PC players, since some mobile apps have had this functionality for a while. Wearing the Pink Crystal boots will let players walk and step over single blocks without having to jump.
-
 
 ___
 
