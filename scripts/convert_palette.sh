@@ -11,11 +11,12 @@ mkdir -p "../GIMP_converted"
 mkdir -p "../GIMP_thumbnails"
 
 gimpy () {
-  gimp -i -b "(let* (
-    (img (car (gimp-file-load RUN-NONINTERACTIVE \"$1\" \"$1\"))))
+  infile="$1"
+  outfile="${infile}_indexed.png"
+  gimp -i --batch-interpreter=plug-in-script-fu-eval --quit -b "(let* (
+    (img (car (gimp-file-load RUN-NONINTERACTIVE \"$infile\" \"$infile\"))))
     (gimp-image-convert-indexed img 0 0 $PALLET FALSE TRUE \"\")
-    (gimp-file-save RUN-NONINTERACTIVE img (
-      car (gimp-image-get-active-layer img)) \"$1\_indexed.png\" \"$1\_indexed.png\") 
+    (gimp-file-save RUN-NONINTERACTIVE img \"$outfile\" \"$outfile\")
       (gimp-image-delete img))" -b "(gimp-quit 0)"
 }
 
