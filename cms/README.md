@@ -27,7 +27,7 @@ ___
 
     1. Could only get it running with Lua 5.4
       - Uninstall Lua 5.3, 5.2, 5.1, and LuaJIT
-      - Apt install lua-lpeg, lua-lpeg-dev, lua-lpeg-patters
+      - Apt install lua-lpeg, lua-lpeg-dev, lua-lpeg-patterns
 
     2. Get Cosmo: https://github.com/mascarenhas/cosmo
       - add it to the lunamark root:
