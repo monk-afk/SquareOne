@@ -1,5 +1,19 @@
 # Recent Updates
 
+### October 7 | Automatic Crafting {.header-separator}
+
+Auto-Craft has been added.
+
+To auto-craft, the player must be standing within 3 nodes of a workbench and have sufficient ingredient supply in their inventory.
+
+While standing next to the workbench, open your inventory and add a recipe to the craft grid.
+
+Auto-craft will continue to craft one of the last recipe crafted every second, and will continue until the player walks away from the workbench or until there are no more ingredients in their inventory.
+
+Be careful! If your inventory is too full, the auto-craft will drop the items at your feet.
+
+Crafting the same recipe along with the auto-craft is possible, however crafting something different will also change the auto-craft recipe.
+
 ### August 30 | Personalized Tools {.header-separator}
 
 Tools which are able to level up, pickaxes, axes, swords, shovels, etc, will now show the player's name after being a level up!
@@ -30,24 +44,6 @@ Full details about the EXP mod, [click here](/pages/exp.html)
 
 ___
 
-### July 21 | Mandated Taxes and Chat Filter Update {.header-separator}
-
-"Profit Sharing" has been an optional feature of shops for the last 9 months. It will now be mandated for all shops, and any shop selling items for cash will automatically contribute 10%% of their cash sales towards the half-hourly money drops.
-
-What to expect:
-
-  - If you have a shop selling items for cash, you will receive 90%% of the cash sale
-    - Example: if you sell gold for $10, each sale gives you $9
-  - The server 30 minute money drops will give more than $10 more frequently
-  - Everyone will complain about it, but in the long run they will have more money to spend
-
-For more details about the shop taxes, [click here](/pages/economy.html)
-
-___
-
-And yes, another chat filter update. I don't have much to say about it. It should be better than the last one, but I always say that.
-
-___
 
 Later updates moved to [the archive](/pages/archive/index.html)
 
