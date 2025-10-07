@@ -2,7 +2,7 @@
 
 ### Welcome to SquareOne
 
-A [Luanti](https://www.luanti.org/) Online Multiplayer Server
+A [Luanti](https://www.luanti.org/) SMP Server
 
 ::: {.notices .red}
 Address: **`monk.moe`** | Port: **`30023`**
@@ -16,23 +16,11 @@ Our dedicated [Staff](/pages/staff.html) are the backbone of ensuring a safe and
 
 Bugs can be reported on our [GitHub](https://github.com/monk-afk/SquareOne/issues)
 
+Recent updates can be found [here](/pages/updates.html).
+
 ___
 
-Credits
-
-[Lua](https://www.lua.org/license.html) Copyright © 1994–2025 Lua.org, PUC-Rio.
-
-[lunamark](https://github.com/jgm/lunamark/blob/master/LICENSE) Copyright © 2009-2016 John MacFarlane
-
-[Luanti](https://github.com/luanti-org/luanti/blob/master/LICENSE.txt) Copyright © 2010-2012 celeron55, Perttu Ahola
-
-[metismenu](https://github.com/onokumus/metismenu/blob/master/LICENSE) Copyright © 2014-2021 Osman Nuri Okumuş
-
-[slideout](https://github.com/Mango/slideout/blob/master/LICENSE) Copyright © 2015 Mango
-
-[hamburgers](https://github.com/jonsuh/hamburgers/blob/master/LICENSE) Copyright © 2016 Jonathan Suh
-
-[SquareOne](https://github.com/monk-afk/SquareOne/blob/main/LICENSE) Copyright © 2024-2025 monk
+Website hosted on GitHub. CMS powered by [lunamark](https://github.com/jgm/lunamark/blob/master/LICENSE).
 
 ![monk with pixel glasses](/images/squareone_pixelmonk.png)
 

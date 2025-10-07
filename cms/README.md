@@ -1,5 +1,17 @@
 # SquareOne.moe
 
+[Lua](https://www.lua.org/license.html) Copyright © 1994–2025 Lua.org, PUC-Rio.
+
+[Luanti](https://github.com/luanti-org/luanti/blob/master/LICENSE.txt) Copyright © 2010-2012 celeron55, Perttu Ahola
+
+[metismenu](https://github.com/onokumus/metismenu/blob/master/LICENSE) Copyright © 2014-2021 Osman Nuri Okumuş
+
+[slideout](https://github.com/Mango/slideout/blob/master/LICENSE) Copyright © 2015 Mango
+
+[hamburgers](https://github.com/jonsuh/hamburgers/blob/master/LICENSE) Copyright © 2016 Jonathan Suh
+
+[SquareOne](https://github.com/monk-afk/SquareOne/blob/main/LICENSE) Copyright © 2024-2025 monk
+
 ![monk](/images/squareone_pixelmonk.png)
 
 [![visitors](https://api.visitorbadge.io/api/visitors?path=squareone.moe&countColor=%23d60000)](https://visitorbadge.io/status?path=squareone.moe)
