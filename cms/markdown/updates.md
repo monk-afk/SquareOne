@@ -1,5 +1,25 @@
 # Recent Updates
 
+### October 12 | XM Repurposed {.header-separator}
+
+The chat command for proximity chat, `/xm` has been repurposed into a group chat command.
+
+To create a new xm group, use `/xm_new`. All xm groups are created without ownership. If the creator of an xm group leaves the group they created, it doesn't matter. The xm group will exist until there are no members in the group.
+
+XM groups are accessed by invite only. Anyone can invite anyone into an XM group, and a member will remain a member of the group they join until they leave.
+
+To invite another player into your XM group, use `/xm_invite player_name`.
+
+To accept an invite, use `/xm_join`. To decline, simply ignore the invite.
+
+Leave an XM group with `/xm_leave`. There is no kick option here, if you don't want someone in your XM group, leave the group and start a new one.
+
+To see the list of members in your group, use `/xm_list`. Include another player's name to check their XM group list, `/xm_list player_name`.
+
+And finally, to chat: `/xm`. XM chat works anywhere in-game, no longer restricted by distance. Since this is a non-public chat stream, the new XM chats are no longer monitored by staff and they are not processed through the chat filter.
+
+There is currently no persistance of the groups or members, however this will be implemented soon along with other minor tweaks such as announcing when someone has invited someone.
+
 ### October 7 | Automatic Crafting {.header-separator}
 
 Auto-Craft has been added.
