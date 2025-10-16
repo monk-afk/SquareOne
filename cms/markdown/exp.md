@@ -83,7 +83,7 @@ The luck throw is this, random() is between 0.0 and 1.0:
 
   > if `luck > random()`: free bones!
 
-  > if `lua < random()`: not free! rip exp.
+  > if `luck < random()`: not free! rip exp.
 
 Exp is reduced by applying the formula `(metric * luck) / (fortune * math.pi)` to both metric points, your Stamina Exhaust, and Online Seconds, then recalculate the exp from the new metric values.
 
