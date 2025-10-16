@@ -86,21 +86,21 @@
 <tbody>
 <tr>
 <td style="text-align: right;"><strong>$1</strong></td>
-<td style="text-align: center;"><img src="/images/textures/money/money_note_1.png" alt="SQ1<em>Note</em>1" /></td>
+<td style="text-align: center;"><img src="/images/textures/money/money_note_1.png" alt="SQ1 Note 1" /></td>
 <td style="text-align: right;"><strong>$5</strong></td>
-<td style="text-align: center;"><img src="/images/textures/money/money_note_5.png" alt="SQ1<em>Note</em>5" /></td>
+<td style="text-align: center;"><img src="/images/textures/money/money_note_5.png" alt="SQ1 Note 5" /></td>
 </tr>
 <tr>
 <td style="text-align: right;"><strong>$10</strong></td>
-<td style="text-align: center;"><img src="/images/textures/money/money_note_10.png" alt="SQ1<em>Note</em>10" /></td>
+<td style="text-align: center;"><img src="/images/textures/money/money_note_10.png" alt="SQ1 Note 10" /></td>
 <td style="text-align: right;"><strong>$50</strong></td>
-<td style="text-align: center;"><img src="/images/textures/money/money_note_50.png" alt="SQ1<em>Note</em>50" /></td>
+<td style="text-align: center;"><img src="/images/textures/money/money_note_50.png" alt="SQ1 Note 50" /></td>
 </tr>
 <tr>
 <td style="text-align: right;"><strong>$100</strong></td>
-<td style="text-align: center;"><img src="/images/textures/money/money_note_100.png" alt="SQ1<em>Note</em>100" /></td>
+<td style="text-align: center;"><img src="/images/textures/money/money_note_100.png" alt="SQ1 Note 100" /></td>
 <td style="text-align: right;"><strong>$500</strong></td>
-<td style="text-align: center;"><img src="/images/textures/money/money_note_500.png" alt="SQ1<em>Note</em>500" /></td>
+<td style="text-align: center;"><img src="/images/textures/money/money_note_500.png" alt="SQ1 Note 500" /></td>
 </tr>
 </tbody>
 </table>
@@ -143,9 +143,503 @@
 <p><code>/profit-share</code> show the amount of collected taxes pending next payout.</p>
 
 <p>Shop owners can expect to receive $9 for every $10 sale.</p>
+
+<hr class="header-hr">
+
+<h3>Tax Brackets</h3>
+
+<p>Below is a table showing the amounts deducted from cash sales in their respective brackets. To elaborate; any item being sold between $1 and $3 will incur no deduction. Sales between $4 and $10 will contribute $1 from the sale to profit share.</p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+<th style="text-align: right;"></th>
+<th style="text-align: right;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/money/money_note_1.png" alt="SQ1 Note 1" /></td>
+<td style="text-align: center;">Range From</td>
+<td style="text-align: right;">Range To</td>
+<td style="text-align: right;">Shared Profit</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 1 ($ 1)</td>
+<td style="text-align: right;">x 3 ($ 4)</td>
+<td style="text-align: right;">$ 0</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 4 ($ 4)</td>
+<td style="text-align: right;">x 10 ($ 11)</td>
+<td style="text-align: right;">$ 1</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 11 ($ 11)</td>
+<td style="text-align: right;">x 20 ($ 21)</td>
+<td style="text-align: right;">$ 2</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 21 ($ 21)</td>
+<td style="text-align: right;">x 30 ($ 31)</td>
+<td style="text-align: right;">$ 3</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 31 ($ 31)</td>
+<td style="text-align: right;">x 40 ($ 41)</td>
+<td style="text-align: right;">$ 4</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 41 ($ 41)</td>
+<td style="text-align: right;">x 50 ($ 51)</td>
+<td style="text-align: right;">$ 5</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 51 ($ 51)</td>
+<td style="text-align: right;">x 60 ($ 61)</td>
+<td style="text-align: right;">$ 6</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 61 ($ 61)</td>
+<td style="text-align: right;">x 70 ($ 71)</td>
+<td style="text-align: right;">$ 7</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 71 ($ 71)</td>
+<td style="text-align: right;">x 80 ($ 81)</td>
+<td style="text-align: right;">$ 8</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 81 ($ 81)</td>
+<td style="text-align: right;">x 90 ($ 91)</td>
+<td style="text-align: right;">$ 9</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 91 ($ 91)</td>
+<td style="text-align: right;">x 99 ($ 100)</td>
+<td style="text-align: right;">$ 10</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/money/money_note_5.png" alt="SQ1 Note 5" /></td>
+<td style="text-align: center;">Range From</td>
+<td style="text-align: right;">Range To</td>
+<td style="text-align: right;">Shared Profit</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 1 ($ 5)</td>
+<td style="text-align: right;">x 2 ($ 15)</td>
+<td style="text-align: right;">$ 1</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 3 ($ 15)</td>
+<td style="text-align: right;">x 3 ($ 20)</td>
+<td style="text-align: right;">$ 2</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 4 ($ 20)</td>
+<td style="text-align: right;">x 10 ($ 55)</td>
+<td style="text-align: right;">$ 5</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 11 ($ 55)</td>
+<td style="text-align: right;">x 20 ($ 105)</td>
+<td style="text-align: right;">$ 10</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 21 ($ 105)</td>
+<td style="text-align: right;">x 30 ($ 155)</td>
+<td style="text-align: right;">$ 15</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 31 ($ 155)</td>
+<td style="text-align: right;">x 40 ($ 205)</td>
+<td style="text-align: right;">$ 20</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 41 ($ 205)</td>
+<td style="text-align: right;">x 50 ($ 255)</td>
+<td style="text-align: right;">$ 25</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 51 ($ 255)</td>
+<td style="text-align: right;">x 60 ($ 305)</td>
+<td style="text-align: right;">$ 30</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 61 ($ 305)</td>
+<td style="text-align: right;">x 70 ($ 355)</td>
+<td style="text-align: right;">$ 35</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 71 ($ 355)</td>
+<td style="text-align: right;">x 80 ($ 405)</td>
+<td style="text-align: right;">$ 40</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 81 ($ 405)</td>
+<td style="text-align: right;">x 90 ($ 455)</td>
+<td style="text-align: right;">$ 45</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 91 ($ 455)</td>
+<td style="text-align: right;">x 99 ($ 500)</td>
+<td style="text-align: right;">$ 50</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/money/money_note_10.png" alt="SQ1 Note 10" /></td>
+<td style="text-align: center;">Range From</td>
+<td style="text-align: right;">Range To</td>
+<td style="text-align: right;">Shared Profit</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 1 ($ 10)</td>
+<td style="text-align: right;">x 1 ($ 20)</td>
+<td style="text-align: right;">$ 1</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 2 ($ 20)</td>
+<td style="text-align: right;">x 2 ($ 30)</td>
+<td style="text-align: right;">$ 2</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 3 ($ 30)</td>
+<td style="text-align: right;">x 3 ($ 40)</td>
+<td style="text-align: right;">$ 3</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 4 ($ 40)</td>
+<td style="text-align: right;">x 10 ($ 110)</td>
+<td style="text-align: right;">$ 10</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 11 ($ 110)</td>
+<td style="text-align: right;">x 20 ($ 210)</td>
+<td style="text-align: right;">$ 20</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 21 ($ 210)</td>
+<td style="text-align: right;">x 30 ($ 310)</td>
+<td style="text-align: right;">$ 30</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 31 ($ 310)</td>
+<td style="text-align: right;">x 40 ($ 410)</td>
+<td style="text-align: right;">$ 40</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 41 ($ 410)</td>
+<td style="text-align: right;">x 50 ($ 510)</td>
+<td style="text-align: right;">$ 50</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 51 ($ 510)</td>
+<td style="text-align: right;">x 60 ($ 610)</td>
+<td style="text-align: right;">$ 60</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 61 ($ 610)</td>
+<td style="text-align: right;">x 70 ($ 710)</td>
+<td style="text-align: right;">$ 70</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 71 ($ 710)</td>
+<td style="text-align: right;">x 80 ($ 810)</td>
+<td style="text-align: right;">$ 80</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 81 ($ 810)</td>
+<td style="text-align: right;">x 90 ($ 910)</td>
+<td style="text-align: right;">$ 90</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 91 ($ 910)</td>
+<td style="text-align: right;">x 99 ($ 1000)</td>
+<td style="text-align: right;">$ 100</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/money/money_note_50.png" alt="SQ1 Note 50" /></td>
+<td style="text-align: center;">Range From</td>
+<td style="text-align: right;">Range To</td>
+<td style="text-align: right;">Shared Profit</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 1 ($ 50)</td>
+<td style="text-align: right;">x 2 ($ 150)</td>
+<td style="text-align: right;">$ 10</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 3 ($ 150)</td>
+<td style="text-align: right;">x 3 ($ 200)</td>
+<td style="text-align: right;">$ 20</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 4 ($ 200)</td>
+<td style="text-align: right;">x 10 ($ 550)</td>
+<td style="text-align: right;">$ 50</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 11 ($ 550)</td>
+<td style="text-align: right;">x 20 ($ 1050)</td>
+<td style="text-align: right;">$ 100</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 21 ($ 1050)</td>
+<td style="text-align: right;">x 30 ($ 1550)</td>
+<td style="text-align: right;">$ 150</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 31 ($ 1550)</td>
+<td style="text-align: right;">x 40 ($ 2050)</td>
+<td style="text-align: right;">$ 200</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 41 ($ 2050)</td>
+<td style="text-align: right;">x 50 ($ 2550)</td>
+<td style="text-align: right;">$ 250</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 51 ($ 2550)</td>
+<td style="text-align: right;">x 60 ($ 3050)</td>
+<td style="text-align: right;">$ 300</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 61 ($ 3050)</td>
+<td style="text-align: right;">x 70 ($ 3550)</td>
+<td style="text-align: right;">$ 350</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 71 ($ 3550)</td>
+<td style="text-align: right;">x 80 ($ 4050)</td>
+<td style="text-align: right;">$ 400</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 81 ($ 4050)</td>
+<td style="text-align: right;">x 90 ($ 4550)</td>
+<td style="text-align: right;">$ 450</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 91 ($ 4550)</td>
+<td style="text-align: right;">x 99 ($ 5000)</td>
+<td style="text-align: right;">$ 500</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/money/money_note_100.png" alt="SQ1 Note 100" /></td>
+<td style="text-align: center;">Range From</td>
+<td style="text-align: right;">Range To</td>
+<td style="text-align: right;">Shared Profit</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 1 ($ 100)</td>
+<td style="text-align: right;">x 1 ($ 200)</td>
+<td style="text-align: right;">$ 10</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 2 ($ 200)</td>
+<td style="text-align: right;">x 2 ($ 300)</td>
+<td style="text-align: right;">$ 20</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 3 ($ 300)</td>
+<td style="text-align: right;">x 3 ($ 400)</td>
+<td style="text-align: right;">$ 30</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 4 ($ 400)</td>
+<td style="text-align: right;">x 10 ($ 1100)</td>
+<td style="text-align: right;">$ 100</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 11 ($ 1100)</td>
+<td style="text-align: right;">x 20 ($ 2100)</td>
+<td style="text-align: right;">$ 200</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 21 ($ 2100)</td>
+<td style="text-align: right;">x 30 ($ 3100)</td>
+<td style="text-align: right;">$ 300</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 31 ($ 3100)</td>
+<td style="text-align: right;">x 40 ($ 4100)</td>
+<td style="text-align: right;">$ 400</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 41 ($ 4100)</td>
+<td style="text-align: right;">x 50 ($ 5100)</td>
+<td style="text-align: right;">$ 500</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 51 ($ 5100)</td>
+<td style="text-align: right;">x 60 ($ 6100)</td>
+<td style="text-align: right;">$ 600</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 61 ($ 6100)</td>
+<td style="text-align: right;">x 70 ($ 7100)</td>
+<td style="text-align: right;">$ 700</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 71 ($ 7100)</td>
+<td style="text-align: right;">x 80 ($ 8100)</td>
+<td style="text-align: right;">$ 800</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 81 ($ 8100)</td>
+<td style="text-align: right;">x 90 ($ 9100)</td>
+<td style="text-align: right;">$ 900</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 91 ($ 9100)</td>
+<td style="text-align: right;">x 99 ($10000)</td>
+<td style="text-align: right;">$1000</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="/images/textures/money/money_note_500.png" alt="SQ1 Note 500" /></td>
+<td style="text-align: center;">Range From</td>
+<td style="text-align: right;">Range To</td>
+<td style="text-align: right;">Shared Profit</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 1 ($ 500)</td>
+<td style="text-align: right;">x 2 ($ 1500)</td>
+<td style="text-align: right;">$ 100</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 3 ($ 1500)</td>
+<td style="text-align: right;">x 3 ($ 2000)</td>
+<td style="text-align: right;">$ 200</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 4 ($ 2000)</td>
+<td style="text-align: right;">x 10 ($ 5500)</td>
+<td style="text-align: right;">$ 500</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 11 ($ 5500)</td>
+<td style="text-align: right;">x 20 ($10500)</td>
+<td style="text-align: right;">$1000</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 21 ($10500)</td>
+<td style="text-align: right;">x 30 ($15500)</td>
+<td style="text-align: right;">$1500</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 31 ($15500)</td>
+<td style="text-align: right;">x 40 ($20500)</td>
+<td style="text-align: right;">$2000</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 41 ($20500)</td>
+<td style="text-align: right;">x 50 ($25500)</td>
+<td style="text-align: right;">$2500</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 51 ($25500)</td>
+<td style="text-align: right;">x 60 ($30500)</td>
+<td style="text-align: right;">$3000</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 61 ($30500)</td>
+<td style="text-align: right;">x 70 ($35500)</td>
+<td style="text-align: right;">$3500</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 71 ($35500)</td>
+<td style="text-align: right;">x 80 ($40500)</td>
+<td style="text-align: right;">$4000</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 81 ($40500)</td>
+<td style="text-align: right;">x 90 ($45500)</td>
+<td style="text-align: right;">$4500</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x 91 ($45500)</td>
+<td style="text-align: right;">x 99 ($50000)</td>
+<td style="text-align: right;">$5000</td>
+</tr>
+</tbody>
+</table>
+
             <div class="page-timestamp">
               <span><a href="#top">TOP</a></span>
-              <span>Updated <code>2025-08-19 12:27:45</code></span>
+              <span>Updated <code>2025-10-16 12:35:10</code></span>
             </div>
           </div>
         </div>
