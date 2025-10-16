@@ -32,7 +32,7 @@ io.write(
 "|:--:|:--:|---:|---:|\n")
 
 local new_row = "|  | x %2s ($%5s) | x %2s ($%5s) | $%4s |\n"
-local new_column = "| ![SQ1_Note_%s](/images/textures/money/money_note_%s.png) | Range From | Range To | Shared Profit |\n"
+local new_column = "| ![SQ1 Note %s](/images/textures/money/money_note_%s.png) | Range From | Range To | Shared Profit |\n"
 
 for n = 1, #note_strings do
   for denomination, conversion in pairs(note_strings[n]) do
@@ -45,19 +45,18 @@ for n = 1, #note_strings do
       local new_denomination, new_multiplier, current_tax = sales_tax(denomination, current_multiplier, conversion)
 
       if current_tax ~= last_tax or current_multiplier == 100 then -- only print when the amount of tax changes
-        local current_value = denomination * current_multiplier
         local output = (new_row):format(
             last_multiplier,
             last_value,
-            current_multiplier - 1,
-            current_value,
+            current_multiplier -1,
+            (current_multiplier - 1) * denomination,
             last_tax
           )
 
         io.write(output)
         last_tax = current_tax
         last_multiplier = current_multiplier
-        last_value = current_value
+        last_value = current_multiplier * denomination
       end
     end
   end
