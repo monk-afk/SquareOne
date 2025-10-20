@@ -18,6 +18,7 @@ ___
 
 | Guardians      | Hired On   | Avatar |
 |---------------:|:----------:|:------:|
+| Nuggette       | 2025/09/30 |        |
 | OfficalCookies | 2025/09/30 | ![OfficalCookies](/images/staff/OfficalCookies.png){width=300 height=300} |
 | elimeshe       | 2025/09/30 | ![elimeshe](/images/staff/elimeshe.png){width=300 height=300} |
 | -RoselinCute-  | 2025/02/20 | ![-RoselinCute-](/images/staff/RoselinCute.png){width=300 height=300} |
