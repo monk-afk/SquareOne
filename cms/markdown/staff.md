@@ -6,9 +6,19 @@ There is no set schedule for when Police hire guardians. The decision typically 
 
 ___
 
+It is with a great sorrow that we announce the retirement of our friend and police staff Red_Dolphin, aka "hilo". Thanks on behalf of everyone for being with us, we hope to see you in-game again one day.
+
+`Red_Dolphin`
+
+![Red_Dolphin](/images/staff/Red_Dolphin.png){width=300 height=300} |
+
+2023/09/03 - 2025/10/20
+
+___
+
 | Guardians      | Hired On   | Avatar |
 |---------------:|:----------:|:------:|
-| OfficalCookies | 2025/09/30 |        |
+| OfficalCookies | 2025/09/30 | ![OfficalCookies](/images/staff/OfficalCookies.png){width=300 height=300} |
 | elimeshe       | 2025/09/30 | ![elimeshe](/images/staff/elimeshe.png){width=300 height=300} |
 | -RoselinCute-  | 2025/02/20 | ![-RoselinCute-](/images/staff/RoselinCute.png){width=300 height=300} |
 | Pot-of-rice    | 2024/09/21 | ![Pot-of-rice](/images/staff/Pot-of-rice.png){width=300 height=300} |
@@ -19,6 +29,4 @@ ___
 | Police         | Hired On   | Avatar |
 |:--------------:|:----------:|:------:|
 | senua          | 2024/02/04 | ![senua](/images/staff/senua.png){width=300 height=300} |
-| Red_Dolphin    | 2023/09/03 | ![Red_Dolphin](/images/staff/Red_Dolphin.png){width=300 height=300} |
 | Ylde           | 2023/08/08 | ![Ylde](/images/staff/Ylde.png){width=300 height=300} |
-
