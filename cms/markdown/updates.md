@@ -1,5 +1,19 @@
 # Recent Updates
 
+### Dec 3 | Etherium Sword {.header-separator}
+
+Kind of a late update on this one, the Etherium Sword, which had been on the back burner since late 2023, has finally been introduced in-game.
+
+Etherium Sword ability is in line with the Anti-Gravity effect of Etherium Armor, and incurs an inversion of gravity on the player being struck by this sword, plus a knockback boost. Wearing full Gold armor, which adds gravity to the player, will be knocked back significantly more than full Etherium armor, which reduces gravity of the player.
+
+Additionally, the knockback system now includes actual physics! *Relative Motion* considers the magnitude and direction of velocity of the players in combat. In plain terms, running towards and hitting another player will cause greater knockback than standing still and hitting them.
+
+The PvP Arena, inspired by senua's PvP area, is found at x300,z-70, which is east of spawn. At this time there are no PvP tournaments planned, but the idea is lingering in my mind.
+
+Also, the [map images](/pages/map.html) have been updated and expanded to show up to x/z:16384. Keep in mind, areas of white will show up in colored detail when they are generated in-game in subsequent updates to these images.
+
+Finally, the second annual Gingerbread Cookie Raffle prize lot is sitting at over $11,000! The draw is now less than a month away, be ready to hear the announced First draw winner. [Click here for more details](/pages/raffle.html).
+
 ### October 12 | XM Repurposed {.header-separator}
 
 The chat command for proximity chat, `/xm` has been repurposed into a group chat command.
@@ -51,11 +65,11 @@ Also, the Mese and Mitril Pickax have had their digtimes swapped. Meaning Mithri
 - The most noticeable change will be your **exp and levels are reduced**
 - Using /bones carries an **actual risk** of loss
 
-There's also going to be changes to node drops, tying into the exp mod. 
+There's also going to be changes to node drops, tying into the exp mod.
 
 - **Blue diamonds no longer have a depth restriction**. Mining stone is still the primary source of diamonds.
-- Luck and Fortune **will affect more node drops**. 
-- If a node is to drop an item, a luck throw will be used to determine if you will receive a multiplier based **directly on your fortune stat**. 
+- Luck and Fortune **will affect more node drops**.
+- If a node is to drop an item, a luck throw will be used to determine if you will receive a multiplier based **directly on your fortune stat**.
   - For example, after a successful Luck throw, and your fortune is between 3.0 and 3.99, you may receive up to 5 items as a drop.
 
 And we're plugging the mobs drops into this mechanic as well.
@@ -66,4 +80,3 @@ ___
 
 
 Later updates moved to [the archive](/pages/archive/index.html)
-
