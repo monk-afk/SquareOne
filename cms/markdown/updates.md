@@ -1,5 +1,31 @@
 # Recent Updates
 
+### Dec 29 | Raffle Winner {.header-separator}
+
+This year's Gingerbread Cookie Raffle was both exciting, and anti-climactic!
+
+Three names were drawn in total, the first two were no-shows causing disqualification.
+
+**grey_slay** was the first picked name, logged in 10 hours after being disqualified.
+
+**Walfey** was the second picked name, logged in 5 days after being disqualified.
+
+The final name to be drawn, whom became the winner of the $15,988 prize was **ItzCookie**!
+
+When asked to give their decision on whether to split the prize and draw a second winner, there was no hesitation:
+
+```<ItzCookie> ill keep it```
+
+Followed by a full *26 seconds of silence*.
+
+And that was it, contest ended.
+
+ItzCookie ended up sharing a lot of the prize with friends and others who asked.
+
+Congratulations again, and better luck to all participants next year!
+
+Find the full contest details by [clicking here](/pages/raffle.html)
+
 ### Dec 3 | Etherium Sword {.header-separator}
 
 Kind of a late update on this one, the Etherium Sword, which had been on the back burner since late 2023, has finally been introduced in-game.
