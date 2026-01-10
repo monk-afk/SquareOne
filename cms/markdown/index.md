@@ -18,8 +18,6 @@ Bugs can be reported on our [GitHub](https://github.com/monk-afk/SquareOne/issue
 
 Recent updates can be found [here](/pages/updates.html).
 
-[Click here for details about the **Gingerbread Cookie Raffle**](/pages/raffle.html)
-
 ___
 
 Website hosted on GitHub. CMS powered by [lunamark](https://github.com/jgm/lunamark/blob/master/LICENSE).
