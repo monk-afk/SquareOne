@@ -64,6 +64,7 @@ Coordinates are `(x,y,z)`. The `y` coord, is the one that tells you how high or 
 A protection block can be crafted with 8 stone, made by smelting cobblestone, and a gold ignot in the center.
 
 Here is an early minshaft depth guide:
+
   - Coal is located almost everywhere in the world.
   - Quartz is fairly shallow at -10 below ground.
   - Iron ore is located roughly -50 below.
