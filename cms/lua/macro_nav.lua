@@ -41,6 +41,7 @@ local menu_pages = {
     }
   },
   {["history"]  = "HISTORY"},
+  {["guide"]  = "INTRO GUIDE"},
   {["updates"]  = "UPDATES"},
 }
 
@@ -71,7 +72,7 @@ local function generate_sidebar(active_page)
             is_dropdown_active = true
           end
 
-          table.insert(submenu_items, 
+          table.insert(submenu_items,
               string.format(menu_item_page,
                   li_class(is_active), "pages/" .. sub_page_key,
                   aria_exp(is_active), a_class(is_active),
