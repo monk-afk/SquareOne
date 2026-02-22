@@ -1,7 +1,5 @@
 # Expenses
 
-This table destails the income and expenses incurred from hosting SquareOne. Many people have asked how much it costs to run the server, so I took the time to compile the invoices related to the server.
-
 | Date       | Product                  | Description            | Coverage | Expires    |  USD + Tax |
 |:-----------|:-------------------------|:-----------------------|:--------:|:-----------|-----------:|
 | 2023-05-15 | VPS S SSD 95.111.233.238 | VPS Subscription       | 1 Year   | 2024-05-15 |  -(101.88) |
@@ -14,14 +12,10 @@ This table destails the income and expenses incurred from hosting SquareOne. Man
 | 2025-02-05 | Gratuity                 | Server Finance Support | N/A      | N/A        |      65.00 |
 | 2025-02-25 | Gratuity                 | Server Finance Support | N/A      | N/A        |      13.36 |
 | 2025-03-31 | VPS 3 SSD 95.111.233.238 | VPS Renewal            | 1 Year   | 2026-05-15 |  -(210.00) |
-
-The best way you can support SquareOne is a simple "thanks monk" in-game, or drop me a word of encouragement in my mailbox at spawn, these gestures mean a lot to me.
-
-I also won't say no to a cold hard cash deposit.
+| 2026-02-11 | VPS 3 SSD 95.111.233.238 | VPS Renewal            | 1 Year   | 2027-05-15 |  -(252.00) |
 
 Donate through Stripe
 
 $htmlsup
 
-Or on my [Ko-Fi](https://ko-fi.com/monkmoe) page
-
+[Ko-Fi](https://ko-fi.com/monkmoe)

@@ -32,7 +32,6 @@ local menu_pages = {
         {["tools"]    = "Tools"},
         {["armor"]    = "Armor"},
         {["exp"]      = "Exp"},
-        {["dyes"]     = "Dyes"},
         {["mining"]   = "Mining"},
         {["crystal"]  = "Crystal"},
         {["protect"]  = "Protect"},

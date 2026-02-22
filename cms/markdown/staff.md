@@ -8,6 +8,14 @@ ___
 
 | Name           | Rank     | Hired On   | Avatar |
 |---------------:|---------:|:----------:|:------:|
+| Tabassum       | Guardian | 2026/02/09 | ![Tabassum](/images/staff/Tabassum.png)    |
+| royxd          | Guardian | 2026/02/09 | ![royxd](/images/staff/royxd.png)    |
+| NoNameGuy2     | Guardian | 2026/02/09 | ![NoNameGuy2](/images/staff/NoNameGuy2.png){width=300 height=300} |
+| lily2          | Guardian | 2026/02/09 | ![lily2](/images/staff/lily2.png)    |
+| ItzCookie      | Guardian | 2026/02/09 | ![ItzCookie](/images/staff/ItzCookie.png){width=300 height=300} |
+| Ginger379      | Guardian | 2026/02/09 | ![Ginger379](/images/staff/Ginger379.png)    |
+| ChickenBro2    | Guardian | 2026/02/09 | ![ChickenBro2](/images/staff/ChickenBro2.png)    |
+| appleing       | Guardian | 2026/02/09 | ![appleing](/images/staff/appleing.png)    |
 | OfficalCookies | Guardian | 2025/09/30 | ![OfficalCookies](/images/staff/OfficalCookies.png){width=300 height=300} |
 | elimeshe       | Guardian | 2025/09/30 | ![elimeshe](/images/staff/elimeshe.png){width=300 height=300} |
 | -RoselinCute-  | Guardian | 2025/02/20 | ![-RoselinCute-](/images/staff/RoselinCute.png){width=300 height=300} |
