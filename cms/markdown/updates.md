@@ -6,15 +6,15 @@ There are now 147 table variants, most wood types, and acrylics. More will will 
 
 The crafting guide does not show all 147, they are however all crafted with the same recipe.
 
-```
-- B = Block (wood, acryilic, etc)
-- S = Stick
-_____________
-| B | B | B |
-| S |   | S |
-| S |   | S |
-‾‾‾‾‾‾‾‾‾‾‾‾‾
-```
+::: {.notices .green}
+- B = Block (wood, acryilic, etc)<br>
+- S = Stick<br>
+_____________<br>
+| B | B | B |<br>
+| S |   | S |<br>
+| S |   | S |<br>
+‾‾‾‾‾‾‾‾‾‾‾‾‾<br>
+:::
 
 The Irrigation mod also has been updated to add 'Pipes'!
 
