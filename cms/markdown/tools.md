@@ -10,6 +10,7 @@ Dig times use Luanti group ratings where `R1` is toughest and `R3` is easiest.
 - [Steel](#tools-steel)
 - [Silver](#tools-silver)
 - [Mese](#tools-mese)
+- [Etherium](#tools-etherium)
 - [Diamond](#tools-diamond)
 - [Obsidian](#tools-obsidian)
 - [Crystal](#tools-crystal)
@@ -74,6 +75,12 @@ ___
 | ![sword](/images/textures/tools/default_tool_mesesword.png){width=32 height=32} | 30 | 6 | 0.8 | R1 2.00s / R2 1.00s / R3 1.35s |
 | ![axe](/images/textures/tools/default_tool_meseaxe.png){width=32 height=32} | 20 | 6 | 0.9 | R1 2.20s / R2 1.00s / R3 0.60s |
 | ![shovel](/images/textures/tools/default_tool_meseshovel.png){width=32 height=32} | 20 | 4 | 1.0 | R1 1.40s / R2 0.95s / R3 0.85s |
+
+### Etherium{#tools-etherium}
+
+| Etherium | Durability | Attack | Full Dmg. Interval | Dig Times | Ability |
+|:-------------:|-------------:|-------------:|-------------:|:-----------|:--------|
+| ![sword](/images/textures/tools/armorplus_etherium_sword.png){width=32 height=32} | 40 | 6 | 0.8 | R1 1.90s / R2 1.20s / R3 0.90s | Inverts gravity before knockback boost |
 
 ### Diamond{#tools-diamond}
 
