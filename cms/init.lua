@@ -85,6 +85,7 @@ local parse = lunamark.reader.markdown.new(writer, {
   bracketed_spans = true,
   fenced_code_attributes = true,
   table_captions = true,
+  strikeout = true
 })
 
 local result, metadata = parse(markdown_content)
