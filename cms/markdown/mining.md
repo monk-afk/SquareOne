@@ -2,17 +2,17 @@
 
 **Public Mines**
 
-There are three public mine locations. Use the `/tpp` chat command to travel:
+There are three public mine locations. Use the chat commands to travel:
 
-  - `/tpp mine1`
-  - `/tpp mine2`
-  - `/tpp mine3`
+  - `/mine1`
+  - `/mine2`
+  - `/mine3`
 
 **Diamonds**
 
 Diamonds can only be found from mining stone.
 
-Pink Diamonds can be found below a depth of -8200.
+Pink Diamonds can be found below a depth of -8700.
 
 Blue diamonds have no height restriction.
 
@@ -21,7 +21,7 @@ Your Fortune stat will multiply your diamond drops!
 | Diamond | Minimum depth | Rarity     |
 |:-------:|:--------------|-----------:|
 | Blue    |     Any depth | 0.000598%% |
-| Pink    |         -8200 | 0.000114%% |
+| Pink    |         -8700 | 0.000114%% |
 
 
 **Extra Drops**
@@ -39,4 +39,3 @@ If a node normally drops an item, this list details extra items drop potentials.
 | dirt               | bone           | 40     |
 
 Your Luck and Fortune stats affect the [quantity of a node drop.](/pages/exp.html)
-
