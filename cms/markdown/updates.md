@@ -8,6 +8,8 @@ The chat command `/chat` now serves more purpose than disabling chat messages.
 
 **Chat channels**
 
+- `/chat` by itself will **toggle chat on/off**
+
 - `/chat ?` **lists open populated channels**
 
 - `/chat ? [channel]` will **list the players in the specified channel**
