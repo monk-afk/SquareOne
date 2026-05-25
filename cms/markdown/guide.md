@@ -19,7 +19,9 @@ ___
     6. [Other Teleport Commands & Public Warps](#other-teleport-commands--public-warps)
     7. [Server Lore & Dangerous Monsters](#server-lore--dangerous-monsters)
 
----
+verison: 1.1 (05/21/2026)
+
+___
 
 ## Your Identity & The Spawn Area{#your-identity--the-spawn-area}
 
@@ -35,7 +37,7 @@ ___
 
   When you are ready to venture out into the world, just head out through any of the four main gates. It is that easy. If you ever need to get back, simply type /spawn in the chat or press the Go Spawn button located right in your inventory.
 
----
+___
 
 ## Setting Up Your First Base & Farm{#setting-up-your-first-base--farm}
 
@@ -65,7 +67,7 @@ ___
   - Gold Ore: Essential for your protection block, located around -200.
   - Mese Crystal: Rare and located deep down at -600.
 
----
+___
 
 ## Surviving Without a Farm (Early Food Sources){#surviving-without-a-farm-early-food-sources}
 
@@ -81,7 +83,7 @@ ___
 
   If you head North of Spawn, you can find beehives that give out free honey. Just make sure you do not punch the hive, or you will regret it.
 
----
+___
 
 ## The Home Teleport System{#the-home-teleport-system}
 
@@ -97,7 +99,7 @@ ___
 
   If you are part of a faction, you can teleport to the shared base using /fhome or the Go Faction Home button. If you are the faction owner, you can set this spawn point for your team by standing at the base and typing /fsethome.
 
----
+___
 
 ## Faction Basics & Customization{#faction-basics--customization}
 
@@ -114,7 +116,7 @@ ___
   - Use the << and >> buttons to shift all three color channels together to change the overall brightness.
   - Make sure to click Save when you are finished.
 
----
+___
 
 ## Other Teleport Commands & Public Warps{#other-teleport-commands--public-warps}
 
@@ -133,7 +135,7 @@ ___
 
   There are also physical teleportals located underneath the spawn area that you can walk into.
 
----
+___
 
 ## Server Lore & Dangerous Monsters{#server-lore--dangerous-monsters}
 
@@ -154,5 +156,3 @@ ___
   The surface is relatively peaceful because monsters mostly roam below a depth of -1000. However, pools of lava found above that depth can spawn dangerous fire elementals (like lava blobs or lava snowmen) that appear in the light near the magma. To survive an early encounter with these fire elementals, you absolutely need a full set of Steel armor, which is made by smelting iron ore. Aside from these lava elementals, no other hostile mobs spawn above -1000 depth.
 
 ___
-
-verison: 1.1 (05/21/2026)
