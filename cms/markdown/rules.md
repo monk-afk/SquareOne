@@ -8,7 +8,17 @@ Use `/rules` in-game for a quick summary. This page provides additional clarific
 
 ___
 
-> Players are responsible for themselves, their items/pets, and their builds/areas.
+## Public Chat Policy
+
+1. Players must be able to understand server rules and staff instructions in real time.
+
+2. Public chat must be in a language staff can reasonably moderate in real-time.
+
+3. Players are responsible for understanding rules and staff messages.
+
+___
+
+## In-game Rules
 
 1. Conduct & Behavior
 
@@ -44,5 +54,7 @@ ___
 : - Repeated requests for items or privileges
 🚫 No misuse of protection blocks
 : - Protections should not be used to trap, block unfairly, or grief
+
+> Players are responsible for themselves, their items/pets, and their builds/areas.
 
 ### Have Fun, Stay Safe!
