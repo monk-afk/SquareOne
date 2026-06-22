@@ -20,7 +20,7 @@ end
 markdown_content = markdown_content:gsub("^#%s+[%a%s%p]-\n", "", 1)
 
 -- make sure the file name is included in the macro_nav.lua
-local filename = markdown_file:gsub("^.+/([%a%d_]+)%.md", "%1")
+local filename = markdown_file:gsub("^.+/([%a%d_-]+)%.md", "%1")
 
 -- second argument is '-o' to write output to file
 local write_to_file = arg[2] and arg[2]:match("%-+o")
