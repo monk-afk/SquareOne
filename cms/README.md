@@ -204,7 +204,7 @@ ___
     `/cms/markdown/index.md` -> `/index.html`
     `/cms/markdown/ezpz.md` -> `/pages/ezpz.html`
 
-    For sub-root files:
+    For sub-directory root:
 
     `/cms/markdown/mysubs_index.md` -> `/pages/mysubs/index.html`
 
