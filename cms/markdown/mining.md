@@ -1,6 +1,6 @@
 # Mining
 
-**Public Mines**
+### Public Mines
 
 There are three public mine locations. Use the chat commands to travel:
 
@@ -8,7 +8,9 @@ There are three public mine locations. Use the chat commands to travel:
   - `/mine2`
   - `/mine3`
 
-**Diamonds**
+___
+
+### Diamonds
 
 Diamonds can only be found from mining stone.
 
@@ -23,8 +25,9 @@ Your Fortune stat will multiply your diamond drops!
 | Blue    |     Any depth | 0.000598%% |
 | Pink    |         -8700 | 0.000114%% |
 
+___
 
-**Extra Drops**
+### Extra Drops
 
 If a node normally drops an item, this list details extra items drop potentials. Rarity number means "1 in X" chance to drop.
 
@@ -39,3 +42,5 @@ If a node normally drops an item, this list details extra items drop potentials.
 | dirt               | bone           | 40     |
 
 Your Luck and Fortune stats affect the [quantity of a node drop.](/pages/exp.html)
+
+___
