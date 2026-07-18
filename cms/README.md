@@ -1,24 +1,22 @@
 # SquareOne.moe
 
-[Lua](https://www.lua.org/license.html) Copyright © 1994–2025 Lua.org, PUC-Rio.
-
-[Luanti](https://github.com/luanti-org/luanti/blob/master/LICENSE.txt) Copyright © 2010-2012 celeron55, Perttu Ahola
-
-[metismenu](https://github.com/onokumus/metismenu/blob/master/LICENSE) Copyright © 2014-2021 Osman Nuri Okumuş
-
-[slideout](https://github.com/Mango/slideout/blob/master/LICENSE) Copyright © 2015 Mango
-
-[hamburgers](https://github.com/jonsuh/hamburgers/blob/master/LICENSE) Copyright © 2016 Jonathan Suh
-
-[SquareOne](https://github.com/monk-afk/SquareOne/blob/main/LICENSE) Copyright © 2024-2025 monk
-
-![monk](/images/squareone_pixelmonk.png)
-
-[![visitors](https://api.visitorbadge.io/api/visitors?path=squareone.moe&countColor=%23d60000)](https://visitorbadge.io/status?path=squareone.moe)
+[Lua](https://www.lua.org/license.html) Copyright © 1994–2025 Lua.org, PUC-Rio.  
+[lunamark](https://github.com/jgm/lunamark/blob/master/LICENSE) Copyright © 2009-2016 John MacFarlane
+[metismenu](https://github.com/onokumus/metismenu/blob/master/LICENSE) Copyright © 2014-2021 Osman Nuri Okumuş  
+[slideout](https://github.com/Mango/slideout/blob/master/LICENSE) Copyright © 2015 Mango  
+[hamburgers](https://github.com/jonsuh/hamburgers/blob/master/LICENSE) Copyright © 2016 Jonathan Suh  
+[Luanti](https://github.com/luanti-org/luanti/blob/master/LICENSE.txt) Copyright © 2010-2012 celeron55, Perttu Ahola  
+[protector_tool.png](https://codeberg.org/tenplus1/protector/raw/branch/master/license.txt)Copyright © Sirrobzeroone  
+[ethereal_light_staff.png](https://codeberg.org/tenplus1/mobs_redo/raw/branch/master/license.txt) Copyright © TenPlus1  
+[ethereal_crystal_gilly_staff.png](https://codeberg.org/tenplus1/mobs_redo/raw/branch/master/license.txt) Copyright © TenPlus1  
+[mobs_lava_pick.png](https://codeberg.org/tenplus1/mobs_redo/raw/branch/master/license.txt) Copyright © TenPlus1  
+[SquareOne](https://github.com/monk-afk/SquareOne/blob/main/LICENSE) Copyright © 2024-2025 monk  
+![monk](/images/squareone_pixelmonk.png)  
+[![visitors](https://api.visitorbadge.io/api/visitors?path=squareone.moe&countColor=%23d60000)](https://visitorbadge.io/status?path=squareone.moe)  
 
 ___
 
-[SquareOne.moe](https://squareone.moe) uses [lunamark (MIT)](https://github.com/jgm/lunamark) to convert markdown into html. All source files for the SquareOne website have been licensed by it's author under the conditions of the MIT license (see [LICENSE](/LICENSE)).
+[SquareOne.moe](https://squareone.moe) uses [lunamark](https://github.com/jgm/lunamark) to convert markdown into html. All source files for the SquareOne website have been licensed by it's author under the conditions of the MIT license (see [LICENSE](/LICENSE)).
 
 | Contents |
 |:---------|
@@ -584,6 +582,16 @@ ___
 
   ```
 
+No-js thumbnail expansion
+
+  ```md
+    [![Thumbnail Image Description](/images/squareone_banner.png)](#img)
+
+    [![Full Image Description](/images/squareone_banner.png)](#href){#img .lightbox}
+
+    ^Image\ Description^
+  ```
+
 + [Top](#markdown-to-html-with-luamark)
 
 ___
@@ -609,8 +617,10 @@ ___
   1. > lua: lua/inject.lua:4: invalid use of '%' in replacement string
       - **Workaround**: Escape `%%` in the markdown file.
 
-  2. End of file should have a blank line, maybe two to be safe, otherwise the last <p> tag won't be closed in the body.
+  2. Last line before EOF empty line should be a non-paragraph content string, such as `___`. Otherwise, the last <p> tag won't be closed in the body.
 
   3. Can't add certain html tags or attributes by default. This is not a design error, but a design choice made by the authors of lunamark. Markdown doesn't natively provide certain features of HTML, therefore lunamark doesn't provide support for those features. This can be circumvented by patching the html writer and/or reader with the desired injection.
+
+  4. See issue#84. Workaround: Always include the first-line header1 tag.
 
 + [Top](#markdown-to-html-with-luamark)
