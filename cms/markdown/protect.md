@@ -1,12 +1,30 @@
-# Protection Blocks
+# Protectors
 
-Players can protect their area from griefing with protection blocks (pblock).
+### About Protector nodes
 
-A pblock will cover an area of 15 cubic meters (nodes).
+Players can protect their area from griefing with protector nodes, aka: pblocks or pbs.
 
-Tap on the pblock, or tap on the ground with a pblock, to momentarily show the area's protected borders.
+A protector node covers an area of 15x15x15.
 
-### PvP
+Tap on your own protector, or tap on the ground with a protector in hand to momentarily show the area's protected borders.
+
+___
+
+### Protector Placer Tool
+
+![Protector Tool](/images/textures/tools/protector_tool.png){width=32 height=32}
+
+To get perfect area coverage, use a placer tool to place a pblock without overlapping or leaving a gap.
+
+::: {.notices .blue}
+  You will need at least one protector in your inventory to use the placer!
+:::
+
+Stand next to an existing protecto., While holding the placer tool, aim at any of the six parallel directions (straight ahead, up, down, etc.). Then click or tap like you're using a sword, the protector from your inventory will shoot 15 blocks away in line with the one you're standing next to.
+
+___
+
+### PvP in protected area
 
 When a player is within the borders of a protected area, they are only able to inflict PvP damage on another player *if they own* the protected area. Otherwise, PvP is not enabled for players who stand in protected areas not owned by themselves.
 
@@ -14,26 +32,16 @@ When a player is within the borders of a protected area, they are only able to i
 |:-:|:---------------:|:------------:|:-----------------:|:-------------------:|:----------------:|
 |   | No              | No           | Yes               | Yes                 | Yes              |
 |   | Yes             | No           | No                | Yes - From pB owner | No               |
-|   | Yes             | Yes          | Yes!              | No                  | Yes              |
+|   | Yes             | Yes          | Yes!              | No                  | No               |
 
 ___
 
-### Abandonned Protectors
+### Chat command: /protect_view
 
-::: {.notices .red}
-  The Abandonned system has been abolished. Protected areas can be removed *only by request*
-:::
+There is now a command to change the protector: `/protector_view`, or for short: `/pb`. This command accepts three different options, and will change nearby protectors into that type:
 
-~~When in an abandonned state, everything, including the pblock, can be picked up by other players.~~
+  - `/pb block`
+  - `/pb logo`
+  - `/pb hide`
 
-~~Protector Abandonment is automatic after 9 months of not joining the server.~~
-
-~~The abandon state only affects the protector blocks, not the player data. Account information, such as passwords and inventories, are **not** affected.~~
-
-~~If the owner of an abandonned area returns after 9 months, remaining pblocks will be re-activated.~~
-
-~~Do not protect abandonned builds, unless you will live in it~~
-
-~~If there are disputes over abandoned builds, or if multiple players chaotically protect an abandoned area into a state where it cannot be built upon, we will demolish the area.~~
-
-~~Please consider scavenging the whole build, as to not leave a mess of half-destroyed builds everywhere.~~
+___
