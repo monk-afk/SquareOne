@@ -1,140 +1,94 @@
 # EXP
 
-## Gains and Losses
+## How to gain EXP?
 
-Playing the game will earn EXP stats. Just play, and you'll gain in stats.
+Play the game.
 
-As you continue to play, your stats curve will dampen and steadily increase/decrease.
+The best EXP comes from doing things at a regular pace.
 
-Dying won't reduce your EXP, but using /bones has a chance of costing EXP.
-
-Being offline for 5 days will cause a reduction of approximately 20%% every day.
+Grinding for EXP will have worse gains than playing regularly.
 
 ___
 
-## Metrics and Stats
+## How to lose EXP?
 
-Experience is measured by your overall activity over a period of time.
+Dying **will not** lower your EXP.
 
-To calculate this, we use two metric points:
+Using `/bones` carries a risk of `50%%` chance to lower EXP.
 
-- `Online Time`: Measured in seconds from the time you join until you leave.
-- `Stamina Exhaust`: Your activity: building, digging, fighting, crafting, running.
-
-From these we measure your `Exp` and `level`, `Luck` and `Fortune`.
-
-View the Leaderboard, and your stats or another player, with game command: `/exp player_name`
+**Being offline** will lower EXP by `1 death per day` after 5 days.
 
 ___
 
-## Exp and Levels
+## How to see my EXP?
 
-Your **level** is shown as part of your public chat nametag flair in round brackets.
+In the chat, your name shows a number like: `(1)«monk» hi`. That number is your EXP Level.
 
-___
+Also using the chat command: `/exp` will show your EXP stats, as well as the leaderboard top 100.
 
-## Luck and Fortune
-
-Luck is a **determinator**: whether something *will or will not* happen.
-
-Fortune is a **Multipliers**: how much of a reward or punishment to receive.
-
-::: {.notices .yellow}
-Luck and Fortune are always changing, especially for new players.
-:::
-
-They typically work together to give a sense of fateful outcome.
+View another player's exp by adding their name to the command: `/exp monk`
 
 ___
 
-## The Odds {#odds}
+## What is Luck and Fortune?
 
-A player's luck will always drift between 0.5 and 1.0.
+Luck and Fortune work together to reward or punish a player event.
 
-When luck is to be tested, like when using `/bones`, a random decimal between 0.0 and 1.0 is compared against the player's luck.
+For example:
 
-Having a high or low luck stat doesn't mean having good or bad luck.
+  - Using `/bones` checks your Luck, and if you're lucky: free bones
+    - If you're not lucky, your Fortune decides "how much EXP will this cost"
+  
+  - When mining, if you dig up a diamond, the server checks your Luck
+    - If lucky, your Fortune decides "how many extra diamonds will drop"
 
-Whether 'good' luck means having a stat higher or lower than the random is determined by the mod calling for a luck throw.
-
-[![Thumbnail Snapshot of Luck and Fortune at Levels 20 to 25](/images/other/published/thumbnails/exp_simulation-lvl_20-25.jpg)](#img)
-
-[![Full Snapshot of Luck and Fortune at Levels 20 to 25](/images/other/published/full/exp_simulation-lvl_20-25.png)](#odds){#img .lightbox}
-
-^Snapshot\ of\ Luck\ and\ Fortune\ from\ Levels\ 20\ to\ 25^
-
-If a mod function asks for a win to be determined with `random() > luck`, the win probability is around 20%%.
-
-Conversely, if the win condition is `luck > random()` the win probability is closer to 80%%.
+Higher level players will have higher Fortune, which means higher losses and higher gains.
 
 ___
 
-## Bones
+## My luck is 0.9, that's good right?
 
-Dying players drop their items into a bones block.
+Sometimes yes, sometimes no.
 
-There is no loss of EXP from dying.
+Remember these two for best Luck to get Fortune bonus:
 
-There is a minimum of 50 EXP to use the command.
+  * Best Luck for Mining drops: `0.5`
+  * Best Luck for Mob drops: `1.0`
 
-You can use command `/bones` to return to bones, but it *may* cost some EXP points.
-
-The luck throw is this, random() is between 0.0 and 1.0:
-
-  > if `luck > random()`: free bones!
-
-  > if `luck < random()`: not free! rip exp.
-
-Exp is reduced by applying the formula `(metric * luck) / (fortune * math.pi)` to both metric points, your Stamina Exhaust, and Online Seconds, then recalculate the exp from the new metric values.
-
-If you die in someone else's protected area no bones are dropped, and are therefore unable to use `/bones`.
+That's all you need to know. Everything else is random.
 
 ___
 
-## Drop Bonus
+## And what does fortune do?
 
-For node drops, you dig something from the list below, a luck throw is made.
+Let's say you find a Diamond, and get Lucky:
 
-|                |
-|:--------------:|
-| bone           |
-| coal_lump      |
-| copper_lump    |
-| diamond        |
-| gold_lump      |
-| iron_lump      |
-| mese_crystal   |
-| obsidian_shard |
-| ender_pearl    |
-| etherium_dust  |
-| mithril_lump   |
-| pinkdiamond    |
-| silver_lump    |
-| quartz_crystal |
-
-The throw is: `if luck < random()`: you win a fortune multiplier!
-
-The multiplier is used with Fortune rounded up: `digged_item x random(1, Fortune)`
-
-In other words, if your fortune is 3.45 and you dig a diamond, you could get between 1 and 4 diamonds!
+  - Your Fortune Number is the Maximum Extra Diamonds from the drop.
+    - Always round up: if your Fortune reads `3.141` means up to `4` extra items
 
 ___
 
-## Mob Drops
+## Summary
 
-Similar to node drops, killing mobs has a chance multiplier.
+- If your Luck is closer to 0.5:
+    - Best Luck for mining drops
+    - Lowest reward from Fortune
+    - Worst Luck for mob drops
+    - Lowest cost for `/bones`
 
-Luck throw is successful if: `luck > rand`: successful luck
-
-The multiplier is the same as digging, except Fortune is *added on to the mob drops*.
-
-Meaning, if a killing a mob drops two diamonds, and your multiplier adds 2, you get 4 diamonds!
+- If your Luck is closer to 1.0:
+    - Worst Luck for mining drops
+    - Highest reward from Fortune
+    - Best Luck for mob drops
+    - Highest cost for `/bones`
 
 ___
 
-# Money
+## Is that all?
 
-The less fortunate don't get money drops every 30 minutes.
+Last points:
 
-The minimum amount of fortune to receive money drops is `0.5`
+  - **Minimum Fortune** of 0.50 to receive half-hourly money drops!
+  - **Minimum EXP** of 0.50 to be allowed to use `/bones`
 
+___
