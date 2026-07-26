@@ -2,11 +2,17 @@
 
 ## Becoming a Guardian
 
-To become a SquareOne Guardian, players may apply when applications are open.
+SquareOne uses an invitation-based staff recruitment system.
 
-There is currently no schedule for open applications.
+Rather than accepting applications during hiring rounds, staff members continuously observe the community over time. When a player consistently demonstrates the qualities we value, any staff member may nominate them for consideration.
 
-Police staff will announce open applications on the Discord `#📢｜news`, and in-game.
+Nominations are based on long-term, observable behavior; not on popularity, playtime, or a single interaction. Staff discuss each nomination using concrete examples of the player's conduct and determine whether an invitation should be extended.
+
+This approach allows us to evaluate players based on their overall character and consistency within the community rather than their ability to write an application or present themselves well during a hiring period.
+
+There are no fixed recruitment dates. Staff nominations can occur at any time, allowing players to be considered whenever they have demonstrated the qualities expected of a member of the team.
+
+An invitation is only an invitation. Players are free to accept, decline, or take as much time as they need to consider it. There is no expectation that an invitation must be accepted or answered immediately.
 
 ___
 
@@ -32,7 +38,6 @@ ___
 |                | therian_W0lf   <br> 2026/05/09 | ![therian_W0lf](/images/staff/therian_W0lf.png){width=300 height=300} |
 |                | Wind_          <br> 2026/05/09 | ![Wind_](/images/icons/alert.svg){width=30 height=30} No image! |
 |                | Zandar         <br> 2026/04/08 | ![Zandar](/images/staff/Zandar.png){width=300 height=300} |
-|                | royxd          <br> 2026/02/09 | ![royxd](/images/icons/alert.svg){width=30 height=30} No image! |
 |                | lily2          <br> 2026/02/09 | ![lily2](/images/icons/alert.svg){width=30 height=30} No image! |
 |                | ItzCookie      <br> 2026/02/09 | ![ItzCookie](/images/staff/ItzCookie.png){width=300 height=300} |
 |                | Ginger379      <br> 2026/02/09 | ![Ginger379](/images/staff/Ginger379.png){width=300 height=300} |
