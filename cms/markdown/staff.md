@@ -36,7 +36,7 @@ ___
 |                | mom6           <br> 2026/05/09 | ![mom6](/images/staff/mom6.png){width=300 height=300} |
 |                | Sweet_Shot     <br> 2026/05/09 | ![Sweet_Shot](/images/icons/alert.svg){width=30 height=30} No image! |
 |                | therian_W0lf   <br> 2026/05/09 | ![therian_W0lf](/images/staff/therian_W0lf.png){width=300 height=300} |
-|                | Wind_          <br> 2026/05/09 | ![Wind_](/images/icons/alert.svg){width=30 height=30} No image! |
+|                | Wind_          <br> 2026/05/09 | ![Wind_](/images/staff/Wind_.png){width=300 height=300} |
 |                | Zandar         <br> 2026/04/08 | ![Zandar](/images/staff/Zandar.png){width=300 height=300} |
 |                | lily2          <br> 2026/02/09 | ![lily2](/images/icons/alert.svg){width=30 height=30} No image! |
 |                | ItzCookie      <br> 2026/02/09 | ![ItzCookie](/images/staff/ItzCookie.png){width=300 height=300} |
