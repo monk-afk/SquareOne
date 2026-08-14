@@ -1,3 +1,6 @@
+-- SquareOne CMS
+-- Copyright © 2026 monk (https://github.com/monk-afk)
+-- SPDX-License-Identifier: MIT
 local landing_page = [[
               <li%s>
                 <a href="/%s.html" aria-expanded="%s" class="sidebar-brand">
@@ -20,28 +23,26 @@ local menu_item_page = [[
 
 -- ["filename"] = "menu title"
 local menu_pages = {
-  {["index"]    = "SPAWN"},
-  {["rules"]    = "RULES"},
-  {["staff"]    = "STAFF"},
-  {["map"]      = "MAPS"},
+  {["index"] = "SPAWN"},
+  {["rules"] = "RULES"},
+  {["staff"] = "STAFF"},
+  {["guide"] = "GUIDE"},
+  {["map"]   = "MAPS"},
   {
     ["mod_info"] = {
       title = "MOD INFO",
       pages = {
-        {["economy"]  = "Economy"},
-        {["tools"]    = "Tools"},
-        {["armor"]    = "Armor"},
-        {["exp"]      = "Exp"},
-        {["mining"]   = "Mining"},
-        {["crystal"]  = "Crystal"},
-        {["protect"]  = "Protect"},
-        {["faq"]      = "FAQs"},
+        {["economy"] = "Economy"},
+        {["tools"]   = "Tools"},
+        {["armor"]   = "Armor"},
+        {["exp"]     = "Exp"},
+        {["mining"]  = "Mining"},
+        {["crystal"] = "Crystal"},
+        {["protect"] = "Protect"},
       }
     }
   },
-  {["history"]  = "HISTORY"},
-  {["guide"]  = "INTRO GUIDE"},
-  {["updates"]  = "UPDATES"},
+  {["faq"] = "FAQs"},
 }
 
 local li_class = function(active) return active and ' class="mm-active"' or "" end
@@ -112,28 +113,3 @@ end
 return generate_sidebar
 -- bottom one for testing, just do  `$ lua macro_nav.lua index`
 -- return arg[1] and print(generate_sidebar(arg[1])) or generate_sidebar
-
-
-------------------------------------------------------------------------------------
--- MIT License                                                                    --
---                                                                                --
--- Copyright © 2025 monk (Discord ID: 699370563235479624)                         --
---                                                                                --
--- Permission is hereby granted, free of charge, to any person obtaining a copy   --
--- of this software and associated documentation files (the "Software"), to deal  --
--- in the Software without restriction, including without limitation the rights   --
--- to use, copy, modify, merge, publish, distribute, sublicense, and/or sell      --
--- copies of the Software, and to permit persons to whom the Software is          --
--- furnished to do so, subject to the following conditions:                       --
---                                                                                --
--- The above copyright notice and this permission notice shall be included in all --
--- copies or substantial portions of the Software.                                --
---                                                                                --
--- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR     --
--- IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,       --
--- FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE    --
--- AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER         --
--- LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,  --
--- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE  --
--- SOFTWARE.                                                                      --
-------------------------------------------------------------------------------------

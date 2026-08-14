@@ -16,8 +16,6 @@ Our dedicated [Staff](/pages/staff.html) are the backbone of ensuring a safe and
 
 Bugs can be reported on our [GitHub](https://github.com/monk-afk/SquareOne/issues)
 
-Recent updates can be found [here](/pages/updates.html).
-
 ___
 
 Website hosted on GitHub. CMS powered by [lunamark](https://github.com/jgm/lunamark/blob/master/LICENSE).

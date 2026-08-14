@@ -42,5 +42,3 @@ If a node normally drops an item, this list details extra items drop potentials.
 | dirt               | bone           | 40     |
 
 Your Luck and Fortune stats affect the [quantity of a node drop.](/pages/exp.html)
-
-___

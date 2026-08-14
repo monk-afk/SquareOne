@@ -90,5 +90,3 @@ Last points:
 
   - **Minimum Fortune** of 0.50 to receive half-hourly money drops!
   - **Minimum EXP** of 0.50 to be allowed to use `/bones`
-
-___

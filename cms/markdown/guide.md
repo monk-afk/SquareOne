@@ -154,5 +154,3 @@ ___
  >  Underworld Monsters
 
   The surface is relatively peaceful because monsters mostly roam below a depth of -1000. However, pools of lava found above that depth can spawn dangerous fire elementals (like lava blobs or lava snowmen) that appear in the light near the magma. To survive an early encounter with these fire elementals, you absolutely need a full set of Steel armor, which is made by smelting iron ore. Aside from these lava elementals, no other hostile mobs spawn above -1000 depth.
-
-___

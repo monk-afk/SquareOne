@@ -4,20 +4,17 @@
 
 SquareOne uses an invitation-based staff recruitment system.
 
-Rather than accepting applications during hiring rounds, staff members continuously observe the community over time. When a player consistently demonstrates the qualities we value, any staff member may nominate them for consideration.
+*Any staff* may nominate a player who consistently demonstrates the qualities we value as a member of the team.
 
-Nominations are based on long-term, observable behavior; not on popularity, playtime, or a single interaction. Staff discuss each nomination using concrete examples of the player's conduct and determine whether an invitation should be extended.
+Nominations with an amount of approval support will be issued an invitation.
 
-This approach allows us to evaluate players based on their overall character and consistency within the community rather than their ability to write an application or present themselves well during a hiring period.
-
-There are no fixed recruitment dates. Staff nominations can occur at any time, allowing players to be considered whenever they have demonstrated the qualities expected of a member of the team.
-
-An invitation is only an invitation. Players are free to accept, decline, or take as much time as they need to consider it. There is no expectation that an invitation must be accepted or answered immediately.
+There is no expectation; Players are free to accept, decline, or take time to consider it.
 
 ___
 
 ## Policies and Best Practices
 
+ - [Hiring Policy](/pages/staff/hiring-policy.html) | [(view text)](https://raw.githubusercontent.com/monk-afk/SquareOne/refs/heads/main/cms/markdown/hiring-policy.md)
  - [Guardian Onboarding](/pages/staff/guardian-onboarding.html) | [(view text)](https://raw.githubusercontent.com/monk-afk/SquareOne/refs/heads/main/cms/markdown/guardian-onboarding.md)
  - [Enforcement Policy](/pages/staff/enforcement-policy.html) | [(view text)](https://raw.githubusercontent.com/monk-afk/SquareOne/refs/heads/main/cms/markdown/enforcement-policy.md)
  - [Handling Provocation](/pages/staff/handling-provocation.html) | [(view text)](https://raw.githubusercontent.com/monk-afk/SquareOne/refs/heads/main/cms/markdown/handling-provocation.md)
@@ -49,5 +46,3 @@ ___
 | **Police**     |   |   |
 |                | senua          <br> 2024/02/04 | ![senua](/images/staff/senua.png){width=300 height=300} |
 |                | Ylde           <br> 2023/08/08 | ![Ylde](/images/staff/Ylde.png){width=300 height=300} |
-
-___

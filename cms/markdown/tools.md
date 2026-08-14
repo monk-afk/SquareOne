@@ -180,5 +180,3 @@ ___
 | Healing ![healing](/images/textures/tools/armorplus_etherium_life_staff.png){width=32 height=32} | Use to restore another player HP, or on self for +5 HP |
 | Light ![light](/images/textures/tools/ethereal_light_staff.png){width=32 height=32} | Temporarily changes stone into glowing stone |
 | Placer ![placer](/images/textures/tools/protector_tool.png){width=32 height=32} | Places a protector block exactly 15 nodes parallel to another nearby protector |
-
-___

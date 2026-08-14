@@ -19,4 +19,3 @@ Daylight is needed for crystal grass to spread.
 Pink Crystal will spawn along with a Pink Crystal Dirt node; it does not spread like normal grassy dirt.
 
 Sometimes a Salt Crystal will spawn
-

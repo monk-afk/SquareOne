@@ -43,5 +43,3 @@ There is now a command to change the protector: `/protector_view`, or for short:
   - `/pb block`
   - `/pb logo`
   - `/pb hide`
-
-___

@@ -113,4 +113,3 @@ You dont.
   - A well will fill itself over time
   - A full well will supply 100 buckets of water
   - It takes 24 hours to full (14.4 minutes for 1 bucket)
-

@@ -165,5 +165,3 @@ Be professional.
 Be specific.
 
 And when in doubt, ask staff for guidance.
-
-___

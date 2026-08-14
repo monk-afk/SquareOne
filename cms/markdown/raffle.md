@@ -63,5 +63,3 @@ ___
 Winners are given 24 hours to respond to the announcement or face disqualification
 
 First name drawn on `December 27, 2025`
-
-___

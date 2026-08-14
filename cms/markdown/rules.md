@@ -49,11 +49,11 @@ ___
 🚫 No exploiting
 : - Bugs, glitches, or modified clients
 🚫 No abusive PvP behavior
-: - Includes spawn killing, camping, or serial targeting
+: - Includes spawn killing, protecting bones, or serial killing
 🚫 No begging
 : - Repeated requests for items or privileges
 🚫 No misuse of protection blocks
-: - Protections should not be used to trap, block unfairly, or grief
+: - Do not protect areas leaving them unused, or areas belonging to other players without their permission.
 
 > Players are responsible for themselves, their items/pets, and their builds/areas.
 
