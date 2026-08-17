@@ -26,6 +26,7 @@ ___
 | Rank           | Name <br>Hired On   | Avatar |
 |:---------------|:-------------------:|:------:|
 | **Guardian**   |   |   |
+|                | KillerJen      <br> 2026/08/16 | ![KillerJen](/images/icons/alert.svg){width=30 height=30} No image! |
 |                | Noormi         <br> 2026/05/13 | ![Noormi](/images/staff/Noormi.png){width=300 height=300} |
 |                | atyn           <br> 2026/05/09 | ![atyn](/images/icons/alert.svg){width=30 height=30} No image! |
 |                | haydens-girl   <br> 2026/05/09 | ![haydens-girl](/images/staff/haydens-girl.png){width=300 height=300} |
