@@ -8,11 +8,11 @@ Use `/rules` in-game for a quick summary. This page provides additional clarific
 
 ___
 
-## Public Chat Policy
+## Chat Policy
 
-1. Players must be able to understand server rules and staff instructions in real time.
+1. Public chat (lobby) must be in English. Other languages may be used in public side-channels.
 
-2. Public chat must be in a language staff can reasonably moderate in real-time.
+2. Players must be able to understand server rules and staff instructions in real time.
 
 3. Players are responsible for understanding rules and staff messages.
 
