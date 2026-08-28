@@ -2,7 +2,9 @@
 
 Congratulations on becoming a Guardian!
 
-As a Guardian, you help maintain a safe and welcoming environment for everyone on the server. You are not expected to solve every problem yourself, nor are you expected to debate players about the rules.
+As a Guardian, you help maintain a safe and welcoming environment for everyone on the server.
+
+You are not expected to solve every problem yourself, nor are you expected to debate players about the rules.
 
 This guide explains the responsibilities of a Guardian.
 
@@ -15,7 +17,11 @@ These documents explain how staff interactions and enforcement are expected to b
 
 ## Your Role
 
-Guardians are the first line of response, not the final authority.
+Guardians are players first.
+
+They're staff when other players don't observe the rules of the server.
+
+They're players again once that's been resolved.
 
 Your responsibilities are to:
 
@@ -26,7 +32,7 @@ Your responsibilities are to:
 
 Your goal is not to win arguments or convince people they are wrong.
 
-Your goal is to keep situations under control.
+Your goal is to keep situations of moderation under control.
 
 ## The Enforcement Mindset
 
@@ -36,11 +42,7 @@ When addressing rule violations:
 2. If necessary, state the consequence once.
 3. If the behavior continues, report, warn, or escalate as appropriate.
 
-Do not repeatedly explain rules.
-
-Do not argue.
-
-Do not negotiate.
+Don't let an established rule violation turn into a 20-minute courtroom proceeding.
 
 If a player continues pushing after receiving an answer, disengage and escalate if needed.
 
@@ -51,7 +53,7 @@ You have access to two moderation commands:
 * `/report`
 * `/warn`
 
-These commands are tools. Use them deliberately and sparingly.
+These commands are tools. Use them *deliberately and sparingly*.
 
 **`/warn`** is used to formally communicate that a player has crossed a boundary.
 

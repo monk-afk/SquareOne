@@ -1,6 +1,18 @@
 # Enforcement Policy /staff/
 
-3-Step Procedure for Enforcing the Server Sules.
+Procedure for Enforcing the Server Rules.
+
+  > Boundary → consequence → action → disengage.
+
+## Step 0: Identify the rule.
+
+Before intervening as staff, know what behaviour you're addressing and why staff intervention is necessary.
+
+If you're uncertain whether something violates a rule, ask another staff member.
+
+Unless immediate action is necessary to prevent harm or disruption, uncertainty is a reason to investigate rather than enforce.
+
+Good judgment includes stopping and questioning your own interpretation before exercising authority.
 
 ## Step 1: State the boundary (once).
 
@@ -10,7 +22,7 @@ Short. Factual. No debate.
 
 No explanations. No history lesson. One sentence.
 
-  > It is appropriate to use the `/warn` command at this step
+  > A verbal instruction is usually sufficient at this step. Use `/warn` when the violation warrants being formally recorded, or when an ordinary instruction has already failed.
 
 **Staff should never repeat Step 1 more than once.**
 

@@ -1,4 +1,4 @@
-# Handling Provocation /staff/
+  # Handling Provocation /staff/
 
 How to end conversations cleanly without losing control.
 
@@ -78,15 +78,15 @@ ___
 
 ## Key Insight
 
-Players who are probing are not trying to understand. They are trying to:
+Players who continue probing after a clear answer may not be trying to understand. They may be trying to:
 
   - Find exceptions
   - Extract approval
   - Reshape the rule
 
-Don't let others walk you into to refining the rule; keep the rule closed.
+Don't let others walk you into refining the rule; keep the rule closed.
 
-Successful interactions are short, controlled, no escalation, ends quickly.
+Successful interactions are short, controlled, avoid escalation, and end quickly.
 
 If it drags on, you've already given too much surface area.
 
@@ -102,7 +102,7 @@ Do not engage if you notice:
   - Bringing in other players for social leverage
   - Guilt tripping
 
-  > recognize that this is probing, not a discussion.
+  > These can be signs that the conversation has shifted from discussion to probing.
 
 ___
 
