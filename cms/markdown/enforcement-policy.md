@@ -2,7 +2,9 @@
 
 Procedure for Enforcing the Server Rules.
 
-  > Boundary → consequence → action → disengage.
+  > `Boundary` → `consequence` → `action` → `disengage`.
+
+___
 
 ## Step 0: Identify the rule.
 
@@ -13,6 +15,8 @@ If you're uncertain whether something violates a rule, ask another staff member.
 Unless immediate action is necessary to prevent harm or disruption, uncertainty is a reason to investigate rather than enforce.
 
 Good judgment includes stopping and questioning your own interpretation before exercising authority.
+
+___
 
 ## Step 1: State the boundary (once).
 
@@ -55,6 +59,8 @@ That sentence does three things simultaneously:
     - Removes the social oxygen from the conflict
 
 If they keep arguing after that, you skip straight to action.
+
+___
 
 ## Step 3: Act, then disengage.
 

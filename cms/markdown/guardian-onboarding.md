@@ -15,6 +15,8 @@ Guardians should also read:
 
 These documents explain how staff interactions and enforcement are expected to be conducted.
 
+___
+
 ## Your Role
 
 Guardians are players first.
@@ -34,6 +36,8 @@ Your goal is not to win arguments or convince people they are wrong.
 
 Your goal is to keep situations of moderation under control.
 
+___
+
 ## The Enforcement Mindset
 
 When addressing rule violations:
@@ -45,6 +49,8 @@ When addressing rule violations:
 Don't let an established rule violation turn into a 20-minute courtroom proceeding.
 
 If a player continues pushing after receiving an answer, disengage and escalate if needed.
+
+___
 
 ## Slash Commands
 
@@ -91,6 +97,8 @@ Include:
 * What happened
 * Relevant coordinates (if applicable)
 * Any useful context
+
+___
 
 ## Common Situations
 
@@ -152,6 +160,8 @@ Examples:
 
 If the discussion becomes circular, disengage.
 
+___
+
 ## Final Advice
 
 Good-faith players usually correct themselves after a reminder.
@@ -160,10 +170,6 @@ Bad-faith players often try to turn moderation into a conversation.
 
 Do not let enforcement become a debate.
 
-Be calm.
-
-Be professional.
-
-Be specific.
+Be calm, be professional, be specific.
 
 And when in doubt, ask staff for guidance.
