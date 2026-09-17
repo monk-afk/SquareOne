@@ -157,15 +157,25 @@
 
 <h2>And what does fortune do?</h2>
 
-<p>Let&#39;s say you find a Diamond, and get Lucky:</p>
+<p>Fortune is a multiplier for drop items.</p>
 
-<ul>
-<li>Your Fortune Number is the Maximum Extra Diamonds from the drop.
+<p>Your Fortune Number is the Maximum bonus from the drop.</p>
 
-<ul>
-<li>Always round up: if your Fortune reads <code>3.141</code> means up to <code>4</code> extra items</li>
-</ul></li>
-</ul>
+<hr class="header-hr">
+
+<h2>How does it really work?</h2>
+
+<p>Okay, I&#39;ll run the process.</p>
+
+<p>You&#39;re mining for gold.</p>
+
+<p>Every time you dig a gold lump, the server checks your exp <code>luck</code>.</p>
+
+<p>The server also generates a random number between 0.00 and 1.00.</p>
+
+<p>If that random number is higher than your <code>luck</code>, you get a <code>fortune</code> multiplier.</p>
+
+<p>The multiplier picks randomly between <code>1</code> and <code>fortune</code> bonus items.</p>
 
 <hr class="header-hr">
 
@@ -203,7 +213,7 @@
             <hr class="header-hr">
             <div class="page-timestamp">
               <span><a href="#top">TOP</a></span>
-              <span>Updated <code>2026-08-14 04:17:13</code></span>
+              <span>Updated <code>2026-09-17 20:38:27</code></span>
             </div>
           </div>
         </div>

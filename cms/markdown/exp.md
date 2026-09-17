@@ -61,10 +61,25 @@ ___
 
 ## And what does fortune do?
 
-Let's say you find a Diamond, and get Lucky:
+Fortune is a multiplier for drop items.
 
-  - Your Fortune Number is the Maximum Extra Diamonds from the drop.
-    - Always round up: if your Fortune reads `3.141` means up to `4` extra items
+Your Fortune Number is the Maximum bonus from the drop.
+
+___
+
+## How does it really work?
+
+Okay, I'll run the process.
+
+You're mining for gold.
+
+Every time you dig a gold lump, the server checks your exp `luck`.
+
+The server also generates a random number between 0.00 and 1.00.
+
+If that random number is higher than your `luck`, you get a `fortune` multiplier.
+
+The multiplier picks randomly between `1` and `fortune` bonus items.
 
 ___
 
