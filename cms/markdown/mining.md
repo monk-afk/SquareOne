@@ -10,35 +10,21 @@ There are three public mine locations. Use the chat commands to travel:
 
 ___
 
-### Diamonds
+### Node Drops
 
-Diamonds can only be found from mining stone.
+Digging certain blocks will sometimes give a bonus item. The list below describes these drop potentials.
 
-Pink Diamonds can be found below a depth of -8700.
+Rarity number means "1 in X" chance to drop.
 
-Blue diamonds have no height restriction.
+| Dig Node           | Chance to Drop | Rarity    |
+|:-------------------|:---------------|----------:|
+| Dirt               | Bone           | 40        |
+| Desert Stone       | Etherium Dust  | 70        |
+| Cobble             | Obsidian Shard | 775       |
+| Sand               | Ender Pearl    | 1475      |
+| Stone              | Blue Diamond   | 1670      |
+| Stone with Coal    | Blue Diamond   | 4450      |
+| Stone              | Pink Diamond   | 8755      |
+| Desert Stone       | Red Diamond    | 300000000 |
 
-Your Fortune stat will multiply your diamond drops!
-
-| Diamond | Minimum depth | Rarity     |
-|:-------:|:--------------|-----------:|
-| Blue    |     Any depth | 0.000598%% |
-| Pink    |         -8700 | 0.000114%% |
-
-___
-
-### Extra Drops
-
-If a node normally drops an item, this list details extra items drop potentials. Rarity number means "1 in X" chance to drop.
-
-| Node               | Drop Item      | Rarity |
-|:-------------------|---------------:|:------:|
-| desert stone       | etherium dust  | 70     |
-| stone              | pinkdiamond    | 8755   |
-| stone              | diamond        | 1670   |
-| cobble             | obsidian shard | 775    |
-| stone with coal    | diamond        | 4450   |
-| sand               | ender pearl    | 1475   |
-| dirt               | bone           | 40     |
-
-Your Luck and Fortune stats affect the [quantity of a node drop.](/pages/exp.html)
+Your Luck and Fortune stats may affect the [quantity of a node drop.](/pages/exp.html)
