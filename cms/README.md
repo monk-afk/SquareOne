@@ -614,13 +614,10 @@ ___
 
 ## Known Issues
 
-  1. > lua: lua/inject.lua:4: invalid use of '%' in replacement string
-      - **Workaround**: Escape `%%` in the markdown file.
+  1. Last line before EOF empty line should be a non-paragraph content string, such as `___`. Otherwise, the last <p> tag won't be closed in the body.
 
-  2. Last line before EOF empty line should be a non-paragraph content string, such as `___`. Otherwise, the last <p> tag won't be closed in the body.
+  2. Can't add certain html tags or attributes by default. This is not a design error, but a design choice made by the authors of lunamark. Markdown doesn't natively provide certain features of HTML, therefore lunamark doesn't provide support for those features. This can be circumvented by patching the html writer and/or reader with the desired injection.
 
-  3. Can't add certain html tags or attributes by default. This is not a design error, but a design choice made by the authors of lunamark. Markdown doesn't natively provide certain features of HTML, therefore lunamark doesn't provide support for those features. This can be circumvented by patching the html writer and/or reader with the desired injection.
-
-  4. See issue#84. Workaround: Always include the first-line header1 tag.
+  3. See issue#84. Workaround: Always include the first-line header1 tag.
 
 + [Top](#markdown-to-html-with-luamark)

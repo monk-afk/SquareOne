@@ -1,10 +1,10 @@
 local function render_template(template, title, date, body, nav--[[ , slug ]])
-  template = template:gsub("$title", title)
-  template = template:gsub("$nav", nav)
-  template = template:gsub("$body", body)
+  template = template:gsub("$title", function() return title end)
+  template = template:gsub("$nav", function() return nav end)
+  template = template:gsub("$body", function() return body end)
   -- template = template:gsub("$slug", slug)
   -- print(slug)
-  template = template:gsub("$time", date)
+  template = template:gsub("$time", function() return date end)
   return template
 end
 
