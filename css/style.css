@@ -2,12 +2,12 @@
 body, html {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   background-color: #1f1f1f;
-  font-size: 1.15rem;
+  font-size: 0.8rem;
   color: #b8b8b8;
-  line-height: 1.25;
+  line-height: 1.15;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
-  word-break: break-word;
+  word-break: normal;
   margin:0;
   padding:0;
   margin-top:6px;
@@ -39,7 +39,7 @@ h3 { font-size: 1.4rem; }
 h4 { font-size: 1.2rem; }
 h5 { font-size: 1rem; }
 h6 { font-size: 0.8rem; }
-p, ul, li, code { font-size: 1.1rem; }
+p, ul, li, code { font-size: 0.75rem; }
 strong { font-weight: 700; }
 
 /* ========== 3. LINKS & BUTTONS ========== */
@@ -62,7 +62,7 @@ a:focus { box-shadow: 0 0 0 0.1rem rgba(238, 48, 48, 0.66); }
 }
 
 footer {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   color: #444;
 }
 
@@ -71,7 +71,7 @@ footer .signature {
   text-align: center;
   align-items: center;
   justify-content: space-evenly;
-  font-size: 0.95rem;
+  font-size: 0.75rem;
   margin: 1.5rem 1.5rem 0.5rem 0;
 }
 
@@ -108,7 +108,7 @@ footer .footer-logo img {
   margin: 0 auto;
   padding: 0 1em;
   max-width: 1280px;
-  word-wrap: break-word;
+  word-wrap: normal;
   overflow: hidden;
 }
 
@@ -271,4 +271,163 @@ code {
   overflow-x:auto;
   padding:1rem;
   width:100%
+}
+
+/* ==== ARMOR CALCULATOR ==== */
+
+.armor-calculator {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border: 1px solid #555;
+  border-left: 4px solid #d10;
+  border-radius: 3px;
+  background: #282828;
+}
+
+.armor-calculator select,
+.armor-calculator button {
+  min-height: 2.25rem;
+  padding: 0.35rem 0.55rem;
+  border: 1px solid #666;
+  border-radius: 3px;
+  background: #1f1f1f;
+  color: #ddd;
+  font: inherit;
+}
+
+.armor-calculator button {
+  cursor: pointer;
+}
+
+.armor-calculator button:hover,
+.armor-calculator button:focus,
+.armor-calculator select:focus {
+  border-color: #e33;
+  outline: 1px solid #e33;
+}
+
+.armor-calculator__toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.armor-calculator__slots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+}
+
+.armor-calculator__slot {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  grid-template-rows: auto auto;
+  gap: 0.25rem 0.6rem;
+  align-items: center;
+  padding: 0.6rem;
+  background: #333;
+  border-radius: 3px;
+}
+
+.armor-calculator__slot img {
+  grid-row: 1 / 3;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  transition: filter 0.15s ease, opacity 0.15s ease;
+}
+
+.armor-calculator__slot img.armor-calculator__placeholder {
+  filter: brightness(0) invert(1);
+  opacity: 0.14;
+}
+
+.armor-calculator__slot label {
+  font-weight: 700;
+}
+
+.armor-calculator__slot select {
+  width: 100%;
+  min-width: 0;
+}
+
+.armor-calculator__results {
+  margin-top: 1rem;
+}
+
+.armor-calculator__metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 0.6rem;
+  margin: 0;
+}
+
+.armor-calculator__metrics > div {
+  padding: 0.65rem;
+  background: #333;
+  border-radius: 3px;
+}
+
+.armor-calculator__metrics dt {
+  color: #999;
+  font-size: 0.85rem;
+}
+
+.armor-calculator__metrics dd {
+  margin: 0.2rem 0 0;
+  color: #eee;
+  font-size: 1.2rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.armor-calculator__durability {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: #333;
+  border-radius: 3px;
+}
+
+.armor-calculator__durability h3,
+.armor-calculator__durability p {
+  margin-top: 0;
+}
+
+.armor-calculator__reference p,
+.armor-calculator__notice {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.armor-calculator__reference {
+  margin-top: 1rem;
+}
+
+.armor-calculator__reference summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.armor-calculator__reference-table img {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+  image-rendering: pixelated;
+}
+
+.armor-calculator__reference-table td {
+  white-space: nowrap;
+}
+
+@media (max-width: 520px) {
+  .armor-calculator {
+    padding: 0.7rem;
+  }
+
+  .armor-calculator__toolbar > * {
+    width: 100%;
+  }
 }

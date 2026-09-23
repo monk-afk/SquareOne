@@ -1,0 +1,46 @@
+<section class="armor-calculator" id="armor-calculator" aria-labelledby="armor-calculator-title">
+  <div class="armor-calculator__toolbar">
+    <select id="armor-calculator-preset">
+      <option value="">Custom</option>
+    </select>
+    <button id="armor-calculator-reset" type="button">Clear</button>
+  </div>
+
+  <div class="armor-calculator__slots" id="armor-calculator-slots"></div>
+
+  <noscript>
+    <p class="armor-calculator__notice">This interactive calculator requires JavaScript. The definitions above still explain each statistic.</p>
+  </noscript>
+
+  <div class="armor-calculator__results" aria-live="polite">
+    <dl class="armor-calculator__metrics">
+      <div><dt>Defense</dt><dd id="armor-result-defense">0%</dd></div>
+      <div><dt>Block</dt><dd id="armor-result-block">0%</dd></div>
+      <div><dt>Reflect damage</dt><dd id="armor-result-reflect">No</dd></div>
+      <div><dt>Matching-set bonus</dt><dd id="armor-result-set">Inactive</dd></div>
+      <!-- <div><dt>Lowest durability</dt><dd id="armor-result-first-break">—</dd></div> -->
+    </dl>
+    <br>
+    <dl class="armor-calculator__metrics">
+      <div><dt>Speed</dt><dd id="armor-result-speed">1×</dd></div>
+      <div><dt>Jump</dt><dd id="armor-result-jump">1×</dd></div>
+      <div><dt>Gravity</dt><dd id="armor-result-gravity">1×</dd></div>
+      <div><dt>Fire resist</dt><dd id="armor-result-fire">0</dd></div>
+    </dl>
+
+    <div class="armor-calculator__durability">
+      <h3>Per-piece durability</h3>
+      <p id="armor-durability-context">Select armor to calculate durability.</p>
+      <ul id="armor-result-durability"></ul>
+    </div>
+  </div>
+</section>
+
+<details class="armor-calculator__reference">
+  <summary><a>Browse all armor pieces</a></summary>
+  <p>The reference durability column assumes five equipped armor elements. Physics columns are the modifiers added by each piece.</p>
+  <div id="armor-reference-table"></div>
+</details>
+
+<script defer src="/js/armor-data.js"></script>
+<script defer src="/js/armor-calculator.js"></script>

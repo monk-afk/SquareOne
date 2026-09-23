@@ -8,7 +8,7 @@
       <link href="/css/style.css" type="text/css" rel="stylesheet">
       <link href="/css/menu.css" type="text/css" rel="stylesheet">
       <link href="/css/notices.css" type="text/css" rel="stylesheet">
-      <title>SquareOne ❖ Armor Stats </title>
+      <title>SquareOne ❖ Armor </title>
 
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -74,7 +74,7 @@
       </div>
       <main id="panel" class="slideout-panel slideout-panel-left">
         <div id="header">
-          <h1 id="top">  Armor Stats</h1>
+          <h1 id="top">  Armor</h1>
           <div class="toggle-button hamburger hamburger--spin">
             <div class="hamburger-box">
               <div class="hamburger-inner">
@@ -86,620 +86,87 @@
           <hr class="header-hr">
           <div class="pagebox">
             <!-- ===== MAIN CONTENT ============================= -->
-<p>Physics modifiers can be combined! Mix armor types to combine their effects</p>
+<p>Choose any combination of armor to see the effective stats.</p>
+
+<section class="armor-calculator" id="armor-calculator" aria-labelledby="armor-calculator-title">
+  <div class="armor-calculator__toolbar">
+    <select id="armor-calculator-preset">
+      <option value="">Custom</option>
+    </select>
+    <button id="armor-calculator-reset" type="button">Clear</button>
+  </div>
+
+  <div class="armor-calculator__slots" id="armor-calculator-slots"></div>
+
+  <noscript>
+    <p class="armor-calculator__notice">This interactive calculator requires JavaScript. The definitions above still explain each statistic.</p>
+  </noscript>
+
+  <div class="armor-calculator__results" aria-live="polite">
+    <dl class="armor-calculator__metrics">
+      <div><dt>Defense</dt><dd id="armor-result-defense">0%</dd></div>
+      <div><dt>Block</dt><dd id="armor-result-block">0%</dd></div>
+      <div><dt>Reflect damage</dt><dd id="armor-result-reflect">No</dd></div>
+      <div><dt>Matching-set bonus</dt><dd id="armor-result-set">Inactive</dd></div>
+      <!-- <div><dt>Lowest durability</dt><dd id="armor-result-first-break">—</dd></div> -->
+    </dl>
+    <br>
+    <dl class="armor-calculator__metrics">
+      <div><dt>Speed</dt><dd id="armor-result-speed">1×</dd></div>
+      <div><dt>Jump</dt><dd id="armor-result-jump">1×</dd></div>
+      <div><dt>Gravity</dt><dd id="armor-result-gravity">1×</dd></div>
+      <div><dt>Fire resist</dt><dd id="armor-result-fire">0</dd></div>
+    </dl>
+
+    <div class="armor-calculator__durability">
+      <h3>Per-piece durability</h3>
+      <p id="armor-durability-context">Select armor to calculate durability.</p>
+      <ul id="armor-result-durability"></ul>
+    </div>
+  </div>
+</section>
+
+<details class="armor-calculator__reference">
+  <summary><a>Browse all armor pieces</a></summary>
+  <p>The reference durability column assumes five equipped armor elements. Physics columns are the modifiers added by each piece.</p>
+  <div id="armor-reference-table"></div>
+</details>
+
+<script defer src="/js/armor-data.js"></script>
+<script defer src="/js/armor-calculator.js"></script>
+
 
 <p><strong>Defense Attributes</strong></p>
 
 <ul>
-<li><strong><code>endurance</code></strong> How many hits the armor can take before breaking.</li>
-<li><strong><code>defense</code></strong> Reduces your vulnerability to damage.</li>
-<li><strong><code>block</code></strong> Percentage chance of receiving zero attack damage.</li>
-<li><strong><code>reflect</code></strong> Reflect damage back to attacker&#39;s armor or weapon.</li>
-<li><strong><code>fire resist</code></strong> Resistance against fire, lava</li>
-</ul>
-
-<p><details>
-<summary>**Physics Modifiers**</summary>
-  Base values are 1.0, with armor stats adding the positive or negative modifiers. Mix armor types to combine their effects
-</details></p>
+<li><strong><code>durability</code></strong> Total survivable hits until item breaks.
 
 <ul>
-<li><strong><code>jump</code></strong> Your jump strength.</li>
-<li><strong><code>speed</code></strong> Your walking and sprinting speed.</li>
-<li><strong><code>gravity</code></strong> The force of downward pull.</li>
+<li>Received damage to armor is divided by total number of equipped armor pieces</li>
+</ul></li>
+<li><strong><code>defense</code></strong> Percentage reduction to incoming damage.</li>
+<li><strong><code>block</code></strong> Percentage chance of receiving zero damage from a hit.</li>
+<li><strong><code>reflect</code></strong> Causes counter damage to the attacker&#39;s weapon.</li>
+<li><strong><code>fire resist</code></strong> Protection against fire and lava.</li>
 </ul>
 
-<p><a href="https://github.com/minetest-mods/3d_armor/blob/master/3d_armor/README.md">Complete list of Definitions Here</a> <em>_</em></p>
+<p><strong>Physics Modifiers</strong></p>
 
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Wood</th>
-<th style="text-align: right;">Durability</th>
-<th style="text-align: right;">Defense</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_helmet_wood.png" alt="helmet" /></td>
-<td style="text-align: right;">32</td>
-<td style="text-align: right;">3</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/shields_inv_shield_wood.png" alt="shield" /></td>
-<td style="text-align: right;">32</td>
-<td style="text-align: right;">3</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_chestplate_wood.png" alt="chestplate" /></td>
-<td style="text-align: right;">32</td>
-<td style="text-align: right;">5</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_leggings_wood.png" alt="leggings" /></td>
-<td style="text-align: right;">32</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_boots_wood.png" alt="boots" /></td>
-<td style="text-align: right;">32</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/shields_inv_shield_enhanced_wood.png" alt="augmented shield" /></td>
-<td style="text-align: right;">32</td>
-<td style="text-align: right;">4</td>
-</tr>
-</tbody>
-</table>
+<blockquote>
+<p>Base values are 1.0. Each selected piece adds its positive or negative modifier.</p>
+</blockquote>
 
+<ul>
+<li><strong><code>jump</code></strong> Your jump-strength multiplier.</li>
+<li><strong><code>speed</code></strong> Your walking and sprinting-speed multiplier.</li>
+<li><strong><code>gravity</code></strong> Your downward-gravity multiplier.</li>
+</ul>
 
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Cactus</th>
-<th style="text-align: right;">Durability</th>
-<th style="text-align: right;">Defense</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_helmet_cactus.png" alt="helmet" /></td>
-<td style="text-align: right;">65</td>
-<td style="text-align: right;">5</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/shields_inv_shield_cactus.png" alt="shield" /></td>
-<td style="text-align: right;">65</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_chestplate_cactus.png" alt="chestplate" /></td>
-<td style="text-align: right;">65</td>
-<td style="text-align: right;">10</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_leggings_cactus.png" alt="leggings" /></td>
-<td style="text-align: right;">65</td>
-<td style="text-align: right;">10</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_boots_cactus.png" alt="boots" /></td>
-<td style="text-align: right;">65</td>
-<td style="text-align: right;">5</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/shields_inv_shield_enhanced_cactus.png" alt="augmented shield" /></td>
-<td style="text-align: right;">65</td>
-<td style="text-align: right;">5</td>
-</tr>
-</tbody>
-</table>
-
-
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Copperpatina</th>
-<th style="text-align: right;">Durability</th>
-<th style="text-align: right;">Defense</th>
-<th style="text-align: right;">Block</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/armorplus_inv_copperpatina_helmet.png" alt="helmet" /></td>
-<td style="text-align: right;">655</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">5</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/armorplus_inv_copperpatina_shield.png" alt="shield" /></td>
-<td style="text-align: right;">655</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">6</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/armorplus_inv_copperpatina_chestplate.png" alt="chestplate" /></td>
-<td style="text-align: right;">655</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">8</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/armorplus_inv_copperpatina_leggings.png" alt="leggings" /></td>
-<td style="text-align: right;">655</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">8</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/armorplus_inv_copperpatina_boots.png" alt="boots" /></td>
-<td style="text-align: right;">655</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">6</td>
-</tr>
-</tbody>
-</table>
-
-
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Mithril</th>
-<th style="text-align: right;">Durability</th>
-<th style="text-align: right;">Defense</th>
-<th style="text-align: right;">Block</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_helmet_mithril.png" alt="helmet" /></td>
-<td style="text-align: right;">992</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">13</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/shields_inv_shield_mithril.png" alt="shield" /></td>
-<td style="text-align: right;">992</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">16</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_chestplate_mithril.png" alt="chestplate" /></td>
-<td style="text-align: right;">992</td>
-<td style="text-align: right;">9</td>
-<td style="text-align: right;">15</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_leggings_mithril.png" alt="leggings" /></td>
-<td style="text-align: right;">992</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">14</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_boots_mithril.png" alt="boots" /></td>
-<td style="text-align: right;">992</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">12</td>
-</tr>
-</tbody>
-</table>
-
-
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Diamond</th>
-<th style="text-align: right;">Durability</th>
-<th style="text-align: right;">Defense</th>
-<th style="text-align: right;">Block</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_helmet_diamond.png" alt="helmet" /></td>
-<td style="text-align: right;">327</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">12</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/shields_inv_shield_diamond.png" alt="shield" /></td>
-<td style="text-align: right;">327</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">7</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_chestplate_diamond.png" alt="chestplate" /></td>
-<td style="text-align: right;">327</td>
-<td style="text-align: right;">12</td>
-<td style="text-align: right;">12</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_leggings_diamond.png" alt="leggings" /></td>
-<td style="text-align: right;">327</td>
-<td style="text-align: right;">12</td>
-<td style="text-align: right;">12</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_boots_diamond.png" alt="boots" /></td>
-<td style="text-align: right;">327</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">12</td>
-</tr>
-</tbody>
-</table>
-
-
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Pink Crystal</th>
-<th style="text-align: right;">Durability</th>
-<th style="text-align: right;">Defense</th>
-<th style="text-align: right;">Block</th>
-<th style="text-align: right;">Jump</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_helmet_pink_crystal.png" alt="helmet" /></td>
-<td style="text-align: right;">655</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">0.25</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/shields_inv_shield_pink_crystal.png" alt="shield" /></td>
-<td style="text-align: right;">327</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">0.35</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_chestplate_pink_crystal.png" alt="chestplate" /></td>
-<td style="text-align: right;">655</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">0.25</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_leggings_pink_crystal.png" alt="leggings" /></td>
-<td style="text-align: right;">655</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">0.25</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_boots_pink_crystal.png" alt="boots" /></td>
-<td style="text-align: right;">655</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">0.35</td>
-</tr>
-</tbody>
-</table>
-
-
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Obsidian</th>
-<th style="text-align: right;">Durability</th>
-<th style="text-align: right;">Defense</th>
-<th style="text-align: right;">Block</th>
-<th style="text-align: right;">Fire Resist</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/armorplus_inv_obsidian_helmet.png" alt="helmet" /></td>
-<td style="text-align: right;">344</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">15</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/armorplus_inv_obsidian_shield.png" alt="shield" /></td>
-<td style="text-align: right;">344</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">15</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/armorplus_inv_obsidian_chestplate.png" alt="chestplate" /></td>
-<td style="text-align: right;">344</td>
-<td style="text-align: right;">9</td>
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">15</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/armorplus_inv_obsidian_leggings.png" alt="leggings" /></td>
-<td style="text-align: right;">344</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">15</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/armorplus_inv_obsidian_boots.png" alt="boots" /></td>
-<td style="text-align: right;">344</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">15</td>
-</tr>
-</tbody>
-</table>
-
-
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Steel</th>
-<th style="text-align: right;">Durability</th>
-<th style="text-align: right;">Defense</th>
-<th style="text-align: right;">Block</th>
-<th style="text-align: right;">Speed</th>
-<th style="text-align: right;">Gravity</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_helmet_steel.png" alt="helmet" /></td>
-<td style="text-align: right;">81</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">-0.01</td>
-<td style="text-align: right;">0.01</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/shields_inv_shield_steel.png" alt="shield" /></td>
-<td style="text-align: right;">81</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">-0.03</td>
-<td style="text-align: right;">0.03</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_chestplate_steel.png" alt="chestplate" /></td>
-<td style="text-align: right;">81</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">-0.04</td>
-<td style="text-align: right;">0.04</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_leggings_steel.png" alt="leggings" /></td>
-<td style="text-align: right;">81</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">-0.03</td>
-<td style="text-align: right;">0.03</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_boots_steel.png" alt="boots" /></td>
-<td style="text-align: right;">81</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">-0.01</td>
-<td style="text-align: right;">0.01</td>
-</tr>
-</tbody>
-</table>
-
-
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Etherium</th>
-<th style="text-align: right;">Durability</th>
-<th style="text-align: right;">Defense</th>
-<th style="text-align: right;">Block</th>
-<th style="text-align: right;">Gravity</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/armorplus_inv_etherium_helmet.png" alt="helmet" /></td>
-<td style="text-align: right;">218</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">-0.19</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/armorplus_inv_etherium_shield.png" alt="shield" /></td>
-<td style="text-align: right;">218</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">-0.19</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/armorplus_inv_etherium_chestplate.png" alt="chestplate" /></td>
-<td style="text-align: right;">218</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">-0.19</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/armorplus_inv_etherium_leggings.png" alt="leggings" /></td>
-<td style="text-align: right;">218</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">-0.19</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/armorplus_inv_etherium_boots.png" alt="boots" /></td>
-<td style="text-align: right;">218</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">-0.19</td>
-</tr>
-</tbody>
-</table>
-
-
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Crystal</th>
-<th style="text-align: right;">Durability</th>
-<th style="text-align: right;">Defense</th>
-<th style="text-align: right;">Block</th>
-<th style="text-align: right;">Speed</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_helmet_crystal.png" alt="helmet" /></td>
-<td style="text-align: right;">655</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">0.35</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/shields_inv_shield_crystal.png" alt="shield" /></td>
-<td style="text-align: right;">327</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">0.15</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_chestplate_crystal.png" alt="chestplate" /></td>
-<td style="text-align: right;">655</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">0.35</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_leggings_crystal.png" alt="leggings" /></td>
-<td style="text-align: right;">655</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">0.35</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_boots_crystal.png" alt="boots" /></td>
-<td style="text-align: right;">655</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">0.35</td>
-</tr>
-</tbody>
-</table>
-
-
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Bronze</th>
-<th style="text-align: right;">Durability</th>
-<th style="text-align: right;">Defense</th>
-<th style="text-align: right;">Block</th>
-<th style="text-align: right;">Speed</th>
-<th style="text-align: right;">Gravity</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_helmet_bronze.png" alt="helmet" /></td>
-<td style="text-align: right;">163</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">-0.01</td>
-<td style="text-align: right;">0.01</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/shields_inv_shield_bronze.png" alt="shield" /></td>
-<td style="text-align: right;">163</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">9</td>
-<td style="text-align: right;">-0.03</td>
-<td style="text-align: right;">0.03</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_chestplate_bronze.png" alt="chestplate" /></td>
-<td style="text-align: right;">163</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">-0.04</td>
-<td style="text-align: right;">0.04</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_leggings_bronze.png" alt="leggings" /></td>
-<td style="text-align: right;">163</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">-0.03</td>
-<td style="text-align: right;">0.03</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_boots_bronze.png" alt="boots" /></td>
-<td style="text-align: right;">163</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">-0.01</td>
-<td style="text-align: right;">0.01</td>
-</tr>
-</tbody>
-</table>
-
-
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Gold</th>
-<th style="text-align: right;">Durability</th>
-<th style="text-align: right;">Defense</th>
-<th style="text-align: right;">Block</th>
-<th style="text-align: right;">Speed</th>
-<th style="text-align: right;">Gravity</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_helmet_gold.png" alt="helmet" /></td>
-<td style="text-align: right;">218</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">-0.02</td>
-<td style="text-align: right;">0.02</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/shields_inv_shield_gold.png" alt="shield" /></td>
-<td style="text-align: right;">218</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">15</td>
-<td style="text-align: right;">-0.04</td>
-<td style="text-align: right;">0.04</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_chestplate_gold.png" alt="chestplate" /></td>
-<td style="text-align: right;">218</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">-0.05</td>
-<td style="text-align: right;">0.05</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_leggings_gold.png" alt="leggings" /></td>
-<td style="text-align: right;">218</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">-0.04</td>
-<td style="text-align: right;">0.04</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="/images/textures/armor/3d_armor_inv_boots_gold.png" alt="boots" /></td>
-<td style="text-align: right;">218</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">-0.02</td>
-<td style="text-align: right;">0.02</td>
-</tr>
-</tbody>
-</table>
-
+<a href="https://github.com/minetest-mods/3d_armor/blob/master/3d_armor/README.md">Complete list of upstream definitions</a>
             <hr class="header-hr">
             <div class="page-timestamp">
               <span><a href="#top">TOP</a></span>
-              <span>Updated <code>2026-08-14 04:17:12</code></span>
+              <span>Updated <code>2026-09-23 13:26:12</code></span>
             </div>
           </div>
         </div>
