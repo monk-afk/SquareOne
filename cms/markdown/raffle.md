@@ -1,7 +1,5 @@
 # GingerBread Cookie Raffle
 
-## Total Prize Lot $15,988
-
 ___
 
 ### Gingerbread cookies are $1 each
@@ -54,7 +52,7 @@ ___
 - New accounts with a minimum play time of less than X number of minutes
 - Alt-accounts (excludes known sibling accounts)
 
-[Click here the list of participating players here](https://gist.github.com/monk-afk/9e375e0cfd0d4af44ce6c2cb04fb32c0)
+The list of participating players will be published after entry deadline.
 
 ___
 
@@ -62,4 +60,4 @@ ___
 
 Winners are given 24 hours to respond to the announcement or face disqualification
 
-First name drawn on `December 27, 2025`
+First name drawn on `December 27, 2026`

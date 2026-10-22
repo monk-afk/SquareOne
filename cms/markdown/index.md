@@ -12,13 +12,19 @@ Discord: [Invite Link](https://discord.gg/pE4Tu3cf23)
 
 Be sure to familiarize yourself with [the rules](/pages/rules.html) before playing.
 
-Our dedicated [Staff](/pages/staff.html) are the backbone of ensuring a safe and enjoyable experience. Please be restpectful, not only to staff but to all players!
+Our dedicated [Staff](/pages/staff.html) are the backbone of ensuring a safe and enjoyable experience. Please be restpectful, to staff and all players!
 
-Bugs can be reported on our [GitHub](https://github.com/monk-afk/SquareOne/issues)
+Issues can be reported [here (link)](https://github.com/monk-afk/SquareOne/issues)
 
 ___
 
-Website hosted on GitHub. CMS powered by [lunamark](https://github.com/jgm/lunamark/blob/master/LICENSE).
+::: {.notices .green}
+[**2026 Gingerbread Cookie Raffle** prize lot is open! Click for details.](/pages/raffle.html)
+:::
+
+___
+
+Website hosted by GitHub-Pages. CMS powered by [lunamark](https://github.com/jgm/lunamark/blob/master/LICENSE).
 
 ![monk with pixel glasses](/images/squareone_pixelmonk.png)
 
