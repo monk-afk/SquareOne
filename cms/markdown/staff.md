@@ -36,7 +36,6 @@ ___
 |                | Zandar         <br> 2026/04/08 | ![Zandar](/images/staff/Zandar.png){width=300 height=300} |
 |                | lily2          <br> 2026/02/09 | ![lily2](/images/icons/alert.svg){width=30 height=30} No image! |
 |                | ItzCookie      <br> 2026/02/09 | ![ItzCookie](/images/staff/ItzCookie.png){width=300 height=300} |
-|                | Ginger379      <br> 2026/02/09 | ![Ginger379](/images/staff/Ginger379.png){width=300 height=300} |
 |                | OfficalCookies <br> 2025/09/30 | ![OfficalCookies](/images/staff/OfficalCookies.png){width=300 height=300} |
 |                | elimeshe       <br> 2025/09/30 | ![elimeshe](/images/staff/elimeshe.png){width=300 height=300} |
 |                | Gh0st          <br> 2024/07/24 | ![Gh0st](/images/staff/Gh0st.png){width=300 height=300} |
