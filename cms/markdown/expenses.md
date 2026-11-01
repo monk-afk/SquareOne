@@ -10,12 +10,15 @@
 | 2024-05-14 | Domain squareone.moe     | Registration           | 3 Years  | 2027-05-14 |   -(40.84) |
 | 2024-05-23 | VPS 3 SSD 95.111.233.238 | Package Upgrade        | 1 Year   | 2025-05-15 |   -(55.00) |
 | 2025-02-05 | Gratuity                 | Server Finance Support | N/A      | N/A        |      65.00 |
-| 2025-02-25 | Gratuity                 | Server Finance Support | N/A      | N/A        |      13.36 |
+| 2025-02-25 | Gratuity                 | Server Finance Support | N/A      | N/A        |      15.00 |
 | 2025-03-31 | VPS 3 SSD 95.111.233.238 | VPS Renewal            | 1 Year   | 2026-05-15 |  -(210.00) |
 | 2026-02-11 | VPS 3 SSD 95.111.233.238 | VPS Renewal            | 1 Year   | 2027-05-15 |  -(252.00) |
+| 2026-08-28 | Gratuity                 | Server Finance Support | N/A      | N/A        |      40.00 |
 
 Donate through Stripe
 
 $htmlsup
 
-[Ko-Fi](https://ko-fi.com/monkmoe)
+Or
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y010XYHQ)
