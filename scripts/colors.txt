@@ -9109,6 +9109,7 @@ coloredblocks:sand_mulberry 201 144 221
 coloredblocks:sand_orange 221 183 144
 coloredblocks:sand_pink 212 179 183
 coloredblocks:sand_red 221 144 144
+coloredblocks:sand_rose 192 116 154
 coloredblocks:sand_sapphire 144 163 221
 coloredblocks:sand_spring 144 221 187
 coloredblocks:sand_turquoise 144 221 206
@@ -19203,6 +19204,7 @@ default:silver_sandstone_nanoslab 195 192 181
 default:silver_sandstone_panel 195 192 181
 default:silver_sandstone_thinstair 195 192 181
 default:snow 247 247 247
+default:snowball_snow 225 225 238
 default:snowblock 247 247 247
 default:steelblock 187 189 186
 default:steelblock_cube 187 189 186
@@ -28121,6 +28123,8 @@ moreores:stair_silver_block_inner 188 206 215
 moreores:stair_silver_block_outer 188 206 215
 moreores:stair_silver_block_right_half 188 206 215
 
+# potted_flowers
+
 # protector
 protector:display_node 214 25 255
 protector:door_steel_b_1 142 142 142
@@ -28298,6 +28302,9 @@ random_teleport:pad 99 145 148
 # safe
 safe:safe 194 196 193
 
+# shopbot
+shopbot:mailbox 209 80 60
+
 # squareone
 squareone:basketball 196 96 6
 squareone:clone_cube 56 52 60
@@ -28314,6 +28321,7 @@ squareone_hilo:vlt 89 115 87
 squareone_poster:100_game_years 87 32 30
 squareone_poster:anniversary_2024 84 52 51
 squareone_poster:anniversary_2025 67 55 54
+squareone_poster:anniversary_2026 70 27 24
 squareone_poster:are_one 67 49 47
 squareone_poster:logo_mosaic_1 84 24 22
 squareone_poster:logo_mosaic_2 77 26 23
@@ -28323,6 +28331,7 @@ squareone_poster:logo_v2 89 58 56
 squareone_poster:monkface 226 208 197
 squareone_poster:nyancat 185 146 160
 squareone_poster:pixel_monk 197 173 157
+squareone_poster:shep 207 201 190
 
 # stained_glass
 stained_glass:stained_glass 244 244 244
