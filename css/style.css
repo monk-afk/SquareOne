@@ -169,6 +169,7 @@ table {
 
 td, th {
   padding: 2px;
+  word-wrap: anywhere;
 }
 
 table th {
@@ -182,6 +183,7 @@ td:first-child {
   background-color: #444;
   border-top: 1px solid #f00;
   font-weight: bold;
+  word-wrap: break-word;
 }
 
 table img {
